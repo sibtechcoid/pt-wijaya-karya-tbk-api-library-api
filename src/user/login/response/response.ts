@@ -1,6 +1,13 @@
-import BaseRequest from '../../../request/request';
+import BaseResponse from '../../../response/response';
 import User from "../../user";
 
-export default interface Response extends BaseRequest<User> {
-
+interface Fail extends BaseResponse<undefined> {
+    code : 404;
 }
+
+interface Success extends BaseResponse<User> {
+    code : 200;
+}
+
+type Response = Fail|Success;
+export default Response;

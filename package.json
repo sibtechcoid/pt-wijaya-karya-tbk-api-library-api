@@ -7,6 +7,8 @@
     "file-copy-no-overwrite": "git+https://github.com/dikac/file-copy-no-overwrite.git",
     "http-method-enum": "^1.0.0",
     "npm-run-all": "^4.1.5",
+    "t-boolean": "git+https://github.com/dikac/t-boolean.git",
+    "t-string": "git+https://github.com/dikac/t-string.git",
     "t-validatable": "git+https://github.com/dikac/t-validatable.git",
     "typescript": "^3.6.4"
   },

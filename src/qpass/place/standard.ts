@@ -3,11 +3,11 @@ import Place from "./place";
 export default class Standard<Id extends undefined|number> implements Place<Id> {
 
     constructor(
-       readonly name : string,
-       readonly abbreviation : string,
-       readonly address : string,
-       readonly type: number,
-       readonly level: number,
-       readonly id : Id,
+       public name : string,
+       public abbreviation : string,
+       public address : string,
+       public type: number,
+       public level: number,
+       public id : Id,
     ) {}
 }

@@ -3,11 +3,11 @@ import HttpMethod from "../../../../method/method";
 
 export default class Standard<Method extends HttpMethod, Body> implements Request<Method, Body> {
 
-    readonly path : '/qpass/place' = '/qpass/place';
+    public path : '/qpass/place' = '/qpass/place';
 
     constructor(
-        readonly method : Method,
-        readonly body : Body
+        public method : Method,
+        public body : Body
     ) {
     }
 

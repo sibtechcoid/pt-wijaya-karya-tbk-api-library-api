@@ -10,8 +10,8 @@
 //     private _valid : boolean = false;
 //
 //     constructor (
-//         readonly path : string,
-//         readonly method : HTTPMethod,
+//         public path : string,
+//         public method : HTTPMethod,
 //         body : any = null,
 //         private validator : (body : any) => body is Body
 //     ) {

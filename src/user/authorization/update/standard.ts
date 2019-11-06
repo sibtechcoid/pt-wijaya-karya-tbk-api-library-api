@@ -5,8 +5,8 @@ import Internal from "./type/internal";
 export default class Standard implements Login {
 
     constructor(
-        readonly qpass : Qpass[],
-        readonly internal : Internal[]
+        public qpass : Qpass[],
+        public internal : Internal[]
     ) {
     }
 }

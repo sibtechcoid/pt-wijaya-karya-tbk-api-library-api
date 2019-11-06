@@ -7,13 +7,13 @@ import Method from "../../../../method/method";
 
 export default class Standard implements Request {
 
-    readonly method : Method.POST = Method.POST;
-    readonly path : '/user/authorization/update' = '/user/authorization/update';
-    readonly body : Update;
+    public method : Method.POST = Method.POST;
+    public path : '/user/authorization/update' = '/user/authorization/update';
+    public body : Update;
 
     constructor(
-        readonly qpass : Qpass[],
-        readonly internal : Internal[]
+        public qpass : Qpass[],
+        public internal : Internal[]
     ) {
         this.body = new StdUpdate(qpass, internal);
     }

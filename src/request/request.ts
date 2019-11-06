@@ -1,8 +1,8 @@
 import HTTPMethod from "http-method-enum";
 
-export default interface Request <Body> {
+export default interface Request <Method extends HTTPMethod, Path extends string, Body> {
 
-    readonly method : HTTPMethod;
+    readonly method : Method;
     readonly body : Body;
-    readonly path : string;
+    readonly path : Path;
 }

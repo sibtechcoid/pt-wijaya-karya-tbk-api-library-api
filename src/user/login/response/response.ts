@@ -1,13 +1,8 @@
 import BaseResponse from '../../../response/response';
 import User from "../../user";
+import Success from "../../../response/success";
+import NotFound from "../../../response/not-found";
 
-interface Fail extends BaseResponse<undefined> {
-    code : 404;
-}
 
-interface Success extends BaseResponse<User> {
-    code : 200;
-}
-
-type Response = Fail|Success;
+type Response = NotFound<undefined>|Success<User>;
 export default Response;

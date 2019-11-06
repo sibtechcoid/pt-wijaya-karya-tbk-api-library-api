@@ -1,6 +1,6 @@
-export default interface Response <Body> {
+export default interface Response <Code extends number, Body> {
 
     readonly body : Body;
-    code : number;
+    code : Code;
     message : string;
 }

@@ -1,0 +1,16 @@
+import BaseResponse from '../../../../../response/response';
+import Type from "../../type";
+import Id from "../../../../../id/id";
+
+
+// TODO ADD BAD REQUEST FOR ABBREVIATION
+interface Fail extends BaseResponse<undefined> {
+    code : 404;
+}
+
+interface Success extends BaseResponse<Id> {
+    code : 200;
+}
+
+type Response = Fail|Success;
+export default Response;

@@ -1,6 +1,6 @@
-import Type from "../../type";
+import Level from "../../level";
 import Success from "../../../../../response/success";
 import NotFound from "../../../../../response/not-found";
 
-type Response = NotFound<undefined>|Success<Type<number>>;
+type Response = NotFound<undefined>|Success<Level<number>>;
 export default Response;

@@ -1,6 +1,6 @@
 import Id from "../../../id/id";
 
-export default interface Type<_Id extends number|undefined> extends Id<_Id> {
+export default interface Level<_Id extends number|undefined> extends Id<_Id> {
 
     /**
      * full name

@@ -1,12 +1,12 @@
 import Request from './request';
-import Type from "../../type";
+import Level from "../../level";
 import BaseStandard from '../../base/request/standard';
 import Method from "../../../../../method/method";
 
-export default class Standard extends BaseStandard<Method.PUT, Type<undefined>> implements Request {
+export default class Standard extends BaseStandard<Method.PUT, Level<undefined>> implements Request {
 
     constructor(
-        body : Type<undefined>
+        body : Level<undefined>
     ) {
         super(Method.PUT, body);
     }

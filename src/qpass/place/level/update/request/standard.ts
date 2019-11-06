@@ -1,5 +1,5 @@
 import Request from './request';
-import Type from "../../type";
+import Level from "../../level";
 import Method from "../../../../../method/method";
 export default class Standard implements Request {
 
@@ -7,7 +7,7 @@ export default class Standard implements Request {
     public path : '/qpass/place/level' = '/qpass/place/level';
 
     constructor(
-        public body : Type<number>
+        public body : Level<number>
     ) {
     }
 

@@ -1,7 +1,6 @@
 import Request from './request';
-import Method from "http-method-enum";
 import Type from "../../type";
-import HttpMethod from "http-method-enum";
+import HttpMethod from "../../../../../method/method";
 
 export default class Standard<Method extends HttpMethod, Body> implements Request<Method, Body> {
 

@@ -1,7 +1,7 @@
-import HTTPMethod from "http-method-enum";
 import Request from "./request";
+import HttpMethod from "../method/method";
 
-export default class Standard<Method extends HTTPMethod, Path extends string, Body> implements Request<Method, Path, Body> {
+export default class Standard<Method extends HttpMethod, Path extends string, Body> implements Request<Method, Path, Body> {
 
     constructor(
         readonly method : Method,

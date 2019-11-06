@@ -1,6 +1,6 @@
 import Request from './request';
-import Method from "http-method-enum";
 import Type from "../../type";
+import Method from "../../../../../method/method";
 export default class Standard implements Request {
 
     readonly method : Method.PATCH = Method.PATCH;

@@ -1,7 +1,7 @@
 import Request from './request';
-import Method from "http-method-enum";
 import Place from "../../place";
 import BaseStandard from '../../base/request/standard';
+import Method from "../../../../method/method";
 
 export default class Standard extends BaseStandard<Method.PUT, Place<undefined>> implements Request {
 

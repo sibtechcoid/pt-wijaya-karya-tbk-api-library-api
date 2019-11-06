@@ -1,7 +1,7 @@
 import Request from './request';
-import Method from "http-method-enum";
 import Login from "../login";
 import StdLogin from "../standard";
+import Method from "../../../method/method";
 export default class Standard implements Request {
 
     readonly method : Method.POST = Method.POST;

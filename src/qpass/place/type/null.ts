@@ -1,5 +1,4 @@
 import Standard from "./standard";
 
-export default function Null () {
-    return new Standard<undefined>('','',  undefined);
-}
+const Null = new Standard<undefined>('','',  undefined);
+export default Null;

@@ -10,5 +10,5 @@ export default interface Type<_Id extends number|undefined> extends Id<_Id> {
     /**
      * abbreviation, initial, or short version of name
      */
-    identifier : string;
+    abbreviation : string;
 }

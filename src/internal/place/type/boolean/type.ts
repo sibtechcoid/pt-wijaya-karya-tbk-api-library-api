@@ -17,7 +17,7 @@ export default function Type<Id extends undefined|number>(value : any, id : bool
         return false;
     }
 
-    if(!TypeString(value.identifier)) {
+    if(!TypeString(value.abbreviation)) {
 
         return false;
     }

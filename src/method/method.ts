@@ -1,4 +1,4 @@
-export declare enum Method {
+enum Method {
     /**
      * The `CONNECT` method establishes a tunnel to the server identified by the
      * target resource.

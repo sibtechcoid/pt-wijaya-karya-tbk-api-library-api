@@ -1,4 +1,5 @@
 import TypeInterface from "../type";
+import TypeId from "../../../../id/boolean/type";
 import TypeObject from "t-object/boolean/type";
 import TypeString from "t-string/boolean/type";
 import TypeNumber from "t-number/boolean/type";
@@ -22,19 +23,10 @@ export default function Type<Id extends undefined|number>(value : any, id : bool
         return false;
     }
 
-    if(id) {
+    // @ts-ignore
+    if(!TypeId<Id>(value, id)) {
 
-        if(!TypeNumber(value.id)) {
-
-            return false;
-        }
-
-    } else {
-
-        if(value.id !== undefined) {
-
-            return false;
-        }
+        return false;
     }
 
     return true;

@@ -2,8 +2,7 @@ import TypeInterface from "../type";
 import InternalType from "../../../../internal/place/type/boolean/type";
 
 interface Function {
-    <Id extends number>(value : any, id : true) : value is TypeInterface<number>;
-    <Id extends undefined>(value : any, id : false) : value is TypeInterface<undefined>;
+    (value : any) : value is TypeInterface;
 }
 
 const Type : Function = InternalType;

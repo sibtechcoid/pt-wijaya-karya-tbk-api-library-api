@@ -1,6 +1,6 @@
 import Id from "../../id/id";
 
-export default interface Place<_Id extends number|undefined> extends Id<_Id> {
+export default interface Place {
 
     name : string;
     abbreviation : string;

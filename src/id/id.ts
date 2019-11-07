@@ -1,4 +1,4 @@
-export default interface Id<_Id extends number|undefined> {
+export default interface Id {
 
-    id : _Id;
+    id : number;
 }

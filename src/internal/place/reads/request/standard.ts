@@ -4,10 +4,10 @@ import BaseStandard from '../../base/request/standard';
 import Id from "../../../../id/id";
 import Method from "../../../../method/method";
 
-export default class Standard extends BaseStandard<Method.POST, Id<number>[]> implements Request {
+export default class Standard extends BaseStandard<Method.POST, Id[]> implements Request {
 
     constructor(
-        body : Place<number>[]
+        body : Id[]
     ) {
         super(Method.POST, body);
     }

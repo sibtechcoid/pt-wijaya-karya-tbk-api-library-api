@@ -1,4 +1,4 @@
 import Standard from "./standard";
 
-const Null = new Standard<undefined>('','',  '',0,undefined);
+const Null = new Standard('','',  '',0);
 export default Null;

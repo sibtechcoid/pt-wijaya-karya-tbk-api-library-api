@@ -5,7 +5,7 @@ import DeleteStandard from '../../../../delete/request/standard';
 export default class Standard extends DeleteStandard<'/qpass/place'> implements Request {
 
     constructor(
-        body : Id<number>[]
+        body : Id[]
     ) {
         super('/qpass/place', body);
     }

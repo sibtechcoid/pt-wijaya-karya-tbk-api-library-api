@@ -6,7 +6,7 @@ import Message from "../../../../../message/message";
 
 type Response =
     BadRequest<undefined> |
-    Created<Id<number>> |
+    Created<Id> |
     Conflict<Message>
     ;
 export default Response;

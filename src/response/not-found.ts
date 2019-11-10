@@ -1,5 +1,6 @@
-import Response from './response';
+import Code from "../code/code";
+import Body from "../body/body";
 
-export default interface NotFound<Body> extends Response<400, Body> {
+export default interface NotFound<B> extends Code<404>, Body<B> {
 
 }

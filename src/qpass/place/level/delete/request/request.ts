@@ -1,8 +1,8 @@
-import DeleteRequest from '../../../../../delete/request/request';
-import BaseRequest from '../../base/request/request';
+import Body from "../../../../../body/body";
+import Path from "../../path/path";
+import Create from "../../../../../method/create";
 import Id from "../../../../../id/id";
-import Method from "../../../../../method/method";
 
-export default interface Request extends BaseRequest<Method.DELETE,  Id[]>, DeleteRequest<'/qpass/place/level'>  {
+export default interface Request extends Body<Id[]>, Path, Create {
 
 }

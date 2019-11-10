@@ -1,11 +1,14 @@
-import Request from "./request";
-import HttpMethod from "../method/method";
 
-export default class Standard<Method extends HttpMethod, Path extends string, Body> implements Request<Method, Path, Body> {
+import HttpMethod from "../method/type/type";
+import Body from "../body/body";
+import Method from "../method/method";
+import Path from "../path/path";
+
+export default class Standard<M extends HttpMethod, P extends string, B> implements Body<B>, Method<M>, Path<P> {
 
     constructor(
-        public method : Method,
-        public path : Path,
-        public body : Body,
+        public method : M,
+        public path : P,
+        public body : B,
     ) {}
 }

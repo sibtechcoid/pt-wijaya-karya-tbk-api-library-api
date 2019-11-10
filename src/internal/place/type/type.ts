@@ -1,3 +1,5 @@
+import Id from "../../../id/id";
+
 export default interface Type {
 
     /**
@@ -10,4 +12,3 @@ export default interface Type {
      */
     abbreviation : string;
 }
-

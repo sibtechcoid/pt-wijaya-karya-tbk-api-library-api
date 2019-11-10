@@ -1,7 +1,8 @@
-import BaseRequest from '../../../../request/request';
-import Update from "../update";
-import Method from "../../../../method/method";
+import Body from "../../../../body/body";
+import Authorization from "../../authorization";
+import Path from "../../path/path";
+import Method from "../method/method";
 
-export default interface Request extends BaseRequest<Method.POST, '/user/authorization/update',Update> {
+export default interface Request extends Body<Authorization>, Path, Method {
 
 }

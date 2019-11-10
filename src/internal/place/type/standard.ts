@@ -1,6 +1,6 @@
 import Type from "./type";
 
-export default class Standard implements Type {
+export default class Standard {
 
     constructor(
        public name : string,

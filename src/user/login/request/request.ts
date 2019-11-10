@@ -1,7 +1,9 @@
-import BaseRequest from '../../../request/request';
 import Login from "../login";
-import Method from "../../../method/method";
+import Body from "../../../body/body";
+import Path from "../path/path";
+import Method from "../method/method";
 
-export default interface Request extends BaseRequest<Method.POST, '/user/login', Login> {
+
+export default interface Request extends Body<Login>, Path, Method {
 
 }

@@ -1,8 +1,9 @@
-import Level from "../../level";
-import BaseRequest from "../../base/request/request";
-import Method from "../../../../../method/method";
+import Body from "../../../../../body/body";
+import Path from "../../path/path";
+import Type from "../../type";
 import Id from "../../../../../id/id";
+import Update from "../../../../../method/update";
 
-export default interface Request extends BaseRequest<Method.PATCH, Level & Id> {
+export default interface Request extends Body<(Type & Id)[]>, Path, Update {
 
 }

@@ -1,7 +1,8 @@
-import BaseRequest from '../../base/request/request';
+import Body from "../../../../../body/body";
+import Path from "../../path/path";
+import Create from "../../../../../method/create";
 import Level from "../../level";
-import Method from "../../../../../method/method";
 
-export default interface Request extends BaseRequest<Method.PUT, Level> {
+export default interface Request extends Body<Level>, Path, Create {
 
 }

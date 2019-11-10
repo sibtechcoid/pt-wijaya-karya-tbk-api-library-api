@@ -1,5 +1,6 @@
-import Response from "./response";
+import Code from "../code/code";
+import Body from "../body/body";
 
 
-export default interface Success<Body> extends Response<200, Body> {
+export default interface Success<B> extends Code<200>, Body<B>  {
 }

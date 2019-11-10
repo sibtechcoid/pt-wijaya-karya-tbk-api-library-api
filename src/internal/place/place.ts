@@ -10,4 +10,9 @@ export default interface Place {
      * type id
      */
     type: number;
+
+    /**
+     * level id
+     */
+    level: number;
 }

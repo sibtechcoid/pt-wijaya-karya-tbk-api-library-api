@@ -1,4 +1,7 @@
-import Standard from "./standard";
+import Create from "./create";
+import Level from "./level";
 
-const Null = new Standard('','');
-export default Null;
+export default function Null() : Level {
+
+    return new Create('','');
+}

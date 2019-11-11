@@ -1,4 +1,6 @@
-import Standard from "./standard";
+import Create from "./create";
+import Place from "./place";
 
-const Null = new Standard('','', '', 0, 0);
-export default Null;
+export default function Null () : Place {
+    return new Create('','', '', 0, 0);
+}

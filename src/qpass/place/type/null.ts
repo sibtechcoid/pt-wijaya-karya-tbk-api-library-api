@@ -1,4 +1,6 @@
-import Standard from "./standard";
+import Create from "./create";
 
-const Null = new Standard('','');
-export default Null;
+export default function Null() {
+
+    return new Create('','');
+}

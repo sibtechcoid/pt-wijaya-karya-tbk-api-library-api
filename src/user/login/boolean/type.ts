@@ -1,5 +1,5 @@
 import NotNull from "t-object/boolean/type";
-import IsBoolean from "t-boolean/type";
+import TypeString from "t-string/boolean/type";
 import Login from "../login";
 
 export default function Type(value : any) : value is Login {
@@ -9,12 +9,12 @@ export default function Type(value : any) : value is Login {
         return false;
     }
 
-    if(!IsBoolean(value.username)) {
+    if(!TypeString(value.username)) {
 
         return false;
     }
 
-    if(!IsBoolean(value.password)) {
+    if(!TypeString(value.password)) {
 
         return false;
     }

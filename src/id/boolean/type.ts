@@ -4,7 +4,7 @@ import TypeString from "t-string/boolean/type";
 import TypeNumber from "t-number/boolean/type";
 import Id from "../id";
 
-export default function Type(value : any, id : boolean)  : value is Id {
+export default function Type(value : any)  : value is Id {
 
     if(!TypeObject<Id>(value)) {
 

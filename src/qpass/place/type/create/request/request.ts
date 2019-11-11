@@ -4,6 +4,6 @@ import Create from "../../../../../method/create";
 import Type from "../../type";
 import Method from "../method/method";
 
-export default interface Request extends Body<Type>, Path, Method {
+export default interface Request extends Body<Type[]>, Path, Method {
 
 }

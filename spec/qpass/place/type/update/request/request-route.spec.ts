@@ -7,7 +7,7 @@ import Id from "../../../../../../dist/id/id";
 import Request from "../../../../../../dist/qpass/place/type/update/request/create";
 import RequestRoute from "../../../../../request/request-route";
 
-describe('user/login request', () => {
+describe('qpass/place/type/update request', () => {
 
     RequestRoute<(Type & Id)[]>(
         (body) => Request(body),

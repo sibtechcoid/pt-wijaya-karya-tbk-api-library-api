@@ -1,6 +1,6 @@
 import Id from "../../../id/id";
 
-export default interface Level  {
+export default interface Level {
 
     /**
      * full name

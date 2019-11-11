@@ -4,7 +4,7 @@ import CreateCreate from "../../../../../method/create-create";
 import Path from "../path/create";
 import Level from "../../level";
 
-export default function Create(place : Level) : Request {
+export default function Create(type : Level[]) : Request {
 
-    return Object.assign(CreateCreate(), Path(), new CreatBody<Level>(place))
+    return Object.assign(CreateCreate(), Path(), new CreatBody<Level[]>(type))
 }

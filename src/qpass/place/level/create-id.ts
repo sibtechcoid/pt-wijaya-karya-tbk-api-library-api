@@ -1,7 +1,8 @@
 import Level from "./level";
+import Create from "./create";
 import Id from "../../../id/id";
 
-export default function CreateId(level : Level, id : Id) : Level & Id {
+export default function CreateId(type : Level, id : Id) : Level & Id {
 
-    return Object.assign(level, id);
+    return Object.assign(type, id);
 }

@@ -1,10 +1,6 @@
 import TypeInterface from "../type";
 import InternalType from "../../../../internal/place/type/boolean/type";
 
-interface Function {
-    (value : any) : value is TypeInterface;
-}
-
-const Type : Function = InternalType;
+const Type : (value : any) => value is TypeInterface = InternalType;
 export default Type;
 

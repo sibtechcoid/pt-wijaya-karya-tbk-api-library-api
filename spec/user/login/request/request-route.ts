@@ -5,5 +5,6 @@ import RequestRoute from "../../../request/request-route";
 
 describe('user/login request', () => {
 
-       // RequestRoute((body) => Request(body), Route(), new Create('username', 'password'));
+    RequestRoute((body) => Request(body), Route(), new Create('username', 'password'));
+
 });

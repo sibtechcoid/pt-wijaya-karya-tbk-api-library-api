@@ -1,6 +1,6 @@
 import Level from "./level";
 
-export default class Create implements Level {
+export default class Create {
 
     constructor(
        public name : string,

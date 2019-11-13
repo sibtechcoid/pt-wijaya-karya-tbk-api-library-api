@@ -1,10 +1,10 @@
 import Request from './request';
 import CreatBody from "../../../../../body/create";
 import Path from "../../create/path/create";
-import Limit from "../../../../../limit/limit";
 import ReadCreate from "../../../../../method/read-create";
+import Data from "./data/data";
 
-export default function Create() : Request {
+export default function Create(data : Data) : Request {
 
-    return Object.assign(ReadCreate(), Path(), new CreatBody<undefined>(undefined))
+    return Object.assign(ReadCreate(), Path(), new CreatBody<Data>(data))
 }

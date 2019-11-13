@@ -1,3 +1,3 @@
-export default interface Activable extends Record<number, boolean>{
+export default interface Activable extends Record<number, boolean> {
 
 }

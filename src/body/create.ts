@@ -1,9 +1,9 @@
 import Body from "./body";
 
-export default class Create<B> implements Body<B> {
+export default class Create<Data> implements Body<Data> {
 
     constructor(
-        public body : B
+        public body : Data
     ) {
 
     }

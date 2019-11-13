@@ -1,4 +1,4 @@
 
-export default interface Body<B> {
-    body : B;
+export default interface Body<Data> {
+    body : Data;
 }

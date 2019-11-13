@@ -8,10 +8,6 @@ import CreateRoute from "../../../route/create";
 
 export default function Create() : Route {
 
-
     return CreateRoute(Read(), Path(), Type);
-    // let validator = new Validator<Login>(Type);
-    // let merged =  Object.assign(Read(), Path(), validator);
-    // merged.validate = validator.validate;
-    // return merged;
+
 }

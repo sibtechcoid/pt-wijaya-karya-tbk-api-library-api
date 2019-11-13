@@ -3,8 +3,9 @@ import Route from "./route";
 import Path from "../../create/path/create";
 import Read from "../../../../../method/read-create";
 import CreateRoute from "../../../../../route/create";
+import TypeData from "../request/data/boolean/type";
 
 export default function Create () : Route {
 
-    return CreateRoute(Read(), Path(), (value : any) : value is undefined => value === undefined);
+    return CreateRoute(Read(), Path(), TypeData);
 }

@@ -5,7 +5,7 @@ import Business from "../../business";
 import Id from "../../../../../id/id";
 import Update from "../../../../../method/update-create";
 
-export default function Create(types : (Business & Id)[]) : Request {
+export default function Create(types : Business & Id) : Request {
 
-    return Object.assign(Update(), Path(), new CreatBody<(Business & Id)[]>(types))
+    return Object.assign(Update(), Path(), new CreatBody<Business & Id>(types))
 }

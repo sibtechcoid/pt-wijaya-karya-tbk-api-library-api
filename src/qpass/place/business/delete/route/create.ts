@@ -8,5 +8,5 @@ import Id from "../../../../../id/id";
 
 export default function Create() : Route {
 
-    return CreateRoute(DeleteCreate(), Path(), (value:any) : value is Id[] => ArrayOf(value, TypeId));
+    return CreateRoute(DeleteCreate(), Path(), TypeId);
 }

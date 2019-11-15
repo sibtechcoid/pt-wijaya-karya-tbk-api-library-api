@@ -4,7 +4,7 @@ import CreateCreate from "../../../../../method/create-create";
 import Path from "../path/create";
 import Business from "../../business";
 
-export default function Create(type : Business[]) : Request {
+export default function Create(type : Business) : Request {
 
-    return Object.assign(CreateCreate(), Path(), new CreatBody<Business[]>(type))
+    return Object.assign(CreateCreate(), Path(), new CreatBody<Business>(type))
 }

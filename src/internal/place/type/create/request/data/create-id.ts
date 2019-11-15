@@ -1,6 +1,6 @@
 import Type from "./type";
 import Create from "./create";
-import Id from "../../../id/id";
+import Id from "../../../../../../id/id";
 
 export default function CreateId(type : Type, id : Id) : Type & Id {
 

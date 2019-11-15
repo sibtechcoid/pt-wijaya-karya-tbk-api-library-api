@@ -1,5 +1,5 @@
 import Body from "../../../../../body/body";
-import Path from "../../create/path/path";
+import Path from "../../create/request/path/path";
 import Read from "../../../../../method/read";
 import Data from "./data/data";
 

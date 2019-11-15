@@ -11,4 +11,6 @@ export default interface Level {
      * abbreviation, initial, or short version of name
      */
     abbreviation : string;
+
+    place : number;
 }

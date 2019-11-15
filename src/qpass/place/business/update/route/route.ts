@@ -4,6 +4,6 @@ import Business from "../../business";
 import Validator from "../../../../../validator/validator";
 import Id from "../../../../../id/id";
 
-export default interface Route extends Path, Validator<(Business & Id)[]>, Method {
+export default interface Route extends Path, Validator<Business & Id>, Method {
 
 }

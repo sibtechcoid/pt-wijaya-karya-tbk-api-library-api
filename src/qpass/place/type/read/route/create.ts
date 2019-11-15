@@ -1,6 +1,5 @@
-import Validator from "../../../../../validator/create";
 import Route from "./route";
-import Path from "../../create/path/create";
+import Path from "../../create/request/path/create";
 import Read from "../../../../../method/read-create";
 import CreateRoute from "../../../../../route/create";
 

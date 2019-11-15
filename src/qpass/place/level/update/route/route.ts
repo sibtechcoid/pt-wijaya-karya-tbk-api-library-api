@@ -4,6 +4,6 @@ import Level from "../../level";
 import Validator from "../../../../../validator/validator";
 import Id from "../../../../../id/id";
 
-export default interface Route extends Path, Validator<(Level & Id)[]>, Method {
+export default interface Route extends Path, Validator<Level & Id>, Method {
 
 }

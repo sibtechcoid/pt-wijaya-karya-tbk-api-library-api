@@ -4,6 +4,6 @@ import Create from "../../../../../method/create";
 import Level from "../../level";
 import Method from "../method/method";
 
-export default interface Request extends Body<Level[]>, Path, Method {
+export default interface Request extends Body<Level>, Path, Method {
 
 }

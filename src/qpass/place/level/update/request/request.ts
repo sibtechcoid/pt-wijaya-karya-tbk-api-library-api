@@ -4,6 +4,6 @@ import Level from "../../level";
 import Id from "../../../../../id/id";
 import Method from "../method/method";
 
-export default interface Request extends Body<(Level & Id)[]>, Path, Method {
+export default interface Request extends Body<Level & Id>, Path, Method {
 
 }

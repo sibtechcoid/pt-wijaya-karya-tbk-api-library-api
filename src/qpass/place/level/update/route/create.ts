@@ -11,11 +11,11 @@ import TypeId from "../../../../../id/boolean/type";
 
 export default function Create () : Route {
 
-    let withId = (value : any) : value is Level & Id => TypeType(value) && TypeId(value);
-    let validator = (body : any) : body is (Level & Id)[] => ArrayOf<Level & Id>(body, withId);
+    // let withId = (value : any) : value is Level & Id => TypeType(value) && TypeId(value);
+    // let validator = (body : any) : body is (Level & Id)[] => ArrayOf<Level & Id>(body, withId);
 
     return CreateRoute(
         UpdateCreate(),
-        Path(), validator
+        Path(), (value : any) : value is Level & Id => TypeType(value) && TypeId(value)
     );
 }

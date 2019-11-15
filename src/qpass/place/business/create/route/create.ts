@@ -8,5 +8,5 @@ import ArrayOf from "t-array/boolean/array-of";
 
 export default function Create() : Route {
 
-    return CreateRoute(CreateCreate(), Path(), (value : any) : value is Business[] => ArrayOf(value, BusinessType));
+    return CreateRoute(CreateCreate(), Path(), BusinessType);
 }

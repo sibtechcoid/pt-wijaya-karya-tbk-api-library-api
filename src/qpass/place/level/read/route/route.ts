@@ -1,6 +1,6 @@
 import Path from "../../create/request/path/path";
 import Method from "../method/method";
-import Level from "../../create/request/data/level";
+import Data from "../../create/request/data/data";
 import Validator from "../../../../../validator/validator";
 import Limit from "../../../../../limit/limit";
 

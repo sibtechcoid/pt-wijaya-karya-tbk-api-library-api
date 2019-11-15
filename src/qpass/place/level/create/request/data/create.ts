@@ -1,6 +1,6 @@
-import Level from "./level";
+import Data from "./data";
 
-export default class Create implements Level {
+export default class Create implements Data {
 
     constructor(
        public name : string,

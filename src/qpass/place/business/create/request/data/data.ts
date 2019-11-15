@@ -1,6 +1,6 @@
-import Id from "../../../id/id";
+import Id from "../../../../../../id/id";
 
-export default interface Business {
+export default interface Data {
 
     /**
      * full name

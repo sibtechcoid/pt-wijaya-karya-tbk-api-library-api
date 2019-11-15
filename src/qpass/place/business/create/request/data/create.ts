@@ -1,4 +1,4 @@
-import Business from "./business";
+import Data from "./data";
 
 export default class Create {
 

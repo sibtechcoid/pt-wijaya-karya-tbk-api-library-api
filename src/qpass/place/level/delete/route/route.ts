@@ -1,5 +1,5 @@
-import Level from "../../level";
-import Path from "../../create/path/path";
+import Level from "../../create/request/data/level";
+import Path from "../../create/request/path/path";
 import Validator from "../../../../../validator/validator";
 import Method from "../method/method";
 import Id from "../../../../../id/id";

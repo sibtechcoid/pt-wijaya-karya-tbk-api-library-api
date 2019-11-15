@@ -1,4 +1,4 @@
-import Type from "./type";
+import Data from "./data";
 
 export default class Create {
 

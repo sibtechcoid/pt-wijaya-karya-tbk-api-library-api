@@ -1,8 +1,8 @@
 import Request from './request';
 import CreatBody from "../../../../../body/create";
 import CreateCreate from "../../../../../method/create-create";
-import Path from "../path/create";
-import Level from "../../level";
+import Path from "./path/create";
+import Level from "./data/level";
 
 export default function Create(type : Level) : Request {
 

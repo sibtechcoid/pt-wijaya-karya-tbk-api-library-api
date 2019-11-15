@@ -1,7 +1,7 @@
-import TypeInterface from "../type";
+import TypeInterface from "../data";
 import NotNull from "t-object/boolean/type";
 import IsString from "t-string/boolean/type";
-import Level from "../../../../../../../qpass/place/level/level";
+import Level from "../../../../../../../qpass/place/level/create/request/data/level";
 
 export default function Type<Extended extends TypeInterface = TypeInterface>(value : any) : value is Extended {
 

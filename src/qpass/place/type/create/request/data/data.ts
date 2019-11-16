@@ -11,4 +11,6 @@ export default interface Data {
      * abbreviation, initial, or short version of name
      */
     abbreviation : string;
+
+    levels : number[];
 }

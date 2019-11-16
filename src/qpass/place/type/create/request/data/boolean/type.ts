@@ -1,7 +1,8 @@
 import TypeInterface from "../data";
 import NotNull from "t-object/boolean/type";
 import IsString from "t-string/boolean/type";
-import Data from "../../../../../../../qpass/place/level/create/request/data/data";
+import IsNumber from "t-number/boolean/type";
+import ArrayOf from "t-array/boolean/array-of";
 
 export default function Type<Extended extends TypeInterface = TypeInterface>(value : any) : value is Extended {
 
@@ -16,6 +17,11 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
     }
 
     if(!IsString(value.abbreviation)) {
+
+        return false;
+    }
+
+    if(!ArrayOf(value.levels, IsNumber)) {
 
         return false;
     }

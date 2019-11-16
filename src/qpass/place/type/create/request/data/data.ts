@@ -1,16 +1,7 @@
-import Id from "../../../../../../id/id";
+import BusinessData from "../../../../business/create/request/data/data";
 
-export default interface Data {
 
-    /**
-     * full name
-     */
-    name : string;
-
-    /**
-     * abbreviation, initial, or short version of name
-     */
-    abbreviation : string;
+export default interface Data extends BusinessData {
 
     levels : number[];
 }

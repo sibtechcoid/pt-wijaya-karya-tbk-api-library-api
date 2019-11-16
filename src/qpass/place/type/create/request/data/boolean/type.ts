@@ -1,22 +1,12 @@
 import TypeInterface from "../data";
-import NotNull from "t-object/boolean/type";
 import IsString from "t-string/boolean/type";
 import IsNumber from "t-number/boolean/type";
 import ArrayOf from "t-array/boolean/array-of";
+import Type from "../../../../../business/create/request/data/boolean/type";
 
-export default function Type<Extended extends TypeInterface = TypeInterface>(value : any) : value is Extended {
+export default function Typez<Extended extends TypeInterface = TypeInterface>(value : any) : value is Extended {
 
-    if(!NotNull<Extended>(value)) {
-
-        return false;
-    }
-
-    if(!IsString(value.name)) {
-
-        return false;
-    }
-
-    if(!IsString(value.abbreviation)) {
+    if(!Type<TypeInterface>(value)) {
 
         return false;
     }

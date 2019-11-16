@@ -1,10 +1,13 @@
 import Data from "./data";
+import BusinessCreate from "../../../../business/create/request/data/create";
 
-export default class Create implements Data {
+export default class Createz extends BusinessCreate {
 
     constructor(
-       public name : string,
-       public abbreviation : string,
-       public levels : number[],
-    ) {}
+        name : string,
+        abbreviation : string,
+        public levels : number[],
+    ) {
+        super(name, abbreviation)
+    }
 }

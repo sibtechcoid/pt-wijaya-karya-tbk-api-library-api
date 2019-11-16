@@ -3,9 +3,5 @@ import Path from "./path";
 
 export default function Create() : Path {
 
-    return new CreatePath('/internal/place/reads')
+    return new CreatePath('/qpass/place');
 }
-
-
-
-

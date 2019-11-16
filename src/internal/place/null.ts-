@@ -1,4 +1,4 @@
-import Create from "./create";
+import Create from "./create.ts-";
 import Place from "./place";
 
 export default function Null() : Place{

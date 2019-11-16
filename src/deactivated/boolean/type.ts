@@ -1,10 +1,10 @@
 import NotNull from "t-object/boolean/type";
 import BooleanType from "t-boolean/type";
-import Data from "../data";
+import Deactivated from "../deactivated";
 
-export default function Type(value : any) : value is Data  {
+export default function Type(value : any) : value is Deactivated  {
 
-    if(!NotNull<Data>(value)) {
+    if(!NotNull<Deactivated>(value)) {
 
         return false;
     }

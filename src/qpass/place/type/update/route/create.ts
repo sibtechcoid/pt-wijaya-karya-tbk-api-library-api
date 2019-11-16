@@ -11,9 +11,6 @@ import TypeId from "../../../../../id/boolean/type";
 
 export default function Create () : Route {
 
-    // let withId = (value : any) : value is Data & Id => TypeType(value) && TypeId(value);
-    // let validator = (body : any) : body is (Data & Id)[] => ArrayOf<Data & Id>(body, withId);
-
     return CreateRoute(
         UpdateCreate(),
         Path(), (value : any) : value is Data & Id => TypeType(value) && TypeId(value)

@@ -1,6 +1,6 @@
 import Data from "./data";
 
-export default class Create implements Data {
+export default class Create {
 
     constructor(
        public name : string,

@@ -3,8 +3,9 @@ import CreatBody from "../../../../../body/create";
 import Path from "../../create/request/path/create";
 import Limit from "../../../../../limit/limit";
 import ReadCreate from "../../../../../method/read-create";
+import Deactivated from "../../../../../deactivated/deactivated";
 
-export default function Create() : Request {
+export default function Create(deactivated : Deactivated) : Request {
 
-    return Object.assign(ReadCreate(), Path(), new CreatBody<undefined>(undefined))
+    return Object.assign(ReadCreate(), Path(), new CreatBody<Deactivated>(deactivated))
 }

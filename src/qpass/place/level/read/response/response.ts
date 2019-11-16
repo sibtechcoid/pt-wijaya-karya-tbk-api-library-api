@@ -1,7 +1,6 @@
-import Data from "../../create/request/data/data";
+import Level from "../../create/request/level/level";
 import Success from "../../../../../response/success";
-import NotFound from "../../../../../response/not-found";
 import Id from "../../../../../id/id";
 
-type Response = Success<(Data & Id)[]>;
+type Response = Success<(Level & Id)[]>;
 export default Response;

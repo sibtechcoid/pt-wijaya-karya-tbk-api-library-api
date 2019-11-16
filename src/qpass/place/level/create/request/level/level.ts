@@ -1,6 +1,5 @@
-import Id from "../../../../../../id/id";
 
-export default interface Data {
+export default interface Level {
 
     /**
      * full name
@@ -12,5 +11,5 @@ export default interface Data {
      */
     abbreviation : string;
 
-    place : number;
+    type : number;
 }

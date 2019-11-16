@@ -1,6 +1,6 @@
 import Data from "./data";
 import Create from "./create";
-import Id from "../../../../../../id/id";
+import Id from "../../../../../id/id";
 
 export default function CreateId(type : Data, id : Id) : Data & Id {
 

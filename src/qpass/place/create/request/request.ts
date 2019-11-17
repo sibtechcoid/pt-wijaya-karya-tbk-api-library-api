@@ -1,9 +1,9 @@
 import Body from "../../../../body/body";
 import Path from "./path/path";
 import Create from "../../../../method/create";
-import Data from "./place/data";
+import Place from "./place/place";
 import Method from "./method/method";
 
-export default interface Request extends Body<Data>, Path, Method {
+export default interface Request extends Body<Place>, Path, Method {
 
 }

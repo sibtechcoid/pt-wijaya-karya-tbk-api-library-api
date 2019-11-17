@@ -1,5 +1,5 @@
 import Data from "./data";
-import BusinessCreate from "../../../../business/create/request/data/create";
+import BusinessCreate from "../../../../business/create/request/business/create";
 
 export default class Createz extends BusinessCreate {
 

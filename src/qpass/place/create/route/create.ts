@@ -1,6 +1,6 @@
 import CreateCreate from "../../../../method/create-create";
 import IsType from "../request/place/boolean/type";
-import Data from "../request/place/data";
+import Place from "../request/place/place";
 import Route from "./route";
 import CreateRoute from "../../../../route/create";
 import Path from "../request/path/create";

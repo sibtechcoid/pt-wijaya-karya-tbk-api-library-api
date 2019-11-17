@@ -1,6 +1,6 @@
-import Data from "./data";
+import Place from "./place";
 
-export default class Create implements Data {
+export default class Create implements Place {
 
     constructor(
        public name : string,

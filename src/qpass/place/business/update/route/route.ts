@@ -1,9 +1,9 @@
 import Path from "../../create/request/path/path";
-import Method from "../method/method";
-import Data from "../../create/request/data/data";
+import Method from "../request/method/method";
+import Business from "../../create/request/business/business";
 import Validator from "../../../../../validator/validator";
 import Id from "../../../../../id/id";
 
-export default interface Route extends Path, Validator<Data & Id>, Method {
+export default interface Route extends Path, Validator<Business & Id>, Method {
 
 }

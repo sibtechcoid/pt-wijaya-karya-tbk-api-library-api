@@ -1,7 +1,7 @@
-import Text from "../user";
+import Text from "../find-text/response/user/user";
 import NotNull from "t-object/boolean/type";
 import IsBoolean from "t-boolean/type";
-import User from "../user";
+import User from "../find-text/response/user/user";
 
 export default function Type(value : any) : value is User {
 

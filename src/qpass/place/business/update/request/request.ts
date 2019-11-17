@@ -1,9 +1,9 @@
 import Body from "../../../../../body/body";
 import Path from "../../create/request/path/path";
-import Data from "../../create/request/data/data";
+import Business from "../../create/request/business/business";
 import Id from "../../../../../id/id";
-import Method from "../method/method";
+import Method from "../request/method/method";
 
-export default interface Request extends Body<Data & Id>, Path, Method {
+export default interface Request extends Body<Business & Id>, Path, Method {
 
 }

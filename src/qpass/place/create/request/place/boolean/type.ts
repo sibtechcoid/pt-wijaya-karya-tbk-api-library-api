@@ -1,4 +1,4 @@
-import TypeInterface from "../data";
+import TypeInterface from "../place";
 import NotNull from "t-object/boolean/type";
 import IsString from "t-string/boolean/type";
 import IsNumber from "t-number/boolean/type";

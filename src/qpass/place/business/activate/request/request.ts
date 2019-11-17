@@ -1,7 +1,7 @@
 import Body from "../../../../../body/body";
-import Path from "../path/path";
+import Path from "./path/path";
 import Id from "../../../../../id/id";
-import Method from "../method/method";
+import Method from "./method/method";
 import Activable from "../../../../../activable/activable";
 
 

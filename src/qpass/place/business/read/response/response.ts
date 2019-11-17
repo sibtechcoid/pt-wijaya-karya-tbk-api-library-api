@@ -1,7 +1,6 @@
-import Data from "../../create/request/data/data";
+import Business from "../../create/request/business/business";
 import Success from "../../../../../response/success";
-import NotFound from "../../../../../response/not-found";
 import Id from "../../../../../id/id";
 
-type Response = Success<Data & Id>;
+type Response = Success<Business & Id>;
 export default Response;

@@ -1,9 +1,9 @@
-import Login from "../login";
+import Login from "../request/login/login";
 import Read from "../../../method/read-create";
 import Validator from "../../../validator/create";
-import Type from "../boolean/type";
+import Type from "../request/login/boolean/type";
 import Route from "./route";
-import Path from "../path/create";
+import Path from "../request/path/create";
 import CreateRoute from "../../../route/create";
 
 export default function Create() : Route {

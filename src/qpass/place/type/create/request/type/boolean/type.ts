@@ -10,11 +10,11 @@ export default function Typez<Extended extends TypeInterface = TypeInterface>(va
 
         return false;
     }
-
-    if(!ArrayOf(value.levels, IsNumber)) {
-
-        return false;
-    }
+    //
+    // if(!ArrayOf(value.levels, IsNumber)) {
+    //
+    //     return false;
+    // }
 
     return true;
 }

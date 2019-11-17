@@ -1,12 +1,12 @@
 import Type from "./type";
 import BusinessCreate from "../../../../business/create/request/business/create";
 
-export default class Createz extends BusinessCreate {
+export default class Create extends BusinessCreate {
 
     constructor(
         name : string,
         abbreviation : string,
-        public levels : number[],
+        //public levels : number[],
     ) {
         super(name, abbreviation)
     }

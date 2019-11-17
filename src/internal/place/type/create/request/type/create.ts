@@ -1,6 +1,6 @@
-import Data from "./data";
+import Type from "./type";
 
-export default class Create implements Data{
+export default class Create implements Type{
 
     constructor(
        public name : string,

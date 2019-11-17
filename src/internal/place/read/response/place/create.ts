@@ -1,5 +1,5 @@
 import Place from "./place";
-import Type from "../../../type/create/request/data/data";
+import Type from "../../../type/create/request/type/type";
 
 export default class Create implements Place {
 

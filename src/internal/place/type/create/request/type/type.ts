@@ -1,5 +1,5 @@
 
-export default interface Data {
+export default interface Type {
 
     /**
      * full name

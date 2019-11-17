@@ -1,5 +1,5 @@
-import CreateCreate from "../../../create/request/data/create";
-import CreateData from "../../../create/request/data/data";
+import CreateCreate from "../../../create/request/place/create";
+import CreateData from "../../../create/request/place/data";
 import Id from "../../../../../id/id";
 
 export default class Create extends CreateCreate implements CreateData, Id {

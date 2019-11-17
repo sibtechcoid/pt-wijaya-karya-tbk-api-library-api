@@ -1,4 +1,4 @@
-import Data from "./data";
+import Type from "./type";
 import BusinessCreate from "../../../../business/create/request/business/create";
 
 export default class Createz extends BusinessCreate {

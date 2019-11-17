@@ -1,4 +1,4 @@
-import TypeInterface from "../data";
+import TypeInterface from "../type";
 import IsString from "t-string/boolean/type";
 import IsNumber from "t-number/boolean/type";
 import ArrayOf from "t-array/boolean/array-of";

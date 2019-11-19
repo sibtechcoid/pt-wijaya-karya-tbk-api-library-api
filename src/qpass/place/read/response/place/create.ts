@@ -6,7 +6,7 @@ import Level from "../../../type/read/response/level/level";
 export default class Create implements Place {
 
     constructor(
-        public id : null,
+        public id : number,
         public created : Date,
         public updated : Date,
         public abbreviation : null|string,
@@ -18,6 +18,6 @@ export default class Create implements Place {
         public deactivated : null,
         public business: null|Business,
         public level: null|Type,
-        public type: null|Level
+        // public type: null|Level
     ) {}
 }

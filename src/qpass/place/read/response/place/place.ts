@@ -4,7 +4,7 @@ import Level from "../../../type/read/response/level/level";
 
 export default interface Place {
 
-    id : null;
+    id : number;
     created : Date;
     updated : Date;
     abbreviation : null|string;
@@ -16,5 +16,5 @@ export default interface Place {
     deactivated : null;
     business: null|Business;
     level: null|Type;
-    type: null|Level;
+    // type: null|Level;
 }

@@ -8,12 +8,12 @@ export default class Create implements Place {
         public abbreviation: string,
         public address: string,
         public type: Type,
-        public deactivated: Date,
         public wikaDesc: string,
         public wikaSlug: string,
         public wikaAttach: string,
         public id : number,
-        public created : Date,
-        public updated : Date,
+        public created : string,
+        public updated : string,
+        public deactivated: string|null,
     ) {}
 }

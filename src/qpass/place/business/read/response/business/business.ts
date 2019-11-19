@@ -1,9 +1,9 @@
-export default interface Business {
+import Record from "../../../../../../record/record";
+import Id from "../../../../../../id/id";
+import Deactivated from "../../../../../../deactivated/deactivated";
 
-    id : number,
-    created : Date,
-    updated : Date,
+export default interface Business extends Id, Record, Deactivated {
+
     name : string,
     abbreviation : string,
-    deactivated : null|Date
 }

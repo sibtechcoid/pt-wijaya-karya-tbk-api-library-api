@@ -6,12 +6,12 @@ export default class Create extends LevelTypeCreate implements Type {
 
     constructor(
         id : number,
-        created : Date,
-        updated : Date,
+        created : string,
+        updated : string,
         name : string,
         abbreviation : string,
         public levels : null|Level[],
-        deactivated : null|Date
+        deactivated : null|string
     ) {
 
         super(id, created, updated, name, abbreviation, deactivated);

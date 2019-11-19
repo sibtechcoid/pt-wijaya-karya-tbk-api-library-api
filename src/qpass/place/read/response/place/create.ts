@@ -7,8 +7,8 @@ export default class Create implements Place {
 
     constructor(
         public id : number,
-        public created : Date,
-        public updated : Date,
+        public created : string,
+        public updated : string,
         public abbreviation : null|string,
         public name : string,
         public address : null|string,

@@ -1,6 +1,6 @@
-import Activable from "./activable";
+import Active from "./active";
 
-export default class Create implements Activable {
+export default class Create implements Active {
 
     constructor(
         public id : number,

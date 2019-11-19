@@ -9,9 +9,9 @@ import RequestRoute from "../../../../../request/request-route";
 
 describe('internal/place/type/update request', () => {
 
-    RequestRoute<(Type & Id)[]>(
+    RequestRoute<Type & Id>(
         (body) => Request(body),
         Route(),
-        [CreateId(new TypeCreate('username', 'password'), new IdCreate(1))]
+        CreateId(new TypeCreate('username', 'password'), new IdCreate(1))
     );
 });

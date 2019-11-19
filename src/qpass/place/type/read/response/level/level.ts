@@ -1,9 +1,9 @@
 export default interface Level {
 
     id : number,
-    created : Date,
-    updated : Date,
+    created : null|string,
+    updated : null|string,
     name : string,
     abbreviation : string,
-    deactivated : null|Date
+    deactivated : null|string
 }

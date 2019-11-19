@@ -5,8 +5,15 @@ import Level from "../../../type/read/response/level/level";
 export default interface Place {
 
     id : number;
-    created : Date;
-    updated : Date;
+
+    /**
+     * Date object compatible
+     */
+    created : string;
+    /**
+     * Date object compatible
+     */
+    updated : string;
     abbreviation : null|string;
     name : string;
     address : null|string;

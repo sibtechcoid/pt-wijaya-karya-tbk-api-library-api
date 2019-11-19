@@ -2,8 +2,8 @@ import Route from "./route";
 import Path from "../../create/request/path/create";
 import Read from "../../../../../method/read-create";
 import CreateRoute from "../../../../../route/create";
-import Deactivated from "../../../../../deactivated/deactivated";
-import DeactivatedType from "../../../../../deactivated/boolean/type";
+import Deactivate from "../../../../../deactivate/deactivate";
+import DeactivatedType from "../../../../../deactivate/boolean/type";
 
 export default function Create () : Route {
 

@@ -9,9 +9,9 @@ import RequestRoute from "../../../../../request/request-route";
 
 describe('qpass/place/business/update  request', () => {
 
-    RequestRoute<(business & Id)[]>(
+    RequestRoute<business & Id>(
         (body) => Request(body),
         Route(),
-        [CreateId(new businessCreate('username', 'password'), new IdCreate(1))]
+        CreateId(new businessCreate('username', 'password'), new IdCreate(1))
     );
 });

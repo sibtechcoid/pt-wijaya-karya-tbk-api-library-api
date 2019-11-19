@@ -5,5 +5,5 @@ import RequestRoute from "../../../../../request/request-route";
 
 describe('qpass/place/type/create request', () => {
 
-    RequestRoute((body) => Request(body), Route(), [new Create('name', 'abbreviation')]);
+    RequestRoute((body) => Request(body), Route(), new Create('name', 'abbreviation'));
 });

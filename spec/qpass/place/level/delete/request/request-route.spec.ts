@@ -9,9 +9,9 @@ import RequestRoute from "../../../../../request/request-route";
 
 describe('qpass/place/level/delete request', () => {
 
-    RequestRoute<Id[]>(
+    RequestRoute<Id>(
         (body) => Request(body),
         Route(),
-        [new IdCreate(1)]
+        new IdCreate(1)
     );
 });

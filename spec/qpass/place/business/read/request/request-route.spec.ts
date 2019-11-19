@@ -6,8 +6,9 @@ import IdCreate from "../../../../../../dist/id/create";
 import Id from "../../../../../../dist/id/id";
 import Request from "../../../../../../dist/qpass/place/type/read/request/create";
 import RequestRoute from "../../../../../request/request-route";
+import Deactivated from "../../../../../../dist/deactivated/deactivated";
 
 describe('qpass/place/type/read request', () => {
 
-    RequestRoute<undefined>(() => Request(), Route(),undefined);
+    RequestRoute<Deactivated>((deactivated:Deactivated) => Request(deactivated), Route(),{deactivated:true});
 });

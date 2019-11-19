@@ -13,7 +13,6 @@ export default interface Place  extends Id, Record, Deactivated{
     wikaParentId : null|number;
     wikaType : string;
     wikaId : number;
-    deactivated : null;
     business: null|Business;
     level: null|Type;
     // type: null|Level;

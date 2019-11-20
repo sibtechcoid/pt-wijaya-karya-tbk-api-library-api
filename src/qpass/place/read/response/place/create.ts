@@ -17,7 +17,7 @@ export default class Create implements Place {
         public wikaId : number,
         public deactivated : null,
         public business: null|Business,
-        public level: null|Type,
+        public level: null|Level,
         // public type: null|Level
     ) {}
 }

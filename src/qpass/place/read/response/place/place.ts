@@ -11,8 +11,10 @@ export default interface Place  extends Id, Record, Deactivated{
     name : string;
     address : null|string;
     wikaParentId : null|number;
-    wikaType : string;
-    wikaId : number;
+    // TODO nullable?
+    wikaType : string|null;
+    // TODO nullable?
+    wikaId : number|null;
     business: null|Business;
     level: null|Level;
     // type: null|Type;

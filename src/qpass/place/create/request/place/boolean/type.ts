@@ -40,10 +40,10 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
         return false;
     }
 
-    if(!IsNumber(value.type)) {
-
-        return false;
-    }
+    // if(!IsNumber(value.type)) {
+    //
+    //     return false;
+    // }
 
     return true;
 }

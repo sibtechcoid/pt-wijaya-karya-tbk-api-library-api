@@ -8,7 +8,7 @@ export default class Create implements Place {
        public address : string,
        public business: number,
        public level: number,
-       public type : number,
+     //  public type : number,
 
     ) {}
 }

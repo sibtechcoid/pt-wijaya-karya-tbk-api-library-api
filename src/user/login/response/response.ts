@@ -1,6 +1,6 @@
 import Success from "../../../response/success";
 import NotFound from "../../../response/not-found";
-import Token from "./token/token";
+import Authorized from "./token/authorized";
 
-type Response = NotFound<undefined>|Success<Token>;
+type Response = NotFound<undefined>|Success<Authorized>;
 export default Response;

@@ -1,6 +1,6 @@
-import Token from "./token";
+import Authorized from "./authorized";
 
-export default class Create implements Token {
+export default class Create implements Authorized {
 
     constructor(
         public token : string

@@ -10,7 +10,7 @@ export default class Create implements User {
         public updated : string,
         public token : string,
         public access : Access,
-        public position : Position,
+        public position : Position|null,
         public name : string,
         public user : string,
         public abbreviation : string|null,

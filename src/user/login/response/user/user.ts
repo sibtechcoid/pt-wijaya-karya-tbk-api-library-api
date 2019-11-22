@@ -10,7 +10,7 @@ export default interface User extends Record, Id, Deactivated {
 
     access   : Access;
 
-    position : Position;
+    position : Position|null;
 
     name            : string;
 

@@ -1,7 +1,7 @@
-import Authorized from "./authorized";
+import User from "./user";
 import Access from "../../../access/update/request/access/access";
 
-export default class Create implements Authorized {
+export default class Create implements User {
 
     constructor(
         public id : number,

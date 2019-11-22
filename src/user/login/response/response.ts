@@ -1,6 +1,6 @@
 import Success from "../../../response/success";
 import NotFound from "../../../response/not-found";
-import Authorized from "./authorized/authorized";
+import User from "./user/user";
 
-type Response = NotFound<undefined>|Success<Authorized>;
+type Response = NotFound<undefined>|Success<User>;
 export default Response;

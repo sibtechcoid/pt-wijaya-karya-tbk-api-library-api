@@ -1,5 +1,5 @@
 import Route from "../../../../../../dist/qpass/place/type/create/route/create";
-import Create from "../../../../../../dist/qpass/place/type/create";
+import Create from "../../../../../../dist/qpass/place/type/create/request/type/create";
 import Request from "../../../../../../dist/qpass/place/type/create/request/create";
 import RequestRoute from "../../../../../request/request-route";
 

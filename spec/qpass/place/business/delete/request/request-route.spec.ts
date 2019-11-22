@@ -1,17 +1,17 @@
-import Route from "../../../../../../dist/qpass/place/business/delete/route/create";
-import CreateId from "../../../../../../dist/qpass/place/business/create-id";
-import business from "../../../../../../dist/qpass/place/business/business";
-import businessCreate from "../../../../../../dist/qpass/place/business/create";
+import Route from "../../../../../../dist/qpass/place/business/activate/route/create";
 import IdCreate from "../../../../../../dist/id/create";
 import Id from "../../../../../../dist/id/id";
-import Request from "../../../../../../dist/qpass/place/business/delete/request/create";
+import Request from "../../../../../../dist/qpass/place/business/activate/request/create";
 import RequestRoute from "../../../../../request/request-route";
+import Assign from "../../../../../../dist/id/assign";
+import Active from "../../../../../../dist/active/active";
+import ActiveCreate from "../../../../../../dist/active/create";
 
 describe('qpass/place/business/delete  request', () => {
 
-    RequestRoute<Id[]>(
-        (body) => Request(body),
+    RequestRoute<Active>(
+        Request,
         Route(),
-        [new IdCreate(1)]
+        new ActiveCreate(1, true)
     );
 });

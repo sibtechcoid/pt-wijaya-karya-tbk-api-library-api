@@ -1,17 +1,16 @@
-import Route from "../../../../../../dist/internal/place/type/delete/route/create";
-import CreateId from "../../../../../../dist/internal/place/type/create-id";
-import Type from "../../../../../../dist/internal/place/type/type";
-import TypeCreate from "../../../../../../dist/internal/place/type/create";
+import Route from "../../../../../../dist/internal/place/type/activate/route/create";
 import IdCreate from "../../../../../../dist/id/create";
 import Id from "../../../../../../dist/id/id";
-import Request from "../../../../../../dist/internal/place/type/delete/request/create";
+import Request from "../../../../../../dist/internal/place/type/activate/request/create";
 import RequestRoute from "../../../../../request/request-route";
+import Active from "../../../../../../dist/active/active";
+import CreateActive from "../../../../../../dist/active/create";
 
 describe('internal/place/type/delete request', () => {
 
-    RequestRoute<Id[]>(
+    RequestRoute<Active>(
         (body) => Request(body),
         Route(),
-        [new IdCreate(1)]
+        new CreateActive(1, true)
     );
 });

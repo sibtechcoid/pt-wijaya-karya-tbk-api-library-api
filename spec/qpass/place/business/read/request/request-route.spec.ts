@@ -1,14 +1,10 @@
 import Route from "../../../../../../dist/qpass/place/type/read/route/create";
-import CreateId from "../../../../../../dist/internal/place/type/create-id";
-import Type from "../../../../../../dist/internal/place/type/type";
-import TypeCreate from "../../../../../../dist/internal/place/type/create";
-import IdCreate from "../../../../../../dist/id/create";
-import Id from "../../../../../../dist/id/id";
 import Request from "../../../../../../dist/qpass/place/type/read/request/create";
 import RequestRoute from "../../../../../request/request-route";
-import Deactivated from "../../../../../../dist/deactivated/deactivated";
+import Deactivated from "../../../../../../dist/deactivate/deactivate";
+import CreateDeactivated from "../../../../../../dist/deactivate/create";
 
 describe('qpass/place/type/read request', () => {
 
-    RequestRoute<Deactivated>((deactivated:Deactivated) => Request(deactivated), Route(),{deactivated:true});
+    RequestRoute<Deactivated>(Request, Route(),new CreateDeactivated(true));
 });

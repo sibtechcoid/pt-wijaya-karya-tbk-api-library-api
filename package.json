@@ -1,6 +1,6 @@
 {
   "name": "library-interface",
-  "version": "0.13.26",
+  "version": "0.15.33",
   "description": "Typescript enum",
   "dependencies": {
     "@types/node": "^12.12.7",
@@ -8,6 +8,7 @@
     "npm-run-all": "^4.1.5",
     "t-array": "git+https://github.com/dikac/t-array.git",
     "t-boolean": "git+https://github.com/dikac/t-boolean.git",
+    "t-enum": "git+https://github.com/dikac/t-enum.git",
     "t-number": "git+https://github.com/dikac/t-number.git",
     "t-object": "git+https://github.com/dikac/t-object.git",
     "t-string": "git+https://github.com/dikac/t-string.git",

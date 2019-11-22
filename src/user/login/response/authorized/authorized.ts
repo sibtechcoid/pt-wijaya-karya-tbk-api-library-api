@@ -1,4 +1,4 @@
-import Authorization from "../../../authorization/update/request/authorization/authorization";
+import Access from "../../../access/update/request/access/access";
 import Record from "../../../../record/record";
 import Id from "../../../../id/id";
 import Deactivated from "../../../../deactivated/deactivated";
@@ -7,7 +7,7 @@ export default interface Authorized extends Record, Id, Deactivated {
 
     token : string;
 
-    authorization   : Authorization;
+    authorization   : Access;
 
     position : Position;
 

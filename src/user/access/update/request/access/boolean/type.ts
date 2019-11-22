@@ -1,12 +1,12 @@
-import Authorization from "../authorization";
+import Access from "../access";
 import TypeQpass from "../../qpass/boolean/type";
 import TypeInternal from "../../internal/boolean/type";
 import NotNull from "t-object/boolean/type";
 import ArrayOf from "t-array/boolean/array-of";
 
-export default function Type(value : any) : value is Authorization {
+export default function Type(value : any) : value is Access {
 
-    if(!NotNull<Authorization>(value)) {
+    if(!NotNull<Access>(value)) {
 
         return false;
     }

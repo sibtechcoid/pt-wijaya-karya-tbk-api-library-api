@@ -1,5 +1,5 @@
 import Authorized from "./authorized";
-import Authorization from "../../../authorization/update/request/authorization/authorization";
+import Access from "../../../access/update/request/access/access";
 
 export default class Create implements Authorized {
 
@@ -8,7 +8,7 @@ export default class Create implements Authorized {
         public created : string,
         public updated : string,
         public token : string,
-        public authorization : Authorization,
+        public authorization : Access,
         public position : Position,
         public name : string,
         public user : string,

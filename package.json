@@ -10,7 +10,7 @@
     "t-boolean": "git+https://github.com/dikac/t-boolean.git",
     "t-enum": "git+https://github.com/dikac/t-enum.git",
     "t-number": "git+https://github.com/dikac/t-number.git",
-    "t-object": "git+https://github.com/dikac/t-object.git",
+    "t-object": "git+https://github.com/dikac/t-object.git#18b7964974887c1dab7ae96ab10e82eaa22f769d",
     "t-string": "git+https://github.com/dikac/t-string.git",
     "t-validatable": "git+https://github.com/dikac/t-validatable.git",
     "typescript": "^3.6.4"

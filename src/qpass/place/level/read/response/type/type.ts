@@ -1,16 +1,10 @@
 import Level from "../level/level";
+import Record from "../../../../../../record/record";
+import Id from "../../../../../../id/id";
+import Deactivated from "../../../../../../deactivated/deactivated";
 
-export default interface Type {
+export default interface Type extends Deactivated, Record, Id {
 
-    id : number;
-    /**
-     * Date object compatible
-     */
-    created : string;
-    /**
-     * Date object compatible
-     */
-    updated : null|string;
     name : string;
     abbreviation : string;
 

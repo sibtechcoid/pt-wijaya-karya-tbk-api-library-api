@@ -1,9 +1,9 @@
-export default interface Level {
+import Record from "../../../../../../record/record";
+import Id from "../../../../../../id/id";
+import Deactivated from "../../../../../../deactivated/deactivated";
 
-    id : number,
-    created : null|string,
-    updated : null|string,
+export default interface Level extends Record, Id, Deactivated  {
+
     name : string,
     abbreviation : string,
-    deactivated : null|string
 }

@@ -4,6 +4,9 @@ import Authorization from "../../../authorization/update/request/authorization/a
 export default class Create implements Authorized {
 
     constructor(
+        public id : number,
+        public created : string,
+        public updated : string,
         public token : string,
         public authorization : Authorization,
         public position : Position,
@@ -16,5 +19,6 @@ export default class Create implements Authorized {
         public active : boolean,
         public positionWika : null|string,
         public parentId : string|null,
+        public deactivated : null|string,
     ) {}
 }

@@ -8,7 +8,7 @@ export default interface User extends Record, Id, Deactivated {
 
     token : string;
 
-    authorization   : Access;
+    access   : Access;
 
     position : Position;
 

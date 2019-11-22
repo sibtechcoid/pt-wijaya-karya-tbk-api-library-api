@@ -3,6 +3,6 @@ import Path from "./path";
 
 export default function Create() : Path {
 
-    return new CreatePath('/user/authorization')
+    return new CreatePath('/user/access')
 }
 

@@ -9,7 +9,7 @@ export default class Create implements User {
         public created : string,
         public updated : string,
         public token : string,
-        public authorization : Access,
+        public access : Access,
         public position : Position,
         public name : string,
         public user : string,

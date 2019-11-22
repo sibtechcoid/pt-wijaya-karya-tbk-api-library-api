@@ -1,5 +1,6 @@
 import User from "./user";
 import Access from "../../../access/update/request/access/access";
+import Position from "../../../position/create/request/position/position";
 
 export default class Create implements User {
 

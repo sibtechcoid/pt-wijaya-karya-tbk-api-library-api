@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const type_1 = require("../../../../../business/create/request/business/boolean/type");
-function Typez(value) {
+function Type(value) {
     if (!type_1.default(value)) {
         return false;
     }
@@ -12,5 +12,5 @@ function Typez(value) {
     // }
     return true;
 }
-exports.default = Typez;
+exports.default = Type;
 //# sourceMappingURL=type.js.map

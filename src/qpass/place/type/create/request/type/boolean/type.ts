@@ -1,12 +1,9 @@
 import TypeInterface from "../type";
-import IsString from "t-string/boolean/type";
-import IsNumber from "t-number/boolean/type";
-import ArrayOf from "t-array/boolean/array-of";
-import Type from "../../../../../business/create/request/business/boolean/type";
+import BusinessType from "../../../../../business/create/request/business/boolean/type";
 
-export default function Typez<Extended extends TypeInterface = TypeInterface>(value : any) : value is Extended {
+export default function Type<Extended extends TypeInterface = TypeInterface>(value : any) : value is Extended {
 
-    if(!Type<TypeInterface>(value)) {
+    if(!BusinessType<TypeInterface>(value)) {
 
         return false;
     }

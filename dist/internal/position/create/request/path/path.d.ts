@@ -1,3 +1,3 @@
 import PathInterface from "../../../../../path/path";
-export default interface Path extends PathInterface<'/user/position'> {
+export default interface Path extends PathInterface<'/internal/position'> {
 }

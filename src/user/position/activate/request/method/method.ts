@@ -1,4 +1,4 @@
-import Delete from "../../../../method/delete";
+import Delete from "../../../../../method/delete";
 
 export default interface Method extends Delete {
 

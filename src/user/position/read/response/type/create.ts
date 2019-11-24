@@ -1,5 +1,4 @@
 import Type from "./type";
-import Level from "../level/level";
 import LevelTypeCreate from "../../../../../qpass/place/level/read/response/type/create";
 import Access from "../../../../access/update/request/access/access";
 
@@ -11,7 +10,7 @@ export default class Create extends LevelTypeCreate implements Type {
         updated : string,
         name : string,
         abbreviation : string,
-        public access : null|Access,
+        public access : Access,
         deactivated : null|string
     ) {
 

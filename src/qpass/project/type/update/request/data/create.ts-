@@ -1,0 +1,7 @@
+import Type from "../../../create/request/type/type";
+import Id from "../../../../../../id/id";
+
+export default function Create(type : Type, id : Id) : Type & Id {
+
+    return Object.assign(type, id);
+}

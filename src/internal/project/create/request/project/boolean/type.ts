@@ -16,12 +16,12 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
     }
 
 
-    if(!ArrayOf(value.planned, TypeDateCompatible) && value.planned.length === 2) {
+    if(!ArrayOf(value.planned, TypeDateCompatible) || value.planned.length !== 2) {
 
         return false;
     }
 
-    if(!ArrayOf(value.realize, TypeDateCompatible) && value.realize.length === 2) {
+    if(!ArrayOf(value.realize, TypeDateCompatible) || value.realize.length !== 2) {
 
         return false;
     }

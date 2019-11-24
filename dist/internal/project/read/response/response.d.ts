@@ -1,4 +1,4 @@
 import Success from "../../../../response/success";
-import Place from "./place/place";
-declare type Response = Success<Place[]>;
+import Project from "./project/project";
+declare type Response = Success<Project[]>;
 export default Response;

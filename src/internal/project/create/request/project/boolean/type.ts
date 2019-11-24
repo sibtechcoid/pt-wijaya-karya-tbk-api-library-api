@@ -2,8 +2,9 @@ import TypeInterface from "../project";
 import NotNull from "t-object/boolean/type";
 import IsString from "t-string/boolean/type";
 import IsNumber from "t-number/boolean/type";
+import IsEnum from "t-enum/boolean/type";
 import TypeDateCompatible from "t-date/boolean/compatible";
-import Member from "../../member/member";
+import TypeMember from "../../member/boolean/type";
 import Category from "../../category/category";
 import ArrayOf from "t-array/boolean/array-of";
 
@@ -14,12 +15,6 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
         return false;
     }
 
-// public planned : [Date|string, Date|string],
-//         public realize : [Date|string, Date|string],
-
-//         public place : number,
-//         public members : Member[],
-//         public category : Category
 
     if(!ArrayOf(value.planned, TypeDateCompatible) && value.planned.length === 2) {
 
@@ -36,33 +31,15 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
         return false;
     }
 
-    if(!IsNumber(value.members)) {
+    if(!ArrayOf(value.members, TypeMember)) {
 
-        throw new Error('implemented');
+        return false;
     }
 
-    if(!IsNumber(value.category)) {
+    if(!IsEnum(value.category, Category)) {
 
-        throw new Error('implemented');
+        return false;
     }
-
-    // throw new Error('implemented');
-    // if(!IsString(value.abbreviation)) {
-    //
-    //     return false;
-    // }
-    //
-    // if(!IsString(value.address)) {
-    //
-    //     return false;
-    // }
-    //
-    // if(!IsString(value.abbreviation)) {
-    //
-    //     return false;
-    // }
-    //
-
 
     return true;
 }

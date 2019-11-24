@@ -1,6 +1,6 @@
 import Success from "./sucess";
 import BaseSuccessCreate from "../../../../response/success-create";
-import Type from "./type/type";
-export default class SuccessCreate extends BaseSuccessCreate<Type[]> implements Success {
-    constructor(body: Type[]);
+import Position from "./position/position";
+export default class SuccessCreate extends BaseSuccessCreate<Position[]> implements Success {
+    constructor(body: Position[]);
 }

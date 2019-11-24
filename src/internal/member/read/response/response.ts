@@ -1,5 +1,5 @@
 import Success from "../../../../response/success";
-import Project from "./project/project";
+import Member from "./member/member";
 
-type Response = Success<Project[]>;
+type Response = Success<Member[]>;
 export default Response;

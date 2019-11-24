@@ -9,7 +9,6 @@ export default interface Place extends Record, Deactivated, Id {
     abbreviation: string;
     address: string;
     type: Type;
-
     wikaDesc: string;
     wikaSlug: string;
     wikaAttach: string;

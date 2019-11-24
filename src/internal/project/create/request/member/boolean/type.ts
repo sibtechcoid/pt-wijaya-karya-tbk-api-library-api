@@ -10,7 +10,7 @@ export default function Type(value : any) : value is Member {
         return false;
     }
 
-    if(!IsString(value.user)) {
+    if(!IsNumber(value.user)) {
 
         return false;
     }

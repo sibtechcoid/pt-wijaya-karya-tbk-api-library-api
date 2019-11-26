@@ -6,7 +6,7 @@ export default class Create implements Project {
     constructor(
         public plan : [Date|string, Date|string],
         public realize : [Date|string, Date|string],
-        public place : number,
+        public object : number,
         public members : Member[],
     ) {}
 }

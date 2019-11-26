@@ -2,12 +2,12 @@ import Record from "../../../../../record/record";
 import Deactivated from "../../../../../deactivated/deactivated";
 import Id from "../../../../../id/id";
 import Status from "../status/status";
-import Place from "../../../../place/read/response/place/place";
+import Object from "../../../../object/read/response/object/object";
 import Member from "../../../../member/read/response/member/member";
 import Schedule from "../../../../../schedule/schedule";
 
 export default interface Project extends Record, Deactivated, Id, Schedule {
     status : Status;
-    place : Omit<Place, "type">;
+    object : Omit<Object, "type">;
     members : Member[]
 }

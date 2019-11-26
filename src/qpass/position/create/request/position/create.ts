@@ -1,4 +1,4 @@
-import BusinessCreate from "../../../../../qpass/place/business/create/request/business/create";
+import BusinessCreate from "../../../../object/business/create/request/business/create";
 import Access from "../access/access";
 import Position from "./position";
 import Group from "../group/group";

@@ -1,5 +1,5 @@
 import Project from "./project";
-import Place from "../../../../place/read/response/place/place";
+import Place from "../../../../object/read/response/object/object";
 import Status from "../status/status";
 import Member from "../../../../member/read/response/member/member";
 export default class Create implements Project {

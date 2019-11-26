@@ -15,7 +15,7 @@ function Type(value) {
     if (!array_of_1.default(value.realize, compatible_1.default) || value.realize.length !== 2) {
         return false;
     }
-    if (!type_2.default(value.place)) {
+    if (!type_2.default(value.object)) {
         return false;
     }
     if (!array_of_1.default(value.members, type_3.default)) {

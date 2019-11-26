@@ -1,5 +1,5 @@
 import TypeInterface from "../position";
-import TypeBusiness from "../../../../../../qpass/place/business/create/request/business/boolean/type";
+import TypeBusiness from "../../../../../object/business/create/request/business/boolean/type";
 import TypeAccess from "../../access/boolean/type";
 import ArrayOf from "t-array/boolean/array-of";
 

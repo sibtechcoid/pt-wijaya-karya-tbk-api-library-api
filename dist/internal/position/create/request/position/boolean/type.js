@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const type_1 = require("../../../../../../qpass/place/business/create/request/business/boolean/type");
+const type_1 = require("../../../../../../qpass/object/business/create/request/business/boolean/type");
 const type_2 = require("../../access/boolean/type");
 const array_of_1 = require("t-array/boolean/array-of");
 function Typez(value) {

@@ -1,3 +1,3 @@
 import PathInterface from "../../../../path/path";
-export default interface Path extends PathInterface<'/qpass/place'> {
+export default interface Path extends PathInterface<'/qpass/object'> {
 }

@@ -1,5 +1,5 @@
 import Project from "./project";
-import Place from "../../../../object/read/response/object/object";
+import Object from "../../../../object/read/response/object/object";
 import Status from "../status/status";
 import Member from "../../../../member/read/response/member/member";
 
@@ -14,7 +14,7 @@ export default class Create implements Project {
         public plan : [string, string],
         public realize : [string, string],
         public status : Status,
-        public object : Omit<Place, "type">,
+        public object : Omit<Object, "type">,
         public members : Member[],
     ) {}
 }

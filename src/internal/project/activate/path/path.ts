@@ -1,5 +1,5 @@
 import PathInterface from "../../../../path/path";
 
-export default interface Path extends PathInterface<'/internal/place'> {
+export default interface Path extends PathInterface<'/internal/object'> {
 
 }

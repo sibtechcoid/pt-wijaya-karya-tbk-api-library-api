@@ -4,7 +4,7 @@ import Schedule from "../../../../../schedule/schedule";
 
 export default interface Project extends Schedule {
 
-    place : number;
+    object : number;
     members : Member[];
     category : Category
 }

@@ -11,6 +11,6 @@ export default interface Project extends Record, Deactivated, Id {
     plan : [string, string];
     realize : [string, string];
     status : Status;
-    place : Omit<Place, "type">;
+    object : Omit<Place, "type">;
     members : Member[]
 }

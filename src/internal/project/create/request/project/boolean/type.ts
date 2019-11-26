@@ -25,7 +25,7 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
         return false;
     }
 
-    if(!IsNumber(value.place)) {
+    if(!IsNumber(value.object)) {
 
         return false;
     }

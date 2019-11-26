@@ -3,5 +3,5 @@ import Path from "./path";
 
 export default function Create() : Path {
 
-    return new CreatePath('/internal/place/type-active');
+    return new CreatePath('/internal/object/type-active');
 }

@@ -14,7 +14,7 @@ export default class Create implements Project {
         public plan : [string, string],
         public realize : [string, string],
         public status : Status,
-        public place : Omit<Place, "type">,
+        public object : Omit<Place, "type">,
         public members : Member[],
     ) {}
 }

@@ -5,12 +5,10 @@ import Id from "../../../../../id/id";
 import Status from "../status/status";
 import Place from "../../../../place/read/response/place/place";
 import Member from "../../../../member/read/response/member/member";
+import Schedule from "../../../../../schedule/schedule";
 
 
-export default interface Project extends Record, Deactivated, Id {
-
-    plan : [string, string];
-    realize : [string|null, string|null];
+export default interface Project extends Record, Deactivated, Id, Schedule {
     status : Status;
     place : Omit<Place, "type">;
     members : Member[]

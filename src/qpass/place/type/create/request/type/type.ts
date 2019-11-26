@@ -1,6 +1,6 @@
-import BusinessData from "../../../../business/create/request/business/business";
+import NameAbbreviation from "../../../../../../name-abbreviation/name-abbreviation";
 
-export default interface Type extends BusinessData {
+export default interface Type extends NameAbbreviation {
 
    // levels : number[];
 }

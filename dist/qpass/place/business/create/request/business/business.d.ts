@@ -1,10 +1,3 @@
-export default interface Business {
-    /**
-     * full name
-     */
-    name: string;
-    /**
-     * abbreviation, initial, or short version of name
-     */
-    abbreviation: string;
+import NameAbbreviation from "../../../../../../name-abbreviation/name-abbreviation";
+export default interface Business extends NameAbbreviation {
 }

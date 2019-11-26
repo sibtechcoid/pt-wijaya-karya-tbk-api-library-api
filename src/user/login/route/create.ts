@@ -1,6 +1,4 @@
-import Login from "../request/login/login";
 import Read from "../../../method/read-create";
-import Validator from "../../../validator/create";
 import Type from "../request/login/boolean/type";
 import Route from "./route";
 import Path from "../request/path/create";

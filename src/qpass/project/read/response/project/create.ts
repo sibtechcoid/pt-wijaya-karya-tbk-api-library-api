@@ -1,5 +1,4 @@
 import Project from "./project";
-import Type from "../../../type/create/request/type/type";
 import Place from "../../../../place/read/response/place/place";
 import Status from "../status/status";
 import Member from "../../../../member/read/response/member/member";

@@ -1,4 +1,3 @@
-import HttpMethod from "../method/type/type";
 import Body from "../body/body";
 import Code from "../code/code";
 import Message from "../message/message";

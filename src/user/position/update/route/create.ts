@@ -2,7 +2,6 @@ import Route from "./route";
 import Path from "../../create/request/path/create";
 import CreateRoute from "../../../../route/create";
 import UpdateCreate from "../../../../method/update-create";
-import ArrayOf from "t-array/boolean/array-of";
 import Position from "../../create/request/position/position";
 import TypeType from "../../create/request/position/boolean/type";
 import Id from "../../../../id/id";

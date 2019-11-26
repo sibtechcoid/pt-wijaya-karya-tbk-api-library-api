@@ -1,5 +1,4 @@
 import Type from "./type";
-import Level from "../level/level";
 
 export default class Create implements Type {
 

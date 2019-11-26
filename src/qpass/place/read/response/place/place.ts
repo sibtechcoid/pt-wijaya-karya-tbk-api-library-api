@@ -1,5 +1,4 @@
 import Business from "../../../business/read/response/business/business";
-import Type from "../../../level/read/response/type/type";
 import Level from "../../../type/read/response/level/level";
 import Id from "../../../../../id/id";
 import Record from "../../../../../record/record";

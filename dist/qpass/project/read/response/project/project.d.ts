@@ -6,7 +6,7 @@ import Place from "../../../../place/read/response/place/place";
 import Member from "../../../../member/read/response/member/member";
 export default interface Project extends Record, Deactivated, Id {
     plan: [string, string];
-    realize: [string, string];
+    realize: [string | null, string | null];
     status: Status;
     place: Omit<Place, "type">;
     members: Member[];

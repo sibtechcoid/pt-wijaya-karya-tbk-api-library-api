@@ -1,8 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 class Create {
-    constructor(planned, realize, place, members, category) {
-        this.planned = planned;
+    constructor(plan, realize, place, members, category) {
+        this.plan = plan;
         this.realize = realize;
         this.place = place;
         this.members = members;

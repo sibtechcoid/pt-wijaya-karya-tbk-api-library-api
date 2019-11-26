@@ -9,8 +9,8 @@ import Member from "../../../../member/read/response/member/member";
 
 export default interface Project extends Record, Deactivated, Id {
 
-    planned : [string, string];
-    realized : [string, string];
+    plan : [string, string];
+    realize : [string, string];
     status : Status;
     place : Omit<Place, "type">;
     members : Member[]

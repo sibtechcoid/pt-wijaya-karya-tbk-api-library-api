@@ -7,10 +7,10 @@ export default class Create implements Project {
     created: string;
     updated: string;
     deactivated: string | null;
-    planned: [string, string];
-    realized: [string, string];
+    plan: [string, string];
+    realize: [string, string];
     status: Status;
     place: Omit<Place, "type">;
     members: Member[];
-    constructor(id: number, created: string, updated: string, deactivated: string | null, planned: [string, string], realized: [string, string], status: Status, place: Omit<Place, "type">, members: Member[]);
+    constructor(id: number, created: string, updated: string, deactivated: string | null, plan: [string, string], realize: [string, string], status: Status, place: Omit<Place, "type">, members: Member[]);
 }

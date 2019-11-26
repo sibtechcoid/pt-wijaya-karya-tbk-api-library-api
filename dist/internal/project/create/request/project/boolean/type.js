@@ -11,7 +11,7 @@ function Type(value) {
     if (!type_1.default(value)) {
         return false;
     }
-    if (!array_of_1.default(value.planned, compatible_1.default) || value.planned.length !== 2) {
+    if (!array_of_1.default(value.plan, compatible_1.default) || value.plan.length !== 2) {
         return false;
     }
     if (!array_of_1.default(value.realize, compatible_1.default) || value.realize.length !== 2) {

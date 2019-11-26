@@ -1,7 +1,6 @@
 import Member from "../member/member";
-export default interface Project {
-    planned: [Date | string, Date | string];
-    realize: [Date | string, Date | string];
+import Schedule from "../../../../../schedule/schedule";
+export default interface Project extends Schedule {
     place: number;
     members: Member[];
 }

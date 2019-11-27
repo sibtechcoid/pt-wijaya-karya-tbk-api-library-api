@@ -1,6 +1,6 @@
 {
   "name": "library-interface",
-  "version": "0.70.124",
+  "version": "0.71.124",
   "description": "Typescript enum",
   "dependencies": {
     "@types/node": "^12.12.14",

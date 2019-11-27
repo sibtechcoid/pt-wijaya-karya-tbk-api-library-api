@@ -1,8 +1,5 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const create_1 = require("../../../../../../path/create");
-function Create() {
-    return new create_1.default('/qpass/object/type-active');
-}
-exports.default = Create;
+const create_1 = require("../../../create/request/path/create");
+exports.default = create_1.default;
 //# sourceMappingURL=create.js.map

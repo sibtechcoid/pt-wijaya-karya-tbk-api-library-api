@@ -1,2 +1,2 @@
-import Path from "./path";
-export default function Create(): Path;
+import Create from "../../../create/request/path/create";
+export default Create;

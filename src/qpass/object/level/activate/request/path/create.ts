@@ -1,7 +1,2 @@
-import CreatePath from "../../../../../../path/create";
-import Path from "./path";
-
-export default function Create() : Path {
-
-    return new CreatePath('/qpass/object/type-active');
-}
+import Create from "../../../create/request/path/create";
+export default Create;

@@ -1,5 +1,3 @@
-import PathInterface from "../../../../../../path/path";
+import Path from "../../../create/request/path/path";
+export default Path;
 
-export default interface Path extends PathInterface<'/qpass/object/business-active'> {
-
-}

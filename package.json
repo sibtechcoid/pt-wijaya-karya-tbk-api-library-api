@@ -1,5 +1,5 @@
 {
-  "name": "library-interface",
+  "name": "api-library",
   "version": "0.71.125",
   "description": "Typescript enum",
   "dependencies": {

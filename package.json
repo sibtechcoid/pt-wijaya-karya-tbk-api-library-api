@@ -1,5 +1,5 @@
 {
-  "name": "api-library",
+  "name": "wika-aims-api-library",
   "version": "0.71.125",
   "description": "Typescript enum",
   "dependencies": {

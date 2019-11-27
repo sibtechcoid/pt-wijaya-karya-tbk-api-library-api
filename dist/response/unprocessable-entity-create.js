@@ -1,10 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 class UnprocessableEntityCreate {
-    constructor(body) {
+    constructor(message = 'Unprocessable Entity', body) {
+        this.message = message;
         this.body = body;
         this.code = 422;
-        this.message = 'Unprocessable Entity';
     }
 }
 exports.default = UnprocessableEntityCreate;

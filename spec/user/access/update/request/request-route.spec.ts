@@ -10,7 +10,7 @@ import Internal from "../../../../../dist/user/access/update/request/internal/in
 import Assign from "../../../../../dist/id/assign";
 
 
-describe('qpass/place/type/update request', () => {
+describe('qpass/object/type/update request', () => {
 
     RequestRoute<Access & Id>(
         Request,

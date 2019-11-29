@@ -1,9 +1,9 @@
 import Position from "./position";
 import PositionUpdate from "../../../../../qpass/position/update/request/position/create";
-import Access from "../../../../position/create/request/access/access";
+import Access from "../../../access/access";
 import Id from "../../../../../id/id";
 import Record from "../../../../../record/record";
-import Group from "../../../create/request/group/group";
+import Group from "../../../group/group";
 export default class Create extends PositionUpdate implements Position {
     created: string;
     updated: string;

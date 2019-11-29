@@ -1,7 +1,7 @@
 import Record from "../../../../../record/record";
 import Id from "../../../../../id/id";
 import Action from "../../../create/request/action/action";
-import Access from "../../../../position/create/request/access/access";
+import Access from "../../../../position/access/access";
 import User from "../../../../../user/read/response/user/user";
 import Position from "../../../../position/read/response/position/position";
 

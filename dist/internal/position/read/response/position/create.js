@@ -1,12 +1,23 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const create_1 = require("../../../../../internal/position/update/request/position/create");
-class Create extends create_1.default {
-    constructor(id, created, updated, name, abbreviation, access, group) {
-        super(id, name, abbreviation, access, group);
-        this.created = created;
-        this.updated = updated;
-    }
-}
-exports.default = Create;
+// import Position from "./position";
+// import PositionUpdate from "../../../update/request/body/create.ts-";
+// import Access from "../../../access/access";
+// import Id from "../../../../../id/id";
+// import Record from "../../../../../record/record";
+// import Group from "../../../group/group";
+//
+// export default class Create extends PositionUpdate implements Position {
+//
+//     constructor(
+//         id : number,
+//         public created : string,
+//         public updated : string,
+//         name : string,
+//         abbreviation : string,
+//         access : (Access & Id & Record)[],
+//         group : Group,
+//     ) {
+//
+//         super(id, name, abbreviation, access, group);
+//     }
+// }
 //# sourceMappingURL=create.js.map

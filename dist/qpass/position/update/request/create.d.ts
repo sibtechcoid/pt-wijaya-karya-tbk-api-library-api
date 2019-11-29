@@ -1,4 +1,4 @@
 import Request from './request';
-import Position from "../../create/request/position/position";
+import Body from "../../create/request/body/body";
 import Id from "../../../../id/id";
-export default function Create(types: Position & Id): Request;
+export default function Create(types: Body & Id): Request;

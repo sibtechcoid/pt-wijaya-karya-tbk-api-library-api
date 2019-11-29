@@ -1,8 +1,8 @@
 import TypeInterface from "../business";
 import NotNull from "t-object/boolean/type";
 import IsString from "t-string/boolean/type";
-import TypeName from "../../../../../../../name/boolean/type";
-import TypeAbbreviation from "../../../../../../../abbreviation/boolean/type";
+import TypeName from "../../../../../../../name/create/boolean/type";
+import TypeAbbreviation from "../../../../../../../abbreviation/create/boolean/type";
 
 export default function Type<Extended extends TypeInterface = TypeInterface>(value : any) : value is Extended {
 

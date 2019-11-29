@@ -1,2 +1,2 @@
-import Data from "../data";
-export default function Type<Extended extends Data = Data>(value: any): value is Extended;
+import Body from "../body";
+export default function Type<Extended extends Body = Body>(value: any): value is Extended;

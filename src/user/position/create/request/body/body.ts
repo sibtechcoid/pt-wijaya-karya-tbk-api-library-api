@@ -1,4 +1,4 @@
-import Access from "../../../../access/update/request/body/body";
+import Access from "../../../../access/create/request/body/body";
 import Abbreviation from "../../../../../abbreviation/create/abbreviation";
 import Name from "../../../../../name/create/name";
 

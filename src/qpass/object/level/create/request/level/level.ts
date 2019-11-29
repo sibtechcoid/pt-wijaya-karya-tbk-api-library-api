@@ -1,15 +1,7 @@
+import Name from "../../../../../../name/name";
+import Abbreviation from "../../../../../../abbreviation/abbreviation";
 
-export default interface Level {
-
-    /**
-     * full name
-     */
-    name : string;
-
-    /**
-     * abbreviation, initial, or short version of name
-     */
-    abbreviation : string;
+export default interface Level extends Name, Abbreviation{
 
     type : number;
 }

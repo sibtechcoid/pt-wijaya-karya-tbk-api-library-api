@@ -1,5 +1,6 @@
-import NameAbbreviation from "../../../../../../name-abbreviation/name-abbreviation";
+import Abbreviation from "../../../../../../abbreviation/abbreviation";
+import Name from "../../../../../../name/name";
 
-export default interface Business extends NameAbbreviation {
+export default interface Business extends Name, Abbreviation {
 
 }

@@ -1,7 +1,8 @@
 import Access from "../../../../access/update/request/access/access";
-import NameAbbreviation from "../../../../../name-abbreviation/name-abbreviation";
+import Abbreviation from "../../../../../abbreviation/abbreviation";
+import Name from "../../../../../name/name";
 
-export default interface Position extends NameAbbreviation {
+export default interface Position extends Abbreviation, Name {
 
     access : Access
    // levels : number[];

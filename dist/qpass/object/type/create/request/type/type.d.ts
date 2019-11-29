@@ -1,3 +1,4 @@
-import NameAbbreviation from "../../../../../../name-abbreviation/name-abbreviation";
-export default interface Type extends NameAbbreviation {
+import Abbreviation from "../../../../../../abbreviation/abbreviation";
+import Name from "../../../../../../name/name";
+export default interface Type extends Name, Abbreviation {
 }

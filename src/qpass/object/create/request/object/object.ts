@@ -1,9 +1,12 @@
-export default interface Object {
+import Name from "../../../../../name/name";
+import Abbreviation from "../../../../../abbreviation/abbreviation";
+
+export default interface Object extends Name, Abbreviation{
 
     address : string;
     business: number;
     level: number;
     //type : number;
-    name : string;
-    abbreviation : string;
+    // name : string;
+    // abbreviation : string;
 }

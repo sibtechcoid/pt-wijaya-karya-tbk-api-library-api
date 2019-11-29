@@ -2,10 +2,9 @@ export default interface NameAbbreviation {
     /**
      * full name
      */
-    name : string;
-
+    name: string;
     /**
      * abbreviation, initial, or short version of name
      */
-    abbreviation : string;
+    abbreviation: string;
 }

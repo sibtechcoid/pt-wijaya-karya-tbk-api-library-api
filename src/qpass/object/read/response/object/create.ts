@@ -8,7 +8,7 @@ export default class Create implements Object {
         public id : number,
         public created : string,
         public updated : string,
-        public abbreviation : null|string,
+        public abbreviation : string,
         public name : string,
         public address : null|string,
         public wikaParentId : null|number,

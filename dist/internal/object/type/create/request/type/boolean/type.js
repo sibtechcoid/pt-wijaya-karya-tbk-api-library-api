@@ -1,0 +1,19 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const type_1 = require("t-object/boolean/type");
+const type_2 = require("../../../../../../../name/boolean/type");
+const type_3 = require("../../../../../../../abbreviation/boolean/type");
+function Typez(value) {
+    if (!type_1.default(value)) {
+        return false;
+    }
+    if (!type_2.default(value)) {
+        return false;
+    }
+    if (!type_3.default(value)) {
+        return false;
+    }
+    return true;
+}
+exports.default = Typez;
+//# sourceMappingURL=type.js.map

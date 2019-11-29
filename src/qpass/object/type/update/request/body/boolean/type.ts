@@ -1,9 +1,9 @@
 import NotNull from "t-object/boolean/type";
 import TypeName from "../../../../../../../name/update/boolean/type";
 import TypeAbbreviation from "../../../../../../../abbreviation/update/boolean/type";
-import Data from "../data";
+import Body from "../body";
 
-export default function Type<Extended extends Data = Data>(value : any) : value is Extended {
+export default function Type<Extended extends Body = Body>(value : any) : value is Extended {
 
     if(!NotNull<Extended>(value)) {
 

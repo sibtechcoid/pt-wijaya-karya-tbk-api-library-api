@@ -1,5 +1,5 @@
 import Level from "../level";
-import InternalType from "../../../../../type/create/request/type/boolean/type";
+import InternalType from "../../../../../type/create/request/body/boolean/type";
 import IsFinite from "t-number/boolean/finite";
 
 

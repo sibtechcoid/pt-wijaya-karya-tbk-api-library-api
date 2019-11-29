@@ -1,4 +1,4 @@
-import TypeInterface from "../business";
+import TypeInterface from "../body";
 import NotNull from "t-object/boolean/type";
 import IsString from "t-string/boolean/type";
 import TypeName from "../../../../../../../name/create/boolean/type";

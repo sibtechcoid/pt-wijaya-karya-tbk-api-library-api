@@ -2,9 +2,9 @@ import Request from './request';
 import CreatBody from "../../../../../body/create";
 import CreateCreate from "../../../../../method/create-create";
 import Path from "./path/create";
-import Business from "./business/business";
+import Body from "./body/body";
 
-export default function Create(type : Business) : Request {
+export default function Create(type : Body) : Request {
 
-    return Object.assign(CreateCreate(), Path(), new CreatBody<Business>(type))
+    return Object.assign(CreateCreate(), Path(), new CreatBody<Body>(type))
 }

@@ -1,4 +1,4 @@
-import TypeInterface from "../type";
+import TypeInterface from "../body";
 import BusinessType from "../../../../../business/create/request/body/boolean/type";
 
 export default function Type<Extended extends TypeInterface = TypeInterface>(value : any) : value is Extended {

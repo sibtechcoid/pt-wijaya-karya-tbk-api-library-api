@@ -3,14 +3,14 @@ import IdCreate from "../../../../../../dist/id/create";
 import Id from "../../../../../../dist/id/id";
 import Request from "../../../../../../dist/internal/object/type/activate/request/create";
 import RequestRoute from "../../../../../request/request-route";
-import Active from "../../../../../../dist/active/active";
-import CreateActive from "../../../../../../dist/active/create";
+import Active from "../../../../../../dist/deactivate/update/request/body/body";
+;
 
 describe('internal/object/type/delete request', () => {
 
     RequestRoute<Active>(
         (body) => Request(body),
         Route(),
-        new CreateActive(1, true)
+        {id:0, deactivate : true}
     );
 });

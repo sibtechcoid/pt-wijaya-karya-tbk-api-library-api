@@ -1,5 +1,5 @@
 import Route from "../../../../../../dist/internal/object/type/update/route/create";
-import Type from "../../../../../../dist/internal/object/type/create/request/type/type";
+import Type from "../../../../../../dist/internal/object/type/update/request/body/body";
 import TypeCreate from "../../../../../../dist/internal/object/type/create/request/type/create";
 import IdCreate from "../../../../../../dist/id/create";
 import Id from "../../../../../../dist/id/id";
@@ -9,9 +9,9 @@ import Assign from "../../../../../../dist/id/assign";
 
 describe('internal/object/type/update request', () => {
 
-    RequestRoute<Type & Id>(
+    RequestRoute<Type>(
         Request,
         Route(),
-        Assign(new TypeCreate('username', 'password'), new IdCreate(1))
+        {name:'username', abbreviation:'password',id:1}
     );
 });

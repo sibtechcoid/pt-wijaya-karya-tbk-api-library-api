@@ -1,10 +1,9 @@
 import Route from "../../../../../../dist/internal/object/type/read/route/create";
 import Request from "../../../../../../dist/internal/object/type/read/request/create";
 import RequestRoute from "../../../../../request/request-route";
-import Deactivate from "../../../../../../dist/deactivate/deactivate";
-import DeactivatedCreate from "../../../../../../dist/deactivate/create";
+import Deactivated from "../../../../../../dist/deactivate/read/request/body/body";
 
 describe('internal/object/type/read request', () => {
 
-    RequestRoute<Deactivate>(Request, Route(), new DeactivatedCreate(true));
+    RequestRoute<Deactivated>(Request, Route(), {deactivate:true});
 });

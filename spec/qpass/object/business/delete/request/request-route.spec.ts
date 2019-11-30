@@ -4,14 +4,14 @@ import Id from "../../../../../../dist/id/id";
 import Request from "../../../../../../dist/qpass/object/business/activate/request/create";
 import RequestRoute from "../../../../../request/request-route";
 import Assign from "../../../../../../dist/id/assign";
-import Active from "../../../../../../dist/active/active";
-import ActiveCreate from "../../../../../../dist/active/create";
+import Active from "../../../../../../dist/deactivate/update/request/body/body";
+import ActiveCreate from "../../../../../../dist/deactivate/update/request/body/body";
 
 describe('qpass/object/business/delete  request', () => {
 
     RequestRoute<Active>(
         Request,
         Route(),
-        new ActiveCreate(1, true)
+        {id:0, deactivate:true}
     );
 });

@@ -8,9 +8,9 @@ describe('project request body', () => {
     it('path equal', () => {
 
         expect(Type(    {
-            planned: [new Date('2020-12-16T20:24:00.000Z'), new Date('2020-12-16T20:24:00.000Z')],
+            plan: [new Date('2020-12-16T20:24:00.000Z'), new Date('2020-12-16T20:24:00.000Z')],
             realize: [new Date('2020-12-16T20:24:00.000Z'), new Date('2020-12-16T20:24:00.000Z')],
-            place: 0,
+            object: 0,
             members: [
                 {position:  33, user:  44},
                 {position:  34, user:  45},

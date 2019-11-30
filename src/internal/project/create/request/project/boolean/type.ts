@@ -1,6 +1,6 @@
 import TypeInterface from "../project";
 import NotNull from "t-object/boolean/type";
-import IsNumber from "t-number/boolean/type";
+import IsNumber from "t-number/boolean/finite";
 import IsEnum from "t-enum/boolean/type";
 import TypeDateCompatible from "t-date/boolean/compatible";
 import TypeMember from "../../member/boolean/type";
@@ -13,7 +13,6 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
 
         return false;
     }
-
 
     if(!ArrayOf(value.plan, TypeDateCompatible) || value.plan.length !== 2) {
 

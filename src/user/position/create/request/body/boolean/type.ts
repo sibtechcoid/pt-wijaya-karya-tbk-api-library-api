@@ -6,10 +6,11 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
 
     if(!TypeBusiness<TypeInterface>(value)) {
 
+
         return false;
     }
 
-    if(!TypeAccess(value)) {
+    if(!TypeAccess(value.access)) {
 
         return false;
     }

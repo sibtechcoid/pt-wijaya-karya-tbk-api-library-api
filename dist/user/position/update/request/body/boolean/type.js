@@ -6,7 +6,7 @@ function Typez(value) {
     if (!type_2.default(value)) {
         return false;
     }
-    if (!type_1.default(value)) {
+    if (!type_1.default(value.access)) {
         return false;
     }
     return true;

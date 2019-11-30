@@ -14,7 +14,7 @@ export default function Typez<Extended extends Body = Body>(value : any) : value
         return false;
     }
 
-    if(!TypeAccess(value)) {
+    if(!TypeAccess(value.access)) {
 
         return false;
     }

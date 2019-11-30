@@ -5,7 +5,7 @@ export default class Create implements Level {
     updated: string;
     name: string;
     abbreviation: string;
-    deactivated: null | string;
+    deactivate: null | string;
     type: null;
-    constructor(id: number, created: string, updated: string, name: string, abbreviation: string, deactivated: null | string, type: null);
+    constructor(id: number, created: string, updated: string, name: string, abbreviation: string, deactivate: null | string, type: null);
 }

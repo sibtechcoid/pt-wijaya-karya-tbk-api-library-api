@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 class Create {
-    constructor(id, created, updated, abbreviation, name, address, wikaParentId, wikaType, wikaId, deactivated, business, level) {
+    constructor(id, created, updated, abbreviation, name, address, wikaParentId, wikaType, wikaId, deactivate, business, level) {
         this.id = id;
         this.created = created;
         this.updated = updated;
@@ -11,7 +11,7 @@ class Create {
         this.wikaParentId = wikaParentId;
         this.wikaType = wikaType;
         this.wikaId = wikaId;
-        this.deactivated = deactivated;
+        this.deactivate = deactivate;
         this.business = business;
         this.level = level;
     }

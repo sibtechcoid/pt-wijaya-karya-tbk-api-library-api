@@ -11,6 +11,6 @@ export default class Create implements Object {
     id: number;
     created: string;
     updated: string;
-    deactivated: string | null;
-    constructor(name: string, abbreviation: string, address: string, type: Type, wikaDesc: string, wikaSlug: string, wikaAttach: string, id: number, created: string, updated: string, deactivated: string | null);
+    deactivate: string | null;
+    constructor(name: string, abbreviation: string, address: string, type: Type, wikaDesc: string, wikaSlug: string, wikaAttach: string, id: number, created: string, updated: string, deactivate: string | null);
 }

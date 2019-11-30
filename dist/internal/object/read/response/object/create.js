@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 class Create {
-    constructor(name, abbreviation, address, type, wikaDesc, wikaSlug, wikaAttach, id, created, updated, deactivated) {
+    constructor(name, abbreviation, address, type, wikaDesc, wikaSlug, wikaAttach, id, created, updated, deactivate) {
         this.name = name;
         this.abbreviation = abbreviation;
         this.address = address;
@@ -12,7 +12,7 @@ class Create {
         this.id = id;
         this.created = created;
         this.updated = updated;
-        this.deactivated = deactivated;
+        this.deactivate = deactivate;
     }
 }
 exports.default = Create;

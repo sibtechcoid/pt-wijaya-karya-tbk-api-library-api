@@ -1,9 +1,9 @@
-import Body from "../../../../../body/body";
+import BaseBody from "../../../../../body/body";
 import Path from "./path/path";
 import Method from "./method/method";
-import Active from "../../../../../active/active";
+import Body from "../../../../../deactivate/update/request/body/body";
 
 
-export default interface Request extends Body<Active>, Path, Method {
+export default interface Request extends BaseBody<Body>, Path, Method {
 
 }

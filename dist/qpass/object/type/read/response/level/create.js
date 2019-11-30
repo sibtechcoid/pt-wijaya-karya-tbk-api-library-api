@@ -1,13 +1,13 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 class Create {
-    constructor(id, created, updated, name, abbreviation, deactivated, type) {
+    constructor(id, created, updated, name, abbreviation, deactivate, type) {
         this.id = id;
         this.created = created;
         this.updated = updated;
         this.name = name;
         this.abbreviation = abbreviation;
-        this.deactivated = deactivated;
+        this.deactivate = deactivate;
         this.type = type;
     }
 }

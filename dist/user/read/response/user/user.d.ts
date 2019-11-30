@@ -1,9 +1,9 @@
 import Record from "../../../../record/record";
-import Deactivated from "../../../../deactivated/deactivated";
+import Body from "../../../../deactivate/read/response/body/body";
 import Id from "../../../../id/id";
 import Access from "../../../access/update/request/body/body";
 import Position from "../../../position/create/request/body/body";
-export default interface User extends Record, Deactivated, Id {
+export default interface User extends Record, Body, Id {
     access: Access;
     position: Position | null;
     name: string;

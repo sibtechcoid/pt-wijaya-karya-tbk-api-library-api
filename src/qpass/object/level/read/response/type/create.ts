@@ -8,6 +8,6 @@ export default class Create implements Type {
         public updated : string,
         public name : string,
         public abbreviation : string,
-        public deactivated : null|string
+        public deactivate : null|string
     ) {}
 }

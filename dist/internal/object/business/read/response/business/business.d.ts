@@ -1,7 +1,7 @@
 import Record from "../../../../../../record/record";
 import Id from "../../../../../../id/id";
-import Deactivated from "../../../../../../deactivated/deactivated";
-export default interface Business extends Id, Record, Deactivated {
+import Body from "../../../../../../deactivate/read/response/body/body";
+export default interface Business extends Id, Record, Body {
     name: string;
     abbreviation: string;
 }

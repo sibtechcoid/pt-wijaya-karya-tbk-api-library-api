@@ -10,7 +10,7 @@ export default class Create implements Project {
         public id : number,
         public created : string,
         public updated : string,
-        public deactivated : string|null,
+        public deactivate : string|null,
         public plan : [string, string],
         public realize : [string, string],
         public status : Status,

@@ -14,6 +14,6 @@ export default class Create implements Object {
         public id : number,
         public created : string,
         public updated : string,
-        public deactivated: string|null,
+        public deactivate: string|null,
     ) {}
 }

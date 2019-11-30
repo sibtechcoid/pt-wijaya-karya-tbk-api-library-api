@@ -8,7 +8,7 @@ export default class Create implements Level {
         public updated : string,
         public name : string,
         public abbreviation : string,
-        public deactivated : null|string,
+        public deactivate : null|string,
         public type : null,
     ) {
     }

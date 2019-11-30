@@ -1,15 +1,17 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-class Create {
-    constructor(id, created, updated, name, abbreviation, deactivated, type) {
-        this.id = id;
-        this.created = created;
-        this.updated = updated;
-        this.name = name;
-        this.abbreviation = abbreviation;
-        this.deactivated = deactivated;
-        this.type = type;
-    }
-}
-exports.default = Create;
+// import Data from "./level";
+//
+// export default class Create implements Data {
+//
+//     constructor(
+//         public id : number,
+//         public created : string,
+//         public updated : string,
+//         public name : string,
+//         public abbreviation : string,
+//         public deactivated : null|string,
+//         public type : null,
+//     ) {
+//
+//     }
+// }
 //# sourceMappingURL=create.js.map

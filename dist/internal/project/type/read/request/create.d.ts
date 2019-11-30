@@ -1,3 +1,3 @@
 import Request from './request';
-import Deactivate from "../../../../../deactivate/deactivate";
-export default function Create(deactivated: Deactivate): Request;
+import Body from "../../../../../deactivate/read/request/body/body";
+export default function Create(deactivated: Body): Request;

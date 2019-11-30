@@ -14,7 +14,7 @@ export default class Create implements Object {
         public wikaParentId : null|number,
         public wikaType : string,
         public wikaId : number,
-        public deactivated : null,
+        public deactivate : null,
         public business: null|Business,
         public level: null|Level,
         // public type: null|Level

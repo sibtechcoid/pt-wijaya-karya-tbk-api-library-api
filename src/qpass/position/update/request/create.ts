@@ -5,7 +5,7 @@ import Body from "./body/body";
 import Id from "../../../../id/id";
 import Update from "../../../../method/update-create";
 
-export default function Create(types : Body & Id) : Request {
+export default function Create(types : Body) : Request {
 
-    return Object.assign(Update(), Path(), new CreatBody<Body & Id>(types))
+    return Object.assign(Update(), Path(), new CreatBody<Body>(types))
 }

@@ -9,7 +9,7 @@ export default interface Object extends Record, Deactivate, Id {
     abbreviation: string;
     address: string;
     type: Type;
-    wikaDesc: string;
-    wikaSlug: string;
-    wikaAttach: string;
+    // wikaDesc: string;
+    // wikaSlug: string;
+    // wikaAttach: string;
 }

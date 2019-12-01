@@ -1,5 +1,5 @@
 import Business from "../../../business/read/response/business/business";
-import Level from "../../../type/read/response/level/level";
+import Level from "../../../level/read/response/level/level";
 import Type from "../../../type/read/response/type/type";
 import Id from "../../../../../id/id";
 import Record from "../../../../../record/record";
@@ -16,6 +16,6 @@ export default interface Object  extends Id, Record, Deactivate, Name, Abbreviat
     // // TODO nullable?
     // wikaId : number|null;
     business: null|Business;
-    level: null|Level;
+    level: null|Omit<Level,'type' >;
     type: null|Type;
 }

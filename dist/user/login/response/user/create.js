@@ -1,24 +1,26 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-class Create {
-    constructor(id, created, updated, token, access, position, name, user, abbreviation, phone, email, nip, active, positionWika, parentId, deactivated) {
-        this.id = id;
-        this.created = created;
-        this.updated = updated;
-        this.token = token;
-        this.access = access;
-        this.position = position;
-        this.name = name;
-        this.user = user;
-        this.abbreviation = abbreviation;
-        this.phone = phone;
-        this.email = email;
-        this.nip = nip;
-        this.active = active;
-        this.positionWika = positionWika;
-        this.parentId = parentId;
-        this.deactivated = deactivated;
-    }
-}
-exports.default = Create;
+// import User from "./user";
+// import Body from "../../../access/update/request/body/body";
+// import Body from "../../../position/create/request/body/body";
+//
+// export default class Create implements User {
+//
+//     constructor(
+//         public id : number,
+//         public created : string,
+//         public updated : string,
+//         public token : string,
+//         public access : Body,
+//         public position : Body|null,
+//         public name : string,
+//         public user : string,
+//         public abbreviation : string|null,
+//         public phone : string|null,
+//         public email : string|null,
+//         public nip : string,
+//         public active : boolean,
+//         public positionWika : null|string,
+//         public parentId : string|null,
+//         public deactivated : null|string,
+//     ) {}
+// }
 //# sourceMappingURL=create.js.map

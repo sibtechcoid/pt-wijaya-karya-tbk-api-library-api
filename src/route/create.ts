@@ -3,7 +3,6 @@ import Path from "../path/path";
 import Validator from "../validator/create";
 import Method from "../method/method";
 import Type from "../method/type/type";
-import Read from "../method/read-create";
 
 export default function Create<T extends Type, P extends string, B>(
     method : Method<T>,

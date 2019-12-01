@@ -1,4 +1,3 @@
-import Conflict from "./conflict";
 import InternalServerError from "./internal-server-error";
 
 export default class InternalServerErrorCreate<Body> implements InternalServerError<Body> {

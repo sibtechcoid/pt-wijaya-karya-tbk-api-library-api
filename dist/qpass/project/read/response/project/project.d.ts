@@ -1,13 +1,12 @@
 import Record from "../../../../../record/record";
-import Deactivated from "../../../../../deactivated/deactivated";
+import Body from "../../../../../deactivate/read/response/body/body";
 import Id from "../../../../../id/id";
 import Status from "../status/status";
-import Place from "../../../../place/read/response/place/place";
+import Object from "../../../../object/read/response/object/object";
 import Member from "../../../../member/read/response/member/member";
-export default interface Project extends Record, Deactivated, Id {
-    planned: [string, string];
-    realized: [string, string];
+import Schedule from "../../../../../schedule/schedule";
+export default interface Project extends Record, Body, Id, Schedule {
     status: Status;
-    place: Omit<Place, "type">;
+    object: Omit<Object, "type">;
     members: Member[];
 }

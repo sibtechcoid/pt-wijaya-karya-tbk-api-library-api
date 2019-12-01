@@ -1,7 +1,6 @@
 import TypeInterface from "../user";
 import NotNull from "t-object/boolean/type";
 import IsString from "t-string/boolean/type";
-import IsNumber from "t-number/boolean/type";
 
 export default function Type<Extended extends TypeInterface = TypeInterface>(value : any) : value is Extended {
 

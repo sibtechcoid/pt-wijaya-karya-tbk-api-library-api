@@ -5,9 +5,9 @@ import Category from "../category/category";
 export default class Create implements Project {
 
     constructor(
-        public planned : [Date|string, Date|string],
+        public plan : [Date|string, Date|string],
         public realize : [Date|string, Date|string],
-        public place : number,
+        public object : number,
         public members : Member[],
         public category : Category
     ) {}

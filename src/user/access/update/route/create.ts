@@ -2,12 +2,12 @@ import Route from "./route";
 import Path from "../../update/request/path/create";
 import Read from "../../../../method/update-create";
 import CreateRoute from "../../../../route/create";
-import AccessType from "../request/access/boolean/type";
-import Access from "../request/access/access";
+import AccessType from "../request/body/boolean/type";
+import Body from "../request/body/body";
 import Id from "../../../../id/id";
 import TypeId from "../../../../id/boolean/type";
 
 export default function Create () : Route {
 
-    return CreateRoute(Read(), Path(), (access : any) : access is Access & Id => AccessType(access) && TypeId(access));
+    return CreateRoute(Read(), Path(), (access : any) : access is Body & Id => AccessType(access) && TypeId(access));
 }

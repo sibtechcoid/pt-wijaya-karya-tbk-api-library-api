@@ -1,6 +1,4 @@
-import IdInterface from "../id";
 import TypeObject from "t-object/boolean/type";
-import TypeString from "t-string/boolean/type";
 import TypeNumber from "t-number/boolean/type";
 import Id from "../id";
 

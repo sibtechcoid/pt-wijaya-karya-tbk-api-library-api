@@ -1,5 +1,5 @@
 import Path from "../../create/request/path/path";
-import Method from "../method/method";
+import Method from "../request/method/method";
 import Project from "../../create/request/project/project";
 import Validator from "../../../../validator/validator";
 import Id from "../../../../id/id";

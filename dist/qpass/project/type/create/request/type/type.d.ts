@@ -1,10 +1,4 @@
-export default interface Type {
-    /**
-     * full name
-     */
-    name: string;
-    /**
-     * abbreviation, initial, or short version of name
-     */
-    abbreviation: string;
+import Abbreviation from "../../../../../../abbreviation/create/abbreviation";
+import Name from "../../../../../../name/create/name";
+export default interface Type extends Abbreviation, Name {
 }

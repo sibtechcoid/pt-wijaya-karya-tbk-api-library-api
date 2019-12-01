@@ -1,11 +1,11 @@
 import Record from "../../../../record/record";
-import Deactivated from "../../../../deactivated/deactivated";
+import Body from "../../../../deactivate/read/response/body/body";
 import Id from "../../../../id/id";
-import Access from "../../../access/update/request/access/access";
-import Position from "../../../position/create/request/position/position";
-export default interface User extends Record, Deactivated, Id {
+import Access from "../../../access/update/request/body/body";
+import Position from "../../../position/read/response/body/body";
+export default interface User extends Record, Body, Id {
     access: Access;
-    position: Position | null;
+    position: Omit<Position, 'access'> | null;
     name: string;
     user: string;
     abbreviation: string | null;

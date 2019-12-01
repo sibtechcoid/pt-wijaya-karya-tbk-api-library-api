@@ -1,3 +1,3 @@
 import Request from './request';
-import Active from "../../../active/active";
-export default function Create(activable: Active): Request;
+import Body from "../../../deactivate/update/request/body/body";
+export default function Create(activable: Body): Request;

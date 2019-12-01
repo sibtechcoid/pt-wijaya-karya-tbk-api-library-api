@@ -1,6 +1,5 @@
 import TypeInterface from "../type";
 import NotNull from "t-object/boolean/type";
-import IsString from "t-string/boolean/type";
 import TypeName from "../../../../../../../name/create/boolean/type";
 import TypeAbbreviation from "../../../../../../../abbreviation/create/boolean/type";
 

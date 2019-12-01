@@ -1,4 +1,3 @@
-import Conflict from "./conflict";
 import BadRequest from "./bad-request";
 
 export default class ConflictCreate<Body> implements BadRequest<Body> {

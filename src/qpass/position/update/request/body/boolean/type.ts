@@ -1,5 +1,4 @@
 import Body from "../body";
-import TypeBusiness from "../../../../../object/business/update/request/body/boolean/type";
 import TypeAccess from "../../../../access/boolean/type";
 import ArrayOf from "t-array/boolean/array-of";
 import TypeName from "../../../../../../name/update/boolean/type";

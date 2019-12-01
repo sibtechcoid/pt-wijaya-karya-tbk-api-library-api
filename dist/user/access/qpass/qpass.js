@@ -5,6 +5,5 @@ var Qpass;
     Qpass["EDIT"] = "EDIT";
     Qpass["CREATE"] = "CREATE";
 })(Qpass || (Qpass = {}));
-;
 exports.default = Qpass;
 //# sourceMappingURL=qpass.js.map

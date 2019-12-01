@@ -5,6 +5,5 @@ var Internal;
     Internal["EDIT"] = "EDIT";
     Internal["CREATE"] = "CREATE";
 })(Internal || (Internal = {}));
-;
 exports.default = Internal;
 //# sourceMappingURL=internal.js.map

@@ -1,5 +1,4 @@
 import Access from "../../../access/access";
-import CreatePosition from "../../../create/request/body/body";
 import Id from "../../../../../id/id";
 import Group from "../../../group/group";
 import Abbreviation from "../../../../../abbreviation/update/abbreviation";

@@ -1,4 +1,3 @@
-import Success from "./success";
 import UnprocessableEntity from "./unprocessable-entity";
 
 export default class UnprocessableEntityCreate<Body> implements UnprocessableEntity<Body> {

@@ -37,5 +37,10 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
         return false;
     }
 
+    if(!IsNumber(value.business)) {
+
+        return false;
+    }
+
     return true;
 }

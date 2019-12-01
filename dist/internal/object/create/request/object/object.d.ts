@@ -6,4 +6,5 @@ export default interface Object {
      * type id
      */
     type: number;
+    business: number;
 }

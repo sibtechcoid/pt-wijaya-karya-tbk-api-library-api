@@ -24,6 +24,9 @@ function Type(value) {
     if (!type_3.default(value.type)) {
         return false;
     }
+    if (!type_3.default(value.business)) {
+        return false;
+    }
     return true;
 }
 exports.default = Type;

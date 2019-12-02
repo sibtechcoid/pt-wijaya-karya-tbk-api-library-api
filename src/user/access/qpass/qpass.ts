@@ -2,8 +2,8 @@ enum Qpass  {
 
     UPDATE = 'UPDATE',
     CREATE = 'CREATE',
-    READ = 'CREATE',
-    DELETE = 'CREATE',
+    READ = 'READ',
+    DELETE = 'DELETE',
     PUBLISH = 'PUBLISH',
     APPROVE = 'APPROVE',
 }

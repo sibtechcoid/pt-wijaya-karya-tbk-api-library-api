@@ -4,8 +4,8 @@ var Internal;
 (function (Internal) {
     Internal["UPDATE"] = "UPDATE";
     Internal["CREATE"] = "CREATE";
-    Internal["READ"] = "CREATE";
-    Internal["DELETE"] = "CREATE";
+    Internal["READ"] = "READ";
+    Internal["DELETE"] = "DELETE";
     Internal["PUBLISH"] = "PUBLISH";
     Internal["APPROVE"] = "APPROVE";
 })(Internal || (Internal = {}));

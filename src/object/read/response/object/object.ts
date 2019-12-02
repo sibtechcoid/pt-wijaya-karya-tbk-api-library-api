@@ -8,6 +8,6 @@ export default interface Object<
     Business extends Name & Abbreviation = Name & Abbreviation
     > extends Record, Deactivate, Id, Name, Abbreviation
 {
-    address: string;
+    address: null|string;
     business: null|Business;
 }

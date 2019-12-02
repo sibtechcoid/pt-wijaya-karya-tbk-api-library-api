@@ -4,42 +4,20 @@ import IsNumber from "t-number/boolean/finite";
 import IsEnum from "t-enum/boolean/type";
 import TypeDateCompatible from "t-date/boolean/compatible";
 import TypeMember from "../../../../../../member/boolean/type";
+import Category from "../../../../category/category";
 import ArrayOf from "t-array/boolean/array-of";
+import InternalType from "../../../../../../qpass/project/update/request/body/boolean/type";
 
 export default function Type<Extended extends TypeInterface = TypeInterface>(value : any) : value is Extended {
 
-    if(!NotNull<Extended>(value)) {
+    if(!InternalType<Extended>(value)) {
 
         return false;
     }
 
     if(value.object !== undefined){
 
-        if(!ArrayOf(value.plan, TypeDateCompatible) || value.plan.length !== 2) {
-
-            return false;
-        }
-    }
-
-    if(value.object !== undefined){
-
-        if(!ArrayOf(value.realize, TypeDateCompatible) || value.realize.length !== 2) {
-
-            return false;
-        }
-    }
-
-    if(value.object !== undefined){
-
-        if(!IsNumber(value.object)) {
-
-            return false;
-        }
-    }
-
-    if(value.object !== undefined){
-
-        if(!ArrayOf(value.members, TypeMember)) {
+        if(!IsEnum(value.category, Category)) {
 
             return false;
         }

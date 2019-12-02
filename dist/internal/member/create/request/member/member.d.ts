@@ -1,4 +1,4 @@
-import ProjectMember from "../../../../project/create/request/member/member";
+import ProjectMember from "../../../../../member/member";
 export default interface Member extends ProjectMember {
     project: number;
 }

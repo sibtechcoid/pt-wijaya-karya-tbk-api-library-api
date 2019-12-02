@@ -1,6 +1,6 @@
 import TypeInterface from "../member";
 import IsNumber from "t-number/boolean/finite";
-import ProjectMemberType from "../../../../../project/create/request/member/boolean/type";
+import ProjectMemberType from "../../../../../../member/boolean/type";
 
 export default function Type<Extended extends TypeInterface = TypeInterface>(value : any) : value is Extended {
 

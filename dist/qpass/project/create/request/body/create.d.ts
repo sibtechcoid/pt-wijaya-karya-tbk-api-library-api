@@ -1,6 +1,6 @@
-import Project from "./project";
+import Body from "./body";
 import Member from "../member/member";
-export default class Create implements Project {
+export default class Create implements Body {
     plan: [Date | string, Date | string];
     realize: [Date | string, Date | string];
     object: number;

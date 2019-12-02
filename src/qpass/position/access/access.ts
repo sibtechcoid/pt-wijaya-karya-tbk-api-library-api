@@ -1,12 +1,7 @@
 enum Access  {
-
-    APPROVE = 'APPROVE',
+    ACCEPT = 'ACCEPT',
     REPORT = 'REPORT',
-    CHANGE  = 'CHANGE',
     UPLOAD  = 'UPLOAD',
-    EDIT    = 'EDIT',
-    READ    = 'READ',
-    ACTION  = 'ACTION',
 }
 
 export default  Access;

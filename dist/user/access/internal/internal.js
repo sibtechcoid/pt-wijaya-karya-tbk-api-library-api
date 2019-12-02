@@ -2,8 +2,12 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var Internal;
 (function (Internal) {
-    Internal["EDIT"] = "EDIT";
+    Internal["UPDATE"] = "EDIT";
     Internal["CREATE"] = "CREATE";
+    Internal["READ"] = "CREATE";
+    Internal["DELETE"] = "CREATE";
+    Internal["PUBLISH"] = "PUBLISH";
+    Internal["APPROVE"] = "APPROVE";
 })(Internal || (Internal = {}));
 exports.default = Internal;
 //# sourceMappingURL=internal.js.map

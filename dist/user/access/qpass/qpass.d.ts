@@ -1,5 +1,9 @@
 declare enum Qpass {
-    EDIT = "EDIT",
-    CREATE = "CREATE"
+    UPDATE = "EDIT",
+    CREATE = "CREATE",
+    READ = "CREATE",
+    DELETE = "CREATE",
+    PUBLISH = "PUBLISH",
+    APPROVE = "APPROVE"
 }
 export default Qpass;

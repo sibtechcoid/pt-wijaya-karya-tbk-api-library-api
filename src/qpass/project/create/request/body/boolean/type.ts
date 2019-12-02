@@ -1,4 +1,4 @@
-import TypeInterface from "../project";
+import TypeInterface from "../body";
 import NotNull from "t-object/boolean/type";
 import IsNumber from "t-number/boolean/type";
 import TypeDateCompatible from "t-date/boolean/compatible";

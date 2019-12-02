@@ -1,5 +1,5 @@
 declare enum Internal {
-    UPDATE = "EDIT",
+    UPDATE = "UPDATE",
     CREATE = "CREATE",
     READ = "CREATE",
     DELETE = "CREATE",

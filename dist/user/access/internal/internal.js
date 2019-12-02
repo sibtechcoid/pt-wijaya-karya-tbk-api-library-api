@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var Internal;
 (function (Internal) {
-    Internal["UPDATE"] = "EDIT";
+    Internal["UPDATE"] = "UPDATE";
     Internal["CREATE"] = "CREATE";
     Internal["READ"] = "CREATE";
     Internal["DELETE"] = "CREATE";

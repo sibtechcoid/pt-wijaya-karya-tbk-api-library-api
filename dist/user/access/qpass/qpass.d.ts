@@ -1,5 +1,5 @@
 declare enum Qpass {
-    UPDATE = "EDIT",
+    UPDATE = "UPDATE",
     CREATE = "CREATE",
     READ = "CREATE",
     DELETE = "CREATE",

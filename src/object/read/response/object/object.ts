@@ -9,5 +9,5 @@ export default interface Object<
     > extends Record, Deactivate, Id, Name, Abbreviation
 {
     address: string;
-    business: Business;
+    business: null|Business;
 }

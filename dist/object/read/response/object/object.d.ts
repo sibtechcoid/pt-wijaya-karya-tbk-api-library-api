@@ -5,5 +5,5 @@ import Name from "../../../../name/create/name";
 import Abbreviation from "../../../../abbreviation/create/abbreviation";
 export default interface Object<Business extends Name & Abbreviation = Name & Abbreviation> extends Record, Deactivate, Id, Name, Abbreviation {
     address: string;
-    business: Business;
+    business: null | Business;
 }

@@ -1,5 +1,5 @@
 import CreateCreate from "../../../../../method/create-create";
-import LevelType from "../request/level/boolean/type";
+import LevelType from "../request/body/boolean/type";
 import Route from "./route";
 import CreateRoute from "../../../../../route/create";
 import Path from "../request/path/create";

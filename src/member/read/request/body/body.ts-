@@ -1,0 +1,19 @@
+import User from "../../../../user/read/response/user/user";
+
+export default interface Member {
+
+    /**
+     * user id
+     */
+    user : User;
+
+    /**
+     * position
+     */
+    position : Position;
+
+    /**
+     * position
+     */
+    project : Project;
+}

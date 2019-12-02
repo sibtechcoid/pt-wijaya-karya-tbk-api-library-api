@@ -1,9 +1,8 @@
-import UpdatePosition from "../../../update/request/position/position";
-import Id from "../../../../../id/id";
-import Record from "../../../../../record/record";
+import BasePosition from "../../../../../position/read/response/body/body";
+import Access from "../../../access/access";
 
 
-export default interface Body extends UpdatePosition, Id, Record {
+export default interface Body extends BasePosition<Access[]> {
 
 
 }

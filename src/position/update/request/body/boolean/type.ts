@@ -4,7 +4,8 @@ import NameType from "../../../../../name/update/boolean/type";
 
 export default function Type<
     Access,
-    Extended extends Body<Access> = Body<Access>
+    Group,
+    Extended extends Body<Access, Group> = Body<Access, Group>
     >(
     value : any,
     access : (value) => value is Access

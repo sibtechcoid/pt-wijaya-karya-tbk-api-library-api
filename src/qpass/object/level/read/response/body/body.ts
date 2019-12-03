@@ -7,5 +7,5 @@ import Type from "../../../../../../internal/object/type/read/response/body/body
 
 export default interface Body extends Deactivate, Record, Id, Name, Abbreviation {
 
-    type : Omit<Type,'levels'>
+    type : Omit<Type,'level'>
 }

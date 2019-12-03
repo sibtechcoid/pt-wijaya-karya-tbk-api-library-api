@@ -7,5 +7,5 @@ import Level from "../../../../level/read/response/body/body";
 import Business from "../../../../business/read/response/body/body";
 export default interface Type extends Deactivate, Record, Id, Name, Abbreviation {
     business: null | Omit<Business, 'type'>[];
-    levels: null | Omit<Level, 'type'>[];
+    level: null | Omit<Level, 'type'>[];
 }

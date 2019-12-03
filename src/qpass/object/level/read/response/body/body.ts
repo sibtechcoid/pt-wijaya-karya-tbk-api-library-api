@@ -6,5 +6,5 @@ import Abbreviation from "../../../../../../abbreviation/create/abbreviation";
 
 export default interface Body extends Deactivate, Record, Id, Name, Abbreviation {
 
-    /*type : null|Omit<Type,'levels'>*/
+    // /*type : null|Omit<Type,'levels'>*/
 }

@@ -4,10 +4,17 @@ import TypeAccess from "../../../../access/boolean/type";
 import ArrayOf from "t-array/boolean/array-of";
 import EnumType from "t-enum/boolean/type";
 import Group from "../../../../group/group";
+import TypeName from "../../../../../../name/create/boolean/type";
+import TypeAbbreviation from "../../../../../../abbreviation/create/boolean/type";
 
 export default function Typez<Extended extends TypeInterface = TypeInterface>(value : any) : value is Extended {
 
-    if(!TypeBusiness<TypeInterface>(value)) {
+    if(!TypeName<Extended>(value)) {
+
+        return false;
+    }
+
+    if(!TypeAbbreviation(value)) {
 
         return false;
     }

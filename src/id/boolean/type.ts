@@ -15,4 +15,3 @@ export default function Type<Extension extends Id = Id>(value : any)  : value is
 
     return true;
 }
-

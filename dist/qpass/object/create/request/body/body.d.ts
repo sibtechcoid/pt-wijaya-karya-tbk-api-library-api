@@ -4,4 +4,5 @@ export default interface Body extends Name, Abbreviation {
     address: string;
     business: number;
     level: number;
+    type: number;
 }

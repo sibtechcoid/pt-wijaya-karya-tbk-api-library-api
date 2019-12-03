@@ -7,5 +7,5 @@ import Level from "../../../../level/read/response/level/level";
 
 export default interface Type extends Deactivate, Record, Id, Name, Abbreviation  {
 
-    levels : null|Level[]
+    levels : null|Omit<Level,'type'>[]
 }

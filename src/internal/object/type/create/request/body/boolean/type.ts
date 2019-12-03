@@ -1,4 +1,4 @@
-import TypeInterface from "../type";
+import TypeInterface from "../body";
 import NotNull from "t-object/boolean/type";
 import TypeName from "../../../../../../../name/create/boolean/type";
 import TypeAbbreviation from "../../../../../../../abbreviation/create/boolean/type";

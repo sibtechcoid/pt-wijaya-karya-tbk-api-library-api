@@ -4,8 +4,8 @@ var Status;
 (function (Status) {
     Status["WAITING"] = "WAITING";
     Status["REJECTED"] = "REJECTED";
-    Status["PROCESS"] = "PROCESS";
-    Status["FINISHED"] = "FINISHED";
+    Status["SUBMITTED"] = "SUBMITTED";
+    Status["DRAFT"] = "DRAFT";
 })(Status || (Status = {}));
 exports.default = Status;
 //# sourceMappingURL=status.js.map

@@ -17,6 +17,6 @@ export default interface Body  extends BaseObject<Business>  {
     // // TODO nullable?
     // wikaId : number|null;
    // business: null|Business;
-    level: null|Omit<Level,'type' >;
+    level: null|Omit<Level,'type'>;
     //type: null|Type;
 }

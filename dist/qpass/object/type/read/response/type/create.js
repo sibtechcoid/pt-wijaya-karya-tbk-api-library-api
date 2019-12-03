@@ -1,11 +1,20 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const create_1 = require("../../../../level/read/response/type/create");
-class Create extends create_1.default {
-    constructor(id, created, updated, name, abbreviation, levels, deactivated) {
-        super(id, created, updated, name, abbreviation, deactivated);
-        this.levels = levels;
-    }
-}
-exports.default = Create;
+// import Type from "./type";
+// import Level from "../level/level.ts-";
+// import LevelTypeCreate from "../../../../level/read/response/type/create";
+//
+// export default class Create extends LevelTypeCreate implements Type {
+//
+//     constructor(
+//         id : number,
+//         created : string,
+//         updated : string,
+//         name : string,
+//         abbreviation : string,
+//         public levels : null|Level[],
+//         deactivated : null|string
+//     ) {
+//
+//         super(id, created, updated, name, abbreviation, deactivated);
+//     }
+// }
 //# sourceMappingURL=create.js.map

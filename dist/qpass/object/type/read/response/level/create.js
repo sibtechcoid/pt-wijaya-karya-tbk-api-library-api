@@ -1,15 +1,16 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-class Create {
-    constructor(id, created, updated, name, abbreviation, deactivate, type) {
-        this.id = id;
-        this.created = created;
-        this.updated = updated;
-        this.name = name;
-        this.abbreviation = abbreviation;
-        this.deactivate = deactivate;
-        this.type = type;
-    }
-}
-exports.default = Create;
+// import Level from "./level.ts-";
+//
+// export default class Create implements Level {
+//
+//     constructor(
+//         public id : number,
+//         public created : string,
+//         public updated : string,
+//         public name : string,
+//         public abbreviation : string,
+//         public deactivate : null|string,
+//         public type : null,
+//     ) {
+//     }
+// }
 //# sourceMappingURL=create.js.map

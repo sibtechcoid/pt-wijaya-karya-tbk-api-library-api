@@ -7,7 +7,8 @@ import Schedule from "../../../../schedule/create/request/body/body";
 import Name from "../../../../name/create/name";
 import Abbreviation from "../../../../abbreviation/create/abbreviation";
 import Position from "../../../../position/read/response/body/body";
-export default interface Body<Group, P extends Omit<Position<any, Group>, 'access'>, M extends Omit<Member<any, Group, P>, 'access'>, O extends Object<Name & Abbreviation> = Object<Name & Abbreviation>> extends Record, BaseBody, Id, Schedule {
+export default interface Body<Action, Status, Group, P extends Omit<Position<any, Group>, 'access'>, M extends Omit<Member<Action, any, Group, P>, 'access'>, O extends Object<Name & Abbreviation> = Object<Name & Abbreviation>> extends Record, BaseBody, Id, Schedule {
+    status: Status;
     object: O;
     members: M[];
 }

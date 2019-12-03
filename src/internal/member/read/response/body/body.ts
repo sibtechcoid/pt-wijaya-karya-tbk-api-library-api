@@ -7,7 +7,7 @@ import Position from "../../../../position/read/response/body/body";
 import BaseMember from "../../../../../member/read/response/body/body";
 import Group from "../../../../position/group/group";
 
-export default interface Body extends BaseMember<Access[], Group, Position> {
+export default interface Body extends BaseMember<Action, Access[], Group, Position> {
 
     action : Action;
     actionDate : string|null;

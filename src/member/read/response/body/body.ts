@@ -6,8 +6,8 @@ import User from "../../../../user/read/response/user/user";
 import Position from "../../../../position/read/response/body/body";
 import Project from "../../../../project/read/response/body/body";
 
-export default interface Body<Access, Group, P extends Omit<Position<any, Group>, 'access'>> extends Record, Id {
-
+export default interface Body<Action, Access, Group, P extends Omit<Position<any, Group>, 'access'>> extends Record, Id {
+    action : Action;
     access : Access;
     position : P;
     // action : Action;

@@ -21,7 +21,7 @@ function Type(value) {
     if (!type_2.default(value.email)) {
         return false;
     }
-    if (!type_2.default(value.nip)) {
+    if (!type_2.default(value.password)) {
         return false;
     }
     return true;

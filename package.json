@@ -1,6 +1,6 @@
 {
   "name": "wika-aims-api-library",
-  "version": "0.93.202",
+  "version": "0.94.202",
   "description": "Typescript enum",
   "dependencies": {
     "@types/node": "^12.12.14",

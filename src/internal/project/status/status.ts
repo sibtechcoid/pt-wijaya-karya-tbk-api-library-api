@@ -1,4 +1,5 @@
 enum Status {
+    // not used
     WAITING = 'WAITING',
     REJECTED = 'REJECTED',
     SUBMITTED = 'SUBMITTED',

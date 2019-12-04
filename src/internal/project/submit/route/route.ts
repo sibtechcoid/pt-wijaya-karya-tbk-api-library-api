@@ -4,6 +4,6 @@ import Project from "../../create/request/body/body";
 import Validator from "../../../../validator/validator";
 import Id from "../../../../id/id";
 
-export default interface Route extends Path, Validator<undefined>, Method {
+export default interface Route extends Path, Validator<Id>, Method {
 
 }

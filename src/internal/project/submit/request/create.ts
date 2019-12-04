@@ -5,7 +5,7 @@ import Project from "../../create/request/body/body";
 import Id from "../../../../id/id";
 import Update from "../../../../method/update-create";
 
-export default function Create(types : Project & Id) : Request {
+export default function Create(types : Id) : Request {
 
-    return Object.assign(Update(), Path(), new CreatBody<Project & Id>(types))
+    return Object.assign(Update(), Path(), new CreatBody<Id>(types))
 }

@@ -4,6 +4,6 @@ import Project from "../../create/request/body/body";
 import Id from "../../../../id/id";
 import Method from "./method/method";
 
-export default interface Request extends Body<Project & Id>, Path, Method {
+export default interface Request extends Body<Id>, Path, Method {
 
 }

@@ -11,6 +11,6 @@ export default function Create () : Route {
 
     return CreateRoute(
         UpdateCreate(),
-        Path(), (value : any) : value is undefined => true
+        Path(), TypeId
     );
 }

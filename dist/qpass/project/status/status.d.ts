@@ -2,6 +2,10 @@ declare enum Status {
     WAITING = "WAITING",
     REJECTED = "REJECTED",
     /**
+     * publish state, after draft
+     */
+    PUBLISH = "PUBLISH",
+    /**
      * awal insert
      */
     SUBMITTED = "SUBMITTED",

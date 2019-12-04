@@ -2,8 +2,13 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var Status;
 (function (Status) {
+    // not used
     Status["WAITING"] = "WAITING";
     Status["REJECTED"] = "REJECTED";
+    /**
+     * publish state, after draft
+     */
+    Status["PUBLISH"] = "PUBLISH";
     /**
      * awal insert
      */

@@ -6,6 +6,10 @@ var Status;
     Status["WAITING"] = "WAITING";
     Status["REJECTED"] = "REJECTED";
     Status["SUBMITTED"] = "SUBMITTED";
+    /**
+     * publish state, after draft
+     */
+    Status["PUBLISH"] = "PUBLISH";
     Status["DRAFT"] = "DRAFT";
 })(Status || (Status = {}));
 exports.default = Status;

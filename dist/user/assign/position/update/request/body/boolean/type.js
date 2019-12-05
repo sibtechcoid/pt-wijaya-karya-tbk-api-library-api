@@ -6,7 +6,7 @@ function Type(value) {
     if (!type_2.default(value)) {
         return false;
     }
-    if (!type_1.default(value.access)) {
+    if (!type_1.default(value.position)) {
         return false;
     }
     if (!type_1.default(value.user)) {

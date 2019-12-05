@@ -1,5 +1,5 @@
 export default interface Body  {
 
-    access : number
+    position : number
     user : number;
 }

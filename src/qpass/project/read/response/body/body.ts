@@ -9,5 +9,5 @@ import Category from "../../../../../internal/project/category/category";
 
 export default interface Body extends BaseProject<Action, Status, Group, Position, Member, Object>  {
 
-    category : Category;
+    //category : Category;
 }

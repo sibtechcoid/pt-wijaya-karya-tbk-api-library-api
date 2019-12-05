@@ -3,5 +3,5 @@ import Status from "../../../status/status";
 
 export default interface Body extends Deactivate {
 
-    status : Status[]
+    status ? : Status[]
 }

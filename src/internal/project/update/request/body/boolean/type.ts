@@ -6,7 +6,7 @@ import TypeDateCompatible from "t-date/boolean/compatible";
 import TypeMember from "../../../../../../member/create/request/body/boolean/type";
 import Category from "../../../../category/category";
 import ArrayOf from "t-array/boolean/array-of";
-import InternalType from "../../../../../../qpass/project/update/request/body/boolean/type";
+import InternalType from "../../../../../../internal/project/update/request/body/boolean/type";
 
 export default function Type<Extended extends TypeInterface = TypeInterface>(value : any) : value is Extended {
 

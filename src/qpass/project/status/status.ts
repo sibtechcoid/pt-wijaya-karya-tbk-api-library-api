@@ -1,8 +1,11 @@
 enum Status {
-    WAITING = 'WAITING',
+
+    DRAFT = 'DRAFT',
+    SUBMITTED = 'SUBMITTED',
+
     REJECTED = 'REJECTED',
-    PROCESS = 'PROCESS',
-    FINISHED = 'FINISHED',
+    WAITING = 'WAITING',
+    APPROVE = 'APPROVE',
 }
 
 export default Status;

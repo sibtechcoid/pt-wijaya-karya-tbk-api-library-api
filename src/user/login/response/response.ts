@@ -1,6 +1,6 @@
 import Success from "../../../response/success";
 import NotFound from "../../../response/not-found";
-import User from "./user/user";
+import Body from "./body/body";
 
-type Response = NotFound<undefined>|Success<User>;
+type Response = NotFound<undefined>|Success<Body>;
 export default Response;

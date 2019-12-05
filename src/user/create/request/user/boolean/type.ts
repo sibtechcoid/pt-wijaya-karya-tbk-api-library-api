@@ -34,7 +34,7 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
         return false;
     }
 
-    if(!IsString(value.nip)) {
+    if(!IsString(value.password)) {
 
         return false;
     }

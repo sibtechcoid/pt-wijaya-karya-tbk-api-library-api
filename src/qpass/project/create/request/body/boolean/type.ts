@@ -5,6 +5,7 @@ import IsEnum from "t-enum/boolean/type";
 import TypeDateCompatible from "t-date/boolean/compatible";
 import TypeMember from "../../../../../../member/create/request/body/boolean/type";
 import ArrayOf from "t-array/boolean/array-of";
+import Status from "../../../../../../qpass/project/status/status";
 
 export default function Type<Extended extends TypeInterface = TypeInterface>(value : any) : value is Extended {
 
@@ -13,37 +14,42 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
         return false;
     }
 
-    if(value.object !== undefined){
+    if(!IsEnum(value.status, Status)) {
+
+        return false;
+    }
+
+    //if(value.object !== undefined){
 
         if(!ArrayOf(value.plan, TypeDateCompatible) || value.plan.length !== 2) {
 
             return false;
         }
-    }
+   // }
 
-    if(value.object !== undefined){
+    //if(value.object !== undefined){
 
         if(!ArrayOf(value.realize, TypeDateCompatible) || value.realize.length !== 2) {
 
             return false;
         }
-    }
+   // }
 
-    if(value.object !== undefined){
+    //if(value.object !== undefined){
 
         if(!IsNumber(value.object)) {
 
             return false;
         }
-    }
+   // }
 
-    if(value.object !== undefined){
+    //if(value.object !== undefined){
 
         if(!ArrayOf(value.members, TypeMember)) {
 
             return false;
         }
-    }
+   // }
 
     return true;
 }

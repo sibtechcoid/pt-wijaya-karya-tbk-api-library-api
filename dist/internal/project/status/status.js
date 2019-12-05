@@ -2,10 +2,11 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var Status;
 (function (Status) {
-    Status["WAITING"] = "WAITING";
+    Status["DRAFT"] = "DRAFT";
+    Status["SUBMITTED"] = "SUBMITTED";
     Status["REJECTED"] = "REJECTED";
-    Status["PROCESS"] = "PROCESS";
-    Status["FINISHED"] = "FINISHED";
+    Status["WAITING"] = "WAITING";
+    Status["APPROVE"] = "APPROVE";
 })(Status || (Status = {}));
 exports.default = Status;
 //# sourceMappingURL=status.js.map

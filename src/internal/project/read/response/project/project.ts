@@ -7,8 +7,10 @@ import Group from "../../../../position/group/group";
 import Action from "../../../../member/action/action";
 import Type from "../../../../../internal/object/type/read/response/body/body";
 import Business from "../../../../../internal/object/business/read/response/body/body";
+import Category from "../../../category/category";
 
 export default interface Project extends BaseProject<Action, Status, Group, Position, Member, Object>  {
 
+    category : Category;
     //status : Status;
 }

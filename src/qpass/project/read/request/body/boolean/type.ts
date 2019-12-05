@@ -11,9 +11,12 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
         return false;
     }
 
-    if(!ArrayOf(value.status, (value) : value is Status => IsEnum(value, Status))) {
+    if(value.status !== undefined) {
 
-        return false;
+        if(!ArrayOf(value.status, (value) : value is Status => IsEnum(value, Status))) {
+
+            return false;
+        }
     }
 
     return true;

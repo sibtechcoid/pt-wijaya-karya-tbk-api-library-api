@@ -8,8 +8,10 @@ function Type(value) {
     if (!type_2.default(value)) {
         return false;
     }
-    if (!array_of_1.default(value.status, (value) => type_1.default(value, status_1.default))) {
-        return false;
+    if (value.status !== undefined) {
+        if (!array_of_1.default(value.status, (value) => type_1.default(value, status_1.default))) {
+            return false;
+        }
     }
     return true;
 }

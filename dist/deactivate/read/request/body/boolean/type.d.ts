@@ -1,2 +1,2 @@
 import Body from "../body";
-export default function Type(value: any): value is Body;
+export default function Type<Extended extends Body = Body>(value: any): value is Extended;

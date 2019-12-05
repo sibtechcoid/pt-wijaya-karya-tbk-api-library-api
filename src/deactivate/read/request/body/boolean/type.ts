@@ -2,7 +2,7 @@ import NotNull from "t-object/boolean/type";
 import BooleanType from "t-boolean/type";
 import Body from "../body";
 
-export default function Type(value : any) : value is Body  {
+export default function Type<Extended extends Body = Body>(value : any) : value is Extended  {
 
     if(!NotNull<Body>(value)) {
 

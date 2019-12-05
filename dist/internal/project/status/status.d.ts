@@ -1,11 +1,8 @@
 declare enum Status {
-    WAITING = "WAITING",
-    REJECTED = "REJECTED",
+    DRAFT = "DRAFT",
     SUBMITTED = "SUBMITTED",
-    /**
-     * publish state, after draft
-     */
-    PUBLISH = "PUBLISH",
-    DRAFT = "DRAFT"
+    REJECTED = "REJECTED",
+    WAITING = "WAITING",
+    APPROVE = "APPROVE"
 }
 export default Status;

@@ -1,13 +1,11 @@
 enum Status {
-    // not used
-    WAITING = 'WAITING',
-    REJECTED = 'REJECTED',
-    SUBMITTED = 'SUBMITTED',
-    /**
-     * publish state, after draft
-     */
-    PUBLISH = 'PUBLISH',
+
     DRAFT = 'DRAFT',
+    SUBMITTED = 'SUBMITTED',
+
+    REJECTED = 'REJECTED',
+    WAITING = 'WAITING',
+    APPROVE = 'APPROVE',
 }
 
 export default Status;

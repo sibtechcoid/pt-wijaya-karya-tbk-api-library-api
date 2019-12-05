@@ -1,2 +1,6 @@
 import Id from "../id";
-export default function Type<Extension extends Id = Id>(value: any): value is Extension;
+interface Optional {
+    id?: number;
+}
+export default function Type<Extension extends Optional = Optional>(value: any): value is Omit<Extension, 'id'> & Id;
+export {};

@@ -9,6 +9,9 @@ function Type(value) {
     if (!finite_1.default(value.type)) {
         return false;
     }
+    if (!finite_1.default(value.jenisUsaha)) {
+        return false;
+    }
     return true;
 }
 exports.default = Type;

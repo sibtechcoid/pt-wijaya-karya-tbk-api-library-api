@@ -15,6 +15,11 @@ export default function Type(value : any) : value is Level {
         return false;
     }
 
+    if(!IsFinite(value.jenisUsaha)) {
+
+        return false;
+    }
+
     return true;
 
 }

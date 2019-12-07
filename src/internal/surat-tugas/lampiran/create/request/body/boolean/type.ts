@@ -10,14 +10,21 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
         return false;
     }
 
-    if(!IsNumber(parseInt(value.surat.toString()))) {
+    if(value.surat === undefined) {
 
         return false;
-    }
 
-    console.log('buffer--------');
-    console.log(value.data);
-    console.log('buffer--------');
+    } else {
+
+        if(!IsNumber(parseInt(value.surat.toString()))) {
+
+            return false;
+        }
+    }
+    //
+    // console.log('buffer--------');
+    // console.log(value.data);
+    // console.log('buffer--------');
     // if(!IsNumber(value.data)) {
     //
     //     return false;

@@ -1,5 +1,5 @@
-import CreateBody from "../../../create/request/body/body";
+export default interface Body {
 
-export default interface Body extends CreateBody {
-
+    plan : [Date|string, Date|string];
+    realize : null|[Date|string, Date|string];
 }

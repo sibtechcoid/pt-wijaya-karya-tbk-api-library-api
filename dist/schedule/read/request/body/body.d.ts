@@ -1,3 +1,4 @@
-import CreateBody from "../../../create/request/body/body";
-export default interface Body extends CreateBody {
+export default interface Body {
+    plan: [Date | string, Date | string];
+    realize: null | [Date | string, Date | string];
 }

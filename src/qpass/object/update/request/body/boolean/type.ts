@@ -44,6 +44,21 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
         }
     }
 
+    if(value.level !== undefined) {
+
+        if(!IsNumber(value.level)) {
+
+            return false;
+        }
+    }
+
+    // if(value.type !== undefined) {
+    //
+    //     if(!IsNumber(value.type)) {
+    //
+    //         return false;
+    //     }
+    // }
 
     if(value.business !== undefined) {
 

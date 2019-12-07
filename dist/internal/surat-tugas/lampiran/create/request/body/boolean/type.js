@@ -6,12 +6,18 @@ function Type(value) {
     if (!type_1.default(value)) {
         return false;
     }
-    if (!finite_1.default(parseInt(value.surat.toString()))) {
+    if (value.surat === undefined) {
         return false;
     }
-    console.log('buffer--------');
-    console.log(value.data);
-    console.log('buffer--------');
+    else {
+        if (!finite_1.default(parseInt(value.surat.toString()))) {
+            return false;
+        }
+    }
+    //
+    // console.log('buffer--------');
+    // console.log(value.data);
+    // console.log('buffer--------');
     // if(!IsNumber(value.data)) {
     //
     //     return false;

@@ -5,7 +5,7 @@ import Id from "../../../../../id/id";
 export default interface Body extends Name, Abbreviation, Id {
 
     address ?: string;
-
+    level ?: number;
     /**
      * type id
      */

@@ -29,6 +29,18 @@ function Type(value) {
             return false;
         }
     }
+    if (value.level !== undefined) {
+        if (!type_3.default(value.level)) {
+            return false;
+        }
+    }
+    // if(value.type !== undefined) {
+    //
+    //     if(!IsNumber(value.type)) {
+    //
+    //         return false;
+    //     }
+    // }
     if (value.business !== undefined) {
         if (!type_3.default(value.business)) {
             return false;

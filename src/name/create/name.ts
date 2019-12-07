@@ -1,6 +1,6 @@
 import UpdateName from "../update/name";
 
-export default interface Name extends UpdateName{
+export default interface Name extends UpdateName {
     /**
      * full name
      */

@@ -1,5 +1,5 @@
 import Body from "../../../update/request/body/body";
-export default interface User extends Omit<Body, 'id'> {
+export default interface User extends Body {
     name: string;
     password: string;
     user: string;

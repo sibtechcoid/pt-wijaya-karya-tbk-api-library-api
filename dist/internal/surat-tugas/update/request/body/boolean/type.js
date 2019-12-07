@@ -11,7 +11,7 @@ function Type(value) {
     if (!type_4.default(value)) {
         return false;
     }
-    if (value.project !== undefined) {
+    if (value.nomer !== undefined) {
         if (!type_2.default(value.nomer)) {
             return false;
         }

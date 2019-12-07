@@ -11,7 +11,7 @@ export default interface Body<Status, Access, Group, P extends Omit<Position<any
     access : Access;
     position : P;
     // action : Action;
-     statusDate : string|null;
+    statusDate : string|null;
     // project : Project,
     user : User
 

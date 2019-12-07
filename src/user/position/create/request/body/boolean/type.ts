@@ -1,5 +1,4 @@
 import TypeInterface from "../body";
-import TypeBusiness from "../../../../../../qpass/object/business/create/request/body/boolean/type";
 import TypeAccess from "../../../../../access/create/request/body/boolean/type";
 import TypeName from "../../../../../../name/create/boolean/type";
 import TypeAbbreviation from "../../../../../../abbreviation/create/boolean/type";

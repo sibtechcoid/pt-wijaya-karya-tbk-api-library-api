@@ -2,8 +2,6 @@ import TypeInterface from "../body";
 import NotNull from "t-object/boolean/type";
 import IsString from "t-string/boolean/type";
 import IsNumber from "t-number/boolean/type";
-import TypeName from "../../../../../../name/update/boolean/type";
-import TypeAbbreviation from "../../../../../../abbreviation/update/boolean/type";
 import TypeId from "../../../../../../id/boolean/type";
 
 export default function Type<Extended extends TypeInterface = TypeInterface>(value : any) : value is Extended {
@@ -18,9 +16,12 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
         return false;
     }
 
-    if(!TypeName(value)) {
+    if(value.project !== undefined) {
 
-        return false;
+        if(!IsString(value.nomer)) {
+
+            return false;
+        }
     }
 
     if(value.project !== undefined) {

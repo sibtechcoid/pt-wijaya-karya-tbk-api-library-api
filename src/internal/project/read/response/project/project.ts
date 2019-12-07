@@ -5,8 +5,6 @@ import Member from "../../../../member/read/response/body/body";
 import BaseProject from "../../../../../project/read/response/body/body";
 import Group from "../../../../position/group/group";
 import MemberStatus from "../../../../member/status/status";
-import Type from "../../../../../internal/object/type/read/response/body/body";
-import Business from "../../../../../internal/object/business/read/response/body/body";
 import Category from "../../../category/category";
 
 export default interface Project extends BaseProject<MemberStatus, ProjectStatus, Group, Position, Member, Object>  {

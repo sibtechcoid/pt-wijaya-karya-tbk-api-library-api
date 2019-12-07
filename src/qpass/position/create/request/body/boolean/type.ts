@@ -1,5 +1,4 @@
 import TypeInterface from "../body";
-import TypeBusiness from "../../../../../object/business/create/request/body/boolean/type";
 import TypeAccess from "../../../../access/boolean/type";
 import ArrayOf from "t-array/boolean/array-of";
 import EnumType from "t-enum/boolean/type";

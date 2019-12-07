@@ -3,7 +3,7 @@ import BaseBody from "../../../../deactivate/read/response/body/body";
 import Id from "../../../../id/id";
 import Object from "../../../../object/read/response/object/object";
 import Member from "../../../../member/read/response/body/body";
-import Schedule from "../../../../schedule/create/request/body/body";
+import Schedule from "../../../../schedule/read/response/body/body";
 import Name from "../../../../name/create/name";
 import Abbreviation from "../../../../abbreviation/create/abbreviation";
 import Position from "../../../../position/read/response/body/body";

@@ -9,8 +9,7 @@ import Group from "../../../../position/group/group";
 
 export default interface Body extends BaseMember<Action, Access[], Group, Position> {
 
-    action : Action;
-    actionDate : string|null;
+
     //access : Access[],
 }
 

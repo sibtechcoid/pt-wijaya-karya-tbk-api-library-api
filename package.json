@@ -1,6 +1,6 @@
 {
   "name": "wika-aims-api-library",
-  "version": "0.97.216",
+  "version": "0.97.222",
   "description": "Typescript enum",
   "dependencies": {
     "@types/node": "^12.12.14",
@@ -14,7 +14,7 @@
     "t-object": "git+https://github.com/dikac/t-object.git",
     "t-string": "git+https://github.com/dikac/t-string.git",
     "t-validatable": "git+https://github.com/dikac/t-validatable.git",
-    "typescript": "^3.6.4"
+    "typescript": "^3.7.3"
   },
   "devDependencies": {
     "@types/jasmine": "^3.5.0",

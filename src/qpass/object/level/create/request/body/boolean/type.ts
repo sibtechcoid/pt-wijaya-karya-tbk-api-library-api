@@ -10,10 +10,11 @@ export default function Type(value : any) : value is Level {
         return false;
     }
 
-    if(!IsFinite(value.type)) {
-
-        return false;
-    }
+    // to be deprecated
+    // if(!IsFinite(value.type)) {
+    //
+    //     return false;
+    // }
 
     if(!IsFinite(value.jenisUsaha)) {
 

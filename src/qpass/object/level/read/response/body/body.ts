@@ -9,5 +9,7 @@ import Business from "../../../../../../qpass/object/business/read/response/body
 export default interface Body extends Deactivate, Record, Id, Name, Abbreviation {
 
     jenisUsaha : Omit<Business,'level'>;
-    type : Omit<Type,'level'>
+
+    // tobe deprecated
+    type ?: Omit<Type,'level'>
 }

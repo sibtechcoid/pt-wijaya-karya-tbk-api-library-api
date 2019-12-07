@@ -9,14 +9,14 @@ import Abbreviation from "../../../../abbreviation/create/abbreviation";
 import Position from "../../../../position/read/response/body/body";
 
 export default interface Body<
-    Action,
-    Status,
+    MemberStatus,
+    ProjectStatus,
     Group,
     P extends Omit<Position<any, Group>, 'access'>,
-    M extends Omit<Member<Action, any, Group, P>, 'access'>,
+    M extends Omit<Member<MemberStatus, any, Group, P>, 'access'>,
     O extends Object<Name & Abbreviation> = Object<Name & Abbreviation>,
     > extends Record, BaseBody, Id, Schedule {
-    status : Status;
+    status : ProjectStatus;
     object : O;
     members : M[]
 }

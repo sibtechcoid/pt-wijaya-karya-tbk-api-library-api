@@ -1,13 +1,13 @@
 import Record from "../../../../../record/record";
 import Id from "../../../../../id/id";
-import Action from "../../../action/action";
+import Status from "../../../status/status";
 import Access from "../../../../position/access/access";
 import User from "../../../../../user/read/response/user/user";
 import Position from "../../../../position/read/response/body/body";
 import BaseMember from "../../../../../member/read/response/body/body";
 import Group from "../../../../position/group/group";
 
-export default interface Body extends BaseMember<Action, Access[], Group, Position> {
+export default interface Body extends BaseMember<Status, Access[], Group, Position> {
 
 
     //access : Access[],

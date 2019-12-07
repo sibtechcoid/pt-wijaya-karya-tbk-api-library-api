@@ -3,11 +3,11 @@ import Member from "../../../../member/read/response/body/body";
 import BaseProject from "../../../../../project/read/response/body/body";
 import Position from "../../../../../qpass/position/read/response/body/body";
 import Group from "../../../../position/group/group";
-import Status from "../../../status/status";
-import Action from "../../../../member/action/action";
+import ProjectStatus from "../../../status/status";
+import MemberStatus from "../../../../member/status/status";
 import Category from "../../../../../internal/project/category/category";
 
-export default interface Body extends BaseProject<Action, Status, Group, Position, Member, Object>  {
+export default interface Body extends BaseProject<MemberStatus, ProjectStatus, Group, Position, Member, Object>  {
 
     //category : Category;
 }

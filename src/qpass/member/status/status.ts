@@ -1,8 +1,8 @@
-enum Action {
+enum Status {
 
     REJECT = 'REJECT',
     APPROVE = 'APPROVE',
     WAITING = 'WAITING',
 }
 
-export default Action;
+export default Status;

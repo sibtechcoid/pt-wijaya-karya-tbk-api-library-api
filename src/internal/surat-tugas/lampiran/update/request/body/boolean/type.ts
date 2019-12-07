@@ -1,7 +1,7 @@
 import TypeInterface from "../body";
 import NotNull from "t-object/boolean/type";
 import IsString from "t-string/boolean/type";
-import IsNumber from "t-number/boolean/type";
+import IsNumber from "t-number/boolean/finite";
 import TypeId from "../../../../../../../id/boolean/type";
 
 export default function Type<Extended extends TypeInterface = TypeInterface>(value : any) : value is Extended {
@@ -18,7 +18,7 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
 
     if(value.surat !== undefined) {
 
-        if(!IsNumber(value.surat)) {
+        if(!IsNumber(parseInt(value.surat.toString()))) {
 
             return false;
         }

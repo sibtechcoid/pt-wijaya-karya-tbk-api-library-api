@@ -14,7 +14,7 @@ export default interface Body extends Record, Deactivate, Id {
     abbreviation : string|null;
     phone : string|null;
     email : string|null;
-    nip : string;
+    nip : string|null;
     active : boolean;
     positionWika : null|string;
     parentId : string|null;

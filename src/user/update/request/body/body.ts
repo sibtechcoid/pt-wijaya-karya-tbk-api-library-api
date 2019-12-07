@@ -9,4 +9,5 @@ export default interface Body extends Id {
     abbreviation    ?: string;
     phone           ?: string;
     email           ?: string;
+
 }

@@ -1,9 +1,9 @@
 import TypeInterface from "../body";
 import NotNull from "t-object/boolean/type";
 import IsNumber from "t-number/boolean/finite";
-import TypeDateCompatible from "t-date/boolean/compatible";
 import TypeMember from "../../../../../member/create/request/body/boolean/type";
 import ArrayOf from "t-array/boolean/array-of";
+import ScheduleType from "../../../../../schedule/update/request/body/boolean/type";
 
 export default function Type<Extended extends TypeInterface = TypeInterface>(value : any) : value is Extended {
 
@@ -12,20 +12,9 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
         return false;
     }
 
-    if(value.object !== undefined){
+    if(!ScheduleType(value)) {
 
-        if(!ArrayOf(value.plan, TypeDateCompatible) || value.plan.length !== 2) {
-
-            return false;
-        }
-    }
-
-    if(value.object !== undefined){
-
-        if(!ArrayOf(value.realize, TypeDateCompatible) || value.realize.length !== 2) {
-
-            return false;
-        }
+        return false;
     }
 
     if(value.object !== undefined){
@@ -36,7 +25,7 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
         }
     }
 
-    if(value.object !== undefined){
+    if(value.members !== undefined){
 
         if(!ArrayOf(value.members, TypeMember)) {
 

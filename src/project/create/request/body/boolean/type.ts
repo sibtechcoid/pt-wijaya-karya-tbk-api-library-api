@@ -1,9 +1,9 @@
 import Body from "../body";
 import NotNull from "t-object/boolean/type";
 import IsNumber from "t-number/boolean/finite";
-import TypeDateCompatible from "t-date/boolean/compatible";
 import TypeMember from "../../../../../member/create/request/body/boolean/type";
 import ArrayOf from "t-array/boolean/array-of";
+import ScheduleType from "../../../../../schedule/create/request/body/boolean/type";
 
 export default function Type<Extended extends Body = Body>(value : any) : value is Extended {
 
@@ -12,36 +12,19 @@ export default function Type<Extended extends Body = Body>(value : any) : value 
         return false;
     }
 
-    if(value.plan !== undefined){
+    if(!ScheduleType(value)) {
 
-        if(!ArrayOf(value.plan, TypeDateCompatible) || value.plan.length !== 2) {
-
-            return false;
-        }
+        return false;
     }
 
-    if(value.realize !== undefined){
+    if(!IsNumber(value.object)) {
 
-        if(!ArrayOf(value.realize, TypeDateCompatible) || value.realize.length !== 2) {
-
-            return false;
-        }
+        return false;
     }
 
-    if(value.object !== undefined){
+    if(!ArrayOf(value.members, TypeMember)) {
 
-        if(!IsNumber(value.object)) {
-
-            return false;
-        }
-    }
-
-    if(value.members !== undefined){
-
-        if(!ArrayOf(value.members, TypeMember)) {
-
-            return false;
-        }
+        return false;
     }
 
     return true;

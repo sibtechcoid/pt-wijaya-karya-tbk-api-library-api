@@ -1,16 +1,16 @@
-import Deactivate from "../../../../../deactivate/read/response/body/body";
 import Record from "../../../../../record/record";
 import Id from "../../../../../id/id";
-import Name from "../../../../../name/create/name";
+import Prosedur from "../../../prosedur/read/response/body/body";
+import Fungsi from "../../../fungsi/read/response/body/body";
+import Project from "../../../../project/read/response/body/body";
 
-export default interface Body extends Deactivate, Record, Id  {
 
-    // TODO FIX ALL FIELD
-    // SHOULD BE OBJECT
+export default interface Body extends Record, Id  {
 
-    project : number;
+    project : Project;
     selesai  : Date|string;
     mulai  : Date|string;
-    fungsi : number[];
-    prosedur : number[];
+    fungsi : Fungsi[];
+    prosedur : Prosedur;
+
 }

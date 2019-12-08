@@ -7,7 +7,7 @@ import Prosedur from "../../../prosedur/read/response/body/body";
 import Klausul from "../../../klausul/read/response/body/body";
 import ProsesBisnis from "../../../proses-bisnis/read/response/body/body";
 
-export default interface Body extends Deactivate, Record, Id  {
+export default interface Body extends  Record, Id  {
 
     project : Project;
     selesai  : Date|string;

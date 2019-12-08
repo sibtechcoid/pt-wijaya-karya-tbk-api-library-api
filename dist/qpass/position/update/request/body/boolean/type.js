@@ -7,7 +7,7 @@ const type_3 = require("../../../../../../abbreviation/update/boolean/type");
 const type_4 = require("t-object/boolean/type");
 const type_5 = require("t-enum/boolean/type");
 const group_1 = require("../../../../group/group");
-function Typez(value) {
+function Type(value) {
     if (!type_4.default(value)) {
         return false;
     }
@@ -29,5 +29,5 @@ function Typez(value) {
     }
     return true;
 }
-exports.default = Typez;
+exports.default = Type;
 //# sourceMappingURL=type.js.map

@@ -7,7 +7,7 @@ import NotNull from "t-object/boolean/type";
 import EnumType from "t-enum/boolean/type";
 import Group from "../../../../group/group";
 
-export default function Typez<Extended extends Body = Body>(value : any) : value is Extended {
+export default function Type<Extended extends Body = Body>(value : any) : value is Extended {
 
     if(!NotNull<Extended>(value)) {
 

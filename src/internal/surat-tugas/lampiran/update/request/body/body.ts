@@ -6,6 +6,7 @@ export default interface Body extends Id {
 
     /**
      * angular file buffer or node buffer
+     * type cannot be forced
      */
     data ?: any;
 }

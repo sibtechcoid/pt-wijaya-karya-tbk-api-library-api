@@ -1,5 +1,6 @@
 import Id from "../../../../../id/id";
 export default interface Body extends Id {
-    project: any;
+    project: any[];
     nomer: string;
+    attachment: any[];
 }

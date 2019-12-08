@@ -3,6 +3,7 @@ import NotNull from "t-object/boolean/type";
 import IsString from "t-string/boolean/type";
 import IsNumber from "t-number/boolean/type";
 import TypeId from "../../../../../../id/boolean/type";
+import ArrayOf from "t-array/boolean/array-of";
 
 export default function Type<Extended extends TypeInterface = TypeInterface>(value : any) : value is Extended {
 
@@ -26,7 +27,7 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
 
     if(value.project !== undefined) {
 
-        if(!IsNumber(value.project)) {
+        if(!ArrayOf(value.project, IsNumber)) {
 
             return false;
         }

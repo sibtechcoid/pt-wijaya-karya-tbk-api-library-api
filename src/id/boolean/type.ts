@@ -12,6 +12,7 @@ export default function Type<Extension extends Optional = Optional>(value : any)
 
         return false;
     }
+
     if(!TypeNumber(value.id)) {
 
         return false;

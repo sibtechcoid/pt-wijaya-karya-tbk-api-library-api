@@ -1,3 +1,4 @@
-import Read from "../../../../../../method/read";
-export default interface Method extends Read {
+import BaseMethod from "../../../../../../method/method";
+import Type from "../../../../../../method/type/type";
+export default interface Method extends BaseMethod<Type.GET> {
 }

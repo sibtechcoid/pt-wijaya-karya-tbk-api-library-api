@@ -1,6 +1,6 @@
 import Id from "../../../../../../id/id";
 
-export default interface Body extends Id {
+export default interface Body  {
 
     /**
      * DATA IS IMAGE BINARY

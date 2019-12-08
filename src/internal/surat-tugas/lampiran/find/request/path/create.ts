@@ -3,5 +3,5 @@ import Path from "./path";
 
 export default function Create() : Path {
 
-    return new CreatePath('/internal/surat-tugas/lampiran-find');
+    return new CreatePath('/internal/surat-tugas/lampiran');
 }

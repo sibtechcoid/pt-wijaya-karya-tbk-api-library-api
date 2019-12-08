@@ -1,4 +1,4 @@
 import Success from "../../../../response/success";
-import Object from "./body/body";
-declare type Response = Success<Object[]>;
+import Lampiran from "./body/body";
+declare type Response = Success<Lampiran[]>;
 export default Response;

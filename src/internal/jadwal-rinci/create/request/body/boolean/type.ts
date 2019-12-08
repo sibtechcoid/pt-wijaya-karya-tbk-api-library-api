@@ -1,6 +1,5 @@
 import TypeInterface from "../body";
 import NotNull from "t-object/boolean/type";
-import IsString from "t-string/boolean/type";
 import ArrayOf from "t-array/boolean/array-of";
 import TypeNumber from "t-number/boolean/type";
 import TypeDateCompatible from "t-date/boolean/compatible";

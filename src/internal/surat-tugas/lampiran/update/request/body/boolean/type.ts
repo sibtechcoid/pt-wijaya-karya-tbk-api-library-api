@@ -1,6 +1,5 @@
 import TypeInterface from "../body";
 import NotNull from "t-object/boolean/type";
-import IsString from "t-string/boolean/type";
 import IsNumber from "t-number/boolean/finite";
 import TypeId from "../../../../../../../id/boolean/type";
 

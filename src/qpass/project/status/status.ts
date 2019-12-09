@@ -1,5 +1,8 @@
 enum Status {
 
+    /**
+     * proses awal
+     */
     DRAFT = 'DRAFT',
     SUBMITTED = 'SUBMITTED',
 

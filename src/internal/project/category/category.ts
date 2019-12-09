@@ -1,7 +1,7 @@
 enum Category {
     INTERNAL = "INTERNAL",
     SMK3L = "SMK3L",
-    EXTENAL = "EXTENAL",
+    EXTERNAL = "EXTERNAL",
     SPI = "SPI",
 }
 

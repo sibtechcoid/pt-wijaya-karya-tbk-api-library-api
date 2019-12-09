@@ -14,6 +14,6 @@ export default interface Body extends  Record, Id  {
     mulai  : Date|string;
     fungsi : Fungsi[];
     prosesBisnis : ProsesBisnis;
-    klausul : Prosedur[];
-    prosedur : Klausul[];
+    klausul : Omit<Klausul,'auditProgram'>[];
+    prosedur : Omit<Prosedur,'prosesBisnis'>[];
 }

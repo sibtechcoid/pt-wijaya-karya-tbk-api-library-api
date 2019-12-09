@@ -1,6 +1,6 @@
 import BaseBody from "../../../../../body/body";
 import Path from "../../create/request/path/path";
-import Data from "../../create/request/body/body";
+import Data from "../request/body/body";
 import Id from "../../../../../id/id";
 import Method from "./method/method";
 

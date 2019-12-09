@@ -3,4 +3,5 @@ import Id from "../../../../../../id/id";
 
 export default interface Body extends Name, Id {
 
+    auditProgram ?: number;
 }

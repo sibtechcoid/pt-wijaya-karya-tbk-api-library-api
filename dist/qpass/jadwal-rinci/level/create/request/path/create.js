@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const create_1 = require("../../../../../../path/create");
 function Create() {
-    return new create_1.default('/internal/jadwal-rinci/level');
+    return new create_1.default('/qpass/jadwal-rinci/level');
 }
 exports.default = Create;
 //# sourceMappingURL=create.js.map

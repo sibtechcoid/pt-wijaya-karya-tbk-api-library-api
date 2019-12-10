@@ -3,5 +3,5 @@ import Path from "./path";
 
 export default function Create() : Path {
 
-    return new CreatePath('/internal/jadwal-rinci/level');
+    return new CreatePath('/qpass/jadwal-rinci/level');
 }

@@ -6,5 +6,5 @@ import AuditProgram from "../../../../audit-program/read/response/body/body";
 
 export default interface Body extends Deactivate, Record, Id, Name  {
 
-    auditProgram : AuditProgram;
+    auditProgram : Omit<AuditProgram,'klausul'>;
 }

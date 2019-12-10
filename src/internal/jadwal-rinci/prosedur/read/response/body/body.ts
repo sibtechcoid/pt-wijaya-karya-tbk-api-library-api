@@ -6,5 +6,5 @@ import ProsesBisnis from "../../../../proses-bisnis/read/response/body/body";
 
 export default interface Body extends Deactivate, Record, Id, Name  {
 
-    prosesBisnis : ProsesBisnis;
+    prosesBisnis: Omit<ProsesBisnis,'prosedur'>;
 }

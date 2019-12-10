@@ -1,17 +1,20 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const type_1 = require("../../../../../../../name/update/boolean/type");
-const type_2 = require("../../../../../../../abbreviation/update/boolean/type");
-const type_3 = require("../../../../../../../id/boolean/type");
+const type_1 = require("../../../../../type/update/request/body/boolean/type");
+const finite_1 = require("t-number/boolean/finite");
 function Type(value) {
-    if (!type_3.default(value)) {
-        return false;
-    }
     if (!type_1.default(value)) {
         return false;
     }
-    if (!type_2.default(value)) {
-        return false;
+    // to be deprecated
+    // if(!IsFinite(value.type)) {
+    //
+    //     return false;
+    // }
+    if (value.jenisUsaha !== undefined) {
+        if (!finite_1.default(value.jenisUsaha)) {
+            return false;
+        }
     }
     return true;
 }

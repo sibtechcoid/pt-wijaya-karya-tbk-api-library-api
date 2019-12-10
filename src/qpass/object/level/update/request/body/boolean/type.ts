@@ -1,24 +1,30 @@
-import TypeName from "../../../../../../../name/update/boolean/type";
-import TypeAbbreviation from "../../../../../../../abbreviation/update/boolean/type";
-import Body from "../body";
-import TypeId from "../../../../../../../id/boolean/type";
+import Level from "../body";
+import InternalType from "../../../../../type/update/request/body/boolean/type";
+import IsFinite from "t-number/boolean/finite";
 
-export default function Type<Extended extends Body = Body>(value : any) : value is Extended {
+export default function Type(value : any) : value is Level {
 
-    if(!TypeId<Extended>(value)) {
-
-        return false;
-    }
-
-    if(!TypeName(value)) {
+    if(!InternalType<Level>(value)) {
 
         return false;
     }
 
-    if(!TypeAbbreviation(value)) {
+    // to be deprecated
+    // if(!IsFinite(value.type)) {
+    //
+    //     return false;
+    // }
 
-        return false;
+    if(value.jenisUsaha !== undefined) {
+
+        if(!IsFinite(value.jenisUsaha)) {
+
+            return false;
+        }
     }
 
     return true;
+
 }
+
+

@@ -1,3 +1,4 @@
 import Request from './request';
 import Level from "../request/body/body";
-export default function Create(types: Level): Request;
+import Id from "../../../../../id/id";
+export default function Create(types: Level & Id): Request;

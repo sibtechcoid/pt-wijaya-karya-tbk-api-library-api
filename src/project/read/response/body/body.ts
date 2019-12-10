@@ -12,10 +12,13 @@ export default interface Body<
     MemberStatus,
     ProjectStatus,
     Group,
-    P extends Omit<Position<any, Group>, 'access'>,
+    P extends Position<any, Group>,
     M extends Omit<Member<MemberStatus, any, Group, P>, 'access'>,
-    O extends Object<Name & Abbreviation> = Object<Name & Abbreviation>,
-    > extends Record, BaseBody, Id, Schedule {
+    O extends Object<Name & Abbreviation> = Object<Name & Abbreviation>
+    > extends Record,
+    BaseBody,
+    Id,
+    Schedule {
     status : ProjectStatus;
     object : O;
     members : M[]

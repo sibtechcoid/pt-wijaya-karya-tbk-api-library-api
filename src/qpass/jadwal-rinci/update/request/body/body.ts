@@ -5,5 +5,5 @@ export default interface Body extends Id {
     selesai  ?: Date|string;
     mulai  ?: Date|string;
     fungsi ?: number[];
-    prosedur ?: number[];
+    prosedur ?: number;
 }

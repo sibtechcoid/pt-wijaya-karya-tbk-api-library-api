@@ -3,6 +3,6 @@ export default interface Body {
     selesai  : Date|string;
     mulai  : Date|string;
     fungsi : number[];
-    prosedur : number[];
+    prosedur : number;
 }
 

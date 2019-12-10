@@ -2,6 +2,9 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var Status;
 (function (Status) {
+    /**
+     * proses awal
+     */
     Status["DRAFT"] = "DRAFT";
     Status["SUBMITTED"] = "SUBMITTED";
     Status["REJECTED"] = "REJECTED";

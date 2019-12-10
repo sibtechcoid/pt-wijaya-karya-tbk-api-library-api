@@ -1,4 +1,7 @@
 declare enum Status {
+    /**
+     * proses awal
+     */
     DRAFT = "DRAFT",
     SUBMITTED = "SUBMITTED",
     REJECTED = "REJECTED",

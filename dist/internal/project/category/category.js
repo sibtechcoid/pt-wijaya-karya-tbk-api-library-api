@@ -4,7 +4,7 @@ var Category;
 (function (Category) {
     Category["INTERNAL"] = "INTERNAL";
     Category["SMK3L"] = "SMK3L";
-    Category["EXTENAL"] = "EXTENAL";
+    Category["EXTERNAL"] = "EXTERNAL";
     Category["SPI"] = "SPI";
 })(Category || (Category = {}));
 exports.default = Category;

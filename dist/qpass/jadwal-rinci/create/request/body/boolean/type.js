@@ -11,7 +11,7 @@ function Type(value) {
     if (!array_of_1.default(value.fungsi, type_2.default)) {
         return false;
     }
-    if (!array_of_1.default(value.prosedur, type_2.default)) {
+    if (!type_2.default(value.prosedur)) {
         return false;
     }
     if (!type_2.default(value.project)) {

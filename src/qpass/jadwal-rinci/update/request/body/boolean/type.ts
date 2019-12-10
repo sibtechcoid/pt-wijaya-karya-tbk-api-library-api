@@ -21,7 +21,7 @@ export default function Type<Extended extends Body = Body>(value : any) : value 
 
     if(value.prosedur !== undefined) {
 
-        if(!ArrayOf(value.prosedur, TypeNumber)) {
+        if(!TypeNumber(value.prosedur)) {
 
             return false;
         }

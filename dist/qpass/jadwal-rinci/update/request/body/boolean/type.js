@@ -14,7 +14,7 @@ function Type(value) {
         }
     }
     if (value.prosedur !== undefined) {
-        if (!array_of_1.default(value.prosedur, type_2.default)) {
+        if (!type_2.default(value.prosedur)) {
             return false;
         }
     }

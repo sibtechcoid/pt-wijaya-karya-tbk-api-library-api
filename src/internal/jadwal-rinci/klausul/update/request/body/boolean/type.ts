@@ -1,4 +1,3 @@
-import NotNull from "t-object/boolean/type";
 import TypeName from "../../../../../../../name/update/boolean/type";
 import Body from "../body";
 import TypeNumber from "t-number/boolean/type";

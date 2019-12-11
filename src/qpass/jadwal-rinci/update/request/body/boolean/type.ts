@@ -1,4 +1,3 @@
-import NotNull from "t-object/boolean/type";
 import Body from "../body";
 import ArrayOf from "t-array/boolean/array-of";
 import TypeNumber from "t-number/boolean/type";

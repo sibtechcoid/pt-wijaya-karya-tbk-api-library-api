@@ -3,7 +3,6 @@ import TypeAccess from "../../../../access/boolean/type";
 import ArrayOf from "t-array/boolean/array-of";
 import TypeName from "../../../../../../name/update/boolean/type";
 import TypeAbbreviation from "../../../../../../abbreviation/update/boolean/type";
-import NotNull from "t-object/boolean/type";
 import EnumType from "t-enum/boolean/type";
 import Group from "../../../../group/group";
 import TypeId from "../../../../../../id/boolean/type";

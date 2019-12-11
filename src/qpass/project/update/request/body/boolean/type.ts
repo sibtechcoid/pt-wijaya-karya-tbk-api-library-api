@@ -1,5 +1,4 @@
 import TypeInterface from "../body";
-import NotNull from "t-object/boolean/type";
 import IsNumber from "t-number/boolean/finite";
 import TypeMember from "../../../../../../member/create/request/body/boolean/type";
 import ArrayOf from "t-array/boolean/array-of";

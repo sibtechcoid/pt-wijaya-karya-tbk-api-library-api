@@ -1,7 +1,7 @@
 {
   "name": "wika-aims-api-library",
-  "version": "0.136.271",
-  "description": "Typescript enum",
+  "version": "0.136.272",
+  "description": "Wika API library",
   "dependencies": {
     "@types/node": "^12.12.14",
     "dist-mover": "git+https://github.com/dikac/dist-mover.git",

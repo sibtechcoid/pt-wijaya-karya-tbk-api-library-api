@@ -1,7 +1,7 @@
 import Request from './request';
 import CreatBody from "../../../../body/create";
 import Path from "../../create/request/path/create";
-import Body from "../request/body/body";
+import Body from "./body/body";
 import Update from "../../../../method/update-create";
 
 export default function Create(types : Body) : Request {

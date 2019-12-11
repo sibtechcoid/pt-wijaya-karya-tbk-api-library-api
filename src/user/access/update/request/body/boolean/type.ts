@@ -13,6 +13,7 @@ export default function Type(value : any) : value is Body {
     }
 
     if(!IdType(value)) {
+
         return false;
     }
 

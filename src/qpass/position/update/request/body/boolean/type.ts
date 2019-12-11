@@ -6,10 +6,11 @@ import TypeAbbreviation from "../../../../../../abbreviation/update/boolean/type
 import NotNull from "t-object/boolean/type";
 import EnumType from "t-enum/boolean/type";
 import Group from "../../../../group/group";
+import TypeId from "../../../../../../id/boolean/type";
 
 export default function Type<Extended extends Body = Body>(value : any) : value is Extended {
 
-    if(!NotNull<Extended>(value)) {
+    if(!TypeId<Extended>(value)) {
 
         return false;
     }

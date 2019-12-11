@@ -1,12 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const type_1 = require("t-object/boolean/type");
-const type_2 = require("../../../../../../../name/update/boolean/type");
+const type_1 = require("../../../../../../../name/update/boolean/type");
+const type_2 = require("../../../../../../../id/boolean/type");
 function Type(value) {
-    if (!type_1.default(value)) {
+    if (!type_2.default(value)) {
         return false;
     }
-    if (!type_2.default(value)) {
+    if (!type_1.default(value)) {
         return false;
     }
     return true;

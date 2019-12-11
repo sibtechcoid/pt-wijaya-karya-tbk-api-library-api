@@ -7,5 +7,5 @@ import Id from "../../../../id/id";
 
 export default function Create(text : Body) : Request {
 
-    return Object.assign(Update(), Path(), new CreatBody<Body & Id>(text))
+    return Object.assign(Update(), Path(), new CreatBody<Body>(text))
 }

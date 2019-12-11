@@ -24,11 +24,6 @@ function Type(value) {
             return false;
         }
     }
-    if (value.abbreviation !== undefined) {
-        if (!type_2.default(value.abbreviation)) {
-            return false;
-        }
-    }
     if (value.business !== undefined) {
         if (!type_3.default(value.business)) {
             return false;

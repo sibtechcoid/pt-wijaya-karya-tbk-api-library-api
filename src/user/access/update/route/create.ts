@@ -9,5 +9,5 @@ import TypeId from "../../../../id/boolean/type";
 
 export default function Create () : Route {
 
-    return CreateRoute(Read(), Path(), (access : any) : access is Body & Id => AccessType(access) && TypeId(access));
+    return CreateRoute(Read(), Path(), AccessType);
 }

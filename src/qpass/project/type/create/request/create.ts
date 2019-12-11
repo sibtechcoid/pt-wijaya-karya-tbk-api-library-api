@@ -2,7 +2,7 @@ import Request from './request';
 import CreatBody from "../../../../../body/create";
 import CreateCreate from "../../../../../method/create-create";
 import Path from "./path/create";
-import Type from "./type/type";
+import Type from "./body/body";
 
 export default function Create(type : Type) : Request {
 

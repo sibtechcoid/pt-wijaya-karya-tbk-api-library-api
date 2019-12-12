@@ -6,8 +6,10 @@ function Type(value) {
     if (!type_1.default(value)) {
         return false;
     }
-    if (!type_2.default(value.abbreviation)) {
-        return false;
+    if (value.abbreviation !== null) {
+        if (!type_2.default(value.abbreviation)) {
+            return false;
+        }
     }
     return true;
 }

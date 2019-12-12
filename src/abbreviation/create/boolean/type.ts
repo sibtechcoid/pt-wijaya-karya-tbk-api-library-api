@@ -9,9 +9,12 @@ export default function Type<Extended extends Abbreviation = Abbreviation>(value
         return false;
     }
 
-    if(!IsString(value.abbreviation)) {
+    if(value.abbreviation !== null) {
 
-        return false;
+        if(!IsString(value.abbreviation)) {
+
+            return false;
+        }
     }
 
     return true;

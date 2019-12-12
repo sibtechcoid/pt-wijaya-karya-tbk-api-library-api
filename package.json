@@ -1,11 +1,10 @@
 {
   "name": "wika-aims-api-library",
-  "version": "0.136.272",
+  "version": "0.136.273",
   "description": "Wika API library",
   "dependencies": {
-    "@types/node": "^12.12.14",
+    "@types/node": "^12.12.17",
     "dist-mover": "git+https://github.com/dikac/dist-mover.git",
-    "marketplace-dna": "^1.0.104",
     "npm-run-all": "^4.1.5",
     "t-array": "git+https://github.com/dikac/t-array.git",
     "t-boolean": "git+https://github.com/dikac/t-boolean.git",

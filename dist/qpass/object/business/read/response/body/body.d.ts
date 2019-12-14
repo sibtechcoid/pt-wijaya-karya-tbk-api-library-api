@@ -5,5 +5,5 @@ import Name from "../../../../../../name/create/name";
 import Abbreviation from "../../../../../../abbreviation/create/abbreviation";
 import Type from "../../../../type/read/response/body/body";
 export default interface Body extends Id, Record, Deactivate, Name, Abbreviation {
-    type: Omit<Type, 'business'>;
+    type: Omit<Type, 'business' | 'level'>;
 }

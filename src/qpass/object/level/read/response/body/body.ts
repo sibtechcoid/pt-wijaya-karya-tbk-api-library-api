@@ -11,5 +11,5 @@ export default interface Body extends Deactivate, Record, Id, Name, Abbreviation
     // tobe deprecated
     //jenisUsaha : Omit<Business,'level'>;
 
-    type : Omit<Type,'level'>
+    type : Omit<Type,'business'|'level'>
 }

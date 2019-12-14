@@ -1,6 +1,6 @@
 {
   "name": "wika-aims-api-library",
-  "version": "0.136.274",
+  "version": "0.136.275",
   "description": "Wika API library",
   "dependencies": {
     "@types/node": "^12.12.17",

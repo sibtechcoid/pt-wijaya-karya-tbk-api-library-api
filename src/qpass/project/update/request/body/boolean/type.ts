@@ -4,6 +4,8 @@ import TypeMember from "../../../../../../member/create/request/body/boolean/typ
 import ArrayOf from "t-array/boolean/array-of";
 import ScheduleType from "../../../../../../schedule/update/request/body/boolean/type";
 import TypeId from "../../../../../../id/boolean/type";
+import EnumType from "t-enum/boolean/type";
+import Status from "../../../../status/status";
 
 export default function Type<Extended extends TypeInterface = TypeInterface>(value : any) : value is Extended {
 
@@ -17,6 +19,15 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
         return false;
     }
 
+
+    if(value.status !== undefined){
+
+        if(!EnumType(value.status, Status)) {
+
+            return false;
+        }
+    }
+
     if(value.object !== undefined){
 
         if(!IsNumber(value.object)) {
@@ -25,7 +36,7 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
         }
     }
 
-    if(value.object !== undefined){
+    if(value.members !== undefined){
 
         if(!ArrayOf(value.members, TypeMember)) {
 

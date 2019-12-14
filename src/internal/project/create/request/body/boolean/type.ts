@@ -1,11 +1,23 @@
 import TypeInterface from "../body";
 import IsEnum from "t-enum/boolean/type";
 import Category from "../../../../category/category";
-import QpassProjectType from "../../../../../../qpass/project/create/request/body/boolean/type";
+import NotNull from "t-object/boolean/type";
+import ProjectType from "../../../../../../project/create/request/body/boolean/type";
+import Status from "../../../../status/status";
 
 export default function Type<Extended extends TypeInterface = TypeInterface>(value : any) : value is Extended {
 
-    if(!QpassProjectType<Extended>(value)) {
+    if(!NotNull<Extended>(value)) {
+
+        return false;
+    }
+
+    if(!ProjectType(value)) {
+
+        return false;
+    }
+
+    if(!IsEnum(value.status, Status)) {
 
         return false;
     }

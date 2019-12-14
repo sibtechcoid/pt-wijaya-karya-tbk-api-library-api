@@ -5,7 +5,7 @@ import Name from "../../../../../../name/create/name";
 import Abbreviation from "../../../../../../abbreviation/create/abbreviation";
 import Level from "../../../../level/read/response/body/body";
 import Business from "../../../../business/read/response/body/body";
-export default interface Type extends Deactivate, Record, Id, Name, Abbreviation {
-    business: null | Omit<Business, 'type'>[];
-    level: null | Omit<Level, 'type'>[];
+export default interface Body extends Deactivate, Record, Id, Name, Abbreviation {
+    business: Omit<Business, 'type'>[];
+    level: Omit<Level, 'type'>[];
 }

@@ -6,14 +6,15 @@ function Type(value) {
     if (!type_1.default(value)) {
         return false;
     }
-    // to be deprecated
-    // if(!IsFinite(value.type)) {
+    if (!finite_1.default(value.type)) {
+        return false;
+    }
+    //    to be deprecated
+    // if(!IsFinite(value.jenisUsaha)) {
     //
     //     return false;
     // }
-    if (!finite_1.default(value.jenisUsaha)) {
-        return false;
-    }
+    //
     return true;
 }
 exports.default = Type;

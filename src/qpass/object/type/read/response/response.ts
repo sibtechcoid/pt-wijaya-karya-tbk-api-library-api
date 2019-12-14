@@ -1,6 +1,6 @@
 
 import Success from "../../../../../response/success";
-import Type from "./type/type";
+import Body from "./body/body";
 
-type Response = Success<Type[]>;
+type Response = Success<Body[]>;
 export default Response;

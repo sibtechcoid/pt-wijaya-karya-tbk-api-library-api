@@ -1,5 +1,5 @@
 import TypeInterface from "../body";
-import TypeNumber from "t-number/boolean/type";
+import TypeNumber from "t-number/boolean/finite";
 import NotNull from "t-object/boolean/type";
 
 export default function Type<Extended extends TypeInterface = TypeInterface>(value : any) : value is Extended {

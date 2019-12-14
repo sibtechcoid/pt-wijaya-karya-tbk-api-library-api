@@ -3,5 +3,4 @@ import Abbreviation from "../../../../../../abbreviation/update/abbreviation";
 import Id from "../../../../../../id/id";
 export default interface Body extends Id, Name, Abbreviation {
     type?: number;
-    jenisUsaha?: number;
 }

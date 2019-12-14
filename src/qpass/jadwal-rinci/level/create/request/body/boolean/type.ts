@@ -1,6 +1,6 @@
 import TypeInterface from "../body";
 import TypeName from "../../../../../../../name/create/boolean/type";
-import TypeNumber from "t-number/boolean/type";
+import TypeNumber from "t-number/boolean/finite";
 import TypeEnum from "t-enum/boolean/type";
 import ContentType from "../../../../type/type";
 

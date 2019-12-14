@@ -6,16 +6,18 @@ function Type(value) {
     if (!type_1.default(value)) {
         return false;
     }
-    // to be deprecated
-    // if(!IsFinite(value.type)) {
-    //
-    //     return false;
-    // }
-    if (value.jenisUsaha !== undefined) {
-        if (!finite_1.default(value.jenisUsaha)) {
+    if (value.type !== undefined) {
+        if (!finite_1.default(value.type)) {
             return false;
         }
     }
+    // if(value.jenisUsaha !== undefined) {
+    //
+    //     if(!IsFinite(value.jenisUsaha)) {
+    //
+    //         return false;
+    //     }
+    // }
     return true;
 }
 exports.default = Type;

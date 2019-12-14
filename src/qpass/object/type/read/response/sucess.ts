@@ -1,8 +1,8 @@
 
 import BaseSuccess from "../../../../../response/success";
-import Type from "./type/type";
+import Body from "./body/body";
 
 
-export default interface Success extends BaseSuccess<Type[]> {
+export default interface Success extends BaseSuccess<Body[]> {
 
 }

@@ -1,5 +1,5 @@
 import TypeObject from "t-object/boolean/type";
-import TypeNumber from "t-number/boolean/type";
+import TypeNumber from "t-number/boolean/finite";
 import Id from "../../../../../../../id/id";
 import StringType from "t-string/boolean/type";
 

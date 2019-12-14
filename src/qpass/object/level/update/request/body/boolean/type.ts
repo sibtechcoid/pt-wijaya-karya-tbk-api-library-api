@@ -9,19 +9,21 @@ export default function Type(value : any) : value is Level {
         return false;
     }
 
-    // to be deprecated
-    // if(!IsFinite(value.type)) {
-    //
-    //     return false;
-    // }
+    if(value.type !== undefined) {
 
-    if(value.jenisUsaha !== undefined) {
-
-        if(!IsFinite(value.jenisUsaha)) {
+        if(!IsFinite(value.type)) {
 
             return false;
         }
     }
+
+    // if(value.jenisUsaha !== undefined) {
+    //
+    //     if(!IsFinite(value.jenisUsaha)) {
+    //
+    //         return false;
+    //     }
+    // }
 
     return true;
 

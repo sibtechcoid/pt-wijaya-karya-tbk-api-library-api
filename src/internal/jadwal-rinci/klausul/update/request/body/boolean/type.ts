@@ -1,6 +1,6 @@
 import TypeName from "../../../../../../../name/update/boolean/type";
 import Body from "../body";
-import TypeNumber from "t-number/boolean/type";
+import TypeNumber from "t-number/boolean/finite";
 import TypeId from "../../../../../../../id/boolean/type";
 
 export default function Type<Extended extends Body = Body>(value : any) : value is Extended {

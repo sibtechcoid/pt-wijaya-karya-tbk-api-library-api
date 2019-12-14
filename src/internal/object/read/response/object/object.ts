@@ -4,7 +4,5 @@ import Business from "../../../business/read/response/body/body";
 
 export default interface Object extends BaseObject<Omit<Type,'business'>, Omit<Business,'type'>> {
 
-    name: string;
-    abbreviation: string;
    // type: null|Type;
 }

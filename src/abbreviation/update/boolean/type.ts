@@ -12,7 +12,7 @@ export default function Type<Extended extends Abbreviation = Abbreviation>(value
 
     if(value.abbreviation !== undefined) {
 
-        if(!IsString(value.abbreviation) || !IsNull(value.abbreviation)) {
+        if(!(IsString(value.abbreviation) || IsNull(value.abbreviation))) {
 
             return false;
         }

@@ -8,7 +8,7 @@ function Type(value) {
         return false;
     }
     if (value.abbreviation !== undefined) {
-        if (!type_2.default(value.abbreviation) || !type_3.default(value.abbreviation)) {
+        if (!(type_2.default(value.abbreviation) || type_3.default(value.abbreviation))) {
             return false;
         }
     }

@@ -1,6 +1,6 @@
-import Body from "../../../../body/body";
+import BaseBody from "../../../../body/body";
 import Path from "./path/path";
-import Id from "../../../../id/id";
+import Body from "./body/body";
 import Method from "./method/method";
-export default interface Request extends Body<Id>, Path, Method {
+export default interface Request extends BaseBody<Body>, Path, Method {
 }

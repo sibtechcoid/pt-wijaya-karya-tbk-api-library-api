@@ -1,6 +1,6 @@
-import Id from "../../../../../id/id";
+import Accept from "../../../accept/request/body/body";
 
-export default interface Body extends Id {
+export default interface Body extends Accept {
 
     alasan : string;
 }

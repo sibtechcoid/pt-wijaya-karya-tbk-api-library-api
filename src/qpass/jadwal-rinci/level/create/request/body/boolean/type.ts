@@ -4,7 +4,7 @@ import TypeNumber from "t-number/boolean/finite";
 import TypeEnum from "t-enum/boolean/type";
 import ContentType from "../../../../type/type";
 
-export default function Typez<Extended extends TypeInterface = TypeInterface>(value : any) : value is Extended {
+export default function Type<Extended extends TypeInterface = TypeInterface>(value : any) : value is Extended {
 
     if(!TypeName<Extended>(value)) {
 

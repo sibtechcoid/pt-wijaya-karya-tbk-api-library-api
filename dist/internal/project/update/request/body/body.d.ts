@@ -1,11 +1,8 @@
 import Member from "../../../../../member/create/request/body/body";
 import Category from "../../../category/category";
-import Schedule from "../../../../../schedule/update/request/body/body";
-import Id from "../../../../../id/id";
 import Status from "../../../status/status";
-export default interface Body extends Schedule, Id {
+import TypeInterface from "../../../../../project/update/request/body/body";
+export default interface Body extends TypeInterface<Member> {
     status?: Status;
-    object?: number;
-    members?: Member[];
     category?: Category;
 }

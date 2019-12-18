@@ -1,6 +1,6 @@
 {
   "name": "wika-aims-api-library",
-  "version": "0.148.282",
+  "version": "0.148.283",
   "description": "Wika API library",
   "dependencies": {
     "@types/node": "^12.12.17",
@@ -8,7 +8,7 @@
     "npm-run-all": "^4.1.5",
     "t-array": "git+https://github.com/dikac/t-array.git",
     "t-boolean": "git+https://github.com/dikac/t-boolean.git",
-    "t-date": "git+https://github.com/dikac/t-date.git",
+    "t-date": "^0.7.10",
     "t-enum": "git+https://github.com/dikac/t-enum.git",
     "t-null": "git+https://github.com/dikac/t-null.git",
     "t-number": "git+https://github.com/dikac/t-number.git",

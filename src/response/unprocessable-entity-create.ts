@@ -5,8 +5,8 @@ export default class UnprocessableEntityCreate<Body> implements UnprocessableEnt
     public code : 422 = 422;
 
     constructor(
+        public body : Body,
         public message : string  = 'Unprocessable Entity',
-        public body : Body
     ) {
 
     }

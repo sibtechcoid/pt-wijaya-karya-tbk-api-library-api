@@ -1,4 +1,5 @@
 export default interface Body {
+    phone?: string;
     /**
      * user id
      */

@@ -5,11 +5,6 @@ import TypeId from "../../../../../../id/boolean/type";
 
 export default function Type<Extended extends TypeInterface = TypeInterface>(value : any) : value is Extended {
 
-    if(!NotNull<Extended>(value)) {
-
-        return false;
-    }
-
     if(!TypeId<Extended>(value)) {
 
         return false;

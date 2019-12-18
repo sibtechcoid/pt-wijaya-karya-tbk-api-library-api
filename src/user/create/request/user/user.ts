@@ -1,11 +1,9 @@
-import Body from "../../../update/request/body/body";
-
-export default interface User extends Body {
+export default interface User {
 
     name            : string;
     password        : string;
     user            : string;
     abbreviation    : string;
-    phone           : string;
-    email           : string;
+    phone           : null|string;
+    email           : null|string;
 }

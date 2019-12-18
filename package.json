@@ -15,7 +15,8 @@
     "t-object": "git+https://github.com/dikac/t-object.git",
     "t-string": "git+https://github.com/dikac/t-string.git",
     "t-validatable": "git+https://github.com/dikac/t-validatable.git",
-    "typescript": "^3.7.3"
+    "typescript": "^3.7.3",
+    "utility-types": "^3.10.0"
   },
   "devDependencies": {
     "@types/jasmine": "^3.5.0",

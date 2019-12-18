@@ -1,11 +1,6 @@
 // no id, use header bearer
-export default interface Body  {
+import User from "../../../create/request/user/user";
 
-    name            ?: string;
-    password        ?: string;
-    user            ?: string;
-    abbreviation    ?: string;
-    phone           ?: string;
-    email           ?: string;
+export default interface Body extends Partial<User> {
 
 }

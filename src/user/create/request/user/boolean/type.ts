@@ -24,12 +24,12 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
         return false;
     }
 
-    if(!IsString(value.phone)) {
+    if(!IsString(value.phone) && value.phone !== null) {
 
         return false;
     }
 
-    if(!IsString(value.email)) {
+    if(!IsString(value.email) && value.email !== null) {
 
         return false;
     }

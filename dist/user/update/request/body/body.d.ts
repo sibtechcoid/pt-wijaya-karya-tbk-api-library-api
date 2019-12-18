@@ -1,8 +1,3 @@
-export default interface Body {
-    name?: string;
-    password?: string;
-    user?: string;
-    abbreviation?: string;
-    phone?: string;
-    email?: string;
+import User from "../../../create/request/user/user";
+export default interface Body extends Partial<User> {
 }

@@ -35,7 +35,7 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
 
     if(value.phone !== undefined) {
 
-        if(!IsString(value.phone)) {
+        if(!IsString(value.phone) && value.phone !== null) {
 
             return false;
         }
@@ -43,7 +43,7 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
 
     if(value.email !== undefined) {
 
-        if(!IsString(value.email)) {
+        if(!IsString(value.email) && value.email !== null) {
 
             return false;
         }

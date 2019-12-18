@@ -15,10 +15,10 @@ function Type(value) {
     if (!type_2.default(value.abbreviation)) {
         return false;
     }
-    if (!type_2.default(value.phone)) {
+    if (!type_2.default(value.phone) && value.phone !== null) {
         return false;
     }
-    if (!type_2.default(value.email)) {
+    if (!type_2.default(value.email) && value.email !== null) {
         return false;
     }
     if (!type_2.default(value.password)) {

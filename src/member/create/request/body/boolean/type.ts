@@ -12,7 +12,7 @@ export default function Type<Extended extends Body = Body>(value : any) : value 
 
     if(value.phone !== undefined) {
 
-        if(!IsString(value.phone)) {
+        if(!IsString(value.phone) && value.phone !== null) {
 
             return false;
         }

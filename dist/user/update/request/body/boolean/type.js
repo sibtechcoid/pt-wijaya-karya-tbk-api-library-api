@@ -22,12 +22,12 @@ function Type(value) {
         }
     }
     if (value.phone !== undefined) {
-        if (!type_2.default(value.phone)) {
+        if (!type_2.default(value.phone) && value.phone !== null) {
             return false;
         }
     }
     if (value.email !== undefined) {
-        if (!type_2.default(value.email)) {
+        if (!type_2.default(value.email) && value.email !== null) {
             return false;
         }
     }

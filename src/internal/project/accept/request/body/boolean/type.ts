@@ -1,15 +1,15 @@
 import TypeInterface from "../../body/body";
-import IsString from "t-string/boolean/type";
-import AcceptType from "../../../../accept/request/body/boolean/type";
+import NotNull from "t-object/boolean/type";
+import TypeNumber from "t-number/boolean/finite";
 
 export default function Type<Extended extends TypeInterface = TypeInterface>(value : any) : value is Extended {
 
-    if(!AcceptType<Extended>(value)) {
+    if(!NotNull<Extended>(value)) {
 
         return false;
     }
 
-    if(!IsString(value.alasan)) {
+    if(!TypeNumber(value.project)) {
 
         return false;
     }

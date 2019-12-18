@@ -1,3 +1,3 @@
 import Request from './request';
-import Id from "../../../../id/id";
-export default function Create(types: Id): Request;
+import Body from "./body/body";
+export default function Create(types: Body): Request;

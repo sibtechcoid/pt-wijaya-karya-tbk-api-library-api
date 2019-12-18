@@ -1,15 +1,9 @@
 import TypeInterface from "../../body/body";
-import NotNull from "t-object/boolean/type";
-import TypeNumber from "t-number/boolean/finite";
+import TypeId from "../../../../../../id/boolean/type";
 
 export default function Type<Extended extends TypeInterface = TypeInterface>(value : any) : value is Extended {
 
-    if(!NotNull<Extended>(value)) {
-
-        return false;
-    }
-
-    if(!TypeNumber(value.project)) {
+    if(!TypeId<Extended>(value)) {
 
         return false;
     }

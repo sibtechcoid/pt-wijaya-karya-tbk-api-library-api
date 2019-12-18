@@ -1,6 +1,3 @@
-export default interface Abbreviation {
-    /**
-     * abbreviation, initial, or short version of name
-     */
-    abbreviation?: string | null;
+import AbbreviationCreate from "../create/abbreviation";
+export default interface Abbreviation extends Partial<AbbreviationCreate> {
 }

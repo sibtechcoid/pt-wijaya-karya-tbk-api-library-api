@@ -10,9 +10,4 @@ export default interface Body {
      * position
      */
     position : number;
-
-//     /**
-//      * project
-//      */
-//     project : number;
 }

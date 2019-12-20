@@ -28,10 +28,6 @@ export default function Type<Extended extends Body = Body>(value : any) : value 
         return false;
     }
 
-    // if(!IsNumber(value.project)) {
-    //
-    //     return false;
-    // }
 
     return true;
 }

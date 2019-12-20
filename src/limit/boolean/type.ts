@@ -1,7 +1,6 @@
 import NotNull from "t-object/boolean/type";
 import Limit from "../limit";
-import Finite from "t-number/boolean/finite";
-import Infinite from "t-number/boolean/infinite";
+import LimitType from "../range/boolean/type";
 
 export default function Type(value : any) : value is Limit {
 
@@ -10,15 +9,12 @@ export default function Type(value : any) : value is Limit {
         return false;
     }
 
-    if(!Finite(value.page)) {
+    if(!value.limit !== undefined) {
 
-        return false;
+        if(!LimitType(value)) {
+
+            return false;
+        }
     }
-
-    if(!Infinite(value.amount) && !Finite(value.page)) {
-
-        return false;
-    }
-
     return true;
 }

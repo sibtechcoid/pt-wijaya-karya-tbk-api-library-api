@@ -4,5 +4,5 @@ import RequestRoute from "../../../../../request/request-route";
 
 describe('qpass/object/business/create request', () => {
 
-    RequestRoute(Request, Route(),{name:'name', abbreviation:'abbreviation'});
+    RequestRoute(Request, Route(),{type:0, name:'name', abbreviation:'abbreviation'});
 });

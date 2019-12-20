@@ -1,5 +1,6 @@
-import Type from "../../../../../../../dist/internal/project/create/request/project/boolean/type";
-import Category from "../../../../../../../dist/internal/project/create/request/category/category";
+import Type from "../../../../../../../dist/internal/project/create/request/body/boolean/type";
+import Category from "../../../../../../../dist/internal/project/category/category";
+import Status from "../../../../../../../dist/internal/project/status/status";
 
 it("force console log", () => { spyOn(console, 'log').and.callThrough();});
 
@@ -15,7 +16,8 @@ describe('project request body', () => {
                 {position:  33, user:  44},
                 {position:  34, user:  45},
             ],
-            category: Category.EXTENAL,
+            category: Category.EXTERNAL,
+            status: Status.SUBMITTED,
         })).toBe(true)
     });
 

@@ -1,14 +1,15 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const type_1 = require("t-object/boolean/type");
-const type_2 = require("../range/boolean/type");
-function Type(value) {
+function Type(value, entity) {
     if (!type_1.default(value)) {
         return false;
     }
-    if (!value.limit !== undefined) {
-        if (!type_2.default(value)) {
-            return false;
+    if (value.sort !== undefined) {
+        for (let property in value.sort) {
+            if (!(property in entity)) {
+                return false;
+            }
         }
     }
     return true;

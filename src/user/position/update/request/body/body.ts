@@ -5,5 +5,5 @@ import Id from "../../../../../id/id";
 
 export default interface Body extends Id, Abbreviation, Name {
 
-    access ?: Access[];
+    access ?: Access;
 }

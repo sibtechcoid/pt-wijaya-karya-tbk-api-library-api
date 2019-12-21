@@ -4,12 +4,8 @@ const type_1 = require("../../../../qpass/boolean/type");
 const type_2 = require("../../../../internal/boolean/type");
 const type_3 = require("t-object/boolean/type");
 const array_of_1 = require("t-array/boolean/array-of");
-const type_4 = require("../../../../../../id/boolean/type");
 function Type(value) {
     if (!type_3.default(value)) {
-        return false;
-    }
-    if (!type_4.default(value)) {
         return false;
     }
     if (value.qpass !== undefined) {

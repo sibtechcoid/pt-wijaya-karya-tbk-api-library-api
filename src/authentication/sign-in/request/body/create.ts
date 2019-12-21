@@ -1,7 +1,7 @@
-import Login from "./login";
+import Body from "./body";
 
 
-export default class Create implements Login{
+export default class Create implements Body{
 
     constructor(
         public username : string,

@@ -1,10 +1,10 @@
 import NotNull from "t-object/boolean/type";
 import TypeString from "t-string/boolean/type";
-import Login from "../login";
+import Body from "../body";
 
-export default function Type(value : any) : value is Login {
+export default function Type(value : any) : value is Body {
 
-    if(!NotNull<Login>(value)) {
+    if(!NotNull<Body>(value)) {
 
         return false;
     }

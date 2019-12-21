@@ -2,9 +2,9 @@ import Request from './request';
 import CreatBody from "../../../body/create";
 import CreateCreate from "../../../method/create-create";
 import Path from "./path/create";
-import Login from "./login/login";
+import Body from "./body/body";
 
-export default function Create(login : Login) : Request {
+export default function Create(login : Body) : Request {
 
-    return Object.assign(CreateCreate(), Path(), new CreatBody<Login>(login))
+    return Object.assign(CreateCreate(), Path(), new CreatBody<Body>(login))
 }

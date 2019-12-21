@@ -1,18 +1,12 @@
 import Body from "../body";
 import TypeQpass from "../../../../qpass/boolean/type";
 import TypeInternal from "../../../../internal/boolean/type";
-import NotNull from "t-object/boolean/type";
+import TypeObject from "t-object/boolean/type";
 import ArrayOf from "t-array/boolean/array-of";
-import IdType from "../../../../../../id/boolean/type";
 
 export default function Type(value : any) : value is Body {
 
-    if(!NotNull<Body>(value)) {
-
-        return false;
-    }
-
-    if(!IdType(value)) {
+    if(!TypeObject<Body>(value)) {
 
         return false;
     }

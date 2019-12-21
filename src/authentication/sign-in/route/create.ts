@@ -1,5 +1,5 @@
 import CreateCreate from "../../../method/create-create";
-import Type from "../request/login/boolean/type";
+import Type from "../request/body/boolean/type";
 import Route from "./route";
 import Path from "../request/path/create";
 import CreateRoute from "../../../route/create";

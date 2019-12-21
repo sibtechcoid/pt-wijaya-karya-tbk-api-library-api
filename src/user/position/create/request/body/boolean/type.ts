@@ -1,7 +1,7 @@
 import TypeInterface from "../body";
-//import TypeAccess from "../../../../../access/create/request/body/boolean/type";
 import TypeName from "../../../../../../name/create/boolean/type";
 import TypeAbbreviation from "../../../../../../abbreviation/create/boolean/type";
+import TypeAccess from "../../../../../access/create/request/body/boolean/type";
 
 export default function Type<Extended extends TypeInterface = TypeInterface>(value : any) : value is Extended {
 
@@ -15,10 +15,10 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
         return false;
     }
 
-    // if(!TypeAccess(value.access)) {
-    //
-    //     return false;
-    // }
+    if(!TypeAccess(value.access)) {
+
+        return false;
+    }
 
     return true;
 }

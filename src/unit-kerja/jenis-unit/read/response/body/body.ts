@@ -8,6 +8,6 @@ import JenisUsaha from "../../../../jenis-usaha/read/response/body/body";
 
 export default interface Body extends Deactivate, Record, Id, Name, Abbreviation  {
 
-    jenisUsaha : Omit<JenisUsaha,'type'>[]
-    levelUsaha : Omit<Level,'type'>[]
+    jenisUsaha : Omit<JenisUsaha,'jenisUnit'>[]
+    levelUsaha : Omit<Level,'jenisUnit'>[]
 }

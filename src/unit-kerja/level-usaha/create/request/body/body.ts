@@ -3,6 +3,6 @@ import Abbreviation from "../../../../../abbreviation/create/abbreviation";
 
 export default interface Body extends Name, Abbreviation {
 
-    jenisUsaha : number;
+    jenisUnit : number;
     //jenisUsaha : number;
 }

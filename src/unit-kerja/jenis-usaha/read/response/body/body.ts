@@ -7,5 +7,5 @@ import JenisUnit from "../../../../jenis-unit/read/response/body/body";
 
 export default interface Body extends Id, Record, Deactivate, Name, Abbreviation {
 
-    jenisUnit : Omit<JenisUnit, 'levelUsaha'|'levelUsaha'>
+    jenisUnit : Omit<JenisUnit, 'jenisUsaha'|'levelUsaha'>
 }

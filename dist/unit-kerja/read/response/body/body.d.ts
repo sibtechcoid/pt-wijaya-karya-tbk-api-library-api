@@ -8,6 +8,6 @@ import Name from "../../../../name/create/name";
 import Abbreviation from "../../../../abbreviation/create/abbreviation";
 export default interface Body extends Record, Deactivate, Id, Name, Abbreviation {
     jenisUsaha: null | JenisUsaha;
-    levelUsaha: null | Omit<LevelUsaha, 'type'>;
+    levelUsaha: null | Omit<LevelUsaha, 'jenisUsaha'>;
     jenisUnit: null | JenisUnit;
 }

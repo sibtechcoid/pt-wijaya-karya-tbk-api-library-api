@@ -3,8 +3,8 @@ declare enum Status {
      * proses awal
      */
     DRAFT = "DRAFT",
-    SUBMIT = "SUBMIT",
-    REJECT = "REJECT",
+    SUBMITTED = "SUBMITTED",
+    REJECTED = "REJECTED",
     WAITING = "WAITING",
     APPROVE = "APPROVE"
 }

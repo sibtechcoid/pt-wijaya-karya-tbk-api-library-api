@@ -16,6 +16,6 @@ export default interface Body extends Record, Deactivate, Id, Name, Abbreviation
     // // TODO nullable?
     // wikaId : number|null;
     jenisUsaha  : null|JenisUsaha;
-    levelUsaha  : null|Omit<LevelUsaha,'type'>;
+    levelUsaha  : null|Omit<LevelUsaha,'jenisUsaha'>;
     jenisUnit   : null|JenisUnit;
 }

@@ -7,7 +7,8 @@ import Id from "../../../../id/id";
 import Name from "../../../../name/create/name";
 import Abbreviation from "../../../../abbreviation/create/abbreviation";
 export default interface Body extends Record, Deactivate, Id, Name, Abbreviation {
-    jenisUsaha: null | JenisUsaha;
-    levelUsaha: null | Omit<LevelUsaha, 'jenisUsaha'>;
-    jenisUnit: null | JenisUnit;
+    address: null | string;
+    jenisUsaha: null | Omit<JenisUsaha, 'jenisUnit'>;
+    levelUsaha: null | Omit<LevelUsaha, 'jenisUnit'>;
+    jenisUnit: null | Omit<JenisUnit, 'levelUsaha' | 'jenisUsaha'>;
 }

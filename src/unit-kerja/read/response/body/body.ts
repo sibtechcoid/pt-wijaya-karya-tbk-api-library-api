@@ -9,13 +9,13 @@ import Abbreviation from "../../../../abbreviation/create/abbreviation";
 
 export default interface Body extends Record, Deactivate, Id, Name, Abbreviation {
 
-    //address : null|string;
+    address : null|string;
     // wikaParentId : null|number;
     // // TODO nullable?
     // wikaType : string|null;
     // // TODO nullable?
     // wikaId : number|null;
-    jenisUsaha  : null|JenisUsaha;
-    levelUsaha  : null|Omit<LevelUsaha,'jenisUsaha'>;
-    jenisUnit   : null|JenisUnit;
+    jenisUsaha: null | Omit<JenisUsaha,'jenisUnit'>;
+    levelUsaha: null | Omit<LevelUsaha, 'jenisUnit'>;
+    jenisUnit: null | Omit<JenisUnit,'levelUsaha'|'jenisUsaha'>;
 }

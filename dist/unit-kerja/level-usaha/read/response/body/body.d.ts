@@ -5,5 +5,5 @@ import Name from "../../../../../name/create/name";
 import Abbreviation from "../../../../../abbreviation/create/abbreviation";
 import JenisUnit from "../../../../jenis-usaha/read/response/body/body";
 export default interface Body extends Deactivate, Record, Id, Name, Abbreviation {
-    jenisUsaha: Omit<JenisUnit, 'jenisUsaha' | 'levelUsaha'>;
+    jenisUnit: Omit<JenisUnit, 'jenisUsaha' | 'levelUsaha'>;
 }

@@ -6,7 +6,7 @@ var Status;
      * proses awal
      */
     Status["DRAFT"] = "DRAFT";
-    Status["SUBMITTED"] = "SUBMIT";
+    Status["SUBMIT"] = "SUBMIT";
     Status["PROJECT_REJECT"] = "PROJECT_REJECT";
     Status["PROJECT_WAITING"] = "PROJECT_WAITING";
     Status["PROJECT_APPROVE"] = "PROJECT_APPROVE";

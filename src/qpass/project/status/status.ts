@@ -4,7 +4,7 @@ enum Status {
      * proses awal
      */
     DRAFT = 'DRAFT',
-    SUBMITTED = 'SUBMIT',
+    SUBMIT = 'SUBMIT',
 
     PROJECT_REJECT = 'PROJECT_REJECT',
     PROJECT_WAITING = 'PROJECT_WAITING',

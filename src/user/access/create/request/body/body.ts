@@ -1,6 +1,7 @@
-import ProjectAccess from "../../../../../qpass/project/access/access";
-import UnitKerjaAccess from "../../../../../qpass/object/access/access";
-import UserAccess from "../../../../../user/access/access";
+import ProjectAccess from "../../../proyek/access";
+import UnitKerjaAccess from "../../../object/access";
+import UserAccess from "../../../user/access";
+import RencanaAccess from "../../../rencana/access";
 
 export default interface Body {
 
@@ -8,7 +9,8 @@ export default interface Body {
     // user : {[key in UserAccess] : boolean};
     // unitKerja : {[key in UnitKerjaAccess] : boolean};
 
-    project : ProjectAccess[];
+    proyek : ProjectAccess[];
+    rencana : RencanaAccess[];
     user : UserAccess[];
     unitKerja : UnitKerjaAccess[];
 }

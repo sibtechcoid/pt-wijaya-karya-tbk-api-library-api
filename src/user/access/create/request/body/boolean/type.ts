@@ -1,9 +1,14 @@
 import Body from "../body";
 import NotNull from "t-object/boolean/type";
 import EnumType from "t-enum/boolean/type";
-import ProjectAccess from "../../../../../../qpass/project/access/access";
-import UserAccess from "../../../../../../user/access/access";
-import UnitKerjaAccess from "../../../../../../qpass/object/access/access";
+import ProjectAccess from "../../../../proyek/access";
+import ProjectAccessType from "../../../../proyek/boolean/type";
+import UserAccess from "../../../../user/access";
+import UserAccessType from "../../../../user/boolean/type";
+import UnitKerjaAccess from "../../../../object/access";
+import UnitKerjaAccessType from "../../../../object/boolean/type";
+import RencanaAccess from "../../../../rencana/access";
+import RencanaAccessType from "../../../../rencana/boolean/type";
 import ArrayOf from "t-array/boolean/array-of";
 
 export default function Type(value : any) : value is Body {
@@ -13,19 +18,24 @@ export default function Type(value : any) : value is Body {
         return false;
     }
 
-    if(!ArrayOf(value.user, (v) : v is UserAccess => EnumType(v, UserAccess)))  {
+    if(!ArrayOf(value.user, UserAccessType))  {
 
         return false;
     }
 
 
-    if(!ArrayOf(value.unitKerja, (v) : v is ProjectAccess => EnumType(v, ProjectAccess)))  {
+    if(!ArrayOf(value.proyek, ProjectAccessType))  {
 
         return false;
     }
 
 
-    if(!ArrayOf(value.project, (v) : v is UnitKerjaAccess => EnumType(v, UnitKerjaAccess)))  {
+    if(!ArrayOf(value.unitKerja, UnitKerjaAccessType))  {
+
+        return false;
+    }
+
+    if(!ArrayOf(value.rencana, RencanaAccessType))  {
 
         return false;
     }

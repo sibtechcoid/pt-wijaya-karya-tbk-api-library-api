@@ -1,22 +1,25 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const type_1 = require("t-object/boolean/type");
-const type_2 = require("t-enum/boolean/type");
-const access_1 = require("../../../../../../qpass/project/access/access");
-const access_2 = require("../../../../../../user/access/access");
-const access_3 = require("../../../../../../qpass/object/access/access");
+const type_2 = require("../../../../proyek/boolean/type");
+const type_3 = require("../../../../user/boolean/type");
+const type_4 = require("../../../../object/boolean/type");
+const type_5 = require("../../../../rencana/boolean/type");
 const array_of_1 = require("t-array/boolean/array-of");
 function Type(value) {
     if (!type_1.default(value)) {
         return false;
     }
-    if (!array_of_1.default(value.user, (v) => type_2.default(v, access_2.default))) {
+    if (!array_of_1.default(value.user, type_3.default)) {
         return false;
     }
-    if (!array_of_1.default(value.unitKerja, (v) => type_2.default(v, access_1.default))) {
+    if (!array_of_1.default(value.proyek, type_2.default)) {
         return false;
     }
-    if (!array_of_1.default(value.project, (v) => type_2.default(v, access_3.default))) {
+    if (!array_of_1.default(value.unitKerja, type_4.default)) {
+        return false;
+    }
+    if (!array_of_1.default(value.rencana, type_5.default)) {
         return false;
     }
     return true;

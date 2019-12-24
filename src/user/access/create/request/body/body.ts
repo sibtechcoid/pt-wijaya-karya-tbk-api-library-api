@@ -4,8 +4,11 @@ import UserAccess from "../../../../../user/access/access";
 
 export default interface Body {
 
-    project : {[key in ProjectAccess] : boolean};
-    user : {[key in UserAccess] : boolean};
-    unitKerja : {[key in UnitKerjaAccess] : boolean};
+    // project : {[key in ProjectAccess] : boolean};
+    // user : {[key in UserAccess] : boolean};
+    // unitKerja : {[key in UnitKerjaAccess] : boolean};
 
+    project : ProjectAccess[];
+    user : UserAccess[];
+    unitKerja : UnitKerjaAccess[];
 }

@@ -1,29 +1,21 @@
 import Body from "../body";
-import NotNull from "t-object/boolean/type";
-import RecordOf from "t-object/boolean/record-of";
-import ProjectAccess from "../../../../../../qpass/project/access/access";
+import TypeObject from "t-object/boolean/type";
+import ArrayOf from "t-array/boolean/array-of";
 import EnumType from "t-enum/boolean/type";
-import UserAccess from "../../../../access";
-import UnitKerjaAccess from "../../../../../../qpass/object/access/access";
+import UserAccess from "../../../../../../user/access/access";
+import ProjectAccess from "../../../../../../qpass/project/access/access";
+import ObjectAccess from "../../../../../../qpass/object/access/access";
 
-export default function Type(value : any) : value is Body {
+export default function Typez(value : any) : value is Body {
 
-    if(!NotNull<Body>(value)) {
+    if(!TypeObject<Body>(value)) {
 
         return false;
     }
 
-    if(value.project !== undefined) {
-
-        if(!RecordOf(value.project, (v) : v is ProjectAccess =>EnumType(v, ProjectAccess))) {
-
-            return false;
-        }
-    }
-
     if(value.user !== undefined) {
 
-        if(!RecordOf(value.user, (v) : v is ProjectAccess =>EnumType(v, UserAccess))) {
+        if(!ArrayOf(value.user, (v) : v is UserAccess => EnumType(v, UserAccess)))  {
 
             return false;
         }
@@ -31,7 +23,15 @@ export default function Type(value : any) : value is Body {
 
     if(value.unitKerja !== undefined) {
 
-        if(!RecordOf(value.unitKerja, (v) : v is ProjectAccess =>EnumType(v, UnitKerjaAccess))) {
+        if(!ArrayOf(value.unitKerja, (v) : v is ProjectAccess => EnumType(v, ProjectAccess)))  {
+
+            return false;
+        }
+    }
+
+    if(value.project !== undefined) {
+
+        if(!ArrayOf(value.project, (v) : v is ObjectAccess => EnumType(v, ObjectAccess)))  {
 
             return false;
         }

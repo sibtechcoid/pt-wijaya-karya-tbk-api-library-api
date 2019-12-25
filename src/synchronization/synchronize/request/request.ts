@@ -5,3 +5,4 @@ import Method from "./method/method";
 export default interface Request extends BaseBody<undefined>, Path, Method {
 
 }
+

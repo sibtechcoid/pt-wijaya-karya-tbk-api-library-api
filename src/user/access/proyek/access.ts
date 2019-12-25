@@ -4,6 +4,7 @@ enum Access  {
     UPDATE_APPROVE = 'UPDATE_APPROVE',
     DELETE  = 'DELETE',
     READ  = 'READ',
+    UPDATE_PUBLISH = 'UPDATE_PUBLISH',
 
 }
 

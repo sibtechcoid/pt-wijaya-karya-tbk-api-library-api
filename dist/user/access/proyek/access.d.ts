@@ -3,6 +3,7 @@ declare enum Access {
     UPDATE_DATA = "UPDATE_DATA",
     UPDATE_APPROVE = "UPDATE_APPROVE",
     DELETE = "DELETE",
-    READ = "READ"
+    READ = "READ",
+    UPDATE_PUBLISH = "UPDATE_PUBLISH"
 }
 export default Access;

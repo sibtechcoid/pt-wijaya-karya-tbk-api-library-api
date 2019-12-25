@@ -7,6 +7,7 @@ var Access;
     Access["UPDATE_PUBLISH"] = "UPDATE_PUBLISH";
     Access["DELETE"] = "DELETE";
     Access["READ"] = "READ";
+    Access["EMAIL_PUBLISH"] = "EMAIL_PUBLISH";
 })(Access || (Access = {}));
 exports.default = Access;
 //# sourceMappingURL=access.js.map

@@ -1,8 +1,0 @@
-declare enum Access {
-    UPDATE_DATA = "UPDATE_DATA",
-    UPDATE_APPROVE = "UPDATE_APPROVE",
-    EMAIL_PUBLISH = "EMAIL_PUBLISH",
-    EMAIL_APPROVE = "EMAIL_APPROVE",
-    EMAIL_REMINDER = "EMAIL_REMINDER"
-}
-export default Access;

@@ -7,16 +7,21 @@ import RequestRoute from "../../../../request/request-route";
 import Qpass from "../../../../../dist/user/access/qpass/qpass";
 import Internal from "../../../../../dist/user/access/internal/internal";
 import Assign from "../../../../../dist/id/assign";
+import ProjectAccess from "../../../../../dist/user/access/proyek/access";
+import RencanaAccess from "../../../../../dist/user/access/rencana/access";
+import UserAccess from "../../../../../dist/user/access/user/access";
+import UnitKerjaAccess from "../../../../../dist/user/access/object/access";
 
 describe('qpass/object/type/update request', () => {
 
-    RequestRoute<Access & Id>(
+    RequestRoute<Access>(
         Request,
         Route(),
         {
-            qpass : [Qpass.CREATE, Qpass.UPDATE],
-            internal : [Internal.CREATE, Internal.UPDATE],
-            id:0
+            proyek: [],
+            rencana: [],
+            user: [],
+            unitKerja: [],
         }
     );
 });

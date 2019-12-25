@@ -1,6 +1,7 @@
 import NotNull from "t-object/boolean/type";
 import IsString from "t-string/boolean/type";
 import Abbreviation from "../abbreviation";
+import IsNull from "t-null/boolean/type";
 
 export default function Type<Extended extends Abbreviation = Abbreviation>(value : any) : value is Extended {
 
@@ -9,12 +10,9 @@ export default function Type<Extended extends Abbreviation = Abbreviation>(value
         return false;
     }
 
-    if(value.abbreviation !== null) {
+    if(!(IsString(value.abbreviation) || IsNull(value.abbreviation))) {
 
-        if(!IsString(value.abbreviation)) {
-
-            return false;
-        }
+        return false;
     }
 
     return true;

@@ -24,23 +24,16 @@ function Type(value) {
             return false;
         }
     }
-    if (value.abbreviation !== undefined) {
-        if (!type_2.default(value.abbreviation)) {
-            return false;
-        }
-    }
     if (value.level !== undefined) {
         if (!finite_1.default(value.level)) {
             return false;
         }
     }
-    // if(value.type !== undefined) {
-    //
-    //     if(!IsNumber(value.type)) {
-    //
-    //         return false;
-    //     }
-    // }
+    if (value.type !== undefined) {
+        if (!finite_1.default(value.type)) {
+            return false;
+        }
+    }
     if (value.business !== undefined) {
         if (!finite_1.default(value.business)) {
             return false;

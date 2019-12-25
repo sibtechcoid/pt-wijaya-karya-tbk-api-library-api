@@ -36,13 +36,6 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
         }
     }
 
-    if(value.abbreviation !== undefined) {
-
-        if(!IsString(value.abbreviation)) {
-
-            return false;
-        }
-    }
 
     if(value.level !== undefined) {
 
@@ -52,13 +45,13 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
         }
     }
 
-    // if(value.type !== undefined) {
-    //
-    //     if(!IsNumber(value.type)) {
-    //
-    //         return false;
-    //     }
-    // }
+    if(value.type !== undefined) {
+
+        if(!IsNumber(value.type)) {
+
+            return false;
+        }
+    }
 
     if(value.business !== undefined) {
 

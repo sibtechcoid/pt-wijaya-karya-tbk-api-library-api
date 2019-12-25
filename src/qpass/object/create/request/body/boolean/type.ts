@@ -27,10 +27,6 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
         return false;
     }
 
-    if(!IsString(value.abbreviation)) {
-
-        return false;
-    }
 
     if(!IsNumber(value.business)) {
 
@@ -42,10 +38,10 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
         return false;
     }
 
-    // if(!IsNumber(value.type)) {
-    //
-    //     return false;
-    // }
+    if(!IsNumber(value.type)) {
+
+        return false;
+    }
 
     return true;
 }

@@ -18,19 +18,15 @@ function Type(value) {
     if (!type_2.default(value.address)) {
         return false;
     }
-    if (!type_2.default(value.abbreviation)) {
-        return false;
-    }
     if (!finite_1.default(value.business)) {
         return false;
     }
     if (!finite_1.default(value.level)) {
         return false;
     }
-    // if(!IsNumber(value.type)) {
-    //
-    //     return false;
-    // }
+    if (!finite_1.default(value.type)) {
+        return false;
+    }
     return true;
 }
 exports.default = Type;

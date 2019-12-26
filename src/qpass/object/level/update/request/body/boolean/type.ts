@@ -1,6 +1,6 @@
 import Level from "../body";
 import InternalType from "../../../../../type/update/request/body/boolean/type";
-import IsFinite from "t-number/boolean/finite";
+import IsFinite from "@dikac/t-number/boolean/finite";
 
 export default function Type(value : any) : value is Level {
 

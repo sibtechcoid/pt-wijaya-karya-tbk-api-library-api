@@ -1,10 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const type_1 = require("t-object/boolean/type");
+const type_1 = require("@dikac/t-object/boolean/type");
 const type_2 = require("../../../../recana/boolean/type");
 const type_3 = require("../../../../surat-tugas/boolean/type");
 const type_4 = require("../../../../proyek/boolean/type");
-const array_of_1 = require("t-array/boolean/array-of");
+const array_of_1 = require("@dikac/t-array/boolean/array-of");
 function Type(value) {
     if (!type_1.default(value)) {
         return false;

@@ -1,6 +1,6 @@
 import Member from "../member";
-import TypeObject from "t-object/boolean/type";
-import IsNumber from "t-number/boolean/finite";
+import TypeObject from "@dikac/t-object/boolean/type";
+import IsNumber from "@dikac/t-number/boolean/finite";
 
 export default function Type<Extended extends Member = Member>(value : any) : value is Extended {
 

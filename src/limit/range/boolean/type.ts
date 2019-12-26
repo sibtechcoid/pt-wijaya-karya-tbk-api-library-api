@@ -1,7 +1,7 @@
-import NotNull from "t-object/boolean/type";
+import NotNull from "@dikac/t-object/boolean/type";
 import Range from "../range";
-import Finite from "t-number/boolean/finite";
-import Infinite from "t-number/boolean/infinite";
+import Finite from "@dikac/t-number/boolean/finite";
+import Infinite from "@dikac/t-number/boolean/infinite";
 
 export default function Type(value : any) : value is Range {
 

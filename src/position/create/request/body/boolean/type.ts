@@ -1,7 +1,7 @@
 import AbbreviationType from "../../../../../abbreviation/create/boolean/type";
 import NameType from "../../../../../name/create/boolean/type";
 import Body from "../body";
-import EnumType from "t-enum/boolean/type";
+import EnumType from "@dikac/t-enum/boolean/type";
 
 export default function Type<
     Group,

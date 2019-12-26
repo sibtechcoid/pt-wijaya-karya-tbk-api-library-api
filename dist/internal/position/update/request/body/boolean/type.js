@@ -1,8 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const type_1 = require("../../../../access/boolean/type");
-const array_of_1 = require("t-array/boolean/array-of");
-const type_2 = require("t-enum/boolean/type");
+const array_of_1 = require("@dikac/t-array/boolean/array-of");
+const type_2 = require("@dikac/t-enum/boolean/type");
 const group_1 = require("../../../../group/group");
 const type_3 = require("../../../../../../name/update/boolean/type");
 const type_4 = require("../../../../../../abbreviation/update/boolean/type");

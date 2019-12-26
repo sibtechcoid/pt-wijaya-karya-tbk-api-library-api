@@ -1,8 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const array_of_1 = require("t-array/boolean/array-of");
-const finite_1 = require("t-number/boolean/finite");
-const compatible_1 = require("t-date/boolean/compatible");
+const array_of_1 = require("@dikac/t-array/boolean/array-of");
+const finite_1 = require("@dikac/t-number/boolean/finite");
+const compatible_1 = require("@dikac/t-date/boolean/compatible");
 const type_1 = require("../../../../../../id/boolean/type");
 function Type(value) {
     if (!type_1.default(value)) {

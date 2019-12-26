@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const type_1 = require("../../../../../abbreviation/create/boolean/type");
 const type_2 = require("../../../../../name/create/boolean/type");
-const type_3 = require("t-enum/boolean/type");
+const type_3 = require("@dikac/t-enum/boolean/type");
 function Type(value, access, group) {
     if (!type_1.default(value)) {
         return false;

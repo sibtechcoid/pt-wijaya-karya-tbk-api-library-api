@@ -1,5 +1,5 @@
 import TypeInterface from "../body";
-import EnumType from "t-enum/boolean/type";
+import EnumType from "@dikac/t-enum/boolean/type";
 import Status from "../../../../status/status";
 import ProjectType from "../../../../../../project/update/request/body/boolean/type";
 

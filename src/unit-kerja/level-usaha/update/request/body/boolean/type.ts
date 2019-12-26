@@ -1,5 +1,5 @@
 import LevelUsaha from "../body";
-import IsFinite from "t-number/boolean/finite";
+import IsFinite from "@dikac/t-number/boolean/finite";
 import TypeId from "../../../../../../id/boolean/type";
 import TypeName from "../../../../../../name/update/boolean/type";
 import TypeAbbreviation from "../../../../../../abbreviation/update/boolean/type";

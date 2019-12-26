@@ -1,7 +1,7 @@
 import Body from "../body";
-import TypeObject from "t-object/boolean/type";
-import IsNumber from "t-number/boolean/finite";
-import IsString from "t-string/boolean/type";
+import TypeObject from "@dikac/t-object/boolean/type";
+import IsNumber from "@dikac/t-number/boolean/finite";
+import IsString from "@dikac/t-string/boolean/type";
 
 export default function Type<Extended extends Body = Body>(value : any) : value is Extended {
 

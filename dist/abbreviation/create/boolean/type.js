@@ -1,8 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const type_1 = require("t-object/boolean/type");
-const type_2 = require("t-string/boolean/type");
-const type_3 = require("t-null/boolean/type");
+const type_1 = require("@dikac/t-object/boolean/type");
+const type_2 = require("@dikac/t-string/boolean/type");
+const type_3 = require("@dikac/t-null/boolean/type");
 function Type(value) {
     if (!type_1.default(value)) {
         return false;

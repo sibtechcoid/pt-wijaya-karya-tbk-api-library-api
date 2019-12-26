@@ -1,8 +1,8 @@
 import TypeInterface from "../body";
-import NotNull from "t-object/boolean/type";
+import NotNull from "@dikac/t-object/boolean/type";
 import TypeName from "../../../../../../../name/create/boolean/type";
 import TypeAbbreviation from "../../../../../../../abbreviation/create/boolean/type";
-import IsFinite from "t-number/boolean/finite";
+import IsFinite from "@dikac/t-number/boolean/finite";
 
 export default function Type<Extended extends TypeInterface = TypeInterface>(value : any) : value is Extended {
 

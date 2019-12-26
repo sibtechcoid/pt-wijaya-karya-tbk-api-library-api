@@ -1,6 +1,6 @@
 import TypeInterface from "../body";
-import NotNull from "t-object/boolean/type";
-import IsEnum from "t-enum/boolean/type";
+import NotNull from "@dikac/t-object/boolean/type";
+import IsEnum from "@dikac/t-enum/boolean/type";
 import Status from "../../../../../../qpass/project/status/status";
 import ProjectType from "../../../../../../project/create/request/body/boolean/type";
 

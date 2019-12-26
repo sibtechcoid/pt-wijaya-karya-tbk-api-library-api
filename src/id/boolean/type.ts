@@ -1,5 +1,5 @@
-import TypeObject from "t-object/boolean/type";
-import TypeNumber from "t-number/boolean/finite";
+import TypeObject from "@dikac/t-object/boolean/type";
+import TypeNumber from "@dikac/t-number/boolean/finite";
 import Id from "../id";
 
 interface Optional {

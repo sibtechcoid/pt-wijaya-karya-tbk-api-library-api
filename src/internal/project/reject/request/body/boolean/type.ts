@@ -1,5 +1,5 @@
 import TypeInterface from "../../body/body";
-import IsString from "t-string/boolean/type";
+import IsString from "@dikac/t-string/boolean/type";
 import TypeId from "../../../../../../id/boolean/type";
 
 export default function Type<Extended extends TypeInterface = TypeInterface>(value : any) : value is Extended {

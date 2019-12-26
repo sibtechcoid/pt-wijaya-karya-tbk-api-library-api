@@ -1,7 +1,7 @@
 import TypeName from "../../../../../../../name/update/boolean/type";
 import Body from "../body";
-import TypeNumber from "t-number/boolean/finite";
-import TypeEnum from "t-enum/boolean/type";
+import TypeNumber from "@dikac/t-number/boolean/finite";
+import TypeEnum from "@dikac/t-enum/boolean/type";
 import ContentType from "../../../../type/type";
 import TypeId from "../../../../../../../id/boolean/type";
 

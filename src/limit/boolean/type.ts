@@ -1,4 +1,4 @@
-import NotNull from "t-object/boolean/type";
+import NotNull from "@dikac/t-object/boolean/type";
 import Limit from "../limit";
 import LimitType from "../range/boolean/type";
 

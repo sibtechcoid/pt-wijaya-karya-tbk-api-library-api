@@ -1,4 +1,4 @@
-import TypeEnum from "t-enum/boolean/type";
+import TypeEnum from "@dikac/t-enum/boolean/type";
 import Group from "../group";
 
 

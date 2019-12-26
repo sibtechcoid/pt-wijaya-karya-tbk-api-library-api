@@ -1,7 +1,7 @@
 import TypeInterface from "../body";
-import IsEnum from "t-enum/boolean/type";
+import IsEnum from "@dikac/t-enum/boolean/type";
 import Category from "../../../../category/category";
-import NotNull from "t-object/boolean/type";
+import NotNull from "@dikac/t-object/boolean/type";
 import ProjectType from "../../../../../../project/create/request/body/boolean/type";
 import Status from "../../../../status/status";
 

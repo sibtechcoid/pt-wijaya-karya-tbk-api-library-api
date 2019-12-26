@@ -1,7 +1,7 @@
 import TypeInterface from "../body";
-import IsNumber from "t-number/boolean/finite";
+import IsNumber from "@dikac/t-number/boolean/finite";
 import TypeMember from "../../../../../member/create/request/body/boolean/type";
-import ArrayOf from "t-array/boolean/array-of";
+import ArrayOf from "@dikac/t-array/boolean/array-of";
 import ScheduleType from "../../../../../schedule/update/request/body/boolean/type";
 import TypeId from "../../../../../id/boolean/type";
 

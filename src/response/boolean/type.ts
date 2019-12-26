@@ -1,8 +1,8 @@
-import NotNull from "t-object/boolean/type";
-import Finite from "t-number/boolean/finite";
+import NotNull from "@dikac/t-object/boolean/type";
+import Finite from "@dikac/t-number/boolean/finite";
 import Code from "../../code/code";
 import Message from "../../message/message";
-import StringType from "t-string/boolean/type";
+import StringType from "@dikac/t-string/boolean/type";
 
 export default function Type<Extended extends Code<number> & Message = Code<number> & Message>(value : any) : value is Extended {
 

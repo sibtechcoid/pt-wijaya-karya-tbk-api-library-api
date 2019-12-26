@@ -1,6 +1,6 @@
 import Text from "../find-text/response/user/user";
-import NotNull from "t-object/boolean/type";
-import IsBoolean from "t-boolean/type";
+import NotNull from "@dikac/t-object/boolean/type";
+import IsBoolean from "@dikac/t-boolean/type";
 import User from "../find-text/response/user/user";
 
 export default function Type(value : any) : value is User {

@@ -1,6 +1,6 @@
 import Text from "../text";
-import NotNull from "t-object/boolean/type";
-import IsString from "t-string/boolean/type";
+import NotNull from "@dikac/t-object/boolean/type";
+import IsString from "@dikac/t-string/boolean/type";
 
 export default function Type(value : any) : value is Text {
 

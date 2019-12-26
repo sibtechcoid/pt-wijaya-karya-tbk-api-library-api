@@ -1,7 +1,7 @@
 import TypeInterface from "../object";
-import NotNull from "t-object/boolean/type";
-import IsString from "t-string/boolean/type";
-import IsNumber from "t-number/boolean/finite";
+import NotNull from "@dikac/t-object/boolean/type";
+import IsString from "@dikac/t-string/boolean/type";
+import IsNumber from "@dikac/t-number/boolean/finite";
 import TypeName from "../../../../../name/create/boolean/type";
 import TypeAbbreviation from "../../../../../abbreviation/create/boolean/type";
 

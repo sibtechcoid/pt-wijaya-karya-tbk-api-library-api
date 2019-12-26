@@ -1,8 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const type_1 = require("../../../../../../../name/create/boolean/type");
-const finite_1 = require("t-number/boolean/finite");
-const type_2 = require("t-enum/boolean/type");
+const finite_1 = require("@dikac/t-number/boolean/finite");
+const type_2 = require("@dikac/t-enum/boolean/type");
 const type_3 = require("../../../../type/type");
 function Type(value) {
     if (!type_1.default(value)) {

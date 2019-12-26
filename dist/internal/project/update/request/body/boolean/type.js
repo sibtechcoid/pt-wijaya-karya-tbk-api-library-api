@@ -1,9 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const type_1 = require("t-enum/boolean/type");
+const type_1 = require("@dikac/t-enum/boolean/type");
 const category_1 = require("../../../../category/category");
 const type_2 = require("../../../../../../schedule/update/request/body/boolean/type");
-const type_3 = require("t-enum/boolean/type");
+const type_3 = require("@dikac/t-enum/boolean/type");
 const status_1 = require("../../../../status/status");
 const type_4 = require("../../../../../../project/update/request/body/boolean/type");
 function Type(value) {

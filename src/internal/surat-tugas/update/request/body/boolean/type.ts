@@ -1,9 +1,9 @@
 import TypeInterface from "../body";
-import NotNull from "t-object/boolean/type";
-import IsString from "t-string/boolean/type";
-import IsNumber from "t-number/boolean/finite";
+import NotNull from "@dikac/t-object/boolean/type";
+import IsString from "@dikac/t-string/boolean/type";
+import IsNumber from "@dikac/t-number/boolean/finite";
 import TypeId from "../../../../../../id/boolean/type";
-import ArrayOf from "t-array/boolean/array-of";
+import ArrayOf from "@dikac/t-array/boolean/array-of";
 
 export default function Type<Extended extends TypeInterface = TypeInterface>(value : any) : value is Extended {
 

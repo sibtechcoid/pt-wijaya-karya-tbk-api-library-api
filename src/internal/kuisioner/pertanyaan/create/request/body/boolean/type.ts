@@ -1,7 +1,7 @@
 import TypeInterface from "../body";
-import NotNull from "t-object/boolean/type";
-import StringType from "t-string/boolean/type";
-import EnumType from "t-enum/boolean/type";
+import NotNull from "@dikac/t-object/boolean/type";
+import StringType from "@dikac/t-string/boolean/type";
+import EnumType from "@dikac/t-enum/boolean/type";
 import Group from "../../../../../../position/group/group";
 
 export default function Type<Extended extends TypeInterface = TypeInterface>(value : any) : value is Extended {

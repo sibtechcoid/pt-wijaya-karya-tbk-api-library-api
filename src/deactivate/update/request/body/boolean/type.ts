@@ -1,6 +1,6 @@
 import Body from "../body";
 import TypeId from "../../../../../id/boolean/type";
-import TypeBoolean from "t-boolean/type";
+import TypeBoolean from "@dikac/t-boolean/type";
 
 export default function Type(value : any) : value is Body {
 

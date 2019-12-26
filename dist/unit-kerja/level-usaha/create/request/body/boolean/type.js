@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const finite_1 = require("t-number/boolean/finite");
-const type_1 = require("t-object/boolean/type");
+const finite_1 = require("@dikac/t-number/boolean/finite");
+const type_1 = require("@dikac/t-object/boolean/type");
 const type_2 = require("../../../../../../name/create/boolean/type");
 const type_3 = require("../../../../../../abbreviation/create/boolean/type");
 function Type(value) {

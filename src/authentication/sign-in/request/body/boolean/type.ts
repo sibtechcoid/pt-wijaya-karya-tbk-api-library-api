@@ -1,5 +1,5 @@
-import NotNull from "t-object/boolean/type";
-import TypeString from "t-string/boolean/type";
+import NotNull from "@dikac/t-object/boolean/type";
+import TypeString from "@dikac/t-string/boolean/type";
 import Body from "../body";
 
 export default function Type(value : any) : value is Body {

@@ -1,10 +1,16 @@
-import ProjectAccess from "../../../proyek/access";
-import UnitKerjaAccess from "../../../unit-kerja/access";
+import Project from "../../../proyek/access";
+import UnitKerja from "../../../unit-kerja/access";
+import JenisUnit from "../../../jenis-unit/access";
+import JenisUsaha from "../../../jenis-usaha/access";
+import LevelUsaha from "../../../level-usaha/access";
 import UserAccess from "../../../user/access";
-import RencanaAccess from "../../../rencana/access";
+import Rencana from "../../../rencana/access";
 export default interface Body {
-    proyek: ProjectAccess[];
-    rencana: RencanaAccess[];
+    proyek: Project[];
+    rencana: Rencana[];
     user: UserAccess[];
-    unitKerja: UnitKerjaAccess[];
+    unitKerja: UnitKerja[];
+    jenisUnit: JenisUnit[];
+    jenisUsaha: JenisUsaha[];
+    levelUsaha: LevelUsaha[];
 }

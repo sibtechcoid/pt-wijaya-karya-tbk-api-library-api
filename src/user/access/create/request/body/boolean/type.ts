@@ -9,6 +9,9 @@ import UnitKerjaAccess from "../../../../unit-kerja/access";
 import UnitKerjaAccessType from "../../../../unit-kerja/boolean/type";
 import RencanaAccess from "../../../../rencana/access";
 import RencanaAccessType from "../../../../rencana/boolean/type";
+import LevelUsahaType from "../../../../level-usaha/boolean/type";
+import JenisUsahaType from "../../../../jenis-usaha/boolean/type";
+import JenisUnitType from "../../../../jenis-unit/boolean/type";
 import ArrayOf from "@dikac/t-array/boolean/array-of";
 
 export default function Type(value : any) : value is Body {
@@ -23,12 +26,10 @@ export default function Type(value : any) : value is Body {
         return false;
     }
 
-
     if(!ArrayOf(value.proyek, ProjectAccessType))  {
 
         return false;
     }
-
 
     if(!ArrayOf(value.unitKerja, UnitKerjaAccessType))  {
 
@@ -36,6 +37,21 @@ export default function Type(value : any) : value is Body {
     }
 
     if(!ArrayOf(value.rencana, RencanaAccessType))  {
+
+        return false;
+    }
+
+    if(!ArrayOf(value.levelUsaha, LevelUsahaType))  {
+
+        return false;
+    }
+
+    if(!ArrayOf(value.jenisUsaha, JenisUsahaType))  {
+
+        return false;
+    }
+
+    if(!ArrayOf(value.jenisUnit, JenisUnitType))  {
 
         return false;
     }

@@ -5,6 +5,9 @@ const type_2 = require("../../../../proyek/boolean/type");
 const type_3 = require("../../../../user/boolean/type");
 const type_4 = require("../../../../unit-kerja/boolean/type");
 const type_5 = require("../../../../rencana/boolean/type");
+const type_6 = require("../../../../level-usaha/boolean/type");
+const type_7 = require("../../../../jenis-usaha/boolean/type");
+const type_8 = require("../../../../jenis-unit/boolean/type");
 const array_of_1 = require("@dikac/t-array/boolean/array-of");
 function Type(value) {
     if (!type_1.default(value)) {
@@ -20,6 +23,15 @@ function Type(value) {
         return false;
     }
     if (!array_of_1.default(value.rencana, type_5.default)) {
+        return false;
+    }
+    if (!array_of_1.default(value.levelUsaha, type_6.default)) {
+        return false;
+    }
+    if (!array_of_1.default(value.jenisUsaha, type_7.default)) {
+        return false;
+    }
+    if (!array_of_1.default(value.jenisUnit, type_8.default)) {
         return false;
     }
     return true;

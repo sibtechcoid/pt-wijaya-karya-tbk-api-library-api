@@ -10,6 +10,9 @@ import UserAccessType from "../../../../user/boolean/type";
 import ProjectAccessType from "../../../../proyek/boolean/type";
 import UnitKerjaAccessType from "../../../../unit-kerja/boolean/type";
 import RencanaAccessType from "../../../../rencana/boolean/type";
+import LevelUsahaType from "../../../../level-usaha/boolean/type";
+import JenisUsahaType from "../../../../jenis-usaha/boolean/type";
+import JenisUnitType from "../../../../jenis-unit/boolean/type";
 
 export default function Type(value : any) : value is Body {
 
@@ -35,7 +38,6 @@ export default function Type(value : any) : value is Body {
         }
     }
 
-
     if(value.unitKerja !== undefined) {
 
         if(!ArrayOf(value.unitKerja, UnitKerjaAccessType))  {
@@ -47,6 +49,30 @@ export default function Type(value : any) : value is Body {
     if(value.rencana !== undefined) {
 
         if(!ArrayOf(value.rencana, RencanaAccessType))  {
+
+            return false;
+        }
+    }
+
+    if(value.levelUsaha !== undefined) {
+
+        if(!ArrayOf(value.levelUsaha, LevelUsahaType))  {
+
+            return false;
+        }
+    }
+
+    if(value.jenisUsaha !== undefined) {
+
+        if(!ArrayOf(value.jenisUsaha, JenisUsahaType))  {
+
+            return false;
+        }
+    }
+
+    if(value.jenisUnit !== undefined) {
+
+        if(!ArrayOf(value.jenisUnit, JenisUnitType))  {
 
             return false;
         }

@@ -4,7 +4,7 @@ const type_1 = require("@dikac/t-object/boolean/type");
 const array_of_1 = require("@dikac/t-array/boolean/array-of");
 const type_2 = require("../../../../user/boolean/type");
 const type_3 = require("../../../../proyek/boolean/type");
-const type_4 = require("../../../../object/boolean/type");
+const type_4 = require("../../../../unit-kerja/boolean/type");
 const type_5 = require("../../../../rencana/boolean/type");
 function Type(value) {
     if (!type_1.default(value)) {

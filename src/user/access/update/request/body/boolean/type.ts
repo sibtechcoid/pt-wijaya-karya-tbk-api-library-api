@@ -4,11 +4,11 @@ import ArrayOf from "@dikac/t-array/boolean/array-of";
 import EnumType from "@dikac/t-enum/boolean/type";
 import UserAccess from "../../../../user/access";
 import ProjectAccess from "../../../../proyek/access";
-import ObjectAccess from "../../../../object/access";
+import ObjectAccess from "../../../../unit-kerja/access";
 import RencanaAccess from "../../../../rencana/access";
 import UserAccessType from "../../../../user/boolean/type";
 import ProjectAccessType from "../../../../proyek/boolean/type";
-import UnitKerjaAccessType from "../../../../object/boolean/type";
+import UnitKerjaAccessType from "../../../../unit-kerja/boolean/type";
 import RencanaAccessType from "../../../../rencana/boolean/type";
 
 export default function Type(value : any) : value is Body {

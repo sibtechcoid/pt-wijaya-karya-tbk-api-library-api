@@ -8,6 +8,7 @@ declare enum Status {
     REJECT = "REJECT",
     APPROVE = "APPROVE",
     PROJECT_WAITING = "PROJECT_WAITING",
-    MEMBER_WAITING = "MEMBER_WAITING"
+    MEMBER_WAITING = "MEMBER_WAITING",
+    FINISH = "FINISH"
 }
 export default Status;

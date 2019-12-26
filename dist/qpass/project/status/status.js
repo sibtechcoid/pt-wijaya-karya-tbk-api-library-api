@@ -12,6 +12,7 @@ var Status;
     Status["APPROVE"] = "APPROVE";
     Status["PROJECT_WAITING"] = "PROJECT_WAITING";
     Status["MEMBER_WAITING"] = "MEMBER_WAITING";
+    Status["FINISH"] = "FINISH";
 })(Status || (Status = {}));
 exports.default = Status;
 //# sourceMappingURL=status.js.map

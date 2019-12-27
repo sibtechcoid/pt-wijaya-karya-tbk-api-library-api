@@ -1,5 +1,5 @@
 import Body from "../body";
-import TypeAccess from "../../../../../access/update/request/body/boolean/type";
+import TypeAccess from "../../../../../access/create/request/body/boolean/type";
 import ArrayOf from "@dikac/t-array/boolean/array-of";
 import TypeName from "../../../../../../name/update/boolean/type";
 import TypeAbbreviation from "../../../../../../abbreviation/update/boolean/type";
@@ -26,7 +26,7 @@ export default function Type<Extended extends Body = Body>(value : any) : value 
 
     if(value.access !== undefined) {
 
-        if(!ArrayOf(value.access, TypeAccess)) {
+        if(!TypeAccess(value.access)) {
 
             return false;
         }

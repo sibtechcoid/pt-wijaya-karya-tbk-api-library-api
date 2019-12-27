@@ -1,5 +1,5 @@
 import Body from "../body";
-import TypeAccess from "../../../../../access/update/request/body/boolean/type";
+import TypeAccess from "../../../../../access/create/request/body/boolean/type";
 import TypeId from "../../../../../../id/boolean/type";
 import TypeName from "../../../../../../name/update/boolean/type";
 import TypeAbbreviation from "../../../../../../abbreviation/update/boolean/type";

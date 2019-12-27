@@ -18,7 +18,7 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
         return false;
     }
 
-    if(!ArrayOf(value.access, TypeAccess)) {
+    if(!TypeAccess(value.access)) {
 
         return false;
     }

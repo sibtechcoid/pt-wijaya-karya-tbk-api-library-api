@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const type_1 = require("../../../../../access/update/request/body/boolean/type");
+const type_1 = require("../../../../../access/create/request/body/boolean/type");
 const type_2 = require("../../../../../../id/boolean/type");
 const type_3 = require("../../../../../../name/update/boolean/type");
 const type_4 = require("../../../../../../abbreviation/update/boolean/type");

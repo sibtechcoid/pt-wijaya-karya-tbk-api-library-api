@@ -1,6 +1,5 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const array_of_1 = require("@dikac/t-array/boolean/array-of");
 const type_1 = require("@dikac/t-enum/boolean/type");
 const group_1 = require("../../../../group/group");
 const type_2 = require("../../../../../../name/create/boolean/type");
@@ -13,7 +12,7 @@ function Type(value) {
     if (!type_3.default(value)) {
         return false;
     }
-    if (!array_of_1.default(value.access, type_4.default)) {
+    if (!type_4.default(value.access)) {
         return false;
     }
     if (!type_1.default(value.group, group_1.default)) {

@@ -13,6 +13,7 @@ import KlausulType from "../../../../klausul/boolean/type";
 import ProsedurType from "../../../../prosedur/boolean/type";
 import FungsiType from "../../../../fungsi/boolean/type";
 import LevelType from "../../../../level/boolean/type";
+import JabatanType from "../../../../jabatan/boolean/type";
 
 export default function Type(value : any) : value is Body {
 
@@ -120,6 +121,13 @@ export default function Type(value : any) : value is Body {
       }
   }
 
+    if(value.jabatan !== undefined) {
+
+        if(!ArrayOf(value.jabatan, JabatanType))  {
+
+            return false;
+        }
+    }
 
     return true;
 

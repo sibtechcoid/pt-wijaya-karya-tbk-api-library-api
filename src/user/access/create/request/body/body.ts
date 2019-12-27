@@ -4,6 +4,7 @@ import JenisUnit from "../../../jenis-unit/access";
 import JenisUsaha from "../../../jenis-usaha/access";
 import LevelUsaha from "../../../level-usaha/access";
 import UserAccess from "../../../user/access";
+import JabatanAccess from "../../../jabatan/access";
 import Rencana from "../../../rencana/access";
 import Fungsi from "../../../fungsi/access";
 import Klausul from "../../../klausul/access";
@@ -16,6 +17,7 @@ export default interface Body {
     proyek : Project[];
     rencana : Rencana[];
     user : UserAccess[];
+    jabatan : JabatanAccess[];
 
 
     unitKerja : UnitKerja[];

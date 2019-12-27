@@ -11,6 +11,7 @@ import AuditProgramType from "../../../../audit-program/boolean/type";
 import KlausulType from "../../../../klausul/boolean/type";
 import ProsedurType from "../../../../prosedur/boolean/type";
 import LevelType from "../../../../level/boolean/type";
+import JabatanType from "../../../../jabatan/boolean/type";
 import FungsiType from "../../../../fungsi/boolean/type";
 import ArrayOf from "@dikac/t-array/boolean/array-of";
 
@@ -77,6 +78,11 @@ export default function Type(value : any) : value is Body {
     }
 
     if(!ArrayOf(value.level, LevelType))  {
+
+        return false;
+    }
+
+    if(!ArrayOf(value.jabatan, JabatanType))  {
 
         return false;
     }

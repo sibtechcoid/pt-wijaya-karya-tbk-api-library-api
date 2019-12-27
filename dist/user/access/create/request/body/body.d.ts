@@ -5,6 +5,10 @@ import JenisUsaha from "../../../jenis-usaha/access";
 import LevelUsaha from "../../../level-usaha/access";
 import UserAccess from "../../../user/access";
 import Rencana from "../../../rencana/access";
+import Fungsi from "../../../fungsi/access";
+import Klausul from "../../../klausul/access";
+import Level from "../../../level/access";
+import AuditProgram from "../../../audit-program/access";
 export default interface Body {
     proyek: Project[];
     rencana: Rencana[];
@@ -13,4 +17,8 @@ export default interface Body {
     jenisUnit: JenisUnit[];
     jenisUsaha: JenisUsaha[];
     levelUsaha: LevelUsaha[];
+    fungsi: Fungsi[];
+    klausul: Klausul[];
+    level: Level[];
+    auditProgram: AuditProgram[];
 }

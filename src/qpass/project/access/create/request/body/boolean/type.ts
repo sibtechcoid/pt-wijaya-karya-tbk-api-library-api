@@ -1,6 +1,5 @@
 import Body from "../body";
 import NotNull from "@dikac/t-object/boolean/type";
-import EnumType from "@dikac/t-enum/boolean/type";
 import RencanaAccessType from "../../../../recana/boolean/type";
 import SuratTugasAccessType from "../../../../surat-tugas/boolean/type";
 import ProyekAccessType from "../../../../proyek/boolean/type";

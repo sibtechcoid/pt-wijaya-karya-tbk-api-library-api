@@ -4,6 +4,7 @@ const type_1 = require("@dikac/t-object/boolean/type");
 const type_2 = require("@dikac/t-enum/boolean/type");
 const status_1 = require("../../../../../../qpass/project/status/status");
 const type_3 = require("../../../../../../project/create/request/body/boolean/type");
+const type_4 = require("../../../../type/type");
 function Type(value) {
     if (!type_1.default(value)) {
         return false;
@@ -12,6 +13,9 @@ function Type(value) {
         return false;
     }
     if (!type_2.default(value.status, status_1.default)) {
+        return false;
+    }
+    if (!type_2.default(value.type, type_4.default)) {
         return false;
     }
     return true;

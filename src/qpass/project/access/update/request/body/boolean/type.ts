@@ -3,7 +3,7 @@ import TypeObject from "@dikac/t-object/boolean/type";
 import ArrayOf from "@dikac/t-array/boolean/array-of";
 import RencanaAccessType from "../../../../recana/boolean/type";
 import ProyekAccessType from "../../../../proyek/boolean/type";
-import SuratTugasAccessType from "../../../../jadwal-rinci/boolean/type";
+import jadwalRinciAccessType from "../../../../jadwal-rinci/boolean/type";
 
 export default function Typez(value : any) : value is Body {
 
@@ -31,9 +31,9 @@ export default function Typez(value : any) : value is Body {
     }
 
 
-    if(value.suratTugas !== undefined) {
+    if(value.jadwalRinci !== undefined) {
 
-        if(!ArrayOf(value.suratTugas, SuratTugasAccessType))  {
+        if(!ArrayOf(value.jadwalRinci, jadwalRinciAccessType))  {
 
             return false;
         }

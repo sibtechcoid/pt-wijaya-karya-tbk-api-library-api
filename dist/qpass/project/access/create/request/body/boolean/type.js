@@ -15,7 +15,7 @@ function Type(value) {
     if (!array_of_1.default(value.proyek, type_4.default)) {
         return false;
     }
-    if (!array_of_1.default(value.suratTugas, type_3.default)) {
+    if (!array_of_1.default(value.jadwalRinci, type_3.default)) {
         return false;
     }
     return true;

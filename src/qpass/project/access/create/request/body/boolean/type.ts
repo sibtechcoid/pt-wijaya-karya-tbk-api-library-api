@@ -1,7 +1,7 @@
 import Body from "../body";
 import NotNull from "@dikac/t-object/boolean/type";
 import RencanaAccessType from "../../../../recana/boolean/type";
-import SuratTugasAccessType from "../../../../jadwal-rinci/boolean/type";
+import jadwalRinciAccessType from "../../../../jadwal-rinci/boolean/type";
 import ProyekAccessType from "../../../../proyek/boolean/type";
 import ArrayOf from "@dikac/t-array/boolean/array-of";
 
@@ -24,7 +24,7 @@ export default function Type(value : any) : value is Body {
     }
 
 
-    if(!ArrayOf(value.suratTugas, SuratTugasAccessType))  {
+    if(!ArrayOf(value.jadwalRinci, jadwalRinciAccessType))  {
 
         return false;
     }

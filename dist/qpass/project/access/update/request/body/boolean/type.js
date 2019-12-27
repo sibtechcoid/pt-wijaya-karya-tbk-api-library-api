@@ -19,8 +19,8 @@ function Typez(value) {
             return false;
         }
     }
-    if (value.suratTugas !== undefined) {
-        if (!array_of_1.default(value.suratTugas, type_4.default)) {
+    if (value.jadwalRinci !== undefined) {
+        if (!array_of_1.default(value.jadwalRinci, type_4.default)) {
             return false;
         }
     }

@@ -1,10 +1,10 @@
 import TypeInterface from "../body";
-import TypeAccess from "../../../../access/boolean/type";
 import ArrayOf from "@dikac/t-array/boolean/array-of";
 import EnumType from "@dikac/t-enum/boolean/type";
 import Group from "../../../../group/group";
 import TypeName from "../../../../../../name/create/boolean/type";
 import TypeAbbreviation from "../../../../../../abbreviation/create/boolean/type";
+import TypeAccess from "../../../../../access/create/request/body/boolean/type";
 
 export default function Type<Extended extends TypeInterface = TypeInterface>(value : any) : value is Extended {
 

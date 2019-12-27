@@ -1,5 +1,5 @@
 import Body from "../body";
-import TypeAccess from "../../../../access/boolean/type";
+import TypeAccess from "../../../../../access/update/request/body/boolean/type";
 import ArrayOf from "@dikac/t-array/boolean/array-of";
 import TypeName from "../../../../../../name/update/boolean/type";
 import TypeAbbreviation from "../../../../../../abbreviation/update/boolean/type";

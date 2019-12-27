@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const type_1 = require("../../../../access/boolean/type");
+const type_1 = require("../../../../../access/update/request/body/boolean/type");
 const array_of_1 = require("@dikac/t-array/boolean/array-of");
 const type_2 = require("../../../../../../name/update/boolean/type");
 const type_3 = require("../../../../../../abbreviation/update/boolean/type");

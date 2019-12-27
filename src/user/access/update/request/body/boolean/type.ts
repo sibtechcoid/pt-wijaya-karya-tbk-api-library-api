@@ -13,6 +13,11 @@ import RencanaAccessType from "../../../../rencana/boolean/type";
 import LevelUsahaType from "../../../../level-usaha/boolean/type";
 import JenisUsahaType from "../../../../jenis-usaha/boolean/type";
 import JenisUnitType from "../../../../jenis-unit/boolean/type";
+import AuditProgramType from "../../../../audit-program/boolean/type";
+import KlausulType from "../../../../klausul/boolean/type";
+import ProsedurType from "../../../../prosedur/boolean/type";
+import FungsiType from "../../../../fungsi/boolean/type";
+import LevelType from "../../../../level/boolean/type";
 
 export default function Type(value : any) : value is Body {
 
@@ -77,6 +82,49 @@ export default function Type(value : any) : value is Body {
             return false;
         }
     }
+
+
+
+  if(value.jenisUnit !== undefined) {
+
+      if(!ArrayOf(value.auditProgram, AuditProgramType))  {
+
+          return false;
+      }
+  }
+
+  if(value.jenisUnit !== undefined) {
+
+      if(!ArrayOf(value.klausul, KlausulType))  {
+
+          return false;
+      }
+  }
+
+  if(value.jenisUnit !== undefined) {
+
+      if(!ArrayOf(value.prosedur, ProsedurType))  {
+
+          return false;
+      }
+  }
+
+  if(value.jenisUnit !== undefined) {
+
+      if(!ArrayOf(value.fungsi, FungsiType))  {
+
+          return false;
+      }
+  }
+
+  if(value.jenisUnit !== undefined) {
+
+      if(!ArrayOf(value.level, LevelType))  {
+
+          return false;
+      }
+  }
+
 
     return true;
 

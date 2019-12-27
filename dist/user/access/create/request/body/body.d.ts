@@ -7,6 +7,7 @@ import UserAccess from "../../../user/access";
 import Rencana from "../../../rencana/access";
 import Fungsi from "../../../fungsi/access";
 import Klausul from "../../../klausul/access";
+import Prosedur from "../../../prosedur/access";
 import Level from "../../../level/access";
 import AuditProgram from "../../../audit-program/access";
 export default interface Body {
@@ -17,6 +18,7 @@ export default interface Body {
     jenisUnit: JenisUnit[];
     jenisUsaha: JenisUsaha[];
     levelUsaha: LevelUsaha[];
+    prosedur: Prosedur[];
     fungsi: Fungsi[];
     klausul: Klausul[];
     level: Level[];

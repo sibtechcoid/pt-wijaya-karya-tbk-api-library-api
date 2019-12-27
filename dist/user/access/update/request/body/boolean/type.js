@@ -14,6 +14,7 @@ const type_10 = require("../../../../klausul/boolean/type");
 const type_11 = require("../../../../prosedur/boolean/type");
 const type_12 = require("../../../../fungsi/boolean/type");
 const type_13 = require("../../../../level/boolean/type");
+const type_14 = require("../../../../jabatan/boolean/type");
 function Type(value) {
     if (!type_1.default(value)) {
         return false;
@@ -75,6 +76,11 @@ function Type(value) {
     }
     if (value.jenisUnit !== undefined) {
         if (!array_of_1.default(value.level, type_13.default)) {
+            return false;
+        }
+    }
+    if (value.jabatan !== undefined) {
+        if (!array_of_1.default(value.jabatan, type_14.default)) {
             return false;
         }
     }

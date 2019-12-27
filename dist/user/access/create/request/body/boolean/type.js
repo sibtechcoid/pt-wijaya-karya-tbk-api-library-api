@@ -12,7 +12,8 @@ const type_9 = require("../../../../audit-program/boolean/type");
 const type_10 = require("../../../../klausul/boolean/type");
 const type_11 = require("../../../../prosedur/boolean/type");
 const type_12 = require("../../../../level/boolean/type");
-const type_13 = require("../../../../fungsi/boolean/type");
+const type_13 = require("../../../../jabatan/boolean/type");
+const type_14 = require("../../../../fungsi/boolean/type");
 const array_of_1 = require("@dikac/t-array/boolean/array-of");
 function Type(value) {
     if (!type_1.default(value)) {
@@ -48,10 +49,13 @@ function Type(value) {
     if (!array_of_1.default(value.prosedur, type_11.default)) {
         return false;
     }
-    if (!array_of_1.default(value.fungsi, type_13.default)) {
+    if (!array_of_1.default(value.fungsi, type_14.default)) {
         return false;
     }
     if (!array_of_1.default(value.level, type_12.default)) {
+        return false;
+    }
+    if (!array_of_1.default(value.jabatan, type_13.default)) {
         return false;
     }
     return true;

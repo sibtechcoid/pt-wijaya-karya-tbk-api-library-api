@@ -1,5 +1,5 @@
 import Rencana from "../../../recana/access";
-import SuratTugas from "../../../surat-tugas/access";
+import SuratTugas from "../../../jadwal-rinci/access";
 import Proyek from "../../../proyek/access";
 
 export default interface Body {

@@ -6,8 +6,8 @@ import Position from "../../../position/read/response/body/body";
 
 export default interface Body extends Record, Deactivate, Id {
 
-    extraAccess : Access;
-    access : Access;
+    //extraAccess : Access;
+   // access : Access;
     position : Omit<Position, 'access'>|null;
     name : string;
     user : string;

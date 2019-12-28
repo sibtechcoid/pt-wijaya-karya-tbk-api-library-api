@@ -6,8 +6,10 @@ function Type(value) {
     if (!type_1.default(value)) {
         return false;
     }
-    if (!type_2.default(value.deactivate)) {
-        return false;
+    if (value.deactivate !== undefined) {
+        if (!type_2.default(value.deactivate)) {
+            return false;
+        }
     }
     return true;
 }

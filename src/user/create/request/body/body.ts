@@ -1,4 +1,4 @@
-export default interface User {
+export default interface Body {
 
     name            : string;
     password        : string;

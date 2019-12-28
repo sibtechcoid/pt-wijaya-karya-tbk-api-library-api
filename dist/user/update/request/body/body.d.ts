@@ -1,3 +1,3 @@
-import User from "../../../create/request/user/user";
-export default interface Body extends Partial<User> {
+import CreateBody from "../../../create/request/body/body";
+export default interface Body extends Partial<CreateBody> {
 }

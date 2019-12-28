@@ -9,9 +9,12 @@ export default function Type<Extended extends Body = Body>(value : any) : value 
         return false;
     }
 
-    if(!BooleanType(value.deactivate)) {
+    if(value.deactivate !== undefined) {
 
-        return false;
+        if(!BooleanType(value.deactivate)) {
+
+            return false;
+        }
     }
 
     return true;

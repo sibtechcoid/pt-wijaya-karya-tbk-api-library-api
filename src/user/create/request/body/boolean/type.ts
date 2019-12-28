@@ -1,4 +1,4 @@
-import TypeInterface from "../user";
+import TypeInterface from "../body";
 import NotNull from "@dikac/t-object/boolean/type";
 import IsString from "@dikac/t-string/boolean/type";
 

@@ -1,8 +1,8 @@
-import User from "../request/user/user";
+import Body from "../request/body/body";
 import Path from "../request/path/path";
 import Validator from "../../../validator/validator";
 import Method from "../request/method/method";
 
-export default interface Route extends Path, Validator<User>, Method {
+export default interface Route extends Path, Validator<Body>, Method {
 
 }

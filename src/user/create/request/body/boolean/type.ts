@@ -1,6 +1,7 @@
 import TypeInterface from "../body";
 import NotNull from "@dikac/t-object/boolean/type";
 import IsString from "@dikac/t-string/boolean/type";
+import IsNumber from "@dikac/t-number/boolean/type";
 
 export default function Type<Extended extends TypeInterface = TypeInterface>(value : any) : value is Extended {
 
@@ -35,6 +36,11 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
     }
 
     if(!IsString(value.password)) {
+
+        return false;
+    }
+
+    if(!IsNumber(value.position)) {
 
         return false;
     }

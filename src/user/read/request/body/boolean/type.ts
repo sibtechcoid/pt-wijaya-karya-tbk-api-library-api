@@ -2,7 +2,7 @@ import DeactivatedType from "../../../../../deactivate/read/request/body/boolean
 import Body from "../body";
 import LimitType from "../../../../../limit/boolean/type";
 import SortType from "../../../../../sort/boolean/type";
-import Null from "../../../../create/request/body/null";
+import Null from "../null";
 
 export default function Type(value : any) : value is Body {
 

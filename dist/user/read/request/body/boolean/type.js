@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const type_1 = require("../../../../../deactivate/read/request/body/boolean/type");
 const type_2 = require("../../../../../limit/boolean/type");
 const type_3 = require("../../../../../sort/boolean/type");
-const null_1 = require("../../../../create/request/body/null");
+const null_1 = require("../null");
 function Type(value) {
     if (!type_1.default(value)) {
         return false;

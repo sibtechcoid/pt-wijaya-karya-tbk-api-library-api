@@ -25,7 +25,7 @@ function Type(value) {
     if (!type_2.default(value.password)) {
         return false;
     }
-    if (!type_3.default(value.position)) {
+    if (!type_3.default(value.position) && value.position !== null) {
         return false;
     }
     return true;

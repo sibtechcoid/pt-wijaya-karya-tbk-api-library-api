@@ -6,8 +6,10 @@ function Typez(value) {
     if (!type_1.default(value)) {
         return false;
     }
-    if (!finite_1.default(value.position)) {
-        return false;
+    if (value.position !== undefined) {
+        if (!finite_1.default(value.position) && value.position !== null) {
+            return false;
+        }
     }
     if (!finite_1.default(value.id)) {
         return false;

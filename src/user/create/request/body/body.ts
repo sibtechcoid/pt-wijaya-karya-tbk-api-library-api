@@ -1,7 +1,7 @@
 export default interface Body {
 
     name            : string;
-    position        : number;
+    position        : number|null;
     password        : string;
     user            : string;
     abbreviation    : string;

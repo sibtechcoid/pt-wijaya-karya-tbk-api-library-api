@@ -7,7 +7,7 @@ function Type(value) {
         return false;
     }
     if (value.limit !== undefined) {
-        if (!type_2.default(value)) {
+        if (!type_2.default(value.limit)) {
             return false;
         }
     }

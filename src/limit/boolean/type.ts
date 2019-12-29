@@ -1,6 +1,6 @@
 import NotNull from "@dikac/t-object/boolean/type";
 import Limit from "../limit";
-import LimitType from "../range/boolean/type";
+import RangeType from "../range/boolean/type";
 
 export default function Type(value : any) : value is Limit {
 
@@ -11,7 +11,7 @@ export default function Type(value : any) : value is Limit {
 
     if(value.limit !== undefined) {
 
-        if(!LimitType(value)) {
+        if(!RangeType(value.limit)) {
 
             return false;
         }

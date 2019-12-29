@@ -4,10 +4,13 @@ import Sort from "../../../../sort/sort";
 import ReadsBody from "../../response/body/body";
 import CreateBody from "../../../create/request/body/body";
 
+export interface WhereInterface extends Partial<Omit<CreateBody,'password'|'user'>>, Deactivate{
 
-export default interface Body extends Deactivate, Limit, Sort<Omit<ReadsBody,'extraAccess'|'access'|'position'|'password'>> {
+}
 
-    where ?: Partial<Omit<CreateBody,'password'|'user'>>;
+export default interface Body extends Limit, Sort<Omit<ReadsBody,'extraAccess'|'access'|'position'|'password'>> {
+
+    where ?: WhereInterface;
 }
 
 // let c : Body = {

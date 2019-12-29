@@ -9,7 +9,7 @@ export default function Type(value : any) : value is Limit {
         return false;
     }
 
-    if(!value.limit !== undefined) {
+    if(value.limit !== undefined) {
 
         if(!LimitType(value)) {
 

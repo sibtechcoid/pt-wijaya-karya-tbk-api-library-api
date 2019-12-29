@@ -2,7 +2,7 @@ import DeactivatedType from "../../../../../deactivate/read/request/body/boolean
 import Body from "../body";
 import LimitType from "../../../../../limit/boolean/type";
 import SortType from "../../../../../sort/boolean/type";
-import Null from "../null";
+import Null from "../sort/null";
 import NotNull from "@dikac/t-object/boolean/type";
 import Where from "./where";
 

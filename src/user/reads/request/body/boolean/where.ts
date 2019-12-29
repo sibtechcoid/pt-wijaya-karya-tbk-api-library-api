@@ -1,10 +1,10 @@
-import TypeInterface, {WhereInterface} from "../body";
+import TypeInterface, {Where} from "../body";
 import NotNull from "@dikac/t-object/boolean/type";
 import IsString from "@dikac/t-string/boolean/type";
 import TypeNumber from "@dikac/t-number/boolean/finite";
 import DeactivatedType from "../../../../../deactivate/read/request/body/boolean/type";
 
-export default function Where<Extended extends WhereInterface = WhereInterface>(value : any) : value is Extended {
+export default function Where<Extended extends Where = Where>(value : any) : value is Extended {
 
     if(!NotNull<Extended>(value)) {
 

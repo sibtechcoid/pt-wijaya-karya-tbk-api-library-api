@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const type_1 = require("../../../../../limit/boolean/type");
 const type_2 = require("../../../../../sort/boolean/type");
-const null_1 = require("../null");
+const null_1 = require("../sort/null");
 const type_3 = require("@dikac/t-object/boolean/type");
 const where_1 = require("./where");
 function Type(value) {

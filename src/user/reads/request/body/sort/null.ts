@@ -1,9 +1,10 @@
-import User from "../../../read/response/body/body";
-import ReadBody from "../../response/body/body";
+import User from "../../../../read/response/body/body";
+import ReadBody from "../../../response/body/body";
+import {Sort} from "../body";
 
-export default function Null () : Omit<ReadBody,'extraAccess'|'access'|'position'> {
+export default function Null () : (keyof Sort)[] {
 
-    return {
+    let temp : Sort  =  {
         id           : 0,
         name         : '',
         user         : '',
@@ -17,8 +18,12 @@ export default function Null () : Omit<ReadBody,'extraAccess'|'access'|'position
         created      : '',
         updated      : '',
         deactivate   : '',
-    }
+    };
+
+    return <(keyof Sort)[]>Object.keys(temp);
 }
+
+
 
 
 // class Create implements User {

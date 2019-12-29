@@ -3,7 +3,7 @@ import Sort from "../sort";
 import ModeType from "../mode/boolean/type";
 import ObjectType from "@dikac/t-object/boolean/type";
 
-export default function Type<Entity>(value : any, entity : Entity) : value is Sort<Entity> {
+export default function Type<Entity>(value : any, properties : (keyof Entity)[]) : value is Sort<Entity> {
 
     if(!NotNull<Sort<Entity>>(value)) {
 
@@ -14,7 +14,7 @@ export default function Type<Entity>(value : any, entity : Entity) : value is So
 
         for(let property in value.sort) {
 
-            if(!(property in entity)) {
+            if(!properties.includes(property)) {
 
                 return false;
             }

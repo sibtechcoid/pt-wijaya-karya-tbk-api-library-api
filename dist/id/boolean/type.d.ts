@@ -1,6 +1,6 @@
-import Id from "../id";
-interface Optional {
+import { Required } from "utility-types";
+export default function Type<Extension extends {
     id?: number;
-}
-export default function Type<Extension extends Optional = Optional>(value: any): value is Omit<Extension, 'id'> & Id;
-export {};
+} = {
+    id?: number;
+}>(value: any): value is Required<Extension, 'id'>;

@@ -1,4 +1,4 @@
 import Success from "../../../response/success";
-import User from "./body/body";
-declare type Response = Success<User[]>;
+import Body from "./body/body";
+declare type Response = Success<Body>;
 export default Response;

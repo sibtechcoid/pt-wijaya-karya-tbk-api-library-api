@@ -18,15 +18,4 @@ function Null() {
     };
 }
 exports.default = Null;
-// class Create implements User {
-//
-//     constructor(
-//        public name : string,
-//        public user : string,
-//        public abbreviation : string,
-//        public phone : string,
-//        public email : string,
-//        public nip : string
-//     ) {}
-// }
 //# sourceMappingURL=null.js.map

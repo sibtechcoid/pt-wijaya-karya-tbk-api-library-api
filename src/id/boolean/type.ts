@@ -1,12 +1,8 @@
 import TypeObject from "@dikac/t-object/boolean/type";
 import TypeNumber from "@dikac/t-number/boolean/finite";
-import Id from "../id";
+import {Required} from "utility-types";
 
-interface Optional {
-    id ?: number;
-}
-
-export default function Type<Extension extends Optional = Optional>(value : any)  : value is Omit<Extension, 'id'> & Id {
+export default function Type<Extension extends {id ?: number} = {id ?: number}>(value : any)  : value is Required<Extension, 'id'> {
 
     if(!TypeObject<Extension>(value)) {
 

@@ -19,16 +19,3 @@ export default function Null () : Omit<ReadBody,'extraAccess'|'access'|'position
         deactivate   : '',
     }
 }
-
-
-// class Create implements User {
-//
-//     constructor(
-//        public name : string,
-//        public user : string,
-//        public abbreviation : string,
-//        public phone : string,
-//        public email : string,
-//        public nip : string
-//     ) {}
-// }

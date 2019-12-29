@@ -5,8 +5,14 @@ enum Status {
     DRAFT = "DRAFT",
     SUBMIT = "SUBMIT",
     PUBLISH = "PUBLISH",
-    REJECT = "REJECT",
-    APPROVE = "APPROVE",
+
+    // /** deprecated **/
+    // REJECT = "REJECT",
+    // /** deprecated **/
+    // APPROVE = "APPROVE",
+
+    PROJECT_REJECT = "PROJECT_REJECT",
+    MEMBER_REJECT = "MEMBER_REJECT",
     PROJECT_WAITING = "PROJECT_WAITING",
     MEMBER_WAITING = "MEMBER_WAITING",
     FINISH = "FINISH",

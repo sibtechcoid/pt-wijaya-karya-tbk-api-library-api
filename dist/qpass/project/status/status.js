@@ -8,8 +8,12 @@ var Status;
     Status["DRAFT"] = "DRAFT";
     Status["SUBMIT"] = "SUBMIT";
     Status["PUBLISH"] = "PUBLISH";
-    Status["REJECT"] = "REJECT";
-    Status["APPROVE"] = "APPROVE";
+    // /** deprecated **/
+    // REJECT = "REJECT",
+    // /** deprecated **/
+    // APPROVE = "APPROVE",
+    Status["PROJECT_REJECT"] = "PROJECT_REJECT";
+    Status["MEMBER_REJECT"] = "MEMBER_REJECT";
     Status["PROJECT_WAITING"] = "PROJECT_WAITING";
     Status["MEMBER_WAITING"] = "MEMBER_WAITING";
     Status["FINISH"] = "FINISH";

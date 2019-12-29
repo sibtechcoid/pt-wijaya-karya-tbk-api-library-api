@@ -7,7 +7,7 @@ import CreateBody from "../../../create/request/body/body";
 
 export default interface Body extends Deactivate, Limit, Sort<Omit<ReadsBody,'extraAccess'|'access'|'position'|'password'>> {
 
-    where ?: Partial<CreateBody>;
+    where ?: Partial<Omit<CreateBody,'password'|'user'>>;
 }
 
 // let c : Body = {

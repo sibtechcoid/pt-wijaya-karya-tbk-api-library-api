@@ -4,7 +4,7 @@
   "description": "Wika API library",
   "dependencies": {
     "@dikac/t-array": "^0.9.11",
-    "@dikac/t-boolean": "^0.1.3",
+    "@dikac/t-boolean": "^0.2.1",
     "@dikac/t-date": "^0.7.11",
     "@dikac/t-enum": "^0.5.16",
     "@dikac/t-null": "0.0.2",

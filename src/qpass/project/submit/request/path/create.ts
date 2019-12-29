@@ -3,5 +3,5 @@ import Path from "./path";
 
 export default function Create() : Path {
 
-    return new CreatePath('/internal/project-submit');
+    return new CreatePath('/qpass/project-submit');
 }

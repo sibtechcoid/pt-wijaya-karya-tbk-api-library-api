@@ -1,5 +1,5 @@
 import PathInterface from "../../../../../path/path";
 
-export default interface Path extends PathInterface<'/qpass/project-accept'> {
+export default interface Path extends PathInterface<'/qpass/project-approve'> {
 
 }

@@ -1,4 +1,4 @@
-declare enum Access {
+enum Access {
     CREATE = "CREATE",
     UPDATE_DATA = "UPDATE_DATA",
     UPDATE_SUBMIT = "UPDATE_SUBMIT",

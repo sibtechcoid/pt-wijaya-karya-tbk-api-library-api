@@ -1,10 +1,7 @@
 import Route from "../../../../../../dist/internal/object/type/update/route/create";
 import Type from "../../../../../../dist/internal/object/type/update/request/body/body";
-import IdCreate from "../../../../../../dist/id/create";
-import Id from "../../../../../../dist/id/id";
 import Request from "../../../../../../dist/internal/object/type/update/request/create";
 import RequestRoute from "../../../../../request/request-route";
-import Assign from "../../../../../../dist/id/assign";
 
 describe('internal/object/type/update request', () => {
 

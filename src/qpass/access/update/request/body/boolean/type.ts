@@ -4,11 +4,17 @@ import ArrayOf from "@dikac/t-array/boolean/array-of";
 import ProjectAccessType from "../../../../proyek/boolean/type";
 import jadwalRinciAccessType from "../../../../jadwal-rinci/boolean/type";
 import RencanaAccessType from "../../../../rencana/boolean/type";
+import TypeId from "../../../../../../id/boolean/type";
 
 
 export default function Type(value : any) : value is Body {
 
     if(!TypeObject<Body>(value)) {
+
+        return false;
+    }
+
+    if(!TypeId(value)) {
 
         return false;
     }

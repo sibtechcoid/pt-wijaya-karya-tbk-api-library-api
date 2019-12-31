@@ -5,8 +5,12 @@ const array_of_1 = require("@dikac/t-array/boolean/array-of");
 const type_2 = require("../../../../proyek/boolean/type");
 const type_3 = require("../../../../jadwal-rinci/boolean/type");
 const type_4 = require("../../../../rencana/boolean/type");
+const type_5 = require("../../../../../../id/boolean/type");
 function Type(value) {
     if (!type_1.default(value)) {
+        return false;
+    }
+    if (!type_5.default(value)) {
         return false;
     }
     if (value.proyek !== undefined) {

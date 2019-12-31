@@ -15,8 +15,12 @@ const type_11 = require("../../../../prosedur/boolean/type");
 const type_12 = require("../../../../fungsi/boolean/type");
 const type_13 = require("../../../../level/boolean/type");
 const type_14 = require("../../../../jabatan/boolean/type");
+const type_15 = require("../../../../../../id/boolean/type");
 function Type(value) {
     if (!type_1.default(value)) {
+        return false;
+    }
+    if (!type_15.default(value)) {
         return false;
     }
     if (value.user !== undefined) {

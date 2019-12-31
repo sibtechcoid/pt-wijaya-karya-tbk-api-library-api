@@ -1,5 +1,4 @@
 import TypeInterface from "../body";
-import ArrayOf from "@dikac/t-array/boolean/array-of";
 import EnumType from "@dikac/t-enum/boolean/type";
 import Group from "../../../../group/group";
 import TypeName from "../../../../../../name/create/boolean/type";

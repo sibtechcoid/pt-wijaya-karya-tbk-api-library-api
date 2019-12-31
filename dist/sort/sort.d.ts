@@ -1,6 +1,5 @@
 import Mode from "./mode/mode";
-export default interface Sort<Entity> {
-    sort?: {
-        [Key in keyof Entity]?: Mode;
-    };
-}
+declare type Sort<Entity> = {
+    [Key in keyof Entity]?: Mode;
+};
+export default Sort;

@@ -1,3 +1,4 @@
 import Success from "../../../../response/success";
-declare type Response = Success<undefined>;
+import Body from "../../read/response/body/body";
+declare type Response = Success<Body>;
 export default Response;

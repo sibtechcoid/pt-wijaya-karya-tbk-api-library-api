@@ -1,10 +1,11 @@
 import Route from "./route";
-import Path from "../../create/request/path/create";
+import Path from "..//request/path/create";
 import Read from "../../../../method/read-create";
 import CreateRoute from "../../../../route/create";
-import Type from "../request/body/boolean/type";
+import TypeId from "../../../../id/boolean/type";
+
 
 export default function Create () : Route {
 
-    return CreateRoute(Read(), Path(), Type);
+    return CreateRoute(Read(), Path(), TypeId);
 }

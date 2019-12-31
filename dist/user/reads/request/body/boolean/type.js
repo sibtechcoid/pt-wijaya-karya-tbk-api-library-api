@@ -4,7 +4,7 @@ const type_1 = require("../../../../../limit/boolean/type");
 const type_2 = require("../../../../../sort/boolean/type");
 const null_1 = require("../sort/null");
 const type_3 = require("@dikac/t-object/boolean/type");
-const where_1 = require("./where");
+const type_4 = require("../where/boolean/type");
 function Type(value) {
     if (!type_3.default(value)) {
         return false;
@@ -12,11 +12,13 @@ function Type(value) {
     if (!type_1.default(value)) {
         return false;
     }
-    if (!type_2.default(value, null_1.default())) {
-        return false;
+    if (value.sort !== undefined) {
+        if (!type_2.default(value.sort, null_1.default())) {
+            return false;
+        }
     }
     if (value.where !== undefined) {
-        if (!where_1.default(value.where)) {
+        if (!type_4.default(value.where)) {
             return false;
         }
     }

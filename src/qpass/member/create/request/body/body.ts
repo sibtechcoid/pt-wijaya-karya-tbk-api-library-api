@@ -1,5 +1,13 @@
-import BaseMember from "../../../../../member/create/request/body/body";
+export default interface Body /*extends BaseMember*/ {
 
-export default interface Body extends BaseMember {
+    phone ?: string;
+    /**
+     * user id
+     */
+    user : number;
 
+    /**
+     * position
+     */
+    position : number;
 }

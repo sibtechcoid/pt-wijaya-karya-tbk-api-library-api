@@ -1,14 +1,6 @@
-import Name from "../../../../../name/update/name";
-import Abbreviation from "../../../../../abbreviation/update/abbreviation";
 import Id from "../../../../../id/id";
+import CreateBody from "../../../create/request/body/body";
 
-export default interface Body extends Name, Abbreviation, Id {
+export default interface Body extends Partial<CreateBody>, Id {
 
-    address ?: string;
-    level ?: number;
-    /**
-     * type id
-     */
-    type ?: number;
-    business ?: number;
 }

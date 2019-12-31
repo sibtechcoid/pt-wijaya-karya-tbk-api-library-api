@@ -16,5 +16,6 @@ export default function Type(value : any) : value is Limit {
             return false;
         }
     }
+
     return true;
 }

@@ -2,19 +2,19 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 function Null() {
     let temp = {
-        id: 0,
-        name: '',
-        user: '',
-        abbreviation: '',
+        id: null,
+        name: null,
+        user: null,
+        abbreviation: null,
         phone: null,
         email: null,
         nip: null,
-        active: true,
+        active: null,
         positionWika: null,
         parentId: null,
-        created: '',
-        updated: '',
-        deactivate: '',
+        created: null,
+        updated: null,
+        deactivate: null,
     };
     return Object.keys(temp);
 }

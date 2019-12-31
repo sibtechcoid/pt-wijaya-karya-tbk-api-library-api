@@ -16,10 +16,10 @@ describe('project request body', () => {
         };
 
         let sort : Sort<Name & Abbreviation> = {
-          sort : {name:Mode.ASC}
+            name:Mode.ASC
         };
 
-        expect(SortType(sort, object)).toBe(true);
+        expect(SortType(sort, Object.keys(object))).toBe(true);
     });
 
 

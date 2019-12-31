@@ -4,6 +4,10 @@ import IsEnum from "@dikac/t-enum/boolean/type";
 import Status from "../../../../../../qpass/project/status/status";
 import ProjectType from "../../../../../../project/create/request/body/boolean/type";
 import TypeType from "../../../../type/type";
+import ScheduleType from "../../../../../../schedule/create/request/body/boolean/type";
+import IsNumber from "@dikac/t-number/boolean/finite";
+import ArrayOf from "@dikac/t-array/boolean/array-of";
+import TypeMember from "../../../../../../member/create/request/body/boolean/type";
 
 export default function Type<Extended extends TypeInterface = TypeInterface>(value : any) : value is Extended {
 
@@ -12,7 +16,17 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
         return false;
     }
 
-    if(!ProjectType(value)) {
+    if(!ScheduleType(value)) {
+
+        return false;
+    }
+
+    if(!IsNumber(value.object)) {
+
+        return false;
+    }
+
+    if(!ArrayOf(value.members, TypeMember)) {
 
         return false;
     }

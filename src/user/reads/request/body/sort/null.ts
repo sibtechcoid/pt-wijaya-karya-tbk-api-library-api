@@ -1,29 +1,27 @@
 import User from "../../../../read/response/body/body";
 import ReadBody from "../../../response/body/body";
-import {Sort} from "../body";
+import Sort from "./sort";
 
 export default function Null () : (keyof Sort)[] {
 
-    let temp : Sort  =  {
-        id           : 0,
-        name         : '',
-        user         : '',
-        abbreviation : '',
+    let temp : {[Key in keyof Sort] : any}  =  {
+        id           : null,
+        name         : null,
+        user         : null,
+        abbreviation : null,
         phone        : null,
         email        : null,
         nip          : null,
-        active       : true,
+        active       : null,
         positionWika : null,
         parentId     : null,
-        created      : '',
-        updated      : '',
-        deactivate   : '',
+        created      : null,
+        updated      : null,
+        deactivate   : null,
     };
 
     return <(keyof Sort)[]>Object.keys(temp);
 }
-
-
 
 
 // class Create implements User {

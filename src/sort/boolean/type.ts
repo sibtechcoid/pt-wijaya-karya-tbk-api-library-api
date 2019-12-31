@@ -10,16 +10,16 @@ export default function Type<Entity>(value : any, properties : (keyof Entity)[])
         return false;
     }
 
-    if(ObjectType(value.sort)) {
+    if(ObjectType(value)) {
 
-        for(let property in value.sort) {
+        for(let property in value) {
 
             if(!properties.includes(property)) {
 
                 return false;
             }
 
-            if(!ModeType(value.sort[property])) {
+            if(!ModeType(value[property])) {
 
                 return false;
 

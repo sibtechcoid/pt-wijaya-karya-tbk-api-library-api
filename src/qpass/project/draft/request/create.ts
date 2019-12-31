@@ -1,7 +1,6 @@
 import Request from './request';
 import CreatBody from "../../../../body/create";
 import Path from "./path/create";
-import Id from "../../../../id/id";
 import Update from "../../../../method/update-create";
 import Body from "../../update/request/body/body";
 

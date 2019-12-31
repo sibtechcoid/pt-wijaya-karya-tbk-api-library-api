@@ -7,12 +7,12 @@ function Type(value, properties) {
     if (!type_1.default(value)) {
         return false;
     }
-    if (type_3.default(value.sort)) {
-        for (let property in value.sort) {
+    if (type_3.default(value)) {
+        for (let property in value) {
             if (!properties.includes(property)) {
                 return false;
             }
-            if (!type_2.default(value.sort[property])) {
+            if (!type_2.default(value[property])) {
                 return false;
             }
         }

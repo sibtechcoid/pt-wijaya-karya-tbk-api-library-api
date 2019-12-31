@@ -4,7 +4,7 @@ import LimitType from "../../../../../limit/boolean/type";
 import SortType from "../../../../../sort/boolean/type";
 import Null from "../sort/null";
 import NotNull from "@dikac/t-object/boolean/type";
-import Where from "./where";
+import WhereType from "../where/boolean/type";
 
 export default function Type(value : any) : value is Body {
 
@@ -18,14 +18,17 @@ export default function Type(value : any) : value is Body {
         return false;
     }
 
-    if(!SortType(value, Null())) {
+    if(value.sort !== undefined) {
 
-        return false;
+        if(!SortType(value.sort, Null())) {
+
+            return false;
+        }
     }
 
     if(value.where !== undefined) {
 
-        if(!Where(value.where)) {
+        if(!WhereType(value.where)) {
 
             return false;
         }

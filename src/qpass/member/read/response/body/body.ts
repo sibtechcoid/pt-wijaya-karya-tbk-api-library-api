@@ -13,8 +13,8 @@ export default interface Body extends /*BaseMember<Status, Access, Group, Positi
     position: Omit<Position, 'access'>;
     //statusDate: string | null;
     user: Omit<User,'extraAccess'|'position'|'access'>;
-    group : Group;
-    access : Access;
+
+    //access : Access;
 
    // action : Action;
    // actionDate : string|null;

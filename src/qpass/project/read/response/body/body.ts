@@ -16,6 +16,6 @@ export default interface Body extends /*BaseProject<MemberStatus, ProjectStatus,
     members : Omit<Member,'access'|'created'|'updated'|'id'>[]
     type : Type;
     penyetuju : Omit<User,'extraAccess'|'position'|'access'>|null
-    menolakan : Penolakan[]
+    penolakan : Penolakan[]
     //category : Category;
 }

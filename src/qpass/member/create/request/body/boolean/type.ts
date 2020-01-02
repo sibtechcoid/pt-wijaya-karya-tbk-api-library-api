@@ -1,5 +1,5 @@
 import TypeInterface from "../body";
-import ProjectMemberType from "../../../../../project/create/request/member/boolean/type";
+import ProjectMemberType from "../../../../../audit/create/request/member/boolean/type";
 
 export default function Type<Extended extends TypeInterface = TypeInterface>(value : any) : value is Extended {
 

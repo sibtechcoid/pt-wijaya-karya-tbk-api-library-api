@@ -4,7 +4,6 @@ declare enum Status {
      */
     DRAFT = "DRAFT",
     SUBMIT = "SUBMIT",
-    PUBLISH = "PUBLISH",
     PROJECT_REJECT = "PROJECT_REJECT",
     MEMBER_REJECT = "MEMBER_REJECT",
     PROJECT_WAITING = "PROJECT_WAITING",

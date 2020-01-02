@@ -7,7 +7,7 @@ var Status;
      */
     Status["DRAFT"] = "DRAFT";
     Status["SUBMIT"] = "SUBMIT";
-    Status["PUBLISH"] = "PUBLISH";
+    // PUBLISH = "PUBLISH",
     // /** deprecated **/
     // REJECT = "REJECT",
     // /** deprecated **/

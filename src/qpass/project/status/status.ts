@@ -4,7 +4,7 @@ enum Status {
      */
     DRAFT = "DRAFT",
     SUBMIT = "SUBMIT",
-    PUBLISH = "PUBLISH",
+   // PUBLISH = "PUBLISH",
 
     // /** deprecated **/
     // REJECT = "REJECT",

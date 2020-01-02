@@ -11,7 +11,7 @@ export default interface Body extends /*BaseProject<MemberStatus, ProjectStatus,
 
     status : ProjectStatus;
     object : Object;
-    members : Omit<Member,'access'|'created'|'updated'>[]
+    members : Omit<Member,'access'|'created'|'updated'|'id'>[]
     type : Type;
     //category : Category;
 }

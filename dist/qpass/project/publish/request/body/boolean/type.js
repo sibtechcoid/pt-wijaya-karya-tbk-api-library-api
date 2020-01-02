@@ -1,14 +1,14 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const type_1 = require("../../../../../../id/boolean/type");
-const type_2 = require("../../../../../../schedule/update/request/body/boolean/type");
 const array_of_1 = require("@dikac/t-array/boolean/array-of");
-const type_3 = require("../../../../../../member/create/request/body/boolean/type");
+const type_2 = require("../../../../../../member/create/request/body/boolean/type");
+const realize_1 = require("../../../../../../schedule/update/request/body/boolean/realize");
 function Type(value) {
     if (!type_1.default(value)) {
         return false;
     }
-    if (!type_2.default(value)) {
+    if (!realize_1.default(value)) {
         return false;
     }
     // if(value.object !== undefined){
@@ -19,7 +19,7 @@ function Type(value) {
     //     }
     // }
     if (value.members !== undefined) {
-        if (!array_of_1.default(value.members, type_3.default)) {
+        if (!array_of_1.default(value.members, type_2.default)) {
             return false;
         }
     }

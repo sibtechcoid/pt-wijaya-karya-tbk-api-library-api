@@ -6,8 +6,7 @@ import MemberPosition from "../../../../position/read/response/body/body";
 
 export default interface Penolakan extends Id, Record {
 
-    realizeFrom : string,
-    realizeTo : string,
+    realize : [Date|string, Date|string],
     alasan : string,
     user : Omit<User,'extraAccess'|'position'|'access'>
     jabatan : Omit<UserPosition, 'access'>|null;

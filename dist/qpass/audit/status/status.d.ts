@@ -11,9 +11,9 @@ declare enum Status {
      * perencanaan di publish menjadi proyek
      */
     PUBLISH = "PUBLISH",
-    audit_REJECT = "audit_REJECT",
+    PROJECT_REJECT = "PROJECT_REJECT",
     MEMBER_REJECT = "MEMBER_REJECT",
-    audit_WAITING = "audit_WAITING",
+    PROJECT_WAITING = "PROJECT_WAITING",
     MEMBER_WAITING = "MEMBER_WAITING",
     FINISH = "FINISH"
 }

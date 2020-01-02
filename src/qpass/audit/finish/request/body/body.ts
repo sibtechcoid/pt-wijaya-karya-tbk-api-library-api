@@ -1,4 +1,4 @@
-import PublishBody from "../../../proyek-publish/request/body/body";
+import PublishBody from "../../../confirm/request/body/body";
 
 
 export default interface Body extends PublishBody {

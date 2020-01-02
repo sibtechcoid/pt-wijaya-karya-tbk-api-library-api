@@ -1,2 +1,2 @@
-import Type from "../../../../proyek-publish/request/body/boolean/type";
+import Type from "../../../../confirm/request/body/boolean/type";
 export default Type;

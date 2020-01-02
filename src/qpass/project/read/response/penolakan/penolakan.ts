@@ -11,5 +11,5 @@ export default interface Penolakan extends Id, Record {
     alasan : string,
     user : Omit<User,'extraAccess'|'position'|'access'>
     jabatan : Omit<UserPosition, 'access'>|null;
-    jabatanMember: Omit<MemberPosition, 'access'>;
+    jabatanMember: Omit<MemberPosition, 'access'>|null;
 }

@@ -8,15 +8,15 @@ const status_1 = require("../../../../../status/status");
 const array_of_1 = require("@dikac/t-array/boolean/array-of");
 const compatible_1 = require("@dikac/t-date/boolean/compatible");
 const type_4 = require("../../../../../type/type");
-function Typez(value) {
+function Type(value) {
     if (!type_1.default(value)) {
         return false;
     }
     if (!type_2.default(value)) {
         return false;
     }
-    if (value.object !== undefined) {
-        if (!finite_1.default(value.object)) {
+    if (value.unitKerja !== undefined) {
+        if (!finite_1.default(value.unitKerja)) {
             return false;
         }
     }
@@ -25,22 +25,22 @@ function Typez(value) {
             return false;
         }
     }
-    if (value.type !== undefined) {
-        if (!type_3.default(value.type, type_4.default)) {
+    if (value.tipe !== undefined) {
+        if (!type_3.default(value.tipe, type_4.default)) {
             return false;
         }
     }
-    if (value.plan !== undefined) {
-        if (!array_of_1.default(value.plan, compatible_1.default) || value.plan.length !== 2) {
+    if (value.rencana !== undefined) {
+        if (!array_of_1.default(value.rencana, compatible_1.default) || value.rencana.length !== 2) {
             return false;
         }
     }
-    if (value.realize !== undefined) {
-        if (!array_of_1.default(value.realize, compatible_1.default) || value.realize.length !== 2) {
+    if (value.realisasi !== undefined) {
+        if (!array_of_1.default(value.realisasi, compatible_1.default) || value.realisasi.length !== 2) {
             return false;
         }
     }
     return true;
 }
-exports.default = Typez;
+exports.default = Type;
 //# sourceMappingURL=type.js.map

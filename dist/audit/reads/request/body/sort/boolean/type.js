@@ -9,9 +9,10 @@ function Type(value) {
         created: (v) => undefinable_1.default(v, type_1.default),
         deactivate: (v) => undefinable_1.default(v, type_1.default),
         id: (v) => undefinable_1.default(v, type_1.default),
-        plan: (v) => undefinable_1.default(v, (v) => array_of_1.default(v, type_1.default)),
-        realize: (v) => undefinable_1.default(v, (v) => array_of_1.default(v, type_1.default)),
+        rencana: (v) => undefinable_1.default(v, (v) => array_of_1.default(v, type_1.default)),
+        realisasi: (v) => undefinable_1.default(v, (v) => array_of_1.default(v, type_1.default)),
         updated: (v) => undefinable_1.default(v, type_1.default),
+        tipe: (v) => undefinable_1.default(v, type_1.default),
     };
     return structure_1.default(value, sort);
 }

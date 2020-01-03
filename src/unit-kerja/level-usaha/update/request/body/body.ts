@@ -4,6 +4,6 @@ import Id from "../../../../../id/id";
 
 export default interface Body extends Id, Nama, Singkatan {
 
-    tipe ?: number;
+    jenisUnit ?: number;
     //jenisUsaha ?: number;
 }

@@ -15,9 +15,10 @@ export default function Type<
         created    : (v) => Undefinable(v, ModeType),
         deactivate : (v) => Undefinable(v, ModeType),
         id         : (v) => Undefinable(v, ModeType),
-        plan       : (v) => Undefinable(v, (v) : v is Mode =>ArrayOf(v, ModeType)),
-        realize    : (v) => Undefinable(v, (v) : v is Mode =>ArrayOf(v, ModeType)),
+        rencana       : (v) => Undefinable(v, (v) : v is Mode =>ArrayOf(v, ModeType)),
+        realisasi    : (v) => Undefinable(v, (v) : v is Mode =>ArrayOf(v, ModeType)),
         updated    : (v) => Undefinable(v, ModeType),
+        tipe    : (v) => Undefinable(v, ModeType),
     };
 
     return Structure(value, sort);

@@ -9,9 +9,9 @@ export default function Type(value : any) : value is Level {
         return false;
     }
 
-    if(value.tipe !== undefined) {
+    if(value.jenisUnit !== undefined) {
 
-        if(!IsFinite(value.tipe)) {
+        if(!IsFinite(value.jenisUnit)) {
 
             return false;
         }

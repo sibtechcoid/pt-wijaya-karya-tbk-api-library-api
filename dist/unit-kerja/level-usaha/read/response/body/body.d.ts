@@ -5,5 +5,5 @@ import Nama from "../../../../../nama/create/nama";
 import Singkatan from "../../../../../singkatan/create/singkatan";
 import Type from "../../../../jenis-unit/reads/response/body/body";
 export default interface Body extends Deactivate, Record, Id, Nama, Singkatan {
-    type: Omit<Type, 'business' | 'level'>;
+    jenisUnit: Omit<Type, 'jenisUsaha' | 'levelUsaha'>;
 }

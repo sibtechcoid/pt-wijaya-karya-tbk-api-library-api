@@ -1,10 +1,10 @@
 import Member from "../../../../anggota/create/request/body/body";
 import Status from "../../../status/status";
 import Type from "../../../type/type";
-import Schedule from "../../../../schedule/create/request/body/body";
+import Schedule from "../../../../jadwal/create/request/body/body";
 export default interface Body extends /*audit<Member>,*/ Schedule {
-    object: number;
+    unitKerja: number;
     anggota: Member[];
     status: Status;
-    type: Type;
+    tipe: Type;
 }

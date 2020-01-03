@@ -22,13 +22,13 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
         return false;
     }
 
-    if(!IsString(value.address)) {
+    if(!IsString(value.alamat)) {
 
         return false;
     }
 
 
-    if(!IsNumber(value.business)) {
+    if(!IsNumber(value.jenisUsaha)) {
 
         return false;
     }

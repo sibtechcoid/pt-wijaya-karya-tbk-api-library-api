@@ -7,10 +7,11 @@ import EnumType from "@dikac/t-enum/boolean/type";
 import Status from "../../../../../status/status";
 import ArrayOf from "@dikac/t-array/boolean/array-of";
 import TypeDateCompatible from "@dikac/t-date/boolean/compatible";
-import Type from "../../../../../type/type";
+import AuditType from "../../../../../type/type";
 
 export default function
-    Typez<Extended extends Where = Where>(value : any) : value is Extended {
+    Type<Extended extends Where = Where>(value : any
+) : value is Extended {
 
     if(!NotNull<Extended>(value)) {
 
@@ -22,9 +23,9 @@ export default function
         return false;
     }
 
-    if(value.object !== undefined) {
+    if(value.unitKerja !== undefined) {
 
-        if(!TypeNumber(value.object)) {
+        if(!TypeNumber(value.unitKerja)) {
 
             return false;
         }
@@ -38,25 +39,25 @@ export default function
         }
     }
 
-    if(value.type !== undefined) {
+    if(value.tipe !== undefined) {
 
-        if(!EnumType(value.type, Type)) {
-
-            return false;
-        }
-    }
-
-    if(value.plan !== undefined){
-
-        if(!ArrayOf(value.plan, TypeDateCompatible) || value.plan.length !== 2) {
+        if(!EnumType(value.tipe, AuditType)) {
 
             return false;
         }
     }
 
-    if(value.realize !== undefined){
+    if(value.rencana !== undefined){
 
-        if(!ArrayOf(value.realize, TypeDateCompatible) || value.realize.length !== 2) {
+        if(!ArrayOf(value.rencana, TypeDateCompatible) || value.rencana.length !== 2) {
+
+            return false;
+        }
+    }
+
+    if(value.realisasi !== undefined){
+
+        if(!ArrayOf(value.realisasi, TypeDateCompatible) || value.realisasi.length !== 2) {
 
             return false;
         }

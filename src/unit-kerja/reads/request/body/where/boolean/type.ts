@@ -22,8 +22,8 @@ export default function
         deactivate    : (v) => Undefinable(v, BooleanType),
         nama    : (v) => Undefinable(v, StringType),
         singkatan    : (v) => Undefinable(v, StringType),
-        address    : (v) => Undefinable(v, StringType),
-        business    : (v) => Undefinable(v, TypeNumber),
+        alamat    : (v) => Undefinable(v, StringType),
+        jenisUsaha    : (v) => Undefinable(v, TypeNumber),
         level    : (v) => Undefinable(v, TypeNumber),
         type    : (v) => Undefinable(v, TypeNumber),
     };

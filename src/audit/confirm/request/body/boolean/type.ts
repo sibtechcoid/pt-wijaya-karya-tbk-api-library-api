@@ -2,11 +2,11 @@ import TypeInterface from "../body";
 import EnumType from "@dikac/t-enum/boolean/type";
 import TypeType from "../../../../type/type";
 import TypeId from "../../../../../id/boolean/type";
-import ScheduleType from "../../../../../schedule/update/request/body/boolean/type";
+import ScheduleType from "../../../../../jadwal/update/request/body/boolean/type";
 import IsNumber from "@dikac/t-number/boolean/finite";
 import ArrayOf from "@dikac/t-array/boolean/array-of";
 import TypeMember from "../../../../../anggota/create/request/body/boolean/type";
-import Realize from "../../../../../schedule/update/request/body/boolean/realize";
+import Realize from "../../../../../jadwal/update/request/body/boolean/realize";
 
 export default function Type<Extended extends TypeInterface = TypeInterface>(value : any) : value is Extended {
 

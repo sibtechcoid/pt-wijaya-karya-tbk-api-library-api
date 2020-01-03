@@ -19,8 +19,8 @@ function Type(value) {
     if (!type_4.default(value)) {
         return false;
     }
-    if (value.address !== undefined) {
-        if (!type_2.default(value.address)) {
+    if (value.alamat !== undefined) {
+        if (!type_2.default(value.alamat)) {
             return false;
         }
     }
@@ -34,8 +34,8 @@ function Type(value) {
             return false;
         }
     }
-    if (value.business !== undefined) {
-        if (!finite_1.default(value.business)) {
+    if (value.jenisUsaha !== undefined) {
+        if (!finite_1.default(value.jenisUsaha)) {
             return false;
         }
     }

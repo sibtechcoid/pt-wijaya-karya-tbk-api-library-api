@@ -9,5 +9,5 @@ export default interface Body extends Id {
     audit : Omit<Project,'member'>[];
     nomer : string;
     lampiran : (Id & Omit<Lampiran,'data'>)[]
-   // type: null|Type;
+   // jenisUnit: null|Type;
 }

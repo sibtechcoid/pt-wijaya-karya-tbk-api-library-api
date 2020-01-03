@@ -8,7 +8,7 @@ import Type from "../../../../jenis-unit/reads/response/body/body";
 export default interface Body extends Deactivate, Record, Id, Nama, Singkatan {
 
     // tobe deprecated
-    //jenisUsaha : Omit<Business,'level'>;
+    //jenisUsaha : Omit<jenisUsaha,'levelUsaha'>;
 
-    type : Omit<Type,'business'|'level'>
+    jenisUnit : Omit<Type,'jenisUsaha'|'levelUsaha'>
 }

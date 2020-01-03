@@ -6,7 +6,7 @@ function Type(value) {
     if (!type_1.default(value)) {
         return false;
     }
-    if (!finite_1.default(value.tipe)) {
+    if (!finite_1.default(value.jenisUsaha)) {
         return false;
     }
     //    to be deprecated

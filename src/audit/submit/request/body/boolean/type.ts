@@ -2,7 +2,7 @@ import TypeInterface from "../body";
 import EnumType from "@dikac/t-enum/boolean/type";
 import TypeType from "../../../../type/type";
 import TypeId from "../../../../../id/boolean/type";
-import ScheduleType from "../../../../../schedule/update/request/body/boolean/type";
+import ScheduleType from "../../../../../jadwal/update/request/body/boolean/type";
 import IsNumber from "@dikac/t-number/boolean/finite";
 import ArrayOf from "@dikac/t-array/boolean/array-of";
 import TypeMember from "../../../../../anggota/create/request/body/boolean/type";
@@ -19,9 +19,9 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
         return false;
     }
 
-    if(value.object !== undefined){
+    if(value.unitKerja !== undefined){
 
-        if(!IsNumber(value.object)) {
+        if(!IsNumber(value.unitKerja)) {
 
             return false;
         }
@@ -35,9 +35,9 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
         }
     }
 
-    if(value.type !== undefined){
+    if(value.tipe !== undefined){
 
-        if(!EnumType(value.type, TypeType)) {
+        if(!EnumType(value.tipe, TypeType)) {
 
             return false;
         }

@@ -1,0 +1,1 @@
+{"version":3,"file":"type.js","sourceRoot":"","sources":["../../../../../../src/jadwal/create/request/body/boolean/type.ts"],"names":[],"mappings":";;AAIA,uEAAgE;AAChE,6EAAsE;AAEtE,SAAwB,IAAI,CAAiD,KAAW;IAEpF,IAAG,CAAC,cAAI,CAAC,KAAK,CAAC,EAAE;QAEb,OAAO,KAAK,CAAC;KAChB;IAED,IAAG,CAAC,iBAAO,CAAC,KAAK,CAAC,EAAE;QAEhB,OAAO,KAAK,CAAC;KAChB;IAGD,OAAO,IAAI,CAAC;AAChB,CAAC;AAdD,uBAcC"}

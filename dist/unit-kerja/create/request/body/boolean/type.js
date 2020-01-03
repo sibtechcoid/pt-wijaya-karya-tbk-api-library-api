@@ -15,10 +15,10 @@ function Type(value) {
     if (!type_4.default(value)) {
         return false;
     }
-    if (!type_2.default(value.address)) {
+    if (!type_2.default(value.alamat)) {
         return false;
     }
-    if (!finite_1.default(value.business)) {
+    if (!finite_1.default(value.jenisUsaha)) {
         return false;
     }
     if (!finite_1.default(value.level)) {

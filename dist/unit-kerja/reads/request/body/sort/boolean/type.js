@@ -11,7 +11,7 @@ function Type(value) {
         updated: (v) => undefinable_1.default(v, type_1.default),
         nama: (v) => undefinable_1.default(v, type_1.default),
         singkatan: (v) => undefinable_1.default(v, type_1.default),
-        address: (v) => undefinable_1.default(v, type_1.default),
+        alamat: (v) => undefinable_1.default(v, type_1.default),
     };
     return structure_1.default(value, sort);
 }

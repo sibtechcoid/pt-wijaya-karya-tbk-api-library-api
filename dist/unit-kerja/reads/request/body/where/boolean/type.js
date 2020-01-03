@@ -14,8 +14,8 @@ function Type(value) {
         deactivate: (v) => undefinable_1.default(v, type_3.default),
         nama: (v) => undefinable_1.default(v, type_2.default),
         singkatan: (v) => undefinable_1.default(v, type_2.default),
-        address: (v) => undefinable_1.default(v, type_2.default),
-        business: (v) => undefinable_1.default(v, finite_1.default),
+        alamat: (v) => undefinable_1.default(v, type_2.default),
+        jenisUsaha: (v) => undefinable_1.default(v, finite_1.default),
         level: (v) => undefinable_1.default(v, finite_1.default),
         type: (v) => undefinable_1.default(v, finite_1.default),
     };

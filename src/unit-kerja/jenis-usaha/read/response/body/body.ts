@@ -7,5 +7,5 @@ import Type from "../../../../jenis-unit/reads/response/body/body";
 
 export default interface Body extends Id, Record, Deactivate, Nama, Singkatan {
 
-    type : Omit<Type, 'business'|'level'>
+    type : Omit<Type, 'jenisUsaha'|'levelUsaha'>
 }

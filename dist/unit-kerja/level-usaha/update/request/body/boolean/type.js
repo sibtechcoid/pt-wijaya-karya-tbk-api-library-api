@@ -6,8 +6,8 @@ function Type(value) {
     if (!type_1.default(value)) {
         return false;
     }
-    if (value.tipe !== undefined) {
-        if (!finite_1.default(value.tipe)) {
+    if (value.jenisUnit !== undefined) {
+        if (!finite_1.default(value.jenisUnit)) {
             return false;
         }
     }

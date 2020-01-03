@@ -28,9 +28,9 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
         return false;
     }
 
-    if(value.address !== undefined) {
+    if(value.alamat !== undefined) {
 
-        if(!IsString(value.address)) {
+        if(!IsString(value.alamat)) {
 
             return false;
         }
@@ -53,9 +53,9 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
         }
     }
 
-    if(value.business !== undefined) {
+    if(value.jenisUsaha !== undefined) {
 
-        if(!IsNumber(value.business)) {
+        if(!IsNumber(value.jenisUsaha)) {
 
             return false;
         }

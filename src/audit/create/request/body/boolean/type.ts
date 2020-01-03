@@ -3,7 +3,7 @@ import NotNull from "@dikac/t-object/boolean/type";
 import IsEnum from "@dikac/t-enum/boolean/type";
 import Status from "../../../../status/status";
 import TypeType from "../../../../type/type";
-import ScheduleType from "../../../../../schedule/create/request/body/boolean/type";
+import ScheduleType from "../../../../../jadwal/create/request/body/boolean/type";
 import IsNumber from "@dikac/t-number/boolean/finite";
 import ArrayOf from "@dikac/t-array/boolean/array-of";
 import TypeMember from "../../../../../anggota/create/request/body/boolean/type";
@@ -20,7 +20,7 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
         return false;
     }
 
-    if(!IsNumber(value.object)) {
+    if(!IsNumber(value.unitKerja)) {
 
         return false;
     }
@@ -35,7 +35,7 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
         return false;
     }
 
-    if(!IsEnum(value.type, TypeType)) {
+    if(!IsEnum(value.tipe, TypeType)) {
 
         return false;
     }

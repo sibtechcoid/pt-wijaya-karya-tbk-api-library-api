@@ -3,8 +3,8 @@ import Singkatan from "../../../../singkatan/create/singkatan";
 
 export default interface Body extends Nama, Singkatan {
 
-    address : string;
-    business: number;
+    alamat : string;
+    jenisUsaha: number;
     level: number;
     type : number;
     // nama : string;

@@ -4,7 +4,7 @@ import auditStatus from "../../../status/status";
 import Type from "../../../type/type";
 import Deactivate from "../../../../deactivate/read/response/body/body";
 import Id from "../../../../id/id";
-import Schedule from "../../../../schedule/read/response/body/body";
+import Schedule from "../../../../jadwal/read/response/body/body";
 import Record from "../../../../record/record";
 import User from "../../../../user/reads/response/body/body";
 import Penolakan from "../penolakan/penolakan";

@@ -3,7 +3,7 @@ import EnumType from "@dikac/t-enum/boolean/type";
 import Status from "../../../../status/status";
 import TypeType from "../../../../type/type";
 import TypeId from "../../../../../id/boolean/type";
-import ScheduleType from "../../../../../schedule/update/request/body/boolean/type";
+import ScheduleType from "../../../../../jadwal/update/request/body/boolean/type";
 import IsNumber from "@dikac/t-number/boolean/finite";
 import ArrayOf from "@dikac/t-array/boolean/array-of";
 import TypeMember from "../../../../../anggota/create/request/body/boolean/type";

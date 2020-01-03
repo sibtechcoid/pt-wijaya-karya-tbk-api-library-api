@@ -1,0 +1,4 @@
+import CreateBody from "../../../../../unit-kerja/create/request/body/body";
+import Deactivate from "../../../../../../deactivate/read/request/body/body";
+export default interface Where extends Partial<CreateBody>, Deactivate {
+}

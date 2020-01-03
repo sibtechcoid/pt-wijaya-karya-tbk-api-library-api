@@ -9,17 +9,18 @@ import Abbreviation from "../../../../../abbreviation/create/abbreviation";
 
 export default interface Body  extends Record, Deactivate, Id, Name, Abbreviation  {
 
+    level: null|Omit<Level,'type'>;
     address: string;
     type: null| Omit<Type,'level'|'business'>;
     business: null|Omit<Business,'type'>;
 
-    //address : null|string;
+    // Deprecated;
     // wikaParentId : null|number;
-    // // TODO nullable?
+
+    // Deprecated
     // wikaType : string|null;
-    // // TODO nullable?
+
+    // Deprecated
     // wikaId : number|null;
-   // business: null|Business;
-    level: null|Omit<Level,'type'>;
-    //type: null|Type;
+
 }

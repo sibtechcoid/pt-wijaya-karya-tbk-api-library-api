@@ -4,6 +4,6 @@ export default interface Body {
     password: string;
     user: string;
     singkatan: string;
-    phone: null | string;
+    telepon: null | string;
     email: null | string;
 }

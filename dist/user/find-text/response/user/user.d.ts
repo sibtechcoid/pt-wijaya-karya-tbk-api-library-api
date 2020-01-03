@@ -7,6 +7,6 @@ export default interface User {
      * - susilo bambang yudhoyono : SBY
      */
     singkatan: string;
-    phone: string;
+    telepon: string;
     email: string;
 }

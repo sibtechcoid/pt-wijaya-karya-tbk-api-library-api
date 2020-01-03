@@ -16,7 +16,7 @@ exports.default = Null;
 //        public nama : string,
 //        public user : string,
 //        public singkatan : string,
-//        public phone : string,
+//        public telepon : string,
 //        public email : string,
 //        public nip : string
 //     ) {}

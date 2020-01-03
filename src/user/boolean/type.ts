@@ -25,7 +25,7 @@ export default function Type(value : any) : value is User {
         return false;
     }
 
-    if(!IsBoolean(value.phone)) {
+    if(!IsBoolean(value.telepon)) {
 
         return false;
     }

@@ -13,7 +13,7 @@ export default interface Body extends ReadsBody {
     // nama : string;
     // user : string;
     // singkatan : string|null;
-    // phone : string|null;
+    // telepon : string|null;
     // email : string|null;
     // nip : string|null;
     // active : boolean;

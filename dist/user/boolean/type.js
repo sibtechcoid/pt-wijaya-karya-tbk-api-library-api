@@ -15,7 +15,7 @@ function Type(value) {
     if (!type_2.default(value.singkatan)) {
         return false;
     }
-    if (!type_2.default(value.phone)) {
+    if (!type_2.default(value.telepon)) {
         return false;
     }
     return true;

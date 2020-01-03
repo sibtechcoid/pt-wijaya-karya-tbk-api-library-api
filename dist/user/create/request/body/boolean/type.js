@@ -16,7 +16,7 @@ function Type(value) {
     if (!type_2.default(value.singkatan)) {
         return false;
     }
-    if (!type_2.default(value.phone) && value.phone !== null) {
+    if (!type_2.default(value.telepon) && value.telepon !== null) {
         return false;
     }
     if (!type_2.default(value.email) && value.email !== null) {

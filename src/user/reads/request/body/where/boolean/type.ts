@@ -41,9 +41,9 @@ export default function Type<Extended extends Where = Where>(value : any) : valu
         }
     }
 
-    if(value.phone !== undefined) {
+    if(value.telepon !== undefined) {
 
-        if(!IsString(value.phone) && value.phone !== null) {
+        if(!IsString(value.telepon) && value.telepon !== null) {
 
             return false;
         }

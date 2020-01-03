@@ -33,9 +33,9 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
         }
     }
 
-    if(value.phone !== undefined) {
+    if(value.telepon !== undefined) {
 
-        if(!IsString(value.phone) && value.phone !== null) {
+        if(!IsString(value.telepon) && value.telepon !== null) {
 
             return false;
         }

@@ -26,8 +26,8 @@ function Type(value) {
             return false;
         }
     }
-    if (value.phone !== undefined) {
-        if (!type_2.default(value.phone) && value.phone !== null) {
+    if (value.telepon !== undefined) {
+        if (!type_2.default(value.telepon) && value.telepon !== null) {
             return false;
         }
     }

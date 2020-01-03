@@ -1,6 +1,6 @@
 export default interface Body {
 
-    phone ?: string;
+    telepon ?: string;
     /**
      * user id
      */

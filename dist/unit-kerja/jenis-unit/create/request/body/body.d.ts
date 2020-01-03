@@ -1,4 +1,4 @@
-import Abbreviation from "../../../../../abbreviation/create/abbreviation";
-import Name from "../../../../../name/create/name";
-export default interface Body extends Name, Abbreviation {
+import Singkatan from "../../../../../singkatan/create/singkatan";
+import Nama from "../../../../../nama/create/nama";
+export default interface Body extends Nama, Singkatan {
 }

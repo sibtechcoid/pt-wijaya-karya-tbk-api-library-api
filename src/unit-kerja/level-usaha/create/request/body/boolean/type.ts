@@ -1,29 +1,16 @@
 import Level from "../body";
+import InternalType from "../../../../../jenis-unit/create/request/body/boolean/type";
 import IsFinite from "@dikac/t-number/boolean/finite";
-import NotNull from "@dikac/t-object/boolean/type";
-import TypeName from "../../../../../../name/create/boolean/type";
-import TypeAbbreviation from "../../../../../../abbreviation/create/boolean/type";
 
 
 export default function Type(value : any) : value is Level {
 
-    if(!NotNull<Level>(value)) {
+    if(!InternalType<Level>(value)) {
 
         return false;
     }
 
-    if(!IsFinite(value.jenisUnit)) {
-
-        return false;
-    }
-
-
-    if(!TypeName(value)) {
-
-        return false;
-    }
-
-    if(!TypeAbbreviation(value)) {
+    if(!IsFinite(value.tipe)) {
 
         return false;
     }

@@ -1,7 +1,7 @@
-import Name from "../../../../../name/update/name";
-import Abbreviation from "../../../../../abbreviation/update/abbreviation";
+import Nama from "../../../../../nama/update/nama";
+import Singkatan from "../../../../../singkatan/update/singkatan";
 import Id from "../../../../../id/id";
 
-export default interface Body extends Name, Abbreviation, Id{
+export default interface Body extends Nama, Singkatan, Id{
 
 }

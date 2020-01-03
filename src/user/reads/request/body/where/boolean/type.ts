@@ -17,25 +17,25 @@ export default function Type<Extended extends Where = Where>(value : any) : valu
         return false;
     }
 
-    if(value.position !== undefined) {
+    if(value.jabatan !== undefined) {
 
-        if(!TypeNumber(value.position) && value.position !== null) {
-
-            return false;
-        }
-    }
-
-    if(value.name !== undefined) {
-
-        if(!IsString(value.name)) {
+        if(!TypeNumber(value.jabatan) && value.jabatan !== null) {
 
             return false;
         }
     }
 
-    if(value.abbreviation !== undefined) {
+    if(value.nama !== undefined) {
 
-        if(!IsString(value.abbreviation)) {
+        if(!IsString(value.nama)) {
+
+            return false;
+        }
+    }
+
+    if(value.singkatan !== undefined) {
+
+        if(!IsString(value.singkatan)) {
 
             return false;
         }

@@ -4,7 +4,7 @@ import Body from "./body";
 export default class Create implements Body{
 
     constructor(
-        public username : string,
+        public usernama : string,
         public password : string,
     ) {
 

@@ -1,5 +1,5 @@
-import TypeName from "../../../../../../name/update/boolean/type";
-import TypeAbbreviation from "../../../../../../abbreviation/update/boolean/type";
+import TypeNama from "../../../../../../nama/update/boolean/type";
+import TypeSingkatan from "../../../../../../singkatan/update/boolean/type";
 import Body from "../body";
 import TypeId from "../../../../../../id/boolean/type";
 
@@ -11,12 +11,12 @@ export default function Type<Extended extends Body = Body>(value : any) : value 
         return false;
     }
 
-    if(!TypeName(value)) {
+    if(!TypeNama(value)) {
 
         return false;
     }
 
-    if(!TypeAbbreviation(value)) {
+    if(!TypeSingkatan(value)) {
 
         return false;
     }

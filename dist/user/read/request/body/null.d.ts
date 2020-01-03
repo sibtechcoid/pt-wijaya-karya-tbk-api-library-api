@@ -1,2 +1,2 @@
 import ReadBody from "../../response/body/body";
-export default function Null(): Omit<ReadBody, 'extraAccess' | 'access' | 'position'>;
+export default function Null(): Omit<ReadBody, 'extraAkses' | 'akses' | 'jabatan'>;

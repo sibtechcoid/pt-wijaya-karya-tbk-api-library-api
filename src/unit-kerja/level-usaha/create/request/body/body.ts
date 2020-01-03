@@ -1,8 +1,8 @@
-import Name from "../../../../../name/create/name";
-import Abbreviation from "../../../../../abbreviation/create/abbreviation";
+import Nama from "../../../../../nama/create/nama";
+import Singkatan from "../../../../../singkatan/create/singkatan";
 
-export default interface Body extends Name, Abbreviation {
+export default interface Body extends Nama, Singkatan {
 
-    jenisUnit : number;
+    tipe : number;
     //jenisUsaha : number;
 }

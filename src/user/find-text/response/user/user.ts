@@ -1,12 +1,12 @@
 export default interface User {
-    name            : string;
+    nama            : string;
     /**
-     * abbreviation or initial
+     * singkatan or initial
      * example :
      * - udin : UDN
      * - susilo bambang yudhoyono : SBY
      */
-    abbreviation    : string;
+    singkatan    : string;
     phone           : string;
     email           : string;
 }

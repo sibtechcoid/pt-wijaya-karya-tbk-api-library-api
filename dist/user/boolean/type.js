@@ -6,13 +6,13 @@ function Type(value) {
     if (!type_1.default(value)) {
         return false;
     }
-    if (!type_2.default(value.name)) {
+    if (!type_2.default(value.nama)) {
         return false;
     }
     if (!type_2.default(value.email)) {
         return false;
     }
-    if (!type_2.default(value.abbreviation)) {
+    if (!type_2.default(value.singkatan)) {
         return false;
     }
     if (!type_2.default(value.phone)) {

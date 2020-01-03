@@ -1,4 +1,4 @@
 export default interface Body {
-    plan: [Date | string, Date | string];
-    realize: null | [Date | string, Date | string];
+    rencana: [Date | string, Date | string];
+    realisasi: null | [Date | string, Date | string];
 }

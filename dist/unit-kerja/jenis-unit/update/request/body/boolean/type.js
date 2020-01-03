@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const type_1 = require("../../../../../../name/update/boolean/type");
-const type_2 = require("../../../../../../abbreviation/update/boolean/type");
+const type_1 = require("../../../../../../nama/update/boolean/type");
+const type_2 = require("../../../../../../singkatan/update/boolean/type");
 const type_3 = require("../../../../../../id/boolean/type");
 function Type(value) {
     if (!type_3.default(value)) {

@@ -4,7 +4,7 @@ import Sort from "../../../../sort/sort";
 import ReadBody from "../../../read/response/body/body";
 
 
-export default interface Body extends Limit, Sort<Omit<ReadBody,'extraAccess'|'access'|'position'>> {
+export default interface Body extends Limit, Sort<Omit<ReadBody,'extraAkses'|'akses'|'jabatan'>> {
 
 }
 
@@ -15,7 +15,7 @@ export default interface Body extends Limit, Sort<Omit<ReadBody,'extraAccess'|'a
 //         page : 2
 //     },
 //     sort : {
-//         name : Mode.ASC
+//         nama : Mode.ASC
 //     }
 //
 // };

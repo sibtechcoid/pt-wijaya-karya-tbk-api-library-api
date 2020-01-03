@@ -1,10 +1,10 @@
 export default interface Body {
 
-    name            : string;
-    position        : number|null;
+    nama            : string;
+    jabatan        : number|null;
     password        : string;
     user            : string;
-    abbreviation    : string;
+    singkatan    : string;
     phone           : null|string;
     email           : null|string;
 }

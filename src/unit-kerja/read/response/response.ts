@@ -1,5 +1,6 @@
 import Success from "../../../response/success";
-import UnitKerja from "./body/body";
+import Body from "./body/body";
+import Id from "../../../id/id";
 
-type Response = Success<UnitKerja[]>;
+type Response = Success<Body[]>;
 export default Response;

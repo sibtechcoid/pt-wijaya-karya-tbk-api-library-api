@@ -20,7 +20,7 @@ export default interface Body extends Limit {
 //         page : 2
 //     },
 //     sort : {
-//         name : Mode.ASC
+//         nama : Mode.ASC
 //     },
 //     where : {
 //

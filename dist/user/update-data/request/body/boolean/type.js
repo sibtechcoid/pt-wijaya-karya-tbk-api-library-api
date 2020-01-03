@@ -6,8 +6,8 @@ function Typez(value) {
     if (!type_1.default(value)) {
         return false;
     }
-    if (value.position !== undefined) {
-        if (!finite_1.default(value.position) && value.position !== null) {
+    if (value.jabatan !== undefined) {
+        if (!finite_1.default(value.jabatan) && value.jabatan !== null) {
             return false;
         }
     }

@@ -9,9 +9,9 @@ export default function Typez<Extended extends TypeInterface = TypeInterface>(va
         return false;
     }
 
-    if(value.position !== undefined) {
+    if(value.jabatan !== undefined) {
 
-        if(!TypeNumber(value.position) && value.position !== null) {
+        if(!TypeNumber(value.jabatan) && value.jabatan !== null) {
 
             return false;
         }

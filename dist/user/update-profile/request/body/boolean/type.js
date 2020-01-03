@@ -6,8 +6,8 @@ function Type(value) {
     if (!type_1.default(value)) {
         return false;
     }
-    if (value.name !== undefined) {
-        if (!type_2.default(value.name)) {
+    if (value.nama !== undefined) {
+        if (!type_2.default(value.nama)) {
             return false;
         }
     }
@@ -16,8 +16,8 @@ function Type(value) {
             return false;
         }
     }
-    if (value.abbreviation !== undefined) {
-        if (!type_2.default(value.abbreviation)) {
+    if (value.singkatan !== undefined) {
+        if (!type_2.default(value.singkatan)) {
             return false;
         }
     }

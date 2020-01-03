@@ -2,9 +2,9 @@ import Request from './request';
 import CreatBody from "../../../../body/create";
 import CreateCreate from "../../../../method/create-create";
 import Path from "./path/create";
-import LevelUsaha from "./body/body";
+import Level from "./body/body";
 
-export default function Create(type : LevelUsaha) : Request {
+export default function Create(type : Level) : Request {
 
-    return Object.assign(CreateCreate(), Path(), new CreatBody<LevelUsaha>(type))
+    return Object.assign(CreateCreate(), Path(), new CreatBody<Level>(type))
 }

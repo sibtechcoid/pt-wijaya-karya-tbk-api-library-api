@@ -3,8 +3,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const type_1 = require("@dikac/t-object/boolean/type");
 const type_2 = require("@dikac/t-string/boolean/type");
 const finite_1 = require("@dikac/t-number/boolean/finite");
-const type_3 = require("../../../../../name/create/boolean/type");
-const type_4 = require("../../../../../abbreviation/create/boolean/type");
+const type_3 = require("../../../../../nama/create/boolean/type");
+const type_4 = require("../../../../../singkatan/create/boolean/type");
 function Type(value) {
     if (!type_1.default(value)) {
         return false;
@@ -18,16 +18,13 @@ function Type(value) {
     if (!type_2.default(value.address)) {
         return false;
     }
-    if (!type_2.default(value.abbreviation)) {
+    if (!finite_1.default(value.business)) {
         return false;
     }
-    if (!finite_1.default(value.jenisUsaha)) {
+    if (!finite_1.default(value.level)) {
         return false;
     }
-    if (!finite_1.default(value.levelUsaha)) {
-        return false;
-    }
-    if (!finite_1.default(value.jenisUnit)) {
+    if (!finite_1.default(value.type)) {
         return false;
     }
     return true;

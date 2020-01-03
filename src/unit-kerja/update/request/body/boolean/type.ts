@@ -2,8 +2,8 @@ import TypeInterface from "../body";
 import NotNull from "@dikac/t-object/boolean/type";
 import IsString from "@dikac/t-string/boolean/type";
 import IsNumber from "@dikac/t-number/boolean/finite";
-import TypeName from "../../../../../name/update/boolean/type";
-import TypeAbbreviation from "../../../../../abbreviation/update/boolean/type";
+import TypeNama from "../../../../../nama/update/boolean/type";
+import TypeSingkatan from "../../../../../singkatan/update/boolean/type";
 import TypeId from "../../../../../id/boolean/type";
 
 export default function Type<Extended extends TypeInterface = TypeInterface>(value : any) : value is Extended {
@@ -18,12 +18,12 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
         return false;
     }
 
-    if(!TypeName(value)) {
+    if(!TypeNama(value)) {
 
         return false;
     }
 
-    if(!TypeAbbreviation(value)) {
+    if(!TypeSingkatan(value)) {
 
         return false;
     }
@@ -36,33 +36,26 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
         }
     }
 
-    if(value.abbreviation !== undefined) {
 
-        if(!IsString(value.abbreviation)) {
+    if(value.level !== undefined) {
 
-            return false;
-        }
-    }
-
-    if(value.levelUsaha !== undefined) {
-
-        if(!IsNumber(value.levelUsaha)) {
+        if(!IsNumber(value.level)) {
 
             return false;
         }
     }
 
-    if(value.jenisUnit !== undefined) {
+    if(value.type !== undefined) {
 
-        if(!IsNumber(value.jenisUnit)) {
+        if(!IsNumber(value.type)) {
 
             return false;
         }
     }
 
-    if(value.jenisUsaha !== undefined) {
+    if(value.business !== undefined) {
 
-        if(!IsNumber(value.jenisUsaha)) {
+        if(!IsNumber(value.business)) {
 
             return false;
         }

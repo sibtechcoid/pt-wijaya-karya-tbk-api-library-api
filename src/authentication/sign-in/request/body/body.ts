@@ -1,5 +1,5 @@
 export default interface Body {
 
-    username : string;
+    usernama : string;
     password : string;
 }

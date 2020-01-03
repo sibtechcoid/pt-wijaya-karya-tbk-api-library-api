@@ -10,7 +10,7 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
         return false;
     }
 
-    if(!IsString(value.name)) {
+    if(!IsString(value.nama)) {
 
         return false;
     }
@@ -20,7 +20,7 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
         return false;
     }
 
-    if(!IsString(value.abbreviation)) {
+    if(!IsString(value.singkatan)) {
 
         return false;
     }
@@ -40,7 +40,7 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
         return false;
     }
 
-    if(!IsNumber(value.position) && value.position !== null) {
+    if(!IsNumber(value.jabatan) && value.jabatan !== null) {
 
         return false;
     }

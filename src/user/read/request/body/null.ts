@@ -1,18 +1,18 @@
 import User from "../../../read/response/body/body";
 import ReadBody from "../../response/body/body";
 
-export default function Null () : Omit<ReadBody,'extraAccess'|'access'|'position'> {
+export default function Null () : Omit<ReadBody,'extraAkses'|'akses'|'jabatan'> {
 
     return {
         id           : 0,
-        name         : '',
+        nama         : '',
         user         : '',
-        abbreviation : '',
-        phone        : null,
+        singkatan : '',
+        telepon        : null,
         email        : null,
         nip          : null,
-        active       : true,
-        positionWika : null,
+        aktif       : true,
+        jabatanWika : null,
         parentId     : null,
         created      : '',
         updated      : '',

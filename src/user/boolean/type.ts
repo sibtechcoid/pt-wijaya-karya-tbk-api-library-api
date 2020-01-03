@@ -10,7 +10,7 @@ export default function Type(value : any) : value is User {
         return false;
     }
 
-    if(!IsBoolean(value.name)) {
+    if(!IsBoolean(value.nama)) {
 
         return false;
     }
@@ -20,7 +20,7 @@ export default function Type(value : any) : value is User {
         return false;
     }
 
-    if(!IsBoolean(value.abbreviation)) {
+    if(!IsBoolean(value.singkatan)) {
 
         return false;
     }

@@ -1,3 +1,3 @@
 import Request from './request';
-import LevelUsaha from "../request/body/body";
-export default function Create(types: LevelUsaha): Request;
+import Level from "./body/body";
+export default function Create(types: Level): Request;

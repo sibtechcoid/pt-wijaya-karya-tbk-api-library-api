@@ -1,21 +1,26 @@
-import JenisUsaha from "../../../jenis-usaha/read/response/body/body";
-import LevelUsaha from "../../../level-usaha/read/response/body/body";
-import JenisUnit from "../../../jenis-unit/read/response/body/body";
+import Business from "../../../jenis-usaha/read/response/body/body";
+import Level from "../../../level-usaha/read/response/body/body";
+import Type from "../../../jenis-unit/reads/response/body/body";
 import Record from "../../../../record/record";
 import Deactivate from "../../../../deactivate/read/response/body/body";
 import Id from "../../../../id/id";
-import Name from "../../../../name/create/name";
-import Abbreviation from "../../../../abbreviation/create/abbreviation";
+import Nama from "../../../../nama/create/nama";
+import Singkatan from "../../../../singkatan/create/singkatan";
 
-export default interface Body extends Record, Deactivate, Id, Name, Abbreviation {
+export default interface Body  extends Record, Deactivate, Id, Nama, Singkatan  {
 
-    address : null|string;
+    level: null|Omit<Level,'type'>;
+    address: string;
+    type: null| Omit<Type,'level'|'business'>;
+    business: null|Omit<Business,'type'>;
+
+    // Deprecated;
     // wikaParentId : null|number;
-    // // TODO nullable?
+
+    // Deprecated
     // wikaType : string|null;
-    // // TODO nullable?
+
+    // Deprecated
     // wikaId : number|null;
-    jenisUsaha: null | Omit<JenisUsaha,'jenisUnit'>;
-    levelUsaha: null | Omit<LevelUsaha, 'jenisUnit'>;
-    jenisUnit: null | Omit<JenisUnit,'levelUsaha'|'jenisUsaha'>;
+
 }

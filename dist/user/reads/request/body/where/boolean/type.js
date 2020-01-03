@@ -11,18 +11,18 @@ function Type(value) {
     if (!type_3.default(value)) {
         return false;
     }
-    if (value.position !== undefined) {
-        if (!finite_1.default(value.position) && value.position !== null) {
+    if (value.jabatan !== undefined) {
+        if (!finite_1.default(value.jabatan) && value.jabatan !== null) {
             return false;
         }
     }
-    if (value.name !== undefined) {
-        if (!type_2.default(value.name)) {
+    if (value.nama !== undefined) {
+        if (!type_2.default(value.nama)) {
             return false;
         }
     }
-    if (value.abbreviation !== undefined) {
-        if (!type_2.default(value.abbreviation)) {
+    if (value.singkatan !== undefined) {
+        if (!type_2.default(value.singkatan)) {
             return false;
         }
     }

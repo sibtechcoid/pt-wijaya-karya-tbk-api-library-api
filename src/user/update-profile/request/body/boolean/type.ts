@@ -9,9 +9,9 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
         return false;
     }
 
-    if(value.name !== undefined) {
+    if(value.nama !== undefined) {
 
-        if(!IsString(value.name)) {
+        if(!IsString(value.nama)) {
 
             return false;
         }
@@ -25,9 +25,9 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
         }
     }
 
-    if(value.abbreviation !== undefined) {
+    if(value.singkatan !== undefined) {
 
-        if(!IsString(value.abbreviation)) {
+        if(!IsString(value.singkatan)) {
 
             return false;
         }

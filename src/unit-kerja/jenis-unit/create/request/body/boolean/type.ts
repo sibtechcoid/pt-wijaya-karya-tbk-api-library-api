@@ -1,15 +1,15 @@
 import TypeInterface from "../body";
-import TypeName from "../../../../../../name/create/boolean/type";
-import TypeAbbreviation from "../../../../../../abbreviation/create/boolean/type";
+import TypeNama from "../../../../../../nama/create/boolean/type";
+import TypeSingkatan from "../../../../../../singkatan/create/boolean/type";
 
 export default function Type<Extended extends TypeInterface = TypeInterface>(value : any) : value is Extended {
 
-    if(!TypeName<Extended>(value)) {
+    if(!TypeNama<Extended>(value)) {
 
         return false;
     }
 
-    if(!TypeAbbreviation(value)) {
+    if(!TypeSingkatan(value)) {
 
         return false;
     }

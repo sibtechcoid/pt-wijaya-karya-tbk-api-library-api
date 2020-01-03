@@ -7,7 +7,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 //         page : 2
 //     },
 //     sort : {
-//         name : Mode.ASC
+//         nama : Mode.ASC
 //     }
 //
 // };

@@ -7,13 +7,13 @@ function Type(value) {
     if (!type_1.default(value)) {
         return false;
     }
-    if (!type_2.default(value.name)) {
+    if (!type_2.default(value.nama)) {
         return false;
     }
     if (!type_2.default(value.user)) {
         return false;
     }
-    if (!type_2.default(value.abbreviation)) {
+    if (!type_2.default(value.singkatan)) {
         return false;
     }
     if (!type_2.default(value.phone) && value.phone !== null) {
@@ -25,7 +25,7 @@ function Type(value) {
     if (!type_2.default(value.password)) {
         return false;
     }
-    if (!type_3.default(value.position) && value.position !== null) {
+    if (!type_3.default(value.jabatan) && value.jabatan !== null) {
         return false;
     }
     return true;

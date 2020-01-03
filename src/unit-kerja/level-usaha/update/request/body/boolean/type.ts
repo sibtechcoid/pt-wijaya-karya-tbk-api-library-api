@@ -1,29 +1,17 @@
-import LevelUsaha from "../body";
+import Level from "../body";
+import InternalType from "../../../../../jenis-unit/update/request/body/boolean/type";
 import IsFinite from "@dikac/t-number/boolean/finite";
-import TypeId from "../../../../../../id/boolean/type";
-import TypeName from "../../../../../../name/update/boolean/type";
-import TypeAbbreviation from "../../../../../../abbreviation/update/boolean/type";
 
-export default function Type(value : any) : value is LevelUsaha {
+export default function Type(value : any) : value is Level {
 
-    if(!TypeId<LevelUsaha>(value)) {
+    if(!InternalType<Level>(value)) {
 
         return false;
     }
 
-    if(!TypeName(value)) {
+    if(value.tipe !== undefined) {
 
-        return false;
-    }
-
-    if(!TypeAbbreviation(value)) {
-
-        return false;
-    }
-
-    if(value.jenisUnit !== undefined) {
-
-        if(!IsFinite(value.jenisUnit)) {
+        if(!IsFinite(value.tipe)) {
 
             return false;
         }

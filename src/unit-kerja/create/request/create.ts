@@ -4,7 +4,7 @@ import CreateCreate from "../../../method/create-create";
 import Path from "./path/create";
 import UnitKerja from "./body/body";
 
-export default function Create(type : UnitKerja) : Request {
+export default function Create(unitKerja : UnitKerja) : Request {
 
-    return Object.assign(CreateCreate(), Path(), new CreatBody<UnitKerja>(type))
+    return Object.assign(CreateCreate(), Path(), new CreatBody<UnitKerja>(unitKerja))
 }

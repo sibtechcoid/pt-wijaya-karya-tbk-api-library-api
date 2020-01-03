@@ -1,7 +1,6 @@
-import Abbreviation from "../../../../../abbreviation/create/abbreviation";
-import Name from "../../../../../name/create/name";
+import Singkatan from "../../../../../singkatan/create/singkatan";
+import Nama from "../../../../../nama/create/nama";
 
-export default interface Body extends Name, Abbreviation {
+export default interface Body extends Nama, Singkatan {
 
-   //levels : number[];
 }

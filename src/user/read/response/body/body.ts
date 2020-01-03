@@ -1,22 +1,22 @@
 import Record from "../../../../record/record";
 import Deactivate from "../../../../deactivate/read/response/body/body";
 import Id from "../../../../id/id";
-import Access from "../../../access/create/request/body/body";
-import Position from "../../../position/read/response/body/body";
+import Akses from "../../../akses/create/request/body/body";
+import Jabatan from "../../../jabatan/read/response/body/body";
 import ReadsBody from "../../../reads/response/body/body";
 
 export default interface Body extends ReadsBody {
 
-    extraAccess : Access;
-    access : Access;
-    // position : Omit<Position, 'access'>|null;
-    // name : string;
+    extraAkses : Akses;
+    akses : Akses;
+    // jabatan : Omit<Jabatan, 'akses'>|null;
+    // nama : string;
     // user : string;
-    // abbreviation : string|null;
+    // singkatan : string|null;
     // phone : string|null;
     // email : string|null;
     // nip : string|null;
     // active : boolean;
-    // positionWika : null|string;
+    // jabatanWika : null|string;
     // parentId : string|null;
 }

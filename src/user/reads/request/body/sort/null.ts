@@ -6,14 +6,14 @@ export default function Null () : (keyof Sort)[] {
 
     let temp : {[Key in keyof Sort] : any}  =  {
         id           : null,
-        name         : null,
+        nama         : null,
         user         : null,
-        abbreviation : null,
-        phone        : null,
+        singkatan : null,
+        telepon        : null,
         email        : null,
         nip          : null,
-        active       : null,
-        positionWika : null,
+        aktif       : null,
+        jabatanWika : null,
         parentId     : null,
         created      : null,
         updated      : null,
@@ -27,9 +27,9 @@ export default function Null () : (keyof Sort)[] {
 // class Create implements User {
 //
 //     constructor(
-//        public name : string,
+//        public nama : string,
 //        public user : string,
-//        public abbreviation : string,
+//        public singkatan : string,
 //        public phone : string,
 //        public email : string,
 //        public nip : string

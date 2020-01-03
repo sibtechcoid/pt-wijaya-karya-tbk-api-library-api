@@ -1,2 +1,2 @@
-import LevelUsaha from "../body";
-export default function Type(value: any): value is LevelUsaha;
+import Level from "../body";
+export default function Type(value: any): value is Level;

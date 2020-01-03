@@ -3,14 +3,14 @@ Object.defineProperty(exports, "__esModule", { value: true });
 function Null() {
     let temp = {
         id: null,
-        name: null,
+        nama: null,
         user: null,
-        abbreviation: null,
-        phone: null,
+        singkatan: null,
+        telepon: null,
         email: null,
         nip: null,
-        active: null,
-        positionWika: null,
+        aktif: null,
+        jabatanWika: null,
         parentId: null,
         created: null,
         updated: null,
@@ -22,9 +22,9 @@ exports.default = Null;
 // class Create implements User {
 //
 //     constructor(
-//        public name : string,
+//        public nama : string,
 //        public user : string,
-//        public abbreviation : string,
+//        public singkatan : string,
 //        public phone : string,
 //        public email : string,
 //        public nip : string

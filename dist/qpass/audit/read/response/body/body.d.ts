@@ -1,4 +1,4 @@
-import Object from "../../../../object/read/response/body/body";
+import Object from "../../../../unit-kerja/read/response/body/body";
 import Member from "../../../../member/read/response/body/body";
 import auditStatus from "../../../status/status";
 import Type from "../../../type/type";

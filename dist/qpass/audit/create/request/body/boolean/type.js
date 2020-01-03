@@ -7,7 +7,7 @@ const type_3 = require("../../../../type/type");
 const type_4 = require("../../../../../../schedule/create/request/body/boolean/type");
 const finite_1 = require("@dikac/t-number/boolean/finite");
 const array_of_1 = require("@dikac/t-array/boolean/array-of");
-const type_5 = require("../../../../../../member/create/request/body/boolean/type");
+const type_5 = require("../../../../../member/create/request/body/boolean/type");
 function Type(value) {
     if (!type_1.default(value)) {
         return false;

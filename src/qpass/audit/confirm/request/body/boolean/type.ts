@@ -5,7 +5,7 @@ import TypeId from "../../../../../../id/boolean/type";
 import ScheduleType from "../../../../../../schedule/update/request/body/boolean/type";
 import IsNumber from "@dikac/t-number/boolean/finite";
 import ArrayOf from "@dikac/t-array/boolean/array-of";
-import TypeMember from "../../../../../../member/create/request/body/boolean/type";
+import TypeMember from "../../../../../member/create/request/body/boolean/type";
 import Realize from "../../../../../../schedule/update/request/body/boolean/realize";
 
 export default function Type<Extended extends TypeInterface = TypeInterface>(value : any) : value is Extended {

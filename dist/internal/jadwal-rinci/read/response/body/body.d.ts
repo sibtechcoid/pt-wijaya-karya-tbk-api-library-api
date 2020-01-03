@@ -1,6 +1,6 @@
 import Record from "../../../../../record/record";
 import Id from "../../../../../id/id";
-import Project from "../../../../project/read/response/project/project";
+import Project from "../../../../../qpass/audit/read/response/body/body";
 import Fungsi from "../../../fungsi/read/response/body/body";
 import Prosedur from "../../../prosedur/read/response/body/body";
 import Klausul from "../../../klausul/read/response/body/body";

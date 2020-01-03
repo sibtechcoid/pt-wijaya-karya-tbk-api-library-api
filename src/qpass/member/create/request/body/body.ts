@@ -1,4 +1,4 @@
-export default interface Body /*extends BaseMember*/ {
+export default interface Body {
 
     phone ?: string;
     /**

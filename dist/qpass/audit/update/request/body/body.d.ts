@@ -1,8 +1,11 @@
-import Member from "../../../../../member/create/request/body/body";
+import Member from "../../../../member/create/request/body/body";
 import Status from "../../../status/status";
-import TypeInterface from "../../../../../project/update/request/body/body";
 import Type from "../../../type/type";
-export default interface Body extends TypeInterface<Member> {
+import Id from "../../../../../id/id";
+import Schedule from "../../../../../schedule/update/request/body/body";
+export default interface Body extends Id, Schedule {
+    object?: number;
+    members?: Omit<Member, 'id'>[];
     type?: Type;
     status?: Status;
 }

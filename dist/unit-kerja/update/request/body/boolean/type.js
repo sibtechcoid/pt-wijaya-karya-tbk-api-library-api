@@ -24,13 +24,13 @@ function Type(value) {
             return false;
         }
     }
-    if (value.level !== undefined) {
-        if (!finite_1.default(value.level)) {
+    if (value.levelUsaha !== undefined) {
+        if (!finite_1.default(value.levelUsaha)) {
             return false;
         }
     }
-    if (value.type !== undefined) {
-        if (!finite_1.default(value.type)) {
+    if (value.jenisUnit !== undefined) {
+        if (!finite_1.default(value.jenisUnit)) {
             return false;
         }
     }

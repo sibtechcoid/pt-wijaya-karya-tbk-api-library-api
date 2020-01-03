@@ -33,12 +33,12 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
         return false;
     }
 
-    if(!IsNumber(value.level)) {
+    if(!IsNumber(value.levelUsaha)) {
 
         return false;
     }
 
-    if(!IsNumber(value.type)) {
+    if(!IsNumber(value.jenisUnit)) {
 
         return false;
     }

@@ -21,10 +21,10 @@ function Type(value) {
     if (!finite_1.default(value.jenisUsaha)) {
         return false;
     }
-    if (!finite_1.default(value.level)) {
+    if (!finite_1.default(value.levelUsaha)) {
         return false;
     }
-    if (!finite_1.default(value.type)) {
+    if (!finite_1.default(value.jenisUnit)) {
         return false;
     }
     return true;

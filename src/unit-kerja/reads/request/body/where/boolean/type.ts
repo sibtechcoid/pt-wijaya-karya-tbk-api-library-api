@@ -24,8 +24,8 @@ export default function
         singkatan    : (v) => Undefinable(v, StringType),
         alamat    : (v) => Undefinable(v, StringType),
         jenisUsaha    : (v) => Undefinable(v, TypeNumber),
-        level    : (v) => Undefinable(v, TypeNumber),
-        type    : (v) => Undefinable(v, TypeNumber),
+        levelUsaha    : (v) => Undefinable(v, TypeNumber),
+        jenisUnit    : (v) => Undefinable(v, TypeNumber),
     };
 
     return Structure(value, sort);

@@ -16,8 +16,8 @@ function Type(value) {
         singkatan: (v) => undefinable_1.default(v, type_2.default),
         alamat: (v) => undefinable_1.default(v, type_2.default),
         jenisUsaha: (v) => undefinable_1.default(v, finite_1.default),
-        level: (v) => undefinable_1.default(v, finite_1.default),
-        type: (v) => undefinable_1.default(v, finite_1.default),
+        levelUsaha: (v) => undefinable_1.default(v, finite_1.default),
+        jenisUnit: (v) => undefinable_1.default(v, finite_1.default),
     };
     return structure_1.default(value, sort);
 }

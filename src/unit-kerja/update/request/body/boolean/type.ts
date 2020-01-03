@@ -37,17 +37,17 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
     }
 
 
-    if(value.level !== undefined) {
+    if(value.levelUsaha !== undefined) {
 
-        if(!IsNumber(value.level)) {
+        if(!IsNumber(value.levelUsaha)) {
 
             return false;
         }
     }
 
-    if(value.type !== undefined) {
+    if(value.jenisUnit !== undefined) {
 
-        if(!IsNumber(value.type)) {
+        if(!IsNumber(value.jenisUnit)) {
 
             return false;
         }

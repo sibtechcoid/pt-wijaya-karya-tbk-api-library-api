@@ -7,7 +7,7 @@ import Level from "../../../../level-usaha/read/response/body/body";
 import Business from "../../../../jenis-usaha/read/response/body/body";
 
 export default interface Body extends Deactivate, Record, Id, Name, Abbreviation  {
-
-    business : Omit<Business,'type'>[]
-    level : Omit<Level,'type'>[]
+    //
+    // business : Omit<Business,'type'>[]
+    // level : Omit<Level,'type'>[]
 }

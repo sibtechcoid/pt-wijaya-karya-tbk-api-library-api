@@ -10,7 +10,7 @@ export default function Type(value : any) : value is Level {
         return false;
     }
 
-    if(!IsFinite(value.jenisUsaha)) {
+    if(!IsFinite(value.jenisUnit)) {
 
         return false;
     }

@@ -8,7 +8,7 @@ function Type(value) {
     if (!type_1.default(value)) {
         return false;
     }
-    if (!finite_1.default(value.type)) {
+    if (!finite_1.default(value.jenisUnit)) {
         return false;
     }
     if (!type_2.default(value)) {

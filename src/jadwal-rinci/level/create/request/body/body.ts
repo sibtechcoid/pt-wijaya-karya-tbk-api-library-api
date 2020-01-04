@@ -1,5 +1,4 @@
 import Nama from "../../../../../nama/create/nama";
-import Type from "../../../type/type";
 
 export default interface Body extends Nama {
 

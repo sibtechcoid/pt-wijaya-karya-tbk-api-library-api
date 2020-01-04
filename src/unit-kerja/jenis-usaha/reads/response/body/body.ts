@@ -1,11 +1,5 @@
-import Record from "../../../../../record/record";
-import Id from "../../../../../id/id";
-import Deactivate from "../../../../../deactivate/read/response/body/body";
-import Nama from "../../../../../nama/create/nama";
-import Singkatan from "../../../../../singkatan/create/singkatan";
-import Type from "../../../../jenis-unit/reads/response/body/body";
+import ReadBody from "../../../read/response/body/body";
 
-export default interface Body extends Id, Record, Deactivate, Nama, Singkatan {
+export default interface Body extends ReadBody {
 
-    jenisUnit : Omit<Type, 'jenisUsaha'|'levelUsaha'>
 }

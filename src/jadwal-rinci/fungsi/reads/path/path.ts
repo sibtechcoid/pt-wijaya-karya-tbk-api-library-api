@@ -1,5 +1,5 @@
 import PathInterface from "../../../../path/path";
 
-export default interface Path extends PathInterface<'/internal/jadwal-rinci/fungsis'> {
+export default interface Path extends PathInterface<'/jadwal-rinci/fungsis'> {
 
 }

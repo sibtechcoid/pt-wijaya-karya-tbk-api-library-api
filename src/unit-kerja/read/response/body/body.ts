@@ -1,4 +1,4 @@
-import JenisUsaha from "../../../jenis-usaha/read/response/body/body";
+import JenisUsaha from "../../../jenis-usaha/reads/response/body/body";
 import Level from "../../../level-usaha/read/response/body/body";
 import Type from "../../../jenis-unit/reads/response/body/body";
 import Record from "../../../../record/record";

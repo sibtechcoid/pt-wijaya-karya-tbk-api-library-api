@@ -4,7 +4,7 @@ import Id from "../../../../../id/id";
 import Nama from "../../../../../nama/create/nama";
 import Singkatan from "../../../../../singkatan/create/singkatan";
 import Level from "../../../../level-usaha/read/response/body/body";
-import jenisUsaha from "../../../../jenis-usaha/read/response/body/body";
+import jenisUsaha from "../../../../jenis-usaha/reads/response/body/body";
 
 export default interface Body extends Deactivate, Record, Id, Nama, Singkatan  {
 

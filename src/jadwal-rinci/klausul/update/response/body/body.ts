@@ -1,4 +1,4 @@
-import ReadBody from "../../../read/response/body/body";
+import ReadBody from "../../../create/response/body/body";
 
 export default interface Body extends ReadBody {
 

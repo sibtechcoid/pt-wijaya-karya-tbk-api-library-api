@@ -1,1 +1,1 @@
-{"version":3,"file":"create.js","sourceRoot":"","sources":["../../../../../../src/unit-kerja/jenis-usaha/create/request/path/create.ts"],"names":[],"mappings":";;AAAA,uDAAoD;AAGpD,SAAwB,MAAM;IAE1B,OAAO,IAAI,gBAAU,CAAC,wBAAwB,CAAC,CAAC;AACpD,CAAC;AAHD,yBAGC"}
+{"version":3,"file":"create.js","sourceRoot":"","sources":["../../../../../../src/unit-kerja/jenis-usaha/create/request/path/create.ts"],"names":[],"mappings":";;AAAA,uDAAoD;AAGpD,SAAwB,MAAM;IAE1B,OAAO,IAAI,gBAAU,CAAC,yBAAyB,CAAC,CAAC;AACrD,CAAC;AAHD,yBAGC"}

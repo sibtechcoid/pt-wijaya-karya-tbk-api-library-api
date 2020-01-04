@@ -1,7 +1,7 @@
 import Id from "../../../../id/id";
 
 export default interface Body extends Id {
-    project ?: number;
+    audit ?: number;
     selesai  ?: Date|string;
     mulai  ?: Date|string;
     fungsi ?: number[];

@@ -25,9 +25,9 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
         }
     }
 
-    if(value.project !== undefined) {
+    if(value.audit !== undefined) {
 
-        if(!ArrayOf(value.project, IsNumber)) {
+        if(!ArrayOf(value.audit, IsNumber)) {
 
             return false;
         }

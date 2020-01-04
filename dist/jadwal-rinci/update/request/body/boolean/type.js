@@ -18,8 +18,8 @@ function Type(value) {
             return false;
         }
     }
-    if (value.project !== undefined) {
-        if (!finite_1.default(value.project)) {
+    if (value.audit !== undefined) {
+        if (!finite_1.default(value.audit)) {
             return false;
         }
     }

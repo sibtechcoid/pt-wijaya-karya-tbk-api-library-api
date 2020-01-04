@@ -27,9 +27,9 @@ export default function Type<Extended extends Body = Body>(value : any) : value 
         }
     }
 
-    if(value.project !== undefined) {
+    if(value.audit !== undefined) {
 
-        if(!TypeNumber(value.project)) {
+        if(!TypeNumber(value.audit)) {
 
             return false;
         }

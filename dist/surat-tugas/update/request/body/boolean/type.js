@@ -17,8 +17,8 @@ function Type(value) {
             return false;
         }
     }
-    if (value.project !== undefined) {
-        if (!array_of_1.default(value.project, finite_1.default)) {
+    if (value.audit !== undefined) {
+        if (!array_of_1.default(value.audit, finite_1.default)) {
             return false;
         }
     }

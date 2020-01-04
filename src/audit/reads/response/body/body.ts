@@ -1,4 +1,4 @@
-import Object from "../../../../unit-kerja/read/response/body/body";
+import UnitKerja from "../../../../unit-kerja/read/response/body/body";
 import Member from "../../../../anggota/read/response/body/body";
 import AuditStatus from "../../../status/status";
 import Type from "../../../type/type";
@@ -10,7 +10,7 @@ import Record from "../../../../record/record";
 export default interface Body extends /*Baseaudit<Anggotatatus, auditStatus, Group, Jabatan, Member, Object>,*/ Deactivate, Id, Schedule, Record  {
 
     status : AuditStatus;
-    unitKerja : Object;
+    unitKerja : UnitKerja;
     anggota : Omit<Member,'akses'>[]
     tipe : Type;
     //category : Category;

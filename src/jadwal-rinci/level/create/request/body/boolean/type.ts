@@ -26,10 +26,17 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
         return false;
     }
 
-    if(!TypeEnum(value.tipe, ContentType)) {
+    if(!TypeNumber(value.judul)) {
 
         return false;
     }
+
+    if(!TypeNumber(value.parent)) {
+
+        return false;
+    }
+
+
 
     return true;
 }

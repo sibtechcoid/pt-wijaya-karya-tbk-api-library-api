@@ -7,5 +7,6 @@ export default interface Body extends Nama {
     nama : string;
     bobot : number;
     point : number;
-    tipe : Type;
+    parent : number;
+    judul : boolean;
 }

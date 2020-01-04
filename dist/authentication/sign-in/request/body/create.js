@@ -1,8 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 class Create {
-    constructor(usernama, password) {
-        this.usernama = usernama;
+    constructor(username, password) {
+        this.username = username;
         this.password = password;
     }
 }

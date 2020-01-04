@@ -9,6 +9,6 @@ import Singkatan from "../../../../singkatan/create/singkatan";
 export default interface Body extends Record, Deactivate, Id, Nama, Singkatan {
     alamat: string;
     jenisUnit: null | Omit<Type, 'levelUsaha' | 'jenisUsaha'>;
-    jenisUsaha: null | Omit<JenisUsaha, 'jenisUsaha'>;
-    levelUsaha: null | Omit<Level, 'jenisUsaha'>;
+    jenisUsaha: null | Omit<JenisUsaha, 'jenisUnit'>;
+    levelUsaha: null | Omit<Level, 'jenisUnit'>;
 }

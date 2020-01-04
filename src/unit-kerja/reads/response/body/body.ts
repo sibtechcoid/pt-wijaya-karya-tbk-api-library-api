@@ -11,7 +11,7 @@ export default interface Body  extends Record, Deactivate, Id, Nama, Singkatan  
 
     alamat: string;
     jenisUnit: null| Omit<Type,'levelUsaha'|'jenisUsaha'>;
-    jenisUsaha: null|Omit<JenisUsaha,'jenisUsaha'>;
+    jenisUsaha: null|Omit<JenisUsaha,'jenisUnit'>;
 
     // Deprecated;
     // wikaParentId : null|number;
@@ -23,6 +23,6 @@ export default interface Body  extends Record, Deactivate, Id, Nama, Singkatan  
     // wikaId : number|null;
 
 
-    levelUsaha: null|Omit<Level,'jenisUsaha'>;
+    levelUsaha: null|Omit<Level,'jenisUnit'>;
 
 }

@@ -9,7 +9,7 @@ export default function Type(value : any) : value is Body {
         return false;
     }
 
-    if(!TypeString(value.usernama)) {
+    if(!TypeString(value.username)) {
 
         return false;
     }

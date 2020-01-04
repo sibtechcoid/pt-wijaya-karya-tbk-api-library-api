@@ -1,12 +1,9 @@
 import Nama from "../../../../../nama/update/nama";
 import Id from "../../../../../id/id";
-import Type from "../../../type/type";
+import CreateBody from "../../../create/request/body/body";
 
-export default interface Body extends Nama, Id {
 
-    auditProgram ?: number;
-    nama ?: string;
-    bobot ?: number;
-    point ?: number;
-    tipe ?: Type;
+export default interface Body extends Partial<CreateBody>, Id {
+
+
 }

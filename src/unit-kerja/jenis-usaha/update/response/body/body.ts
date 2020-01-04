@@ -1,6 +1,6 @@
-import RequestBody from "../../request/body/body";
+import ReadBody from "../../../read/response/body/body";
 import Id from "../../../../../id/id";
 
-export default interface Body extends Id, RequestBody {
+export default interface Body extends Id, ReadBody {
 
 }

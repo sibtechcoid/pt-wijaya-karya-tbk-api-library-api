@@ -15,10 +15,6 @@ function Type(value) {
             return false;
         }
     }
-    //
-    // console.log('buffer--------');
-    // console.log(value.data);
-    // console.log('buffer--------');
     return true;
 }
 exports.default = Type;

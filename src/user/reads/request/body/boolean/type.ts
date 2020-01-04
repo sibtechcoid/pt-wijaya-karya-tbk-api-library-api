@@ -1,4 +1,3 @@
-import DeactivatedType from "../../../../../deactivate/read/request/body/boolean/type";
 import Body from "../body";
 import LimitType from "../../../../../limit/boolean/type";
 import SortType from "../../../../../sort/boolean/type";

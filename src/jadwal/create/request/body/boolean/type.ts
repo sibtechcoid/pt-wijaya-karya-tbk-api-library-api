@@ -1,7 +1,4 @@
 import TypeInterface from "../body";
-import NotNull from "@dikac/t-object/boolean/type";
-import TypeDateCompatible from "@dikac/t-date/boolean/compatible";
-import ArrayOf from "@dikac/t-array/boolean/array-of";
 import Plan from "../../../../update/request/body/boolean/plan";
 import Realize from "../../../../update/request/body/boolean/realize";
 

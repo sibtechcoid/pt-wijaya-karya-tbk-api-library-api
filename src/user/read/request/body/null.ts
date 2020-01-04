@@ -1,4 +1,3 @@
-import User from "../../../read/response/body/body";
 import ReadBody from "../../response/body/body";
 
 export default function Null () : Omit<ReadBody,'extraAkses'|'akses'|'jabatan'> {

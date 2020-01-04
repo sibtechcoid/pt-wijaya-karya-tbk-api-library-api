@@ -1,3 +1,3 @@
 import PathInterface from "../../../../../path/path";
-export default interface Path extends PathInterface<'/unit-kerja/type'> {
+export default interface Path extends PathInterface<'/unit-kerja/jenis-unit'> {
 }

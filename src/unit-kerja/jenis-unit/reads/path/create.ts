@@ -3,5 +3,5 @@ import Path from "./path";
 
 export default function Create() : Path {
 
-    return new CreatePath('/unit-kerja/types');
+    return new CreatePath('/unit-kerja/jenis-units');
 }

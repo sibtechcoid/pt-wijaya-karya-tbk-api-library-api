@@ -22,10 +22,6 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
             return false;
         }
     }
-    //
-    // console.log('buffer--------');
-    // console.log(value.data);
-    // console.log('buffer--------');
 
     return true;
 }

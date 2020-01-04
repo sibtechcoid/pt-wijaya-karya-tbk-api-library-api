@@ -1,10 +1,7 @@
-import TypeNama from "../../../../../../nama/update/boolean/type";
 import Body from "../body";
 import TypeNumber from "@dikac/t-number/boolean/finite";
-import TypeEnum from "@dikac/t-enum/boolean/type";
 import TypeId from "../../../../../../id/boolean/type";
 import Structure, {Validator} from "@dikac/t-object/boolean/structure";
-import Where from "../../../../reads/request/body/where/where";
 import Undefinable from "@dikac/t-undefined/boolean/undefinable";
 import BooleanType from "@dikac/t-boolean/type";
 import Nullable from "@dikac/t-null/boolean/nullable";

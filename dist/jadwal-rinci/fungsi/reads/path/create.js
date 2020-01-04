@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const create_1 = require("../../../../path/create");
 function Create() {
-    return new create_1.default('/internal/jadwal-rinci/fungsis');
+    return new create_1.default('/jadwal-rinci/fungsis');
 }
 exports.default = Create;
 //# sourceMappingURL=create.js.map

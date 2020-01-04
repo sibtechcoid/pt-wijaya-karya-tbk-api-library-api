@@ -1,4 +1,3 @@
-import Nama from "../../../../../nama/update/nama";
 import Id from "../../../../../id/id";
 import CreateBody from "../../../create/request/body/body";
 

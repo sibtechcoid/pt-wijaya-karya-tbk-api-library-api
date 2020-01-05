@@ -1,4 +1,5 @@
-import Nama from "../../../../../nama/update/nama";
+import Name from "../../../../../nama/update/nama";
 import Id from "../../../../../id/id";
-export default interface Body extends Nama, Id {
+export default interface Body extends Name, Id {
+    prosesBisnis?: number;
 }

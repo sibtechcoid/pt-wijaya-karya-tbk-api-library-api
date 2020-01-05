@@ -1,9 +1,15 @@
 import TypeInterface from "../body";
-import TypeNama from "../../../../../../nama/create/boolean/type";
+import TypeName from "../../../../../../nama/create/boolean/type";
+import TypeNumber from "@dikac/t-number/boolean/finite";
 
 export default function Type<Extended extends TypeInterface = TypeInterface>(value : any) : value is Extended {
 
-    if(!TypeNama<Extended>(value)) {
+    if(!TypeName<Extended>(value)) {
+
+        return false;
+    }
+
+    if(!TypeNumber(value.prosesBisnis)) {
 
         return false;
     }

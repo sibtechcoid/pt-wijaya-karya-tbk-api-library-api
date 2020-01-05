@@ -1,4 +1,4 @@
 import Success from "../../../response/success";
-import Id from "../../../id/id";
-declare type Response = Success<Id>;
+import Body from "./body/body";
+declare type Response = Success<Body>;
 export default Response;

@@ -10,9 +10,11 @@ import Fungsi from "../../../fungsi/akses";
 import Klausul from "../../../klausul/akses";
 import Prosedur from "../../../prosedur/akses";
 import Level from "../../../level/akses";
+import ProsesBisnis from "../../../proses-bisnis/akses";
 import AuditProgram from "../../../audit-program/akses";
 
 export default interface Body {
+
 
     proyek : Project[];
     rencana : Rencana[];
@@ -30,4 +32,5 @@ export default interface Body {
     klausul : Klausul[];
     level : Level[];
     auditProgram : AuditProgram[];
+    prosesBisnis : ProsesBisnis[];
 }

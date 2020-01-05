@@ -14,51 +14,30 @@ const type_11 = require("../../../../prosedur/boolean/type");
 const type_12 = require("../../../../level/boolean/type");
 const type_13 = require("../../../../jabatan/boolean/type");
 const type_14 = require("../../../../fungsi/boolean/type");
+const type_15 = require("../../../../proses-bisnis/boolean/type");
 const array_of_1 = require("@dikac/t-array/boolean/array-of");
+const structure_1 = require("@dikac/t-object/boolean/structure");
 function Type(value) {
     if (!type_1.default(value)) {
         return false;
     }
-    if (!array_of_1.default(value.user, type_3.default)) {
-        return false;
-    }
-    if (!array_of_1.default(value.proyek, type_2.default)) {
-        return false;
-    }
-    if (!array_of_1.default(value.unitKerja, type_4.default)) {
-        return false;
-    }
-    if (!array_of_1.default(value.rencana, type_5.default)) {
-        return false;
-    }
-    if (!array_of_1.default(value.levelUsaha, type_6.default)) {
-        return false;
-    }
-    if (!array_of_1.default(value.jenisUsaha, type_7.default)) {
-        return false;
-    }
-    if (!array_of_1.default(value.jenisUnit, type_8.default)) {
-        return false;
-    }
-    if (!array_of_1.default(value.auditProgram, type_9.default)) {
-        return false;
-    }
-    if (!array_of_1.default(value.klausul, type_10.default)) {
-        return false;
-    }
-    if (!array_of_1.default(value.prosedur, type_11.default)) {
-        return false;
-    }
-    if (!array_of_1.default(value.fungsi, type_14.default)) {
-        return false;
-    }
-    if (!array_of_1.default(value.level, type_12.default)) {
-        return false;
-    }
-    if (!array_of_1.default(value.jabatan, type_13.default)) {
-        return false;
-    }
-    return true;
+    let sort = {
+        user: (v) => array_of_1.default(v, type_3.default),
+        proyek: (v) => array_of_1.default(v, type_2.default),
+        unitKerja: (v) => array_of_1.default(v, type_4.default),
+        rencana: (v) => array_of_1.default(v, type_5.default),
+        levelUsaha: (v) => array_of_1.default(v, type_6.default),
+        jenisUsaha: (v) => array_of_1.default(v, type_7.default),
+        jenisUnit: (v) => array_of_1.default(v, type_8.default),
+        auditProgram: (v) => array_of_1.default(v, type_9.default),
+        klausul: (v) => array_of_1.default(v, type_10.default),
+        prosedur: (v) => array_of_1.default(v, type_11.default),
+        fungsi: (v) => array_of_1.default(v, type_14.default),
+        jabatan: (v) => array_of_1.default(v, type_13.default),
+        level: (v) => array_of_1.default(v, type_12.default),
+        prosesBisnis: (v) => array_of_1.default(v, type_15.default),
+    };
+    return structure_1.default(value, sort);
 }
 exports.default = Type;
 //# sourceMappingURL=type.js.map

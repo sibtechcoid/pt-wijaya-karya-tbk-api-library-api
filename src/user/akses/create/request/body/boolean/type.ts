@@ -13,7 +13,14 @@ import ProsedurType from "../../../../prosedur/boolean/type";
 import LevelType from "../../../../level/boolean/type";
 import JabatanType from "../../../../jabatan/boolean/type";
 import FungsiType from "../../../../fungsi/boolean/type";
+import ProsesBisnisType from "../../../../proses-bisnis/boolean/type";
 import ArrayOf from "@dikac/t-array/boolean/array-of";
+import Structure, {Validator} from "@dikac/t-object/boolean/structure";
+import Where from "../../../../../../unit-kerja/reads/request/body/where/where";
+import Undefinable from "@dikac/t-undefined/boolean/undefinable";
+import BooleanType from "@dikac/t-boolean/type";
+import StringType from "@dikac/t-string/boolean/type";
+import TypeNumber from "@dikac/t-number/boolean/finite";
 
 export default function Type(value : any) : value is Body {
 
@@ -22,71 +29,22 @@ export default function Type(value : any) : value is Body {
         return false;
     }
 
-    if(!ArrayOf(value.user, UserAksesType))  {
+    let sort : Validator<Required<Body>> = {
+        user : (v)=>ArrayOf(v, UserAksesType),
+        proyek : (v)=>ArrayOf(v, ProjectAksesType),
+        unitKerja : (v)=>ArrayOf(v, UnitKerjaAksesType),
+        rencana : (v)=>ArrayOf(v, RencanaAksesType),
+        levelUsaha : (v)=>ArrayOf(v, LevelUsahaType),
+        jenisUsaha : (v)=>ArrayOf(v, JenisUsahaType),
+        jenisUnit : (v)=>ArrayOf(v, JenisUnitType),
+        auditProgram : (v)=>ArrayOf(v, AuditProgramType),
+        klausul : (v)=>ArrayOf(v, KlausulType),
+        prosedur : (v)=>ArrayOf(v, ProsedurType),
+        fungsi : (v)=>ArrayOf(v, FungsiType),
+        jabatan : (v)=>ArrayOf(v, JabatanType),
+        level : (v)=>ArrayOf(v, LevelType),
+        prosesBisnis : (v)=>ArrayOf(v, ProsesBisnisType),
+    };
 
-        return false;
-    }
-
-    if(!ArrayOf(value.proyek, ProjectAksesType))  {
-
-        return false;
-    }
-
-    if(!ArrayOf(value.unitKerja, UnitKerjaAksesType))  {
-
-        return false;
-    }
-
-    if(!ArrayOf(value.rencana, RencanaAksesType))  {
-
-        return false;
-    }
-
-    if(!ArrayOf(value.levelUsaha, LevelUsahaType))  {
-
-        return false;
-    }
-
-    if(!ArrayOf(value.jenisUsaha, JenisUsahaType))  {
-
-        return false;
-    }
-
-    if(!ArrayOf(value.jenisUnit, JenisUnitType))  {
-
-        return false;
-    }
-
-    if(!ArrayOf(value.auditProgram, AuditProgramType))  {
-
-        return false;
-    }
-
-    if(!ArrayOf(value.klausul, KlausulType))  {
-
-        return false;
-    }
-
-    if(!ArrayOf(value.prosedur, ProsedurType))  {
-
-        return false;
-    }
-
-    if(!ArrayOf(value.fungsi, FungsiType))  {
-
-        return false;
-    }
-
-    if(!ArrayOf(value.level, LevelType))  {
-
-        return false;
-    }
-
-    if(!ArrayOf(value.jabatan, JabatanType))  {
-
-        return false;
-    }
-
-    return true;
-
+    return Structure(value, sort);
 }

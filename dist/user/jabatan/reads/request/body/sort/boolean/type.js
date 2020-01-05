@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const structure_1 = require("@dikac/t-object/boolean/structure");
-const type_1 = require("../../../../../../sort/mode/boolean/type");
+const type_1 = require("../../../../../../../sort/mode/boolean/type");
 const undefinable_1 = require("@dikac/t-undefined/boolean/undefinable");
 function Type(value) {
     let sort = {

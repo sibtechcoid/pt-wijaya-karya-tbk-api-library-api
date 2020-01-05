@@ -16,11 +16,6 @@ import FungsiType from "../../../../fungsi/boolean/type";
 import ProsesBisnisType from "../../../../proses-bisnis/boolean/type";
 import ArrayOf from "@dikac/t-array/boolean/array-of";
 import Structure, {Validator} from "@dikac/t-object/boolean/structure";
-import Where from "../../../../../../unit-kerja/reads/request/body/where/where";
-import Undefinable from "@dikac/t-undefined/boolean/undefinable";
-import BooleanType from "@dikac/t-boolean/type";
-import StringType from "@dikac/t-string/boolean/type";
-import TypeNumber from "@dikac/t-number/boolean/finite";
 
 export default function Type(value : any) : value is Body {
 

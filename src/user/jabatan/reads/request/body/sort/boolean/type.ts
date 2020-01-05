@@ -1,6 +1,6 @@
 import Sort from "../sort";
 import Structure, {Validator} from "@dikac/t-object/boolean/structure";
-import ModeType from "../../../../../../sort/mode/boolean/type";
+import ModeType from "../../../../../../../sort/mode/boolean/type";
 import Undefinable from "@dikac/t-undefined/boolean/undefinable";
 
 export default function Type<

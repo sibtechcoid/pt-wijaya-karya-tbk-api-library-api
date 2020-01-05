@@ -23,18 +23,18 @@ function Type(value) {
     }
     let sort = {
         user: (v) => array_of_1.default(v, type_3.default),
-        proyek: (v) => array_of_1.default(v, type_2.default),
+        jabatan: (v) => array_of_1.default(v, type_13.default),
         unitKerja: (v) => array_of_1.default(v, type_4.default),
+        proyek: (v) => array_of_1.default(v, type_2.default),
         rencana: (v) => array_of_1.default(v, type_5.default),
         levelUsaha: (v) => array_of_1.default(v, type_6.default),
         jenisUsaha: (v) => array_of_1.default(v, type_7.default),
         jenisUnit: (v) => array_of_1.default(v, type_8.default),
-        auditProgram: (v) => array_of_1.default(v, type_9.default),
         klausul: (v) => array_of_1.default(v, type_10.default),
         prosedur: (v) => array_of_1.default(v, type_11.default),
-        fungsi: (v) => array_of_1.default(v, type_14.default),
-        jabatan: (v) => array_of_1.default(v, type_13.default),
         level: (v) => array_of_1.default(v, type_12.default),
+        auditProgram: (v) => array_of_1.default(v, type_9.default),
+        fungsi: (v) => array_of_1.default(v, type_14.default),
         prosesBisnis: (v) => array_of_1.default(v, type_15.default),
     };
     return structure_1.default(value, sort);

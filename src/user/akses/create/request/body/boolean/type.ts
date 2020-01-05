@@ -25,19 +25,19 @@ export default function Type(value : any) : value is Body {
     }
 
     let sort : Validator<Required<Body>> = {
-        user : (v)=>ArrayOf(v, UserAksesType),
-        proyek : (v)=>ArrayOf(v, ProjectAksesType),
-        unitKerja : (v)=>ArrayOf(v, UnitKerjaAksesType),
-        rencana : (v)=>ArrayOf(v, RencanaAksesType),
-        levelUsaha : (v)=>ArrayOf(v, LevelUsahaType),
-        jenisUsaha : (v)=>ArrayOf(v, JenisUsahaType),
-        jenisUnit : (v)=>ArrayOf(v, JenisUnitType),
+        user         : (v)=>ArrayOf(v, UserAksesType),
+        jabatan      : (v)=>ArrayOf(v, JabatanType),
+        unitKerja    : (v)=>ArrayOf(v, UnitKerjaAksesType),
+        proyek       : (v)=>ArrayOf(v, ProjectAksesType),
+        rencana      : (v)=>ArrayOf(v, RencanaAksesType),
+        levelUsaha   : (v)=>ArrayOf(v, LevelUsahaType),
+        jenisUsaha   : (v)=>ArrayOf(v, JenisUsahaType),
+        jenisUnit    : (v)=>ArrayOf(v, JenisUnitType),
+        klausul      : (v)=>ArrayOf(v, KlausulType),
+        prosedur     : (v)=>ArrayOf(v, ProsedurType),
+        level        : (v)=>ArrayOf(v, LevelType),
         auditProgram : (v)=>ArrayOf(v, AuditProgramType),
-        klausul : (v)=>ArrayOf(v, KlausulType),
-        prosedur : (v)=>ArrayOf(v, ProsedurType),
-        fungsi : (v)=>ArrayOf(v, FungsiType),
-        jabatan : (v)=>ArrayOf(v, JabatanType),
-        level : (v)=>ArrayOf(v, LevelType),
+        fungsi       : (v)=>ArrayOf(v, FungsiType),
         prosesBisnis : (v)=>ArrayOf(v, ProsesBisnisType),
     };
 

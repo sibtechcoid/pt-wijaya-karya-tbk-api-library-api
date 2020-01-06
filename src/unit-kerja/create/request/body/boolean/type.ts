@@ -4,6 +4,7 @@ import IsString from "@dikac/t-string/boolean/type";
 import IsNumber from "@dikac/t-number/boolean/finite";
 import TypeNama from "../../../../../nama/create/boolean/type";
 import TypeSingkatan from "../../../../../singkatan/create/boolean/type";
+import Nullable from "@dikac/t-null/boolean/nullable";
 
 export default function Type<Extended extends TypeInterface = TypeInterface>(value : any) : value is Extended {
 
@@ -27,13 +28,12 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
         return false;
     }
 
-
     if(!IsNumber(value.jenisUsaha)) {
 
         return false;
     }
 
-    if(!IsNumber(value.levelUsaha)) {
+    if(!Nullable(value.levelUsaha, IsNumber)) {
 
         return false;
     }

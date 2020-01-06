@@ -1,3 +1,3 @@
 import PathInterface from "../../../../../path/path";
-export default interface Path extends PathInterface<'/jabatan'> {
+export default interface Path extends PathInterface<'/anggota/jabatan'> {
 }

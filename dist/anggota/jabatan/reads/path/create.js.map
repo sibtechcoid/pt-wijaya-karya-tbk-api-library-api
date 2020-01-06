@@ -1,1 +1,1 @@
-{"version":3,"file":"create.js","sourceRoot":"","sources":["../../../../../src/anggota/jabatan/reads/path/create.ts"],"names":[],"mappings":";;AAAA,oDAAiD;AAGjD,SAAwB,MAAM;IAE1B,OAAO,IAAI,gBAAU,CAAC,WAAW,CAAC,CAAC;AACvC,CAAC;AAHD,yBAGC"}
+{"version":3,"file":"create.js","sourceRoot":"","sources":["../../../../../src/anggota/jabatan/reads/path/create.ts"],"names":[],"mappings":";;AAAA,oDAAiD;AAGjD,SAAwB,MAAM;IAE1B,OAAO,IAAI,gBAAU,CAAC,mBAAmB,CAAC,CAAC;AAC/C,CAAC;AAHD,yBAGC"}

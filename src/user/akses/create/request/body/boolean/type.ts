@@ -12,6 +12,7 @@ import KlausulType from "../../../../klausul/boolean/type";
 import ProsedurType from "../../../../prosedur/boolean/type";
 import LevelType from "../../../../level/boolean/type";
 import JabatanType from "../../../../jabatan/boolean/type";
+import JabatanAnggotaType from "../../../../jabatan-anggota/boolean/type";
 import FungsiType from "../../../../fungsi/boolean/type";
 import ProsesBisnisType from "../../../../proses-bisnis/boolean/type";
 import ArrayOf from "@dikac/t-array/boolean/array-of";
@@ -25,20 +26,21 @@ export default function Type(value : any) : value is Body {
     }
 
     let sort : Validator<Required<Body>> = {
-        user         : (v)=>ArrayOf(v, UserAksesType),
-        jabatan      : (v)=>ArrayOf(v, JabatanType),
-        unitKerja    : (v)=>ArrayOf(v, UnitKerjaAksesType),
-        proyek       : (v)=>ArrayOf(v, ProjectAksesType),
-        rencana      : (v)=>ArrayOf(v, RencanaAksesType),
-        levelUsaha   : (v)=>ArrayOf(v, LevelUsahaType),
-        jenisUsaha   : (v)=>ArrayOf(v, JenisUsahaType),
-        jenisUnit    : (v)=>ArrayOf(v, JenisUnitType),
-        klausul      : (v)=>ArrayOf(v, KlausulType),
-        prosedur     : (v)=>ArrayOf(v, ProsedurType),
-        level        : (v)=>ArrayOf(v, LevelType),
-        auditProgram : (v)=>ArrayOf(v, AuditProgramType),
-        fungsi       : (v)=>ArrayOf(v, FungsiType),
-        prosesBisnis : (v)=>ArrayOf(v, ProsesBisnisType),
+        user           : (v)=>ArrayOf(v, UserAksesType),
+        jabatan        : (v)=>ArrayOf(v, JabatanType),
+        unitKerja      : (v)=>ArrayOf(v, UnitKerjaAksesType),
+        proyek         : (v)=>ArrayOf(v, ProjectAksesType),
+        rencana        : (v)=>ArrayOf(v, RencanaAksesType),
+        levelUsaha     : (v)=>ArrayOf(v, LevelUsahaType),
+        jenisUsaha     : (v)=>ArrayOf(v, JenisUsahaType),
+        jenisUnit      : (v)=>ArrayOf(v, JenisUnitType),
+        klausul        : (v)=>ArrayOf(v, KlausulType),
+        prosedur       : (v)=>ArrayOf(v, ProsedurType),
+        level          : (v)=>ArrayOf(v, LevelType),
+        auditProgram   : (v)=>ArrayOf(v, AuditProgramType),
+        fungsi         : (v)=>ArrayOf(v, FungsiType),
+        jabatanAnggota : (v)=>ArrayOf(v, JabatanAnggotaType),
+        prosesBisnis   : (v)=>ArrayOf(v, ProsesBisnisType),
     };
 
     return Structure(value, sort);

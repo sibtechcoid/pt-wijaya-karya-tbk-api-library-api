@@ -9,6 +9,7 @@ import Rencana from "../../../rencana/akses";
 import Fungsi from "../../../fungsi/akses";
 import Klausul from "../../../klausul/akses";
 import Prosedur from "../../../prosedur/akses";
+import JabatanAnggotaAkses from "../../../jabatan-anggota/akses";
 import Level from "../../../level/akses";
 import ProsesBisnis from "../../../proses-bisnis/akses";
 import AuditProgram from "../../../audit-program/akses";
@@ -17,6 +18,7 @@ export default interface Body {
     rencana: Rencana[];
     user: UserAkses[];
     jabatan: JabatanAkses[];
+    jabatanAnggota: JabatanAnggotaAkses[];
     unitKerja: UnitKerja[];
     jenisUnit: JenisUnit[];
     jenisUsaha: JenisUsaha[];

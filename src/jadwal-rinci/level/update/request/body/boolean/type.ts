@@ -1,6 +1,5 @@
 import Body from "../body";
 import TypeNumber from "@dikac/t-number/boolean/finite";
-import TypeId from "../../../../../../id/boolean/type";
 import Structure, {Validator} from "@dikac/t-object/boolean/structure";
 import Undefinable from "@dikac/t-undefined/boolean/undefinable";
 import BooleanType from "@dikac/t-boolean/type";

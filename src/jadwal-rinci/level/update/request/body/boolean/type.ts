@@ -16,15 +16,14 @@ export default function Type<Extended extends Body = Body>(value : any) : value 
     }
 
     let sort : Validator<Required<Body>> = {
-        //created    : (v) => Undefinable(v, ModeType),
-        id    : TypeId,
+        id    : TypeNumber,
         auditProgram    : (v) => Undefinable(v, TypeNumber),
-        parent    : (v) => Undefinable(v, TypeNumber),
+        parent    : (p) => Undefinable<number|null>(p, (p) : p is number|null => Nullable<number>(p, (p) : p is number => TypeNumber(p))),
         judul : (v) => Undefinable(v, BooleanType),
-        // id         : (v) => Undefinable(v, ModeType),
         bobot    : (p) => Undefinable<number|null>(p, (p) : p is number|null => Nullable<number>(p, (p) : p is number => TypeNumber(p))),
         point    : (p) => Undefinable<number|null>(p, (p) : p is number|null => Nullable<number>(p, (p) : p is number => TypeNumber(p))),
         nama    : (v) => Undefinable(v, StringType),
     };
+
     return Structure(value, sort);
 }

@@ -12,7 +12,7 @@ function Type(value) {
     }
     let sort = {
         mulai: (v) => undefinable_1.default(v, compatible_1.default),
-        project: (v) => undefinable_1.default(v, infinite_1.default),
+        audit: (v) => undefinable_1.default(v, infinite_1.default),
         selesai: (v) => undefinable_1.default(v, compatible_1.default),
         deactivate: (v) => undefinable_1.default(v, type_2.default)
     };

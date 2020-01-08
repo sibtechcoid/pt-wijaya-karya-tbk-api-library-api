@@ -12,7 +12,7 @@ function Type(value) {
         return false;
     }
     let sort = {
-        project: finite_1.default,
+        audit: finite_1.default,
         selesai: compatible_1.default,
         mulai: compatible_1.default,
         fungsi: (v) => array_of_1.default(v, finite_1.default),
@@ -21,31 +21,6 @@ function Type(value) {
         klausul: (v) => nullable_1.default(v, (v) => array_of_1.default(v, type_2.default)),
     };
     return structure_1.default(value, sort);
-    // if(!ArrayOf(value.fungsi, TypeNumber)) {
-    //
-    //     return false;
-    // }
-    //
-    // if(!TypeNumber(value.prosedur)) {
-    //
-    //     return false;
-    // }
-    //
-    // if(!TypeNumber(value.project)) {
-    //
-    //     return false;
-    // }
-    //
-    // if(!TypeDateCompatible(value.selesai)) {
-    //
-    //     return false;
-    // }
-    //
-    // if(!TypeDateCompatible(value.mulai)) {
-    //
-    //     return false;
-    // }
-    return true;
 }
 exports.default = Type;
 //# sourceMappingURL=type.js.map

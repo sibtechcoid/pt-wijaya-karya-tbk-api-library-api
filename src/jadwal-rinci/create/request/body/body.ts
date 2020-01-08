@@ -1,5 +1,5 @@
 export default interface Body {
-    project : number;
+    audit : number;
     selesai  : Date|string;
     mulai  : Date|string;
 

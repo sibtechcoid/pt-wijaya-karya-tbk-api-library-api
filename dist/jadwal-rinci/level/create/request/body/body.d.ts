@@ -2,8 +2,8 @@ import Nama from "../../../../../nama/create/nama";
 export default interface Body extends Nama {
     auditProgram: number;
     nama: string;
-    bobot: number;
-    point: number;
-    parent: number;
+    bobot: null | number;
+    point: null | number;
+    parent: number | null;
     judul: boolean;
 }

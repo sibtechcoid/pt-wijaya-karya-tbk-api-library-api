@@ -12,6 +12,7 @@ import KlausulType from "../../../../klausul/boolean/type";
 import ProsedurType from "../../../../prosedur/boolean/type";
 import LevelType from "../../../../level/boolean/type";
 import JabatanType from "../../../../jabatan/boolean/type";
+import JadwalRinciType from "../../../../jadwal-rinci/boolean/type";
 import JabatanAnggotaType from "../../../../jabatan-anggota/boolean/type";
 import FungsiType from "../../../../fungsi/boolean/type";
 import ProsesBisnisType from "../../../../proses-bisnis/boolean/type";
@@ -41,6 +42,7 @@ export default function Type(value : any) : value is Body {
         fungsi         : (v)=>ArrayOf(v, FungsiType),
         jabatanAnggota : (v)=>ArrayOf(v, JabatanAnggotaType),
         prosesBisnis   : (v)=>ArrayOf(v, ProsesBisnisType),
+        jadwalRinci   : (v)=>ArrayOf(v, JadwalRinciType),
     };
 
     return Structure(value, sort);

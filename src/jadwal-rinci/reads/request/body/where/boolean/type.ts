@@ -1,6 +1,5 @@
 import NotNull from "@dikac/t-object/boolean/type";
 import Where from "../where";
-import StringType from "@dikac/t-string/boolean/type";
 import BooleanType from "@dikac/t-boolean/type";
 import Structure, {Validator} from "@dikac/t-object/boolean/structure";
 import Undefinable from "@dikac/t-undefined/boolean/undefinable";

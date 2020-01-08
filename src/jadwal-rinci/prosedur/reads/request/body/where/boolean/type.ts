@@ -5,7 +5,6 @@ import BooleanType from "@dikac/t-boolean/type";
 import FiniteType from "@dikac/t-number/boolean/finite";
 import Structure, {Validator} from "@dikac/t-object/boolean/structure";
 import Undefinable from "@dikac/t-undefined/boolean/undefinable";
-import Nullable from "@dikac/t-null/boolean/nullable";
 
 
 export default function

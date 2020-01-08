@@ -5,5 +5,5 @@ export default interface Body {
     fungsi: number[];
     prosedur: number[];
     prosesBisnis: number | null;
-    klausul: number[] | null;
+    klausul: number[];
 }

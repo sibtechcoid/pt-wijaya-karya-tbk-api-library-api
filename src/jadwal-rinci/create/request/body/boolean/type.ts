@@ -22,7 +22,7 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
         fungsi : (v) => ArrayOf(v, TypeNumber),
         prosedur : (v) => ArrayOf(v, TypeNumber),
         prosesBisnis : (v) => Nullable(v, TypeNumber),
-        klausul : (v) => Nullable(v, (v) : v is number[] => ArrayOf(v, ModeType)),
+        klausul : (v) => Nullable(v, (v) : v is number[] => ArrayOf(v, TypeNumber)),
 
     };
 

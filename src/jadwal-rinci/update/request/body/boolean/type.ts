@@ -3,6 +3,10 @@ import ArrayOf from "@dikac/t-array/boolean/array-of";
 import TypeNumber from "@dikac/t-number/boolean/finite";
 import TypeDateCompatible from "@dikac/t-date/boolean/compatible";
 import TypeId from "../../../../../id/boolean/type";
+import Structure, {Validator} from "@dikac/t-object/boolean/structure";
+import TypeInterface from "../../../request/body/body";
+import Nullable from "@dikac/t-null/boolean/nullable";
+import ModeType from "../../../../../sort/mode/boolean/type";
 
 export default function Type<Extended extends Body = Body>(value : any) : value is Extended {
 
@@ -10,46 +14,17 @@ export default function Type<Extended extends Body = Body>(value : any) : value 
 
         return false;
     }
+    let sort : Validator<Required<TypeInterface>> = {
+        id : TypeNumber,
+        audit : TypeNumber,
+        selesai : TypeDateCompatible,
+        mulai : TypeDateCompatible,
+        fungsi : (v) => ArrayOf(v, TypeNumber),
+        prosedur : (v) => ArrayOf(v, TypeNumber),
+        prosesBisnis : (v) => Nullable(v, TypeNumber),
+        klausul : (v) => Nullable(v, (v) : v is number[] => ArrayOf(v, ModeType)),
 
-    if(value.fungsi !== undefined) {
+    };
 
-        if(!ArrayOf(value.fungsi, TypeNumber)) {
-
-            return false;
-        }
-    }
-
-    if(value.prosedur !== undefined) {
-
-        if(!TypeNumber(value.prosedur)) {
-
-            return false;
-        }
-    }
-
-    if(value.audit !== undefined) {
-
-        if(!TypeNumber(value.audit)) {
-
-            return false;
-        }
-    }
-
-    if(value.selesai !== undefined) {
-
-        if(!TypeDateCompatible(value.selesai)) {
-
-            return false;
-        }
-    }
-
-    if(value.mulai !== undefined) {
-
-        if(!TypeDateCompatible(value.mulai)) {
-
-            return false;
-        }
-    }
-
-    return true;
+    return Structure(value, sort);
 }

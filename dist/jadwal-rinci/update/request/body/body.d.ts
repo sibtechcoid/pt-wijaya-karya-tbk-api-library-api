@@ -1,8 +1,4 @@
 import Id from "../../../../id/id";
-export default interface Body extends Id {
-    audit?: number;
-    selesai?: Date | string;
-    mulai?: Date | string;
-    fungsi?: number[];
-    prosedur?: number;
+import CreateBody from "../../../create/request/body/body";
+export default interface Body extends Id, Partial<CreateBody> {
 }

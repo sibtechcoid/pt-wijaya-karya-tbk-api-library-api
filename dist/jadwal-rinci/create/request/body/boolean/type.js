@@ -4,26 +4,22 @@ const type_1 = require("@dikac/t-object/boolean/type");
 const array_of_1 = require("@dikac/t-array/boolean/array-of");
 const finite_1 = require("@dikac/t-number/boolean/finite");
 const compatible_1 = require("@dikac/t-date/boolean/compatible");
+const structure_1 = require("@dikac/t-object/boolean/structure");
+const nullable_1 = require("@dikac/t-null/boolean/nullable");
 function Type(value) {
     if (!type_1.default(value)) {
         return false;
     }
-    if (!array_of_1.default(value.fungsi, finite_1.default)) {
-        return false;
-    }
-    if (!finite_1.default(value.prosedur)) {
-        return false;
-    }
-    if (!finite_1.default(value.project)) {
-        return false;
-    }
-    if (!compatible_1.default(value.selesai)) {
-        return false;
-    }
-    if (!compatible_1.default(value.mulai)) {
-        return false;
-    }
-    return true;
+    let sort = {
+        audit: finite_1.default,
+        selesai: compatible_1.default,
+        mulai: compatible_1.default,
+        fungsi: (v) => array_of_1.default(v, finite_1.default),
+        prosedur: (v) => array_of_1.default(v, finite_1.default),
+        prosesBisnis: (v) => nullable_1.default(v, finite_1.default),
+        klausul: (v) => nullable_1.default(v, (v) => array_of_1.default(v, finite_1.default)),
+    };
+    return structure_1.default(value, sort);
 }
 exports.default = Type;
 //# sourceMappingURL=type.js.map

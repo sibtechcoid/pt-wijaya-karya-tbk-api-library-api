@@ -1,7 +1,9 @@
 export default interface Body {
-    project: number;
+    audit: number;
     selesai: Date | string;
     mulai: Date | string;
     fungsi: number[];
-    prosedur: number;
+    prosedur: number[];
+    prosesBisnis: number | null;
+    klausul: number[];
 }

@@ -13,9 +13,10 @@ const type_10 = require("../../../../klausul/boolean/type");
 const type_11 = require("../../../../prosedur/boolean/type");
 const type_12 = require("../../../../level/boolean/type");
 const type_13 = require("../../../../jabatan/boolean/type");
-const type_14 = require("../../../../jabatan-anggota/boolean/type");
-const type_15 = require("../../../../fungsi/boolean/type");
-const type_16 = require("../../../../proses-bisnis/boolean/type");
+const type_14 = require("../../../../jadwal-rinci/boolean/type");
+const type_15 = require("../../../../jabatan-anggota/boolean/type");
+const type_16 = require("../../../../fungsi/boolean/type");
+const type_17 = require("../../../../proses-bisnis/boolean/type");
 const array_of_1 = require("@dikac/t-array/boolean/array-of");
 const structure_1 = require("@dikac/t-object/boolean/structure");
 function Type(value) {
@@ -35,9 +36,10 @@ function Type(value) {
         prosedur: (v) => array_of_1.default(v, type_11.default),
         level: (v) => array_of_1.default(v, type_12.default),
         auditProgram: (v) => array_of_1.default(v, type_9.default),
-        fungsi: (v) => array_of_1.default(v, type_15.default),
-        jabatanAnggota: (v) => array_of_1.default(v, type_14.default),
-        prosesBisnis: (v) => array_of_1.default(v, type_16.default),
+        fungsi: (v) => array_of_1.default(v, type_16.default),
+        jabatanAnggota: (v) => array_of_1.default(v, type_15.default),
+        prosesBisnis: (v) => array_of_1.default(v, type_17.default),
+        jadwalRinci: (v) => array_of_1.default(v, type_14.default),
     };
     return structure_1.default(value, sort);
 }

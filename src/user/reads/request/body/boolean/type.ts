@@ -1,7 +1,6 @@
 import Body from "../body";
 import LimitType from "../../../../../limit/boolean/type";
-import SortType from "../../../../../sort/boolean/type";
-import Null from "../sort/null";
+import SortType from "../sort/boolean/type";
 import NotNull from "@dikac/t-object/boolean/type";
 import WhereType from "../where/boolean/type";
 
@@ -19,7 +18,7 @@ export default function Type(value : any) : value is Body {
 
     if(value.sort !== undefined) {
 
-        if(!SortType(value.sort, Null())) {
+        if(!SortType(value.sort)) {
 
             return false;
         }

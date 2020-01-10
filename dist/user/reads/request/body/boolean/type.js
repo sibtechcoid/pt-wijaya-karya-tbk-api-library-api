@@ -1,8 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const type_1 = require("../../../../../limit/boolean/type");
-const type_2 = require("../../../../../sort/boolean/type");
-const null_1 = require("../sort/null");
+const type_2 = require("../sort/boolean/type");
 const type_3 = require("@dikac/t-object/boolean/type");
 const type_4 = require("../where/boolean/type");
 function Type(value) {
@@ -13,7 +12,7 @@ function Type(value) {
         return false;
     }
     if (value.sort !== undefined) {
-        if (!type_2.default(value.sort, null_1.default())) {
+        if (!type_2.default(value.sort)) {
             return false;
         }
     }

@@ -1,8 +1,7 @@
 import TypeInterface from "../body";
 import WhereType from "../where/boolean/type";
 import NotNull from "@dikac/t-object/boolean/type";
-import Null from "../../../../../user/reads/request/body/sort/null";
-import SortType from "../../../../../sort/boolean/type";
+import SortType from "../sort/boolean/type";
 import LimitType from "../../../../../limit/boolean/type";
 
 
@@ -28,7 +27,7 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
 
     if(value.sort !== undefined) {
 
-        if(!SortType(value.sort, Null())) {
+        if(!SortType(value.sort)) {
 
             return false;
         }

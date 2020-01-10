@@ -2,11 +2,17 @@ import TypeInterface from "../body";
 import WhereType from "../where/boolean/type";
 import SortType from "../sort/boolean/type";
 import NotNull from "@dikac/t-object/boolean/type";
+import LimitType from "../../../../../limit/boolean/type";
 
 
 export default function Type<Extended extends TypeInterface = TypeInterface>(value : any) : value is Extended {
 
     if(!NotNull<Extended>(value)) {
+
+        return false;
+    }
+
+    if(!LimitType(value)) {
 
         return false;
     }
@@ -26,7 +32,6 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
             return false;
         }
     }
-
 
     return true;
 }

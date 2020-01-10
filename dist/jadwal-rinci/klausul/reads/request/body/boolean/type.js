@@ -3,8 +3,12 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const type_1 = require("../where/boolean/type");
 const type_2 = require("../sort/boolean/type");
 const type_3 = require("@dikac/t-object/boolean/type");
+const type_4 = require("../../../../../../limit/boolean/type");
 function Type(value) {
     if (!type_3.default(value)) {
+        return false;
+    }
+    if (!type_4.default(value)) {
         return false;
     }
     if (value.where !== undefined) {

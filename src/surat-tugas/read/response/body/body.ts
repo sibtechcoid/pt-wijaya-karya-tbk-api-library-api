@@ -5,10 +5,8 @@ import Record from "../../../../record/record";
 
 export default interface Body extends Id, Record {
 
-    // TODO fix any
-    // TODO fix structure
-    audit : Omit<Project,'member'>[];
+    audit : Omit<Project,'anggota'|'penolakan'|'penyetuju'>[];
     nomer : string;
     lampiran : (Id & Omit<Lampiran,'data'>)[]
-   // jenisUnit: null|Type;
+
 }

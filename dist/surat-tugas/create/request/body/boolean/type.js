@@ -11,7 +11,7 @@ function Type(value) {
     if (!type_2.default(value.nomer)) {
         return false;
     }
-    if (!array_of_1.default(value.project, finite_1.default)) {
+    if (!array_of_1.default(value.audit, finite_1.default)) {
         return false;
     }
     return true;

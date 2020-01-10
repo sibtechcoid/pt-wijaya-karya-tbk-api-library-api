@@ -16,7 +16,7 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
         return false;
     }
 
-    if(!ArrayOf(value.project, IsNumber)) {
+    if(!ArrayOf(value.audit, IsNumber)) {
 
         return false;
     }

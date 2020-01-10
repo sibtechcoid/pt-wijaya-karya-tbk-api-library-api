@@ -1,5 +1,4 @@
 import Id from "../../../../id/id";
-export default interface Body extends Id {
-    nomer?: string;
-    audit?: number[];
+import CreateBody from "../../../create/request/body/body";
+export default interface Body extends Id, Partial<CreateBody> {
 }

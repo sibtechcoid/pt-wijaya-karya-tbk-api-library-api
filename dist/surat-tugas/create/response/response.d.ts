@@ -1,5 +1,4 @@
 import Created from "../../../response/created";
-import Id from "../../../id/id";
-import BadRequest from "../../../response/bad-request";
-declare type Response = BadRequest<undefined> | Created<Id>;
+import Body from "./body/body";
+declare type Response = Created<Body>;
 export default Response;

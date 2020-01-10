@@ -3,9 +3,7 @@ import Where from "../where";
 import BooleanType from "@dikac/t-boolean/type";
 import Structure, {Validator} from "@dikac/t-object/boolean/structure";
 import Undefinable from "@dikac/t-undefined/boolean/undefinable";
-import Finite from "@dikac/t-number/boolean/finite";
 import IsString from "@dikac/t-string/boolean/type";
-import ArrayOf from "@dikac/t-array/boolean/array-of";
 
 
 export default function

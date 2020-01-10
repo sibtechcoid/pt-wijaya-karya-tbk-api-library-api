@@ -18,7 +18,7 @@ export default function
 
     let sort : Validator<Required<Where>> = {
         nomer: (v) => Undefinable(v, IsString),
-        audit: (v) => Undefinable(v, (v) : v is number[] =>ArrayOf(v, Finite)),
+       // audit: (v) => Undefinable(v, (v) : v is number[] =>ArrayOf(v, Finite)),
         deactivate : (v) => Undefinable(v, BooleanType)
     };
 

@@ -15,6 +15,7 @@ import JabatanType from "../../../../jabatan/boolean/type";
 import JadwalRinciType from "../../../../jadwal-rinci/boolean/type";
 import JabatanAnggotaType from "../../../../jabatan-anggota/boolean/type";
 import FungsiType from "../../../../fungsi/boolean/type";
+import SuratTugasType from "../../../../surat-tugas/boolean/type";
 import ProsesBisnisType from "../../../../proses-bisnis/boolean/type";
 import ArrayOf from "@dikac/t-array/boolean/array-of";
 import Structure, {Validator} from "@dikac/t-object/boolean/structure";
@@ -27,6 +28,7 @@ export default function Type(value : any) : value is Body {
     }
 
     let sort : Validator<Required<Body>> = {
+        suratTugas     : (v)=>ArrayOf(v, SuratTugasType),
         user           : (v)=>ArrayOf(v, UserAksesType),
         jabatan        : (v)=>ArrayOf(v, JabatanType),
         unitKerja      : (v)=>ArrayOf(v, UnitKerjaAksesType),

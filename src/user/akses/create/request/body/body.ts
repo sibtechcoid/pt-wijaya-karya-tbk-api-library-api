@@ -11,6 +11,7 @@ import Klausul from "../../../klausul/akses";
 import Prosedur from "../../../prosedur/akses";
 import JabatanAnggotaAkses from "../../../jabatan-anggota/akses";
 import Level from "../../../level/akses";
+import SuratTugas from "../../../surat-tugas/akses";
 import JadwalRinci from "../../../jadwal-rinci/akses";
 import ProsesBisnis from "../../../proses-bisnis/akses";
 import AuditProgram from "../../../audit-program/akses";
@@ -18,6 +19,7 @@ import AuditProgram from "../../../audit-program/akses";
 export default interface Body {
 
 
+    suratTugas : SuratTugas[];
     proyek : Project[];
     rencana : Rencana[];
     user : UserAkses[];

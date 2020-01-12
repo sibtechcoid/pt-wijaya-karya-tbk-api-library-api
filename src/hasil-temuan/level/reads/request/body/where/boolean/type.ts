@@ -18,7 +18,7 @@ export default function
 
     let sort : Validator<Required<Where>> = {
         //created    : (v) => Undefinable(v, ModeType),
-        auditProgram    : (v) => Undefinable(v, FiniteType),
+        levelUsaha    : (v) => Undefinable(v, FiniteType),
         parent    : (v) => Undefinable(v, FiniteType),
         deactivate : (v) => Undefinable(v, BooleanType),
         judul : (v) => Undefinable(v, BooleanType),

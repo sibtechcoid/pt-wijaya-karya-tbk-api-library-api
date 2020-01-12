@@ -1,7 +1,7 @@
 import ReadBody from "../../../read/response/body/body";
-import AuditProgram from "../../../../../jadwal-rinci/audit-program/reads/response/body/body";
+import LevelUsaha from "../../../../../unit-kerja/level-usaha/reads/response/body/body";
 
-export default interface Body extends Omit<ReadBody,'auditProgram'> {
+export default interface Body extends Omit<ReadBody,'levelUsaha'> {
 
-    auditProgram : Omit<AuditProgram,'level'>;
+    levelUsaha : Omit<LevelUsaha,'jenisUnit'>;
 }

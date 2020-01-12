@@ -20,7 +20,7 @@ export default function Type<
         deactivate : (v) => Undefinable(v, ModeType),
         id         : (v) => Undefinable(v, ModeType),
         updated    : (v) => Undefinable(v, ModeType),
-        auditProgram    : (v) => Undefinable(v, ModeType),
+        levelUsaha    : (v) => Undefinable(v, ModeType),
         bobot    : (v) => Undefinable(v, ModeType),
         point    : (v) => Undefinable(v, ModeType),
         judul    : (v) => Undefinable(v, ModeType),

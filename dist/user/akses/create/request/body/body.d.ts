@@ -12,10 +12,10 @@ import Prosedur from "../../../prosedur/akses";
 import JabatanAnggotaAkses from "../../../jabatan-anggota/akses";
 import Level from "../../../jadwal-rinci-level/akses";
 import SuratTugas from "../../../surat-tugas/akses";
-import InternalJadwalRinci from "../../../internal-jadwal-rinci/akses";
-import QpassJadwalRinci from "../../../qpass-jadwal-rinci/akses";
-import InternalHasilTemuan from "../../../internal-hasil-temuan/akses";
-import QpassHasilTemuan from "../../../qpass-hasil-temuan/akses";
+import JadwalRinciInternal from "../../../jadwal-rinci-internal/akses";
+import JadwalRinciQpass from "../../../jadwal-rinci-qpass/akses";
+import HasilTemuanInternal from "../../../hasil-temuan-internal/akses";
+import HasilTemuanQpass from "../../../hasil-temuan-qpass/akses";
 import ProsesBisnis from "../../../proses-bisnis/akses";
 import AuditProgram from "../../../audit-program/akses";
 export default interface Body {
@@ -35,8 +35,8 @@ export default interface Body {
     auditProgram: AuditProgram[];
     klausul: Klausul[];
     jadwalRinciLevel: Level[];
-    internalJadwalRinci: InternalJadwalRinci[];
-    qpassJadwalRinci: QpassJadwalRinci[];
-    internalHasilTemuan: InternalHasilTemuan[];
-    qpassHasilTemuan: QpassHasilTemuan[];
+    jadwalRinciInternal: JadwalRinciInternal[];
+    jadwalRinciQpass: JadwalRinciQpass[];
+    hasilTemuanInternal: HasilTemuanInternal[];
+    hasilTemuanQpass: HasilTemuanQpass[];
 }

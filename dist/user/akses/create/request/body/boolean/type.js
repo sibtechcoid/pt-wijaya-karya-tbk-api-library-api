@@ -13,10 +13,10 @@ const type_10 = require("../../../../klausul/boolean/type");
 const type_11 = require("../../../../prosedur/boolean/type");
 const type_12 = require("../../../../jadwal-rinci-level/boolean/type");
 const type_13 = require("../../../../jabatan/boolean/type");
-const type_14 = require("../../../../qpass-hasil-temuan/boolean/type");
-const type_15 = require("../../../../internal-hasil-temuan/boolean/type");
-const type_16 = require("../../../../qpass-jadwal-rinci/boolean/type");
-const type_17 = require("../../../../internal-jadwal-rinci/boolean/type");
+const type_14 = require("../../../../hasil-temuan-qpass/boolean/type");
+const type_15 = require("../../../../hasil-temuan-internal/boolean/type");
+const type_16 = require("../../../../jadwal-rinci-qpass/boolean/type");
+const type_17 = require("../../../../jadwal-rinci-internal/boolean/type");
 const type_18 = require("../../../../jabatan-anggota/boolean/type");
 const type_19 = require("../../../../fungsi/boolean/type");
 const type_20 = require("../../../../surat-tugas/boolean/type");
@@ -44,10 +44,10 @@ function Type(value) {
         fungsi: (v) => array_of_1.default(v, type_19.default),
         jabatanAnggota: (v) => array_of_1.default(v, type_18.default),
         prosesBisnis: (v) => array_of_1.default(v, type_21.default),
-        qpassJadwalRinci: (v) => array_of_1.default(v, type_16.default),
-        internalJadwalRinci: (v) => array_of_1.default(v, type_17.default),
-        qpassHasilTemuan: (v) => array_of_1.default(v, type_14.default),
-        internalHasilTemuan: (v) => array_of_1.default(v, type_15.default),
+        jadwalRinciQpass: (v) => array_of_1.default(v, type_16.default),
+        jadwalRinciInternal: (v) => array_of_1.default(v, type_17.default),
+        hasilTemuanQpass: (v) => array_of_1.default(v, type_14.default),
+        hasilTemuanInternal: (v) => array_of_1.default(v, type_15.default),
     };
     return structure_1.default(value, sort);
 }

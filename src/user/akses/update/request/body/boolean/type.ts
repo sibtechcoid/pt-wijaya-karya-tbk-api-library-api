@@ -19,10 +19,10 @@ import AuditProgramType from "../../../../audit-program/boolean/type";
 import FungsiType from "../../../../fungsi/boolean/type";
 import JabatanAnggotaType from "../../../../jabatan-anggota/boolean/type";
 import ProsesBisnisType from "../../../../proses-bisnis/boolean/type";
-import QpassJadwalRinciType from "../../../../qpass-jadwal-rinci/boolean/type";
-import InternalJadwalRinciType from "../../../../internal-jadwal-rinci/boolean/type";
-import QpassHasilTemuanType from "../../../../qpass-hasil-temuan/boolean/type";
-import InternalHasilTemuanType from "../../../../internal-hasil-temuan/boolean/type";
+import JadwalRinciQpassType from "../../../../jadwal-rinci-qpass/boolean/type";
+import JadwalRinciInternalType from "../../../../jadwal-rinci-internal/boolean/type";
+import HasilTemuanQpassType from "../../../../hasil-temuan-qpass/boolean/type";
+import HasilTemuanInternalType from "../../../../hasil-temuan-internal/boolean/type";
 import SuratTugasAccess from "../../../../surat-tugas/akses";
 import UserAksesAccess from "../../../../user/akses";
 import JabatanAccess from "../../../../jabatan/akses";
@@ -39,10 +39,10 @@ import AuditProgramAccess from "../../../../audit-program/akses";
 import FungsiAccess from "../../../../fungsi/akses";
 import JabatanAnggotaAccess from "../../../../jabatan-anggota/akses";
 import ProsesBisnisAccess from "../../../../proses-bisnis/akses";
-import QpassJadwalRinciAccess from "../../../../qpass-jadwal-rinci/akses";
-import InternalJadwalRinciAccess from "../../../../internal-jadwal-rinci/akses";
-import QpassHasilTemuanAccess from "../../../../qpass-hasil-temuan/akses";
-import InternalHasilTemuanAccess from "../../../../internal-hasil-temuan/akses";
+import JadwalRinciQpassAccess from "../../../../jadwal-rinci-qpass/akses";
+import JadwalRinciInternalAccess from "../../../../jadwal-rinci-internal/akses";
+import HasilTemuanQpassAccess from "../../../../hasil-temuan-qpass/akses";
+import HasilTemuanInternalAccess from "../../../../hasil-temuan-internal/akses";
 import TypeNumber from "@dikac/t-number/boolean/finite";
 import Undefinable from "@dikac/t-undefined/boolean/undefinable";
 
@@ -71,10 +71,10 @@ export default function Type(value : any) : value is Body {
         fungsi                : (v)=>Undefinable(v,(v) : v is FungsiAccess[]               => ArrayOf(v, FungsiType)),
         jabatanAnggota        : (v)=>Undefinable(v,(v) : v is JabatanAnggotaAccess[]       => ArrayOf(v, JabatanAnggotaType)),
         prosesBisnis          : (v)=>Undefinable(v,(v) : v is ProsesBisnisAccess[]         => ArrayOf(v, ProsesBisnisType)),
-        qpassJadwalRinci      : (v)=>Undefinable(v,(v) : v is QpassJadwalRinciAccess[]     => ArrayOf(v, QpassJadwalRinciType)),
-        internalJadwalRinci   : (v)=>Undefinable(v, (v) : v is InternalJadwalRinciAccess[] => ArrayOf(v, InternalJadwalRinciType)),    
-        qpassHasilTemuan      : (v)=>Undefinable(v,(v) : v is QpassHasilTemuanAccess[]     => ArrayOf(v, QpassHasilTemuanType)),
-        internalHasilTemuan   : (v)=>Undefinable(v, (v) : v is InternalHasilTemuanAccess[] => ArrayOf(v, InternalHasilTemuanType)),
+        jadwalRinciQpass      : (v)=>Undefinable(v,(v) : v is JadwalRinciQpassAccess[]     => ArrayOf(v, JadwalRinciQpassType)),
+        jadwalRinciInternal   : (v)=>Undefinable(v, (v) : v is JadwalRinciInternalAccess[] => ArrayOf(v, JadwalRinciInternalType)),
+        hasilTemuanQpass      : (v)=>Undefinable(v,(v) : v is HasilTemuanQpassAccess[]     => ArrayOf(v, HasilTemuanQpassType)),
+        hasilTemuanInternal   : (v)=>Undefinable(v, (v) : v is HasilTemuanInternalAccess[] => ArrayOf(v, HasilTemuanInternalType)),
     };
     return Structure(value, sort);
 

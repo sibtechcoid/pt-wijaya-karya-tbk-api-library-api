@@ -19,10 +19,10 @@ const type_14 = require("../../../../audit-program/boolean/type");
 const type_15 = require("../../../../fungsi/boolean/type");
 const type_16 = require("../../../../jabatan-anggota/boolean/type");
 const type_17 = require("../../../../proses-bisnis/boolean/type");
-const type_18 = require("../../../../qpass-jadwal-rinci/boolean/type");
-const type_19 = require("../../../../internal-jadwal-rinci/boolean/type");
-const type_20 = require("../../../../qpass-hasil-temuan/boolean/type");
-const type_21 = require("../../../../internal-hasil-temuan/boolean/type");
+const type_18 = require("../../../../jadwal-rinci-qpass/boolean/type");
+const type_19 = require("../../../../jadwal-rinci-internal/boolean/type");
+const type_20 = require("../../../../hasil-temuan-qpass/boolean/type");
+const type_21 = require("../../../../hasil-temuan-internal/boolean/type");
 const finite_1 = require("@dikac/t-number/boolean/finite");
 const undefinable_1 = require("@dikac/t-undefined/boolean/undefinable");
 function Type(value) {
@@ -47,10 +47,10 @@ function Type(value) {
         fungsi: (v) => undefinable_1.default(v, (v) => array_of_1.default(v, type_15.default)),
         jabatanAnggota: (v) => undefinable_1.default(v, (v) => array_of_1.default(v, type_16.default)),
         prosesBisnis: (v) => undefinable_1.default(v, (v) => array_of_1.default(v, type_17.default)),
-        qpassJadwalRinci: (v) => undefinable_1.default(v, (v) => array_of_1.default(v, type_18.default)),
-        internalJadwalRinci: (v) => undefinable_1.default(v, (v) => array_of_1.default(v, type_19.default)),
-        qpassHasilTemuan: (v) => undefinable_1.default(v, (v) => array_of_1.default(v, type_20.default)),
-        internalHasilTemuan: (v) => undefinable_1.default(v, (v) => array_of_1.default(v, type_21.default)),
+        jadwalRinciQpass: (v) => undefinable_1.default(v, (v) => array_of_1.default(v, type_18.default)),
+        jadwalRinciInternal: (v) => undefinable_1.default(v, (v) => array_of_1.default(v, type_19.default)),
+        hasilTemuanQpass: (v) => undefinable_1.default(v, (v) => array_of_1.default(v, type_20.default)),
+        hasilTemuanInternal: (v) => undefinable_1.default(v, (v) => array_of_1.default(v, type_21.default)),
     };
     return structure_1.default(value, sort);
 }

@@ -12,10 +12,10 @@ import KlausulType from "../../../../klausul/boolean/type";
 import ProsedurType from "../../../../prosedur/boolean/type";
 import LevelType from "../../../../jadwal-rinci-level/boolean/type";
 import JabatanType from "../../../../jabatan/boolean/type";
-import QpassHasilTemuanType from "../../../../qpass-hasil-temuan/boolean/type";
-import InternalHasilTemuanType from "../../../../internal-hasil-temuan/boolean/type";
-import QpassJadwalRinciType from "../../../../qpass-jadwal-rinci/boolean/type";
-import InternalJadwalRinciType from "../../../../internal-jadwal-rinci/boolean/type";
+import HasilTemuanQpassType from "../../../../hasil-temuan-qpass/boolean/type";
+import HasilTemuanInternalType from "../../../../hasil-temuan-internal/boolean/type";
+import JadwalRinciQpassType from "../../../../jadwal-rinci-qpass/boolean/type";
+import JadwalRinciInternalType from "../../../../jadwal-rinci-internal/boolean/type";
 import JabatanAnggotaType from "../../../../jabatan-anggota/boolean/type";
 import FungsiType from "../../../../fungsi/boolean/type";
 import SuratTugasType from "../../../../surat-tugas/boolean/type";
@@ -47,10 +47,10 @@ export default function Type(value : any) : value is Body {
         fungsi              : (v)=>ArrayOf(v, FungsiType),
         jabatanAnggota      : (v)=>ArrayOf(v, JabatanAnggotaType),
         prosesBisnis        : (v)=>ArrayOf(v, ProsesBisnisType),
-        qpassJadwalRinci    : (v)=>ArrayOf(v, QpassJadwalRinciType),
-        internalJadwalRinci : (v)=>ArrayOf(v, InternalJadwalRinciType),
-        qpassHasilTemuan    : (v)=>ArrayOf(v, QpassHasilTemuanType),
-        internalHasilTemuan : (v)=>ArrayOf(v, InternalHasilTemuanType),
+        jadwalRinciQpass    : (v)=>ArrayOf(v, JadwalRinciQpassType),
+        jadwalRinciInternal : (v)=>ArrayOf(v, JadwalRinciInternalType),
+        hasilTemuanQpass    : (v)=>ArrayOf(v, HasilTemuanQpassType),
+        hasilTemuanInternal : (v)=>ArrayOf(v, HasilTemuanInternalType),
     };
 
     return Structure(value, sort);

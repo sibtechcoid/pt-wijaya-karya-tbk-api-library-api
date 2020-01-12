@@ -4,6 +4,6 @@ export default interface Body {
     mulai: Date | string;
     fungsi: number[];
     prosedur: number[];
-    prosesBisnis: number | null;
+    prosesBisnis: number;
     klausul: number[];
 }

@@ -13,7 +13,7 @@ function Type(value) {
         deactivate: (v) => undefinable_1.default(v, type_1.default),
         id: (v) => undefinable_1.default(v, type_1.default),
         updated: (v) => undefinable_1.default(v, type_1.default),
-        auditProgram: (v) => undefinable_1.default(v, type_1.default),
+        levelUsaha: (v) => undefinable_1.default(v, type_1.default),
         bobot: (v) => undefinable_1.default(v, type_1.default),
         point: (v) => undefinable_1.default(v, type_1.default),
         judul: (v) => undefinable_1.default(v, type_1.default),

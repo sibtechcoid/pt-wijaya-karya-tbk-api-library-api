@@ -11,6 +11,6 @@ export default interface Body extends Record, Id  {
     selesai  : Date|string;
     mulai  : Date|string;
     fungsi : Fungsi[];
-    level : Omit<Level,'auditProgram'>;
+    level : Omit<Level,'LevelUsaha'>;
 
 }

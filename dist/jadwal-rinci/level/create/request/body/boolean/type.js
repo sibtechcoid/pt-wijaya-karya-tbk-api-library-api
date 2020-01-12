@@ -11,7 +11,7 @@ function Type(value) {
         return false;
     }
     let sort = {
-        auditProgram: positive_1.default,
+        levelUsaha: positive_1.default,
         nama: type_2.default,
         bobot: (v) => nullable_1.default(v, positive_1.default),
         point: (v) => nullable_1.default(v, positive_1.default),

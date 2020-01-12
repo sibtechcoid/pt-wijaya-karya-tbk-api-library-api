@@ -13,7 +13,7 @@ function Type(value) {
     }
     let sort = {
         id: finite_1.default,
-        auditProgram: (v) => undefinable_1.default(v, finite_1.default),
+        levelUsaha: (v) => undefinable_1.default(v, finite_1.default),
         parent: (p) => undefinable_1.default(p, (p) => nullable_1.default(p, (p) => finite_1.default(p))),
         judul: (v) => undefinable_1.default(v, type_1.default),
         bobot: (p) => undefinable_1.default(p, (p) => nullable_1.default(p, (p) => finite_1.default(p))),

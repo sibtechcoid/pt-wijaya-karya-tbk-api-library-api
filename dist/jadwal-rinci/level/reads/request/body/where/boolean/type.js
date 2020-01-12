@@ -13,7 +13,7 @@ function Type(value) {
     }
     let sort = {
         //created    : (v) => Undefinable(v, ModeType),
-        auditProgram: (v) => undefinable_1.default(v, finite_1.default),
+        levelUsaha: (v) => undefinable_1.default(v, finite_1.default),
         parent: (v) => undefinable_1.default(v, finite_1.default),
         deactivate: (v) => undefinable_1.default(v, type_3.default),
         judul: (v) => undefinable_1.default(v, type_3.default),

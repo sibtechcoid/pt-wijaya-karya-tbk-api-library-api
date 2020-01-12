@@ -15,7 +15,7 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
     }
 
     let sort : Validator<Required<Body>> = {
-        auditProgram    : Positive,
+        levelUsaha    : Positive,
         nama : StringType,
         bobot : (v) => Nullable(v, Positive),
         point : (v) => Nullable(v, Positive),

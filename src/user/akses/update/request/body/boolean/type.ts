@@ -23,6 +23,8 @@ import JadwalRinciQpassType from "../../../../jadwal-rinci-qpass/boolean/type";
 import JadwalRinciInternalType from "../../../../jadwal-rinci-internal/boolean/type";
 import HasilTemuanQpassType from "../../../../hasil-temuan-qpass/boolean/type";
 import HasilTemuanInternalType from "../../../../hasil-temuan-internal/boolean/type";
+import HasilTemuanKriteriaType from "../../../../hasil-temuan-kriteria/boolean/type";
+import HasilTemuanLevelType from "../../../../hasil-temuan-level/boolean/type";
 import SuratTugasAccess from "../../../../surat-tugas/akses";
 import UserAksesAccess from "../../../../user/akses";
 import JabatanAccess from "../../../../jabatan/akses";
@@ -43,6 +45,8 @@ import JadwalRinciQpassAccess from "../../../../jadwal-rinci-qpass/akses";
 import JadwalRinciInternalAccess from "../../../../jadwal-rinci-internal/akses";
 import HasilTemuanQpassAccess from "../../../../hasil-temuan-qpass/akses";
 import HasilTemuanInternalAccess from "../../../../hasil-temuan-internal/akses";
+import HasilTemuanKriteriaAccess from "../../../../hasil-temuan-kriteria/akses";
+import HasilTemuanLevelAccess from "../../../../hasil-temuan-level/akses";
 import TypeNumber from "@dikac/t-number/boolean/finite";
 import Undefinable from "@dikac/t-undefined/boolean/undefinable";
 
@@ -75,6 +79,8 @@ export default function Type(value : any) : value is Body {
         jadwalRinciInternal   : (v)=>Undefinable(v, (v) : v is JadwalRinciInternalAccess[] => ArrayOf(v, JadwalRinciInternalType)),
         hasilTemuanQpass      : (v)=>Undefinable(v,(v) : v is HasilTemuanQpassAccess[]     => ArrayOf(v, HasilTemuanQpassType)),
         hasilTemuanInternal   : (v)=>Undefinable(v, (v) : v is HasilTemuanInternalAccess[] => ArrayOf(v, HasilTemuanInternalType)),
+        hasilTemuanKriteria   : (v)=>Undefinable(v,(v) : v is HasilTemuanKriteriaAccess[]  => ArrayOf(v, HasilTemuanKriteriaType)),
+        hasilTemuanLevel      : (v)=>Undefinable(v, (v) : v is HasilTemuanLevelAccess[]    => ArrayOf(v, HasilTemuanLevelType)),
     };
     return Structure(value, sort);
 

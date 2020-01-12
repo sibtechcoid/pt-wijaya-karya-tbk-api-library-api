@@ -16,6 +16,8 @@ import JadwalRinciInternal from "../../../jadwal-rinci-internal/akses";
 import JadwalRinciQpass from "../../../jadwal-rinci-qpass/akses";
 import HasilTemuanInternal from "../../../hasil-temuan-internal/akses";
 import HasilTemuanQpass from "../../../hasil-temuan-qpass/akses";
+import HasilTemuanKriteria from "../../../hasil-temuan-kriteria/akses";
+import HasilTemuanLevel from "../../../hasil-temuan-level/akses";
 import ProsesBisnis from "../../../proses-bisnis/akses";
 import AuditProgram from "../../../audit-program/akses";
 
@@ -47,4 +49,7 @@ export default interface Body {
 
     hasilTemuanInternal : HasilTemuanInternal[];
     hasilTemuanQpass : HasilTemuanQpass[];
+
+    hasilTemuanKriteria : HasilTemuanKriteria[];
+    hasilTemuanLevel : HasilTemuanLevel[];
 }

@@ -14,6 +14,8 @@ import LevelType from "../../../../jadwal-rinci-level/boolean/type";
 import JabatanType from "../../../../jabatan/boolean/type";
 import HasilTemuanQpassType from "../../../../hasil-temuan-qpass/boolean/type";
 import HasilTemuanInternalType from "../../../../hasil-temuan-internal/boolean/type";
+import HasilTemuanKriteriaType from "../../../../hasil-temuan-kriteria/boolean/type";
+import HasilTemuanLevelType from "../../../../hasil-temuan-level/boolean/type";
 import JadwalRinciQpassType from "../../../../jadwal-rinci-qpass/boolean/type";
 import JadwalRinciInternalType from "../../../../jadwal-rinci-internal/boolean/type";
 import JabatanAnggotaType from "../../../../jabatan-anggota/boolean/type";
@@ -51,6 +53,8 @@ export default function Type(value : any) : value is Body {
         jadwalRinciInternal : (v)=>ArrayOf(v, JadwalRinciInternalType),
         hasilTemuanQpass    : (v)=>ArrayOf(v, HasilTemuanQpassType),
         hasilTemuanInternal : (v)=>ArrayOf(v, HasilTemuanInternalType),
+        hasilTemuanLevel    : (v)=>ArrayOf(v, HasilTemuanLevelType),
+        hasilTemuanKriteria : (v)=>ArrayOf(v, HasilTemuanKriteriaType),
     };
 
     return Structure(value, sort);

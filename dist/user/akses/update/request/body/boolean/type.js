@@ -23,6 +23,8 @@ const type_18 = require("../../../../jadwal-rinci-qpass/boolean/type");
 const type_19 = require("../../../../jadwal-rinci-internal/boolean/type");
 const type_20 = require("../../../../hasil-temuan-qpass/boolean/type");
 const type_21 = require("../../../../hasil-temuan-internal/boolean/type");
+const type_22 = require("../../../../hasil-temuan-kriteria/boolean/type");
+const type_23 = require("../../../../hasil-temuan-level/boolean/type");
 const finite_1 = require("@dikac/t-number/boolean/finite");
 const undefinable_1 = require("@dikac/t-undefined/boolean/undefinable");
 function Type(value) {
@@ -51,6 +53,8 @@ function Type(value) {
         jadwalRinciInternal: (v) => undefinable_1.default(v, (v) => array_of_1.default(v, type_19.default)),
         hasilTemuanQpass: (v) => undefinable_1.default(v, (v) => array_of_1.default(v, type_20.default)),
         hasilTemuanInternal: (v) => undefinable_1.default(v, (v) => array_of_1.default(v, type_21.default)),
+        hasilTemuanKriteria: (v) => undefinable_1.default(v, (v) => array_of_1.default(v, type_22.default)),
+        hasilTemuanLevel: (v) => undefinable_1.default(v, (v) => array_of_1.default(v, type_23.default)),
     };
     return structure_1.default(value, sort);
 }

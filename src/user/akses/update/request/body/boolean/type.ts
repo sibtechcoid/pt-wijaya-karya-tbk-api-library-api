@@ -1,20 +1,50 @@
 import Body from "../body";
 import TypeObject from "@dikac/t-object/boolean/type";
+import TypeId from "../../../../../../id/boolean/type";
+import Structure, {Validator} from "@dikac/t-object/boolean/structure";
 import ArrayOf from "@dikac/t-array/boolean/array-of";
+import SuratTugasType from "../../../../surat-tugas/boolean/type";
 import UserAksesType from "../../../../user/boolean/type";
-import ProjectAksesType from "../../../../proyek/boolean/type";
+import JabatanType from "../../../../jabatan/boolean/type";
 import UnitKerjaAksesType from "../../../../unit-kerja/boolean/type";
+import ProjectAksesType from "../../../../proyek/boolean/type";
 import RencanaAksesType from "../../../../rencana/boolean/type";
 import LevelUsahaType from "../../../../level-usaha/boolean/type";
 import JenisUsahaType from "../../../../jenis-usaha/boolean/type";
 import JenisUnitType from "../../../../jenis-unit/boolean/type";
-import AuditProgramType from "../../../../audit-program/boolean/type";
 import KlausulType from "../../../../klausul/boolean/type";
 import ProsedurType from "../../../../prosedur/boolean/type";
+import LevelType from "../../../../jadwal-rinci-level/boolean/type";
+import AuditProgramType from "../../../../audit-program/boolean/type";
 import FungsiType from "../../../../fungsi/boolean/type";
-import LevelType from "../../../../level/boolean/type";
-import JabatanType from "../../../../jabatan/boolean/type";
-import TypeId from "../../../../../../id/boolean/type";
+import JabatanAnggotaType from "../../../../jabatan-anggota/boolean/type";
+import ProsesBisnisType from "../../../../proses-bisnis/boolean/type";
+import QpassJadwalRinciType from "../../../../qpass-jadwal-rinci/boolean/type";
+import InternalJadwalRinciType from "../../../../internal-jadwal-rinci/boolean/type";
+import QpassHasilTemuanType from "../../../../qpass-hasil-temuan/boolean/type";
+import InternalHasilTemuanType from "../../../../internal-hasil-temuan/boolean/type";
+import SuratTugasAccess from "../../../../surat-tugas/akses";
+import UserAksesAccess from "../../../../user/akses";
+import JabatanAccess from "../../../../jabatan/akses";
+import UnitKerjaAksesAccess from "../../../../unit-kerja/akses";
+import ProjectAksesAccess from "../../../../proyek/akses";
+import RencanaAksesAccess from "../../../../rencana/akses";
+import LevelUsahaAccess from "../../../../level-usaha/akses";
+import JenisUsahaAccess from "../../../../jenis-usaha/akses";
+import JenisUnitAccess from "../../../../jenis-unit/akses";
+import KlausulAccess from "../../../../klausul/akses";
+import ProsedurAccess from "../../../../prosedur/akses";
+import LevelAccess from "../../../../jadwal-rinci-level/akses";
+import AuditProgramAccess from "../../../../audit-program/akses";
+import FungsiAccess from "../../../../fungsi/akses";
+import JabatanAnggotaAccess from "../../../../jabatan-anggota/akses";
+import ProsesBisnisAccess from "../../../../proses-bisnis/akses";
+import QpassJadwalRinciAccess from "../../../../qpass-jadwal-rinci/akses";
+import InternalJadwalRinciAccess from "../../../../internal-jadwal-rinci/akses";
+import QpassHasilTemuanAccess from "../../../../qpass-hasil-temuan/akses";
+import InternalHasilTemuanAccess from "../../../../internal-hasil-temuan/akses";
+import TypeNumber from "@dikac/t-number/boolean/finite";
+import Undefinable from "@dikac/t-undefined/boolean/undefinable";
 
 export default function Type(value : any) : value is Body {
 
@@ -23,118 +53,29 @@ export default function Type(value : any) : value is Body {
         return false;
     }
 
-    if(!TypeId(value)) {
-
-        return false;
-    }
-
-    if(value.user !== undefined) {
-
-        if(!ArrayOf(value.user, UserAksesType))  {
-
-            return false;
-        }
-    }
-
-
-    if(value.proyek !== undefined) {
-
-        if(!ArrayOf(value.proyek, ProjectAksesType))  {
-
-            return false;
-        }
-    }
-
-    if(value.unitKerja !== undefined) {
-
-        if(!ArrayOf(value.unitKerja, UnitKerjaAksesType))  {
-
-            return false;
-        }
-    }
-
-    if(value.rencana !== undefined) {
-
-        if(!ArrayOf(value.rencana, RencanaAksesType))  {
-
-            return false;
-        }
-    }
-
-    if(value.levelUsaha !== undefined) {
-
-        if(!ArrayOf(value.levelUsaha, LevelUsahaType))  {
-
-            return false;
-        }
-    }
-
-    if(value.jenisUsaha !== undefined) {
-
-        if(!ArrayOf(value.jenisUsaha, JenisUsahaType))  {
-
-            return false;
-        }
-    }
-
-    if(value.jenisUnit !== undefined) {
-
-        if(!ArrayOf(value.jenisUnit, JenisUnitType))  {
-
-            return false;
-        }
-    }
-
-
-
-  if(value.jenisUnit !== undefined) {
-
-      if(!ArrayOf(value.auditProgram, AuditProgramType))  {
-
-          return false;
-      }
-  }
-
-  if(value.jenisUnit !== undefined) {
-
-      if(!ArrayOf(value.klausul, KlausulType))  {
-
-          return false;
-      }
-  }
-
-  if(value.jenisUnit !== undefined) {
-
-      if(!ArrayOf(value.prosedur, ProsedurType))  {
-
-          return false;
-      }
-  }
-
-  if(value.jenisUnit !== undefined) {
-
-      if(!ArrayOf(value.fungsi, FungsiType))  {
-
-          return false;
-      }
-  }
-
-  if(value.jenisUnit !== undefined) {
-
-      if(!ArrayOf(value.level, LevelType))  {
-
-          return false;
-      }
-  }
-
-    if(value.jabatan !== undefined) {
-
-        if(!ArrayOf(value.jabatan, JabatanType))  {
-
-            return false;
-        }
-    }
-
-    return true;
+    let sort : Validator<Required<Body>> = {
+        id : TypeNumber,
+        suratTugas            : (v)=>Undefinable(v,(v) : v is SuratTugasAccess[]           => ArrayOf(v, SuratTugasType)),
+        user                  : (v)=>Undefinable(v,(v) : v is UserAksesAccess[]            => ArrayOf(v, UserAksesType)),
+        jabatan               : (v)=>Undefinable(v,(v) : v is JabatanAccess[]              => ArrayOf(v, JabatanType)),
+        unitKerja             : (v)=>Undefinable(v,(v) : v is UnitKerjaAksesAccess[]       => ArrayOf(v, UnitKerjaAksesType)),
+        proyek                : (v)=>Undefinable(v,(v) : v is ProjectAksesAccess[]         => ArrayOf(v, ProjectAksesType)),
+        rencana               : (v)=>Undefinable(v,(v) : v is RencanaAksesAccess[]         => ArrayOf(v, RencanaAksesType)),
+        levelUsaha            : (v)=>Undefinable(v,(v) : v is LevelUsahaAccess[]           => ArrayOf(v, LevelUsahaType)),
+        jenisUsaha            : (v)=>Undefinable(v,(v) : v is JenisUsahaAccess[]           => ArrayOf(v, JenisUsahaType)),
+        jenisUnit             : (v)=>Undefinable(v,(v) : v is JenisUnitAccess[]            => ArrayOf(v, JenisUnitType)),
+        klausul               : (v)=>Undefinable(v,(v) : v is KlausulAccess[]              => ArrayOf(v, KlausulType)),
+        prosedur              : (v)=>Undefinable(v,(v) : v is ProsedurAccess[]             => ArrayOf(v, ProsedurType)),
+        jadwalRinciLevel      : (v)=>Undefinable(v,(v) : v is LevelAccess[]                => ArrayOf(v, LevelType)),
+        auditProgram          : (v)=>Undefinable(v,(v) : v is AuditProgramAccess[]         => ArrayOf(v, AuditProgramType)),
+        fungsi                : (v)=>Undefinable(v,(v) : v is FungsiAccess[]               => ArrayOf(v, FungsiType)),
+        jabatanAnggota        : (v)=>Undefinable(v,(v) : v is JabatanAnggotaAccess[]       => ArrayOf(v, JabatanAnggotaType)),
+        prosesBisnis          : (v)=>Undefinable(v,(v) : v is ProsesBisnisAccess[]         => ArrayOf(v, ProsesBisnisType)),
+        qpassJadwalRinci      : (v)=>Undefinable(v,(v) : v is QpassJadwalRinciAccess[]     => ArrayOf(v, QpassJadwalRinciType)),
+        internalJadwalRinci   : (v)=>Undefinable(v, (v) : v is InternalJadwalRinciAccess[] => ArrayOf(v, InternalJadwalRinciType)),    
+        qpassHasilTemuan      : (v)=>Undefinable(v,(v) : v is QpassHasilTemuanAccess[]     => ArrayOf(v, QpassHasilTemuanType)),
+        internalHasilTemuan   : (v)=>Undefinable(v, (v) : v is InternalHasilTemuanAccess[] => ArrayOf(v, InternalHasilTemuanType)),
+    };
+    return Structure(value, sort);
 
 }

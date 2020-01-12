@@ -11,13 +11,16 @@ const type_8 = require("../../../../jenis-unit/boolean/type");
 const type_9 = require("../../../../audit-program/boolean/type");
 const type_10 = require("../../../../klausul/boolean/type");
 const type_11 = require("../../../../prosedur/boolean/type");
-const type_12 = require("../../../../level/boolean/type");
+const type_12 = require("../../../../jadwal-rinci-level/boolean/type");
 const type_13 = require("../../../../jabatan/boolean/type");
-const type_14 = require("../../../../jadwal-rinci/boolean/type");
-const type_15 = require("../../../../jabatan-anggota/boolean/type");
-const type_16 = require("../../../../fungsi/boolean/type");
-const type_17 = require("../../../../surat-tugas/boolean/type");
-const type_18 = require("../../../../proses-bisnis/boolean/type");
+const type_14 = require("../../../../qpass-hasil-temuan/boolean/type");
+const type_15 = require("../../../../internal-hasil-temuan/boolean/type");
+const type_16 = require("../../../../qpass-jadwal-rinci/boolean/type");
+const type_17 = require("../../../../internal-jadwal-rinci/boolean/type");
+const type_18 = require("../../../../jabatan-anggota/boolean/type");
+const type_19 = require("../../../../fungsi/boolean/type");
+const type_20 = require("../../../../surat-tugas/boolean/type");
+const type_21 = require("../../../../proses-bisnis/boolean/type");
 const array_of_1 = require("@dikac/t-array/boolean/array-of");
 const structure_1 = require("@dikac/t-object/boolean/structure");
 function Type(value) {
@@ -25,7 +28,7 @@ function Type(value) {
         return false;
     }
     let sort = {
-        suratTugas: (v) => array_of_1.default(v, type_17.default),
+        suratTugas: (v) => array_of_1.default(v, type_20.default),
         user: (v) => array_of_1.default(v, type_3.default),
         jabatan: (v) => array_of_1.default(v, type_13.default),
         unitKerja: (v) => array_of_1.default(v, type_4.default),
@@ -36,12 +39,15 @@ function Type(value) {
         jenisUnit: (v) => array_of_1.default(v, type_8.default),
         klausul: (v) => array_of_1.default(v, type_10.default),
         prosedur: (v) => array_of_1.default(v, type_11.default),
-        level: (v) => array_of_1.default(v, type_12.default),
+        jadwalRinciLevel: (v) => array_of_1.default(v, type_12.default),
         auditProgram: (v) => array_of_1.default(v, type_9.default),
-        fungsi: (v) => array_of_1.default(v, type_16.default),
-        jabatanAnggota: (v) => array_of_1.default(v, type_15.default),
-        prosesBisnis: (v) => array_of_1.default(v, type_18.default),
-        jadwalRinci: (v) => array_of_1.default(v, type_14.default),
+        fungsi: (v) => array_of_1.default(v, type_19.default),
+        jabatanAnggota: (v) => array_of_1.default(v, type_18.default),
+        prosesBisnis: (v) => array_of_1.default(v, type_21.default),
+        qpassJadwalRinci: (v) => array_of_1.default(v, type_16.default),
+        internalJadwalRinci: (v) => array_of_1.default(v, type_17.default),
+        qpassHasilTemuan: (v) => array_of_1.default(v, type_14.default),
+        internalHasilTemuan: (v) => array_of_1.default(v, type_15.default),
     };
     return structure_1.default(value, sort);
 }

@@ -2,8 +2,6 @@ import Sort from "../sort";
 import Structure, {Validator} from "@dikac/t-object/boolean/structure";
 import ModeType from "../../../../../../sort/mode/boolean/type";
 import Undefinable from "@dikac/t-undefined/boolean/undefinable";
-import ArrayOf from "@dikac/t-array/boolean/array-of";
-import Mode from "../../../../../../sort/mode/mode";
 
 export default function Type<
     Extended extends Sort = Sort

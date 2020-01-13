@@ -1,6 +1,5 @@
 import Body from "../body";
 import TypeObject from "@dikac/t-object/boolean/type";
-import TypeId from "../../../../../../id/boolean/type";
 import Structure, {Validator} from "@dikac/t-object/boolean/structure";
 import ArrayOf from "@dikac/t-array/boolean/array-of";
 import SuratTugasType from "../../../../surat-tugas/boolean/type";

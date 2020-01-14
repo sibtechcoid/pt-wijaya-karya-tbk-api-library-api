@@ -21,8 +21,8 @@ export default function Type<Extended extends Body = Body>(value : any) : value 
         mulai : TypeDateCompatible,
         fungsi : (v) => ArrayOf(v, TypeNumber),
         prosedur : (v) => ArrayOf(v, TypeNumber),
-        prosesBisnis : (v) => Nullable(v, TypeNumber),
-        klausul : (v) => Nullable(v, (v) : v is number[] => ArrayOf(v, ModeType)),
+        prosesBisnis : TypeNumber,
+        klausul : (v) => ArrayOf(v, TypeNumber),
 
     };
 

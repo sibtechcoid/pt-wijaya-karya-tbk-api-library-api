@@ -18,10 +18,8 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
         level : TypeNumber,
         selesai : TypeDateCompatible,
         mulai : TypeDateCompatible,
-        fungsi : (v) => ArrayOf(v, TypeNumber),
-
+        fungsi : (v) => ArrayOf(v, TypeNumber)
     };
 
     return Structure(value, sort);
-
 }

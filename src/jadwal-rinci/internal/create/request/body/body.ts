@@ -7,5 +7,4 @@ export default interface Body {
     prosedur : number[];
     prosesBisnis : number;
     klausul : number[];
-
 }

@@ -22,6 +22,7 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
         prosedur : (v) => ArrayOf(v, TypeNumber),
         prosesBisnis : TypeNumber,
         klausul : (v) => ArrayOf(v, TypeNumber),
+        auditor : (v) => ArrayOf(v, TypeNumber),
 
     };
 

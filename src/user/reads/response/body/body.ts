@@ -5,8 +5,6 @@ import Jabatan from "../../../jabatan/read/response/body/body";
 
 export default interface Body extends Record, Deactivate, Id {
 
-    //extraAkses : Akses;
-   // akses : Akses;
     jabatan : Omit<Jabatan, 'akses'>|null;
     nama : string;
     user : string;

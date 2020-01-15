@@ -7,6 +7,7 @@ import Structure, {Validator} from "@dikac/t-object/boolean/structure";
 import TypeInterface from "../body";
 import Nullable from "@dikac/t-null/boolean/nullable";
 import ModeType from "../../../../../../sort/mode/boolean/type";
+import Undefinable from "@dikac/t-undefined/boolean/undefinable";
 
 export default function Type<Extended extends Body = Body>(value : any) : value is Extended {
 
@@ -14,17 +15,19 @@ export default function Type<Extended extends Body = Body>(value : any) : value 
 
         return false;
     }
-    let sort : Validator<Required<TypeInterface>> = {
-        id : TypeNumber,
-        audit : TypeNumber,
-        selesai : TypeDateCompatible,
-        mulai : TypeDateCompatible,
-        fungsi : (v) => ArrayOf(v, TypeNumber),
-        prosedur : (v) => ArrayOf(v, TypeNumber),
-        prosesBisnis : TypeNumber,
-        klausul : (v) => ArrayOf(v, TypeNumber),
+
+    let update : Validator<Required<TypeInterface>> = {
+        id : (v) => Undefinable(v, TypeNumber),
+        audit : (v) => Undefinable(v, TypeNumber),
+        selesai : (v) => Undefinable(v, TypeDateCompatible),
+        mulai : (v) => Undefinable(v, TypeDateCompatible),
+        fungsi :  (v) => Undefinable(v, (v) : v is number[] => ArrayOf(v, TypeNumber)),
+        prosedur :  (v) => Undefinable(v, (v) : v is number[] => ArrayOf(v, TypeNumber)),
+        prosesBisnis : (v) => Undefinable(v, TypeNumber),
+        klausul :  (v) => Undefinable(v, (v) : v is number[] => ArrayOf(v, TypeNumber)),
+        auditor :  (v) => Undefinable(v, (v) : v is number[] => ArrayOf(v, TypeNumber)),
 
     };
 
-    return Structure(value, sort);
+    return Structure(value, update);
 }

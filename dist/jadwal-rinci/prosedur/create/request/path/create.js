@@ -5,4 +5,3 @@ function Create() {
     return new create_1.default('/jadwal-rinci/prosedur');
 }
 exports.default = Create;
-//# sourceMappingURL=create.js.map

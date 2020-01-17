@@ -8,4 +8,3 @@ class ConflictCreate {
     }
 }
 exports.default = ConflictCreate;
-//# sourceMappingURL=bad-request-create.js.map

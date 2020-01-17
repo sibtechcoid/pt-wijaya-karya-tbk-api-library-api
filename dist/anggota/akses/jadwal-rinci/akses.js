@@ -6,4 +6,3 @@ var Akses;
     Akses["EMAIL_NOTIFICATION"] = "EMAIL_NOTIFICATION";
 })(Akses || (Akses = {}));
 exports.default = Akses;
-//# sourceMappingURL=akses.js.map

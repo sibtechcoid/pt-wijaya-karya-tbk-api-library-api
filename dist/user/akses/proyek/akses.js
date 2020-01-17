@@ -33,4 +33,3 @@ var Akses;
     Akses["EMAIL_APPROVE"] = "EMAIL_APPROVE";
 })(Akses || (Akses = {}));
 exports.default = Akses;
-//# sourceMappingURL=akses.js.map

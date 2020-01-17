@@ -4,4 +4,3 @@ function Assign(type, id) {
     return Object.assign(type, id);
 }
 exports.default = Assign;
-//# sourceMappingURL=assign.js.map

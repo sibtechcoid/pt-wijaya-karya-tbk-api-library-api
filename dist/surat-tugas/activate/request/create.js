@@ -7,4 +7,3 @@ function Create(activable) {
     return Object.assign(delete_create_1.default(), create_2.default(), new create_1.default(activable));
 }
 exports.default = Create;
-//# sourceMappingURL=create.js.map

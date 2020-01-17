@@ -5,4 +5,3 @@ function Create() {
     return new create_1.default('/hasil-temuan/internal/kriteria');
 }
 exports.default = Create;
-//# sourceMappingURL=create.js.map

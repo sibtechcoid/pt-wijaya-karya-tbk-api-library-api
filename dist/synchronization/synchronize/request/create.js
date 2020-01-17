@@ -8,4 +8,3 @@ function Create() {
     return Object.assign(new standard_1.default(type_1.default.GET), create_2.default(), new create_1.default(undefined));
 }
 exports.default = Create;
-//# sourceMappingURL=create.js.map

@@ -15,4 +15,3 @@ function Type(value) {
     return true;
 }
 exports.default = Type;
-//# sourceMappingURL=realize.js.map

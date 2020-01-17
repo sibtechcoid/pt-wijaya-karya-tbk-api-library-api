@@ -6,4 +6,3 @@ function ReadCreate() {
     return new standard_1.default(type_1.default.POST);
 }
 exports.default = ReadCreate;
-//# sourceMappingURL=read-create.js.map

@@ -8,4 +8,3 @@ class ConflictCreate {
     }
 }
 exports.default = ConflictCreate;
-//# sourceMappingURL=conflict-create.js.map

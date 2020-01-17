@@ -8,4 +8,3 @@ class SuccessCreate {
     }
 }
 exports.default = SuccessCreate;
-//# sourceMappingURL=success-create.js.map

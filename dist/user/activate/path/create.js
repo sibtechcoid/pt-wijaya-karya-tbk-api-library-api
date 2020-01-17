@@ -5,4 +5,3 @@ function Create() {
     return new create_1.default('/user');
 }
 exports.default = Create;
-//# sourceMappingURL=create.js.map

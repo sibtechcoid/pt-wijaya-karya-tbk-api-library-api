@@ -24,4 +24,3 @@ function Type(value) {
     return structure_1.default(value, update);
 }
 exports.default = Type;
-//# sourceMappingURL=type.js.map

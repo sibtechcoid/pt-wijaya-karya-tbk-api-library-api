@@ -18,4 +18,3 @@ function Null() {
     };
 }
 exports.default = Null;
-//# sourceMappingURL=null.js.map

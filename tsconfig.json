@@ -6,7 +6,6 @@
     "declaration": true,
     "target": "es2016",
     "outDir": "dist",
-    "sourceMap": true,
     "downlevelIteration" : true,
     "strictNullChecks": true,
     "incremental": true,

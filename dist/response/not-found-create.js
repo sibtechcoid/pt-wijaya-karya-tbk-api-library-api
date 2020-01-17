@@ -8,4 +8,3 @@ class NotFoundCreate {
     }
 }
 exports.default = NotFoundCreate;
-//# sourceMappingURL=not-found-create.js.map

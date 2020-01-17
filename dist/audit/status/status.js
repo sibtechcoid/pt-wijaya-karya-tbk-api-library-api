@@ -25,4 +25,3 @@ var Status;
     Status["FINISH"] = "FINISH";
 })(Status || (Status = {}));
 exports.default = Status;
-//# sourceMappingURL=status.js.map

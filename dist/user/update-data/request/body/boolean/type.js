@@ -17,4 +17,3 @@ function Typez(value) {
     return true;
 }
 exports.default = Typez;
-//# sourceMappingURL=type.js.map

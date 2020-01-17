@@ -50,4 +50,3 @@ var Type;
  * @public
  */
 exports.default = Type;
-//# sourceMappingURL=type.js.map

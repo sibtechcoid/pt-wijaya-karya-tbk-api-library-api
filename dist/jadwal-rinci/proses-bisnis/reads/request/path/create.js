@@ -5,4 +5,3 @@ function Create() {
     return new create_1.default('/jadwal-rinci/proses-bisniss');
 }
 exports.default = Create;
-//# sourceMappingURL=create.js.map

@@ -9,4 +9,3 @@ var Akses;
     Akses["ASSIGN"] = "ASSIGN";
 })(Akses || (Akses = {}));
 exports.default = Akses;
-//# sourceMappingURL=akses.js.map

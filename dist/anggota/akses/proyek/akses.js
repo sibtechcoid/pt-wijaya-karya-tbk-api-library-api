@@ -21,4 +21,3 @@ var Akses;
     Akses["UPDATE_APPROVE"] = "UPDATE_APPROVE";
 })(Akses || (Akses = {}));
 exports.default = Akses;
-//# sourceMappingURL=akses.js.map

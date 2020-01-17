@@ -5,4 +5,3 @@ function Create() {
     return new create_1.default('/audit-publish');
 }
 exports.default = Create;
-//# sourceMappingURL=create.js.map

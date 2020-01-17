@@ -6,4 +6,3 @@ function UpdateCreate() {
     return new standard_1.default(type_1.default.PATCH);
 }
 exports.default = UpdateCreate;
-//# sourceMappingURL=update-create.js.map

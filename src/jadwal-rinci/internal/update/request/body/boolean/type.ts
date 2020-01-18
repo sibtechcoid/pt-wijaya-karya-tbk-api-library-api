@@ -5,8 +5,6 @@ import TypeDateCompatible from "@dikac/t-date/boolean/compatible";
 import TypeId from "../../../../../../id/boolean/type";
 import Structure, {Validator} from "@dikac/t-object/boolean/structure";
 import TypeInterface from "../body";
-import Nullable from "@dikac/t-null/boolean/nullable";
-import ModeType from "../../../../../../sort/mode/boolean/type";
 import Undefinable from "@dikac/t-undefined/boolean/undefinable";
 
 export default function Type<Extended extends Body = Body>(value : any) : value is Extended {

@@ -1,5 +1,4 @@
-import UpdateSingkatan from "../update/singkatan";
-export default interface Singkatan extends UpdateSingkatan {
+export default interface Singkatan {
     /**
      * singkatan, initial, or short version of nama
      */

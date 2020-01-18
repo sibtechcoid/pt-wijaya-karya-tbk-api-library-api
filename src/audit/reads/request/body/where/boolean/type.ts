@@ -32,7 +32,7 @@ export default function
 
     if(value.status !== undefined) {
 
-        if(!EnumType(value.status, Status)) {
+        if(!ArrayOf(value.status, (v) : v is Status => EnumType(v, Status))) {
 
             return false;
         }

@@ -17,16 +17,7 @@ export default function Type(value : any) : value is Level {
         }
     }
 
-    // if(value.jenisUsaha !== undefined) {
-    //
-    //     if(!IsFinite(value.jenisUsaha)) {
-    //
-    //         return false;
-    //     }
-    // }
-
     return true;
-
 }
 
 

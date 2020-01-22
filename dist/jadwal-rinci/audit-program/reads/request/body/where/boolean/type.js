@@ -10,10 +10,7 @@ function Type(value) {
         return false;
     }
     let sort = {
-        //created    : (v) => Undefinable(v, ModeType),
         deactivate: (v) => undefinable_1.default(v, type_3.default),
-        // id         : (v) => Undefinable(v, ModeType),
-        // updated    : (v) => Undefinable(v, ModeType),
         nama: (v) => undefinable_1.default(v, type_2.default),
     };
     return structure_1.default(value, sort);

@@ -12,12 +12,10 @@ function Type(value) {
         return false;
     }
     let sort = {
-        //created    : (v) => Undefinable(v, ModeType),
         levelUsaha: (v) => undefinable_1.default(v, finite_1.default),
         parent: (v) => undefinable_1.default(v, finite_1.default),
         deactivate: (v) => undefinable_1.default(v, type_3.default),
         judul: (v) => undefinable_1.default(v, type_3.default),
-        // id         : (v) => Undefinable(v, ModeType),
         bobot: (p) => undefinable_1.default(p, (p) => nullable_1.default(p, (p) => finite_1.default(p))),
         point: (p) => undefinable_1.default(p, (p) => nullable_1.default(p, (p) => finite_1.default(p))),
         nama: (v) => undefinable_1.default(v, type_2.default),

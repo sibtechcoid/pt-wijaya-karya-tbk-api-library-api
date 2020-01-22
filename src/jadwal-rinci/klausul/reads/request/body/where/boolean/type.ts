@@ -16,9 +16,7 @@ export default function
     }
 
     let sort : Validator<Required<Where>> = {
-        //created    : (v) => Undefinable(v, ModeType),
         deactivate : (v) => Undefinable(v, BooleanType),
-       // id         : (v) => Undefinable(v, ModeType),
         auditProgram    : (v) => Undefinable(v, FiniteType),
         nama    : (v) => Undefinable(v, StringType),
     };

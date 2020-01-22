@@ -11,10 +11,7 @@ function Type(value) {
         return false;
     }
     let sort = {
-        //created    : (v) => Undefinable(v, ModeType),
         deactivate: (v) => undefinable_1.default(v, type_3.default),
-        // id         : (v) => Undefinable(v, ModeType),
-        // updated    : (v) => Undefinable(v, ModeType),
         nama: (v) => undefinable_1.default(v, type_2.default),
         singkatan: (v) => undefinable_1.default(v, type_2.default),
         jenisUnit: (v) => undefinable_1.default(v, finite_1.default),

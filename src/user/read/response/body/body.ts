@@ -17,6 +17,4 @@ export default interface Body extends Record, Deactivate, Id, Nama, Singkatan {
     jabatanWika : null|string;
     parentId : string|null;
 
-    //extraAkses : Akses;
-    //akses : Akses;
 }

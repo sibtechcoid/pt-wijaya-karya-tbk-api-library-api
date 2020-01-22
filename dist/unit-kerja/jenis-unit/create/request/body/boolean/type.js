@@ -9,10 +9,6 @@ function Type(value) {
     if (!type_2.default(value)) {
         return false;
     }
-    // if(!ArrayOf(value.levels, IsNumber)) {
-    //
-    //     return false;
-    // }
     return true;
 }
 exports.default = Type;

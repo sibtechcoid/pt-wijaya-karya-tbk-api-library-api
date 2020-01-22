@@ -13,7 +13,6 @@ function Type(value) {
         deactivate: (v) => undefinable_1.default(v, type_1.default),
         id: (v) => undefinable_1.default(v, type_1.default),
         updated: (v) => undefinable_1.default(v, type_1.default),
-        //auditProgram    : (v) => Undefinable(v, ModeType),
         nama: (v) => undefinable_1.default(v, type_1.default),
     };
     return structure_1.default(value, sort);

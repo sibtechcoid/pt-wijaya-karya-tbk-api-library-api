@@ -11,9 +11,7 @@ function Type(value) {
         return false;
     }
     let sort = {
-        //created    : (v) => Undefinable(v, ModeType),
         deactivate: (v) => undefinable_1.default(v, type_3.default),
-        // id         : (v) => Undefinable(v, ModeType),
         auditProgram: (v) => undefinable_1.default(v, finite_1.default),
         nama: (v) => undefinable_1.default(v, type_2.default),
     };

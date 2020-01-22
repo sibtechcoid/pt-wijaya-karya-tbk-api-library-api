@@ -16,10 +16,7 @@ export default function
     }
 
     let sort : Validator<Required<Where>> = {
-        //created    : (v) => Undefinable(v, ModeType),
         deactivate : (v) => Undefinable(v, BooleanType),
-       // id         : (v) => Undefinable(v, ModeType),
-       // updated    : (v) => Undefinable(v, ModeType),
         nama    : (v) => Undefinable(v, StringType),
         singkatan    : (v) => Undefinable(v, StringType),
         jenisUnit    : (v) => Undefinable(v, NumberType),

@@ -14,13 +14,4 @@ export default interface Body  extends Record, Deactivate, Id, Nama, Singkatan  
     jenisUnit: null| Omit<Type,'levelUsaha'|'jenisUsaha'>;
     jenisUsaha: null|Omit<JenisUsaha,'jenisUnit'>;
 
-    // Deprecated;
-    // wikaParentId : null|number;
-
-    // Deprecated
-    // wikaType : string|null;
-
-    // Deprecated
-    // wikaId : number|null;
-
 }

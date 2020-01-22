@@ -5,7 +5,5 @@ import Nama from "../../../../../nama/create/nama";
 import Singkatan from "../../../../../singkatan/create/singkatan";
 
 export default interface Body extends Deactivate, Record, Id, Nama, Singkatan  {
-    //
-    // jenisUsaha : Omit<jenisUsaha,'jenisUsaha'>[]
-    // level : Omit<Level,'jenisUsaha'>[]
+
 }

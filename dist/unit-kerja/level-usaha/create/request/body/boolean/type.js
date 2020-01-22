@@ -9,12 +9,6 @@ function Type(value) {
     if (!finite_1.default(value.jenisUnit)) {
         return false;
     }
-    //    to be deprecated
-    // if(!IsFinite(value.jenisUsaha)) {
-    //
-    //     return false;
-    // }
-    //
     return true;
 }
 exports.default = Type;

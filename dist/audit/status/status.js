@@ -14,10 +14,6 @@ var Status;
      * perencanaan di publish menjadi proyek
      */
     Status["PUBLISH"] = "PUBLISH";
-    // /** deprecated **/
-    // REJECT = "REJECT",
-    // /** deprecated **/
-    // APPROVE = "APPROVE",
     Status["PROJECT_REJECT"] = "PROJECT_REJECT";
     Status["MEMBER_REJECT"] = "MEMBER_REJECT";
     Status["PROJECT_WAITING"] = "PROJECT_WAITING";

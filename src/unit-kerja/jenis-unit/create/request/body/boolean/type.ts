@@ -14,10 +14,5 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
         return false;
     }
 
-    // if(!ArrayOf(value.levels, IsNumber)) {
-    //
-    //     return false;
-    // }
-
     return true;
 }

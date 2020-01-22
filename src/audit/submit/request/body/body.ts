@@ -8,5 +8,4 @@ export default interface Body extends Id, Schedule {
     unitKerja ?: number;
     anggota ?: Member[];
     tipe ?: Type;
-    //status ? : Status;
 }

@@ -17,12 +17,10 @@ export default function
     }
 
     let sort : Validator<Required<Where>> = {
-        //created    : (v) => Undefinable(v, ModeType),
         levelUsaha    : (v) => Undefinable(v, FiniteType),
         parent    : (v) => Undefinable(v, FiniteType),
         deactivate : (v) => Undefinable(v, BooleanType),
         judul : (v) => Undefinable(v, BooleanType),
-       // id         : (v) => Undefinable(v, ModeType),
         bobot    : (p) => Undefinable<number|null>(p, (p) : p is number|null => Nullable<number>(p, (p) : p is number => FiniteType(p))),
         point    : (p) => Undefinable<number|null>(p, (p) : p is number|null => Nullable<number>(p, (p) : p is number => FiniteType(p))),
         nama    : (v) => Undefinable(v, StringType),

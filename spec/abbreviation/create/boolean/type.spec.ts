@@ -1,14 +1,14 @@
 
-import Type from "../../../../dist/abbreviation/create/boolean/type";
+import Type from "../../../../dist/singkatan/create/boolean/type";
 
-describe('abbreviation//create request', () => {
+describe('singkatan//create request', () => {
 
     it('string', ()=>{
-        expect(Type({abbreviation: 'abbreviation'})).toBe(true)
+        expect(Type({singkatan: 'singkatan'})).toBe(true)
     })  ;
 
     it('null', ()=>{
-        expect(Type({abbreviation: null})).toBe(true)
+        expect(Type({singkatan: null})).toBe(true)
     })
 
     it('undefined', ()=>{

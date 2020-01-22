@@ -1,6 +1,6 @@
-import Access from "../../../../../dist/user/access/update/request/body/body";
-import Request from "../../../../../dist/user/access/update/request/create";
-import Route from "../../../../../dist/user/access/update/route/create";
+import Access from "../../../../../dist/user/akses/update/request/body/body";
+import Request from "../../../../../dist/user/akses/update/request/create";
+import Route from "../../../../../dist/user/akses/update/route/create";
 import RequestRoute from "../../../../request/request-route";
 
 describe('qpass/object/type/update request', () => {
@@ -21,7 +21,7 @@ describe('qpass/object/type/update request', () => {
             prosedur: [],
             fungsi: [],
             klausul: [],
-            level: [],
+            jadwalRinciLevel: [],
             auditProgram: [],
         }
     );

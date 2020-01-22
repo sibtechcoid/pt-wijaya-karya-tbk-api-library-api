@@ -1,5 +1,5 @@
-import Type from "../../../../../../../../dist/qpass/project/reads/request/body/sort/boolean/type";
-import Sort from "../../../../../../../../dist/qpass/project/reads/request/body/sort/sort";
+import Type from "../../../../../../../../dist/audit/reads/request/body/sort/boolean/type";
+import Sort from "../../../../../../../../dist/audit/reads/request/body/sort/sort";
 import Mode from "../../../../../../../../dist/sort/mode/mode";
 
 it("force console log", () => { spyOn(console, 'log').and.callThrough();});
@@ -10,9 +10,10 @@ describe('type', () => {
         created    : Mode.ASC,
         deactivate : Mode.ASC,
         id         : Mode.ASC,
-        plan       : [Mode.ASC, Mode.DESC],
-        realize    : [Mode.ASC, Mode.DESC],
+        rencana       : [Mode.ASC, Mode.DESC],
+        realisasi    : [Mode.ASC, Mode.DESC],
         updated    : Mode.ASC,
+        tipe    : Mode.ASC,
     };
 
     it('valid all', () => {
@@ -21,7 +22,7 @@ describe('type', () => {
 
     let partial : Sort = {
         created    : Mode.ASC,
-        realize    : [Mode.ASC, Mode.DESC],
+        realisasi    : [Mode.ASC, Mode.DESC],
         updated    : Mode.ASC,
     };
 

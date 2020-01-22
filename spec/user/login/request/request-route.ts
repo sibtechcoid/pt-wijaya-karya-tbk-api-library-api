@@ -4,6 +4,6 @@ import RequestRoute from "../../../request/request-route";
 
 describe('user/login request', () => {
 
-    RequestRoute((body) => Request(body), Route(), {username:'username', password:'password'});
+    RequestRoute((body) => Request(body), Route(), {username:'usernama', password:'password'});
 
 });

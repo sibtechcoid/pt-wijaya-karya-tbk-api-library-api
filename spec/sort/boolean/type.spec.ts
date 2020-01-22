@@ -1,5 +1,5 @@
-import Name from "../../../dist/name/create/name";
-import Abbreviation from "../../../dist/abbreviation/create/abbreviation";
+import Name from "../../../dist/nama/create/nama";
+import Abbreviation from "../../../dist/singkatan/create/singkatan";
 import SortType from "../../../dist/sort/boolean/type";
 import Mode from "../../../dist/sort/mode/mode";
 import Sort from "../../../dist/sort/sort";
@@ -11,12 +11,12 @@ describe('project request body', () => {
     it('path equal', () => {
 
         let object : Name & Abbreviation = {
-          name : 'name',
-          abbreviation : 'abbreviation'
+          nama : 'nama',
+          singkatan : 'singkatan'
         };
 
         let sort : Sort<Name & Abbreviation> = {
-            name:Mode.ASC
+            nama:Mode.ASC
         };
 
         expect(SortType(sort, Object.keys(object))).toBe(true);

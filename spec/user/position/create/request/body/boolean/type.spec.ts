@@ -1,17 +1,17 @@
-import Type from "../../../../../../../dist/user/position/create/request/body/boolean/type";
-import User from "../../../../../../../dist/user/access/user/access";
-import Proyek from "../../../../../../../dist/user/access/proyek/access";
-import UnitKerja from "../../../../../../../dist/user/access/unit-kerja/access";
-import Rencana from "../../../../../../../dist/user/access/rencana/access";
-import LevelUsaha from "../../../../../../../dist/user/access/level-usaha/access";
-import JenisUsaha from "../../../../../../../dist/user/access/jenis-usaha/access";
-import JenisUnit from "../../../../../../../dist/user/access/jenis-unit/access";
-import AuditProgram from "../../../../../../../dist/user/access/audit-program/access";
-import Klausul from "../../../../../../../dist/user/access/klausul/access";
-import Prosedur from "../../../../../../../dist/user/access/prosedur/access";
-import Fungsi from "../../../../../../../dist/user/access/fungsi/access";
-import Level from "../../../../../../../dist/user/access/level/access";
-import Jabatan from "../../../../../../../dist/user/access/jabatan/access";
+import Type from "../../../../../../../dist/user/jabatan/create/request/body/boolean/type";
+import User from "../../../../../../../dist/user/akses/user/akses";
+import Proyek from "../../../../../../../dist/user/akses/proyek/akses";
+import UnitKerja from "../../../../../../../dist/user/akses/unit-kerja/akses";
+import Rencana from "../../../../../../../dist/user/akses/rencana/akses";
+import LevelUsaha from "../../../../../../../dist/user/akses/level-usaha/akses";
+import JenisUsaha from "../../../../../../../dist/user/akses/jenis-usaha/akses";
+import JenisUnit from "../../../../../../../dist/user/akses/jenis-unit/akses";
+import AuditProgram from "../../../../../../../dist/user/akses/audit-program/akses";
+import Klausul from "../../../../../../../dist/user/akses/klausul/akses";
+import Prosedur from "../../../../../../../dist/user/akses/prosedur/akses";
+import Fungsi from "../../../../../../../dist/user/akses/fungsi/akses";
+import Level from "../../../../../../../dist/user/akses/jadwal-rinci-level/akses";
+import Jabatan from "../../../../../../../dist/user/akses/jabatan/akses";
 
 it("force console log", () => { spyOn(console, 'log').and.callThrough();});
 
@@ -20,9 +20,9 @@ describe('project request body', () => {
     it('path equal', () => {
 
         expect(Type(    {
-            "name" : "Admin",
-            "abbreviation" : "ADM",
-            "access" : {
+            "nama" : "Admin",
+            "singkatan" : "ADM",
+            "akses" : {
                 "user" : [User.CREATE],
                 "proyek" : [Proyek.CREATE],
                 "unitKerja" : [UnitKerja.CREATE],

@@ -4,5 +4,5 @@ import Mode from "../../../../../../sort/mode/mode";
 
 export default interface Sort extends BaseSort<Omit<ReadsBody,'parent'|'turunan'>> {
 
-    levelUsaha : Mode;
+    levelUsaha ?: Mode;
 }

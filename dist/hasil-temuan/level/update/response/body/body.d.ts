@@ -1,3 +1,3 @@
-import CreateBody from "../../../create/response/body/body";
-export default interface Body extends CreateBody {
+import ReadBody from "../../../read/response/body/body";
+export default interface Body extends ReadBody {
 }

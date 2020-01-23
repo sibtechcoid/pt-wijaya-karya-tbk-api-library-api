@@ -6,10 +6,10 @@ import LevelUsaha from "../../../../../unit-kerja/level-usaha/reads/response/bod
 
 export default interface Body extends Deactivate, Record, Id, Nama  {
 
-    levelUsaha: Omit<LevelUsaha,'jenisUnit'>;
+    //levelUsaha: Omit<LevelUsaha,'jenisUnit'>;
     judul : boolean;
     nama : string;
     bobot : null|number;
     point : null|number;
-    parent: Omit<Body, 'judul'|'levelUsaha'>|null;
+    //parent: Omit<Body, 'judul'|'levelUsaha'>|null;
 }

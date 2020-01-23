@@ -9,5 +9,5 @@ export default interface Body extends Deactivate, Record, Id, Nama {
     nama: string;
     bobot: null | number;
     point: null | number;
-    parent: Omit<Body, 'judul' | 'levelUsaha'> | null;
+    turunan: Omit<Body, 'turunan'>[];
 }

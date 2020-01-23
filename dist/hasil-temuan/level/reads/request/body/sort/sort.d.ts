@@ -1,4 +1,6 @@
 import ReadsBody from "../../../../read/response/body/body";
 import BaseSort from "../../../../../../sort/sort";
-export default interface Sort extends BaseSort<Omit<ReadsBody, 'parent'>> {
+import Mode from "../../../../../../sort/mode/mode";
+export default interface Sort extends BaseSort<Omit<ReadsBody, 'parent' | 'turunan'>> {
+    levelUsaha: Mode;
 }

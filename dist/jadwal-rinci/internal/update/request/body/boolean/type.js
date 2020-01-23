@@ -11,7 +11,7 @@ function Type(value) {
         return false;
     }
     let update = {
-        id: (v) => undefinable_1.default(v, finite_1.default),
+        id: finite_1.default,
         audit: (v) => undefinable_1.default(v, finite_1.default),
         selesai: (v) => undefinable_1.default(v, compatible_1.default),
         mulai: (v) => undefinable_1.default(v, compatible_1.default),

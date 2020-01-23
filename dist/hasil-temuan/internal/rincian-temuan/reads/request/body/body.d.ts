@@ -1,2 +1,7 @@
-import Body from "../../../../../../jadwal-rinci/internal/reads/request/body/body";
-export default Body;
+import Limit from "../../../../../../limit/limit";
+import Sort from "./sort/sort";
+import Where from "./where/where";
+export default interface Body extends Limit {
+    where?: Where;
+    sort?: Sort;
+}

@@ -10,7 +10,7 @@ import Fungsi from "../../../fungsi/akses";
 import Klausul from "../../../klausul/akses";
 import Prosedur from "../../../prosedur/akses";
 import JabatanAnggotaAkses from "../../../jabatan-anggota/akses";
-import Level from "../../../jadwal-rinci-level/akses";
+import Level from "../../../level/akses";
 import SuratTugas from "../../../surat-tugas/akses";
 import JadwalRinciInternal from "../../../jadwal-rinci-internal/akses";
 import JadwalRinciQpass from "../../../jadwal-rinci-qpass/akses";

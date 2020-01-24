@@ -10,7 +10,7 @@ import JenisUnitType from "../../../../jenis-unit/boolean/type";
 import AuditProgramType from "../../../../audit-program/boolean/type";
 import KlausulType from "../../../../klausul/boolean/type";
 import ProsedurType from "../../../../prosedur/boolean/type";
-import LevelType from "../../../../jadwal-rinci-level/boolean/type";
+import LevelType from "../../../../level/boolean/type";
 import JabatanType from "../../../../jabatan/boolean/type";
 import HasilTemuanQpassType from "../../../../hasil-temuan-qpass/boolean/type";
 import HasilTemuanInternalType from "../../../../hasil-temuan-internal/boolean/type";

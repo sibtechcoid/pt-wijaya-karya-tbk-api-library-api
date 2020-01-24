@@ -18,5 +18,6 @@ export default interface Body extends Record, Id  {
     prosesBisnis : Omit<ProsesBisnis,'prosedur'>;
     klausul : Omit<Klausul,'auditProgram'>[];
     auditor : Omit<User,'extraAkses'|'akses'|'jabatan'>[];
+    pelaksanaan : boolean;
 
 }

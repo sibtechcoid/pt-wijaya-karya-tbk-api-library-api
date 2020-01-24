@@ -3,8 +3,6 @@ import Where from "../where";
 import BooleanType from "@dikac/t-boolean/type";
 import Structure, {Validator} from "@dikac/t-object/boolean/structure";
 import Undefinable from "@dikac/t-undefined/boolean/undefinable";
-import Infinite from "@dikac/t-number/boolean/infinite";
-import Compatible from "@dikac/t-date/boolean/compatible";
 import TypeNumber from "@dikac/t-number/boolean/finite";
 
 

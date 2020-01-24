@@ -44,7 +44,7 @@ export default function Type(value : any) : value is Body {
         jenisUnit           : (v)=>ArrayOf(v, JenisUnitType),
         klausul             : (v)=>ArrayOf(v, KlausulType),
         prosedur            : (v)=>ArrayOf(v, ProsedurType),
-        jadwalRinciLevel    : (v)=>ArrayOf(v, LevelType),
+        level               : (v)=>ArrayOf(v, LevelType),
         auditProgram        : (v)=>ArrayOf(v, AuditProgramType),
         fungsi              : (v)=>ArrayOf(v, FungsiType),
         jabatanAnggota      : (v)=>ArrayOf(v, JabatanAnggotaType),

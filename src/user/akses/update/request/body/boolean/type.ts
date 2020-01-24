@@ -69,7 +69,7 @@ export default function Type(value : any) : value is Body {
         jenisUnit             : (v)=>Undefinable(v,(v) : v is JenisUnitAccess[]            => ArrayOf(v, JenisUnitType)),
         klausul               : (v)=>Undefinable(v,(v) : v is KlausulAccess[]              => ArrayOf(v, KlausulType)),
         prosedur              : (v)=>Undefinable(v,(v) : v is ProsedurAccess[]             => ArrayOf(v, ProsedurType)),
-        jadwalRinciLevel      : (v)=>Undefinable(v,(v) : v is LevelAccess[]                => ArrayOf(v, LevelType)),
+        level                 : (v)=>Undefinable(v,(v) : v is LevelAccess[]                => ArrayOf(v, LevelType)),
         auditProgram          : (v)=>Undefinable(v,(v) : v is AuditProgramAccess[]         => ArrayOf(v, AuditProgramType)),
         fungsi                : (v)=>Undefinable(v,(v) : v is FungsiAccess[]               => ArrayOf(v, FungsiType)),
         jabatanAnggota        : (v)=>Undefinable(v,(v) : v is JabatanAnggotaAccess[]       => ArrayOf(v, JabatanAnggotaType)),

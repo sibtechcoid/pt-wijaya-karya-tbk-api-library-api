@@ -44,7 +44,7 @@ function Type(value) {
         jenisUnit: (v) => undefinable_1.default(v, (v) => array_of_1.default(v, type_10.default)),
         klausul: (v) => undefinable_1.default(v, (v) => array_of_1.default(v, type_11.default)),
         prosedur: (v) => undefinable_1.default(v, (v) => array_of_1.default(v, type_12.default)),
-        jadwalRinciLevel: (v) => undefinable_1.default(v, (v) => array_of_1.default(v, type_13.default)),
+        level: (v) => undefinable_1.default(v, (v) => array_of_1.default(v, type_13.default)),
         auditProgram: (v) => undefinable_1.default(v, (v) => array_of_1.default(v, type_14.default)),
         fungsi: (v) => undefinable_1.default(v, (v) => array_of_1.default(v, type_15.default)),
         jabatanAnggota: (v) => undefinable_1.default(v, (v) => array_of_1.default(v, type_16.default)),

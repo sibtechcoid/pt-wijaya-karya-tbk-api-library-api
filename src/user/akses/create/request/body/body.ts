@@ -42,7 +42,7 @@ export default interface Body {
     fungsi : Fungsi[];
     auditProgram : AuditProgram[];
     klausul : Klausul[];
-    jadwalRinciLevel : Level[];
+    level : Level[];
 
     jadwalRinciInternal : JadwalRinciInternal[];
     jadwalRinciQpass : JadwalRinciQpass[];

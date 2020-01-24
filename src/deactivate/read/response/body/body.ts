@@ -6,5 +6,5 @@ export default interface Body {
     /**
      * Date object compatible
      */
-    deactivate : string|null;
+    deactivate : Date|string|null;
 }

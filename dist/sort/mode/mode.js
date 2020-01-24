@@ -6,4 +6,3 @@ var Mode;
     Mode["DESC"] = "DESC";
 })(Mode || (Mode = {}));
 exports.default = Mode;
-//# sourceMappingURL=mode.js.map

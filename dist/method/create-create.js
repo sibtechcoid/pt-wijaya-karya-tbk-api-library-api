@@ -6,4 +6,3 @@ function CreateCreate() {
     return new standard_1.default(type_1.default.PUT);
 }
 exports.default = CreateCreate;
-//# sourceMappingURL=create-create.js.map

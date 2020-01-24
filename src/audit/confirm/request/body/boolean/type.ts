@@ -16,14 +16,6 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
         return false;
     }
 
-    // if(value.object !== undefined){
-    //
-    //     if(!IsNumber(value.object)) {
-    //
-    //         return false;
-    //     }
-    // }
-
     if(value.anggota !== undefined){
 
         if(!ArrayOf(value.anggota, TypeMember)) {
@@ -31,23 +23,6 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
             return false;
         }
     }
-
-    // if(value.type !== undefined){
-    //
-    //     if(!EnumType(value.type, TypeType)) {
-    //
-    //         return false;
-    //     }
-    // }
-
-    // if(value.status !== undefined){
-    //
-    //     if(!EnumType(value.status, Status)) {
-    //
-    //         return false;
-    //     }
-    // }
-
 
     return true;
 }

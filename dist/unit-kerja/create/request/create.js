@@ -7,4 +7,3 @@ function Create(unitKerja) {
     return Object.assign(create_create_1.default(), create_2.default(), new create_1.default(unitKerja));
 }
 exports.default = Create;
-//# sourceMappingURL=create.js.map

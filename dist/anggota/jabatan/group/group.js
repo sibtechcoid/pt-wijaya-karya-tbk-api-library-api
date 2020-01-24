@@ -6,4 +6,3 @@ var Group;
     Group["AUDITEE"] = "AUDITEE";
 })(Group || (Group = {}));
 exports.default = Group;
-//# sourceMappingURL=group.js.map

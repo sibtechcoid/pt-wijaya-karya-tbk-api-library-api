@@ -43,14 +43,5 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
         }
     }
 
-    // if(value.status !== undefined){
-    //
-    //     if(!EnumType(value.status, Status)) {
-    //
-    //         return false;
-    //     }
-    // }
-
-
     return true;
 }

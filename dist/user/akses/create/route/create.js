@@ -9,4 +9,3 @@ function Create() {
     return create_2.default(create_create_1.default(), create_1.default(), (akses) => type_1.default(akses) && type_2.default(akses));
 }
 exports.default = Create;
-//# sourceMappingURL=create.js.map

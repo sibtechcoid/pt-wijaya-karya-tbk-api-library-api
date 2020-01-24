@@ -11,14 +11,6 @@ function Type(value) {
             return false;
         }
     }
-    // if(value.jenisUsaha !== undefined) {
-    //
-    //     if(!IsFinite(value.jenisUsaha)) {
-    //
-    //         return false;
-    //     }
-    // }
     return true;
 }
 exports.default = Type;
-//# sourceMappingURL=type.js.map

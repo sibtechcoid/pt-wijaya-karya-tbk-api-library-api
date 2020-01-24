@@ -7,4 +7,3 @@ class SuccessCreate extends success_create_1.default {
     }
 }
 exports.default = SuccessCreate;
-//# sourceMappingURL=success-create.js.map

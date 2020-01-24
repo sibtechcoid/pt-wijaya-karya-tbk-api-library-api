@@ -19,9 +19,7 @@ export default function Type<
         created    : (v) => Undefinable(v, ModeType),
         id         : (v) => Undefinable(v, ModeType),
         updated    : (v) => Undefinable(v, ModeType),
-        //audit      : (v) => Undefinable(v, ModeType),
         nomer      : (v) => Undefinable(v, ModeType),
-        //lampiran   : (v) => Undefinable(v, ModeType),
     };
 
     return Structure(value, sort);

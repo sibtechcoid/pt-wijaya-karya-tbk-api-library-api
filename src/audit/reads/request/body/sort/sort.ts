@@ -7,12 +7,3 @@ export default interface Sort extends BaseSort<Omit<ReadsBody,'status'|'unitKerj
     rencana ?: [Mode, Mode];
     realisasi ?: [Mode, Mode];
 }
-
-// Deactivate, Id, Schedule, Record  {
-//
-//     status : auditStatus;
-//     object : Object;
-//     anggota : Omit<Member,'akses'>[]
-//     type : Type;
-//     //category : Category;
-// }

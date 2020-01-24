@@ -17,8 +17,8 @@ function Type(value) {
         prosedur: (v) => array_of_1.default(v, finite_1.default),
         prosesBisnis: finite_1.default,
         klausul: (v) => array_of_1.default(v, finite_1.default),
+        auditor: (v) => array_of_1.default(v, finite_1.default),
     };
     return structure_1.default(value, sort);
 }
 exports.default = Type;
-//# sourceMappingURL=type.js.map

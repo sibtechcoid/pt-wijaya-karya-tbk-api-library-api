@@ -7,11 +7,10 @@ import Id from "../../../../id/id";
 import Schedule from "../../../../jadwal/read/response/body/body";
 import Record from "../../../../record/record";
 
-export default interface Body extends /*Baseaudit<Anggotatatus, auditStatus, Group, Jabatan, Member, Object>,*/ Deactivate, Id, Schedule, Record  {
+export default interface Body extends  Deactivate, Id, Schedule, Record  {
 
     status : AuditStatus;
     unitKerja : UnitKerja;
     anggota : Omit<Member,'akses'>[]
     tipe : Type;
-    //category : Category;
 }

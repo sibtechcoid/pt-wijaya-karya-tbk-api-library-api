@@ -1,5 +1,5 @@
 import PathInterface from "../../../../../path/path";
 
-export default interface Path extends PathInterface<'/hasil-temuan/qpass/level'> {
+export default interface Path extends PathInterface<'/hasil-temuan/level'> {
 
 }

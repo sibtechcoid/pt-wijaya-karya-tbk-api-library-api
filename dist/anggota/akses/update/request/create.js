@@ -7,4 +7,3 @@ function Create(text) {
     return Object.assign(update_create_1.default(), create_1.default(), new create_2.default(text));
 }
 exports.default = Create;
-//# sourceMappingURL=create.js.map

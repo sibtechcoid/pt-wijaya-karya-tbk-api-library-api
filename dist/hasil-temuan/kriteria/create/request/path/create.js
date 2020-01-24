@@ -2,7 +2,6 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const create_1 = require("../../../../../path/create");
 function Create() {
-    return new create_1.default('/hasil-temuan/internal/kriteria');
+    return new create_1.default('/hasil-temuan/kriteria');
 }
 exports.default = Create;
-//# sourceMappingURL=create.js.map

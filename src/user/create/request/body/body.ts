@@ -1,10 +1,12 @@
-export default interface Body {
+import Nama from "../../../../nama/create/nama";
+import Singkatan from "../../../../singkatan/create/singkatan";
 
-    nama            : string;
-    jabatan        : number|null;
-    password        : string;
-    user            : string;
-    singkatan    : string;
-    telepon           : null|string;
-    email           : null|string;
+export default interface Body extends Nama, Singkatan {
+
+    singkatan : string;
+    jabatan : number|null;
+    password : string;
+    user : string;
+    telepon : null|string;
+    email : null|string;
 }

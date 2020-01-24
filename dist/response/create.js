@@ -8,4 +8,3 @@ function Create(code, message, body) {
     };
 }
 exports.default = Create;
-//# sourceMappingURL=create.js.map

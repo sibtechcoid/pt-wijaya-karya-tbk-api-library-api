@@ -5,4 +5,3 @@ function Create() {
     return new create_1.default('/jadwal-rinci/fungsis');
 }
 exports.default = Create;
-//# sourceMappingURL=create.js.map

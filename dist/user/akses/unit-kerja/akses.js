@@ -8,4 +8,3 @@ var Akses;
     Akses["READ"] = "READ";
 })(Akses || (Akses = {}));
 exports.default = Akses;
-//# sourceMappingURL=akses.js.map

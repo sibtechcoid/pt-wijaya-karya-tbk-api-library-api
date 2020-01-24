@@ -5,7 +5,6 @@ import Structure, {Validator} from "@dikac/t-object/boolean/structure";
 import Undefinable from "@dikac/t-undefined/boolean/undefinable";
 import IsString from "@dikac/t-string/boolean/type";
 
-
 export default function
     Type<Extended extends Where = Where>(value : any) : value is Extended {
 
@@ -16,7 +15,6 @@ export default function
 
     let sort : Validator<Required<Where>> = {
         nomer: (v) => Undefinable(v, IsString),
-       // audit: (v) => Undefinable(v, (v) : v is number[] =>ArrayOf(v, Finite)),
         deactivate : (v) => Undefinable(v, BooleanType)
     };
 

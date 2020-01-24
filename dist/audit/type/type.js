@@ -9,4 +9,3 @@ var Type;
     Type["SPI"] = "SPI";
 })(Type || (Type = {}));
 exports.default = Type;
-//# sourceMappingURL=type.js.map

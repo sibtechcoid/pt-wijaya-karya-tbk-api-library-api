@@ -21,7 +21,7 @@ function Type(value) {
         }
     }
     if (value.status !== undefined) {
-        if (!type_3.default(value.status, status_1.default)) {
+        if (!array_of_1.default(value.status, (v) => type_3.default(v, status_1.default))) {
             return false;
         }
     }
@@ -43,4 +43,3 @@ function Type(value) {
     return true;
 }
 exports.default = Type;
-//# sourceMappingURL=type.js.map

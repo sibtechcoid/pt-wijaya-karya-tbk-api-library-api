@@ -6,4 +6,3 @@ function Type(value) {
     return type_1.default(value, group_1.default);
 }
 exports.default = Type;
-//# sourceMappingURL=type.js.map

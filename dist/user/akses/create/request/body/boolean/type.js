@@ -41,7 +41,7 @@ function Type(value) {
         jenisUnit: (v) => array_of_1.default(v, type_8.default),
         klausul: (v) => array_of_1.default(v, type_10.default),
         prosedur: (v) => array_of_1.default(v, type_11.default),
-        jadwalRinciLevel: (v) => array_of_1.default(v, type_12.default),
+        level: (v) => array_of_1.default(v, type_12.default),
         auditProgram: (v) => array_of_1.default(v, type_9.default),
         fungsi: (v) => array_of_1.default(v, type_21.default),
         jabatanAnggota: (v) => array_of_1.default(v, type_20.default),
@@ -56,4 +56,3 @@ function Type(value) {
     return structure_1.default(value, sort);
 }
 exports.default = Type;
-//# sourceMappingURL=type.js.map

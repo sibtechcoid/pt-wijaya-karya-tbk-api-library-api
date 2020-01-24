@@ -11,10 +11,8 @@ function Type(value) {
     }
     let sort = {
         nomer: (v) => undefinable_1.default(v, type_3.default),
-        // audit: (v) => Undefinable(v, (v) : v is number[] =>ArrayOf(v, Finite)),
         deactivate: (v) => undefinable_1.default(v, type_2.default)
     };
     return structure_1.default(value, sort);
 }
 exports.default = Type;
-//# sourceMappingURL=type.js.map

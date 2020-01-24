@@ -7,4 +7,3 @@ var Status;
     Status["WAITING"] = "WAITING";
 })(Status || (Status = {}));
 exports.default = Status;
-//# sourceMappingURL=status.js.map

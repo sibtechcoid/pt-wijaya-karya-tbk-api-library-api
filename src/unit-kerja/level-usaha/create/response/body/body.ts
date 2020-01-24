@@ -1,6 +1,5 @@
-import ReadBody from "../../../reads/response/body/body";
-import Id from "../../../../../id/id";
+import ReadBody from "../../../read/response/body/body";
 
-export default interface Body extends Id, ReadBody {
+export default interface Body extends ReadBody {
 
 }

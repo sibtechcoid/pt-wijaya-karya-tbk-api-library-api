@@ -6,4 +6,3 @@ function DeleteCreate() {
     return new standard_1.default(type_1.default.DELETE);
 }
 exports.default = DeleteCreate;
-//# sourceMappingURL=delete-create.js.map

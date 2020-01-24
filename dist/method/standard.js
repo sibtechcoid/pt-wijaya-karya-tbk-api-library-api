@@ -6,4 +6,3 @@ class Standard {
     }
 }
 exports.default = Standard;
-//# sourceMappingURL=standard.js.map

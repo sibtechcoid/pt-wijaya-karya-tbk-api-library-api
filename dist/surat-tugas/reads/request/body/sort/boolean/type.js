@@ -12,10 +12,8 @@ function Type(value) {
         created: (v) => undefinable_1.default(v, type_1.default),
         id: (v) => undefinable_1.default(v, type_1.default),
         updated: (v) => undefinable_1.default(v, type_1.default),
-        //audit      : (v) => Undefinable(v, ModeType),
         nomer: (v) => undefinable_1.default(v, type_1.default),
     };
     return structure_1.default(value, sort);
 }
 exports.default = Type;
-//# sourceMappingURL=type.js.map

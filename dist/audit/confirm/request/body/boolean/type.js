@@ -11,33 +11,11 @@ function Type(value) {
     if (!realize_1.default(value)) {
         return false;
     }
-    // if(value.object !== undefined){
-    //
-    //     if(!IsNumber(value.object)) {
-    //
-    //         return false;
-    //     }
-    // }
     if (value.anggota !== undefined) {
         if (!array_of_1.default(value.anggota, type_2.default)) {
             return false;
         }
     }
-    // if(value.type !== undefined){
-    //
-    //     if(!EnumType(value.type, TypeType)) {
-    //
-    //         return false;
-    //     }
-    // }
-    // if(value.status !== undefined){
-    //
-    //     if(!EnumType(value.status, Status)) {
-    //
-    //         return false;
-    //     }
-    // }
     return true;
 }
 exports.default = Type;
-//# sourceMappingURL=type.js.map

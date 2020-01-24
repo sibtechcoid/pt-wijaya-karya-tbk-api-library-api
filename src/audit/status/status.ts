@@ -14,11 +14,6 @@ enum Status {
      */
     PUBLISH = "PUBLISH",
 
-    // /** deprecated **/
-    // REJECT = "REJECT",
-    // /** deprecated **/
-    // APPROVE = "APPROVE",
-
     PROJECT_REJECT = "PROJECT_REJECT",
     MEMBER_REJECT = "MEMBER_REJECT",
     PROJECT_WAITING = "PROJECT_WAITING",

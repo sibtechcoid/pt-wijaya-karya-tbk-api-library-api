@@ -1,5 +1,11 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const akses_1 = require("../unit-kerja/akses");
-exports.default = akses_1.default;
-//# sourceMappingURL=akses.js.map
+var Akses;
+(function (Akses) {
+    Akses["CREATE"] = "CREATE";
+    Akses["UPDATE"] = "UPDATE";
+    Akses["DELETE"] = "DELETE";
+    Akses["READ"] = "READ";
+    Akses["SUBMIT"] = "SUBMIT";
+})(Akses || (Akses = {}));
+exports.default = Akses;

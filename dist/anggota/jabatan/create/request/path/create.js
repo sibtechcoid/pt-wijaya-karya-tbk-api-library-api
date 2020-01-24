@@ -5,4 +5,3 @@ function Create() {
     return new create_1.default('/anggota/jabatan');
 }
 exports.default = Create;
-//# sourceMappingURL=create.js.map

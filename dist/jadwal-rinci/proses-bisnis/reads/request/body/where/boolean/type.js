@@ -10,17 +10,9 @@ function Type(value) {
         return false;
     }
     let sort = {
-        //created    : (v) => Undefinable(v, ModeType),
-        //auditProgram    : (v) => Undefinable(v, FiniteType),
-        //parent    : (v) => Undefinable(v, FiniteType),
         deactivate: (v) => undefinable_1.default(v, type_3.default),
-        //judul : (v) => Undefinable(v, BooleanType),
-        // id         : (v) => Undefinable(v, ModeType),
-        // bobot    : (p) => Undefinable<number|null>(p, (p) : p is number|null => Nullable<number>(p, (p) : p is number => FiniteType(p))),
-        //point    : (p) => Undefinable<number|null>(p, (p) : p is number|null => Nullable<number>(p, (p) : p is number => FiniteType(p))),
         nama: (v) => undefinable_1.default(v, type_2.default),
     };
     return structure_1.default(value, sort);
 }
 exports.default = Type;
-//# sourceMappingURL=type.js.map

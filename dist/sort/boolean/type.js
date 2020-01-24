@@ -20,4 +20,3 @@ function Type(value, properties) {
     return true;
 }
 exports.default = Type;
-//# sourceMappingURL=type.js.map

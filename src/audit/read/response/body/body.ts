@@ -9,7 +9,7 @@ import Record from "../../../../record/record";
 import User from "../../../../user/reads/response/body/body";
 import Penolakan from "../penolakan/penolakan";
 
-export default interface Body extends /*Baseaudit<Anggotatatus, auditStatus, Group, Jabatan, Member, Object>,*/ Deactivate, Id, Schedule, Record  {
+export default interface Body extends Deactivate, Id, Schedule, Record  {
 
     status : AuditStatus;
     unitKerja : Object;
@@ -17,5 +17,4 @@ export default interface Body extends /*Baseaudit<Anggotatatus, auditStatus, Gro
     tipe : Type;
     penyetuju : Omit<User,'extraAkses'|'jabatan'|'akses'>|null
     penolakan : Penolakan[]
-    //category : Category;
 }

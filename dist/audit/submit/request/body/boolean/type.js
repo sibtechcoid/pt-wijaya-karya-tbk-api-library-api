@@ -29,14 +29,6 @@ function Type(value) {
             return false;
         }
     }
-    // if(value.status !== undefined){
-    //
-    //     if(!EnumType(value.status, Status)) {
-    //
-    //         return false;
-    //     }
-    // }
     return true;
 }
 exports.default = Type;
-//# sourceMappingURL=type.js.map

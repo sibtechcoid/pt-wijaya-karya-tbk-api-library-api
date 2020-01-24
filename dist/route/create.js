@@ -8,4 +8,3 @@ function Create(method, path, validator) {
     return merged;
 }
 exports.default = Create;
-//# sourceMappingURL=create.js.map

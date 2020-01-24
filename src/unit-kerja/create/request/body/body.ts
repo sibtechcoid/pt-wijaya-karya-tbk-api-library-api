@@ -7,6 +7,4 @@ export default interface Body extends Nama, Singkatan {
     jenisUsaha: number;
     levelUsaha: null|number;
     jenisUnit : number;
-    // nama : string;
-    // singkatan : string;
 }

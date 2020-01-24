@@ -13,4 +13,3 @@ function Plan(value) {
     return true;
 }
 exports.default = Plan;
-//# sourceMappingURL=plan.js.map

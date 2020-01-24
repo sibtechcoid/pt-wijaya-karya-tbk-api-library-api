@@ -3,5 +3,5 @@ import Path from "./path";
 
 export default function Create() : Path {
 
-    return new CreatePath('/jadwal-rinci/internals');
+    return new CreatePath('/hasil-temuan/internal/rincian-temuans');
 }

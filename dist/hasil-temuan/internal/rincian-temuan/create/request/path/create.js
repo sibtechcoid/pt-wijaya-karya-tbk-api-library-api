@@ -2,6 +2,6 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const create_1 = require("../../../../../../path/create");
 function Create() {
-    return new create_1.default('/jadwal-rinci/internal/rincian-temuan');
+    return new create_1.default('/hasil-temuan/internal/rincian-temuan');
 }
 exports.default = Create;

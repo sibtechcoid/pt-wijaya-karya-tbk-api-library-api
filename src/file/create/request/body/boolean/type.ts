@@ -8,11 +8,11 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
         return false;
     }
 
-    if(!value.data) {
-
-        return false;
-
-    }
+    // if(!value.data) {
+    //
+    //     return false;
+    //
+    // }
 
     return true;
 }

@@ -15,6 +15,7 @@ function Type(value) {
         selesai: (v) => undefinable_1.default(v, type_1.default),
         audit: (v) => undefinable_1.default(v, type_1.default),
         mulai: (v) => undefinable_1.default(v, type_1.default),
+        pelaksanaan: (v) => undefinable_1.default(v, type_1.default),
     };
     return structure_1.default(value, sort);
 }

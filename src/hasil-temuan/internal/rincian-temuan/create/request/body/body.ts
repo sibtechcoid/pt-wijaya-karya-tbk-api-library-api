@@ -1,5 +1,6 @@
 export default interface Body {
     jadwalRinci : number;
+    prosesBisnis : number;
     prosedur : number;
     klausul : number[];
     fungsi : number[];
@@ -10,7 +11,6 @@ export default interface Body {
 
     kriteria : number[];
 
-    // lampiran file identifier from lampiran api
     lampiran : string[]
 
 }

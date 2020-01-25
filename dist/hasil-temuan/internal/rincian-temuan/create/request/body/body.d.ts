@@ -1,5 +1,6 @@
 export default interface Body {
     jadwalRinci: number;
+    prosesBisnis: number;
     prosedur: number;
     klausul: number[];
     fungsi: number[];

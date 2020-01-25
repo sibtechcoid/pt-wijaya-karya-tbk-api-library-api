@@ -13,6 +13,7 @@ function Type(value) {
     let sort = {
         id: finite_1.default,
         jadwalRinci: (v) => undefinable_1.default(v, finite_1.default),
+        prosesBisnis: (v) => undefinable_1.default(v, finite_1.default),
         prosedur: (v) => undefinable_1.default(v, finite_1.default),
         klausul: (v) => undefinable_1.default(v, (v) => array_of_1.default(v, finite_1.default)),
         fungsi: (v) => undefinable_1.default(v, (v) => array_of_1.default(v, finite_1.default)),

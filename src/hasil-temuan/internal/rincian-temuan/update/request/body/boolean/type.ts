@@ -16,6 +16,7 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
     let sort : Validator<Required<TypeInterface>> = {
         id : TypeNumber,
         jadwalRinci : (v) => undefinable(v, TypeNumber),
+        prosesBisnis : (v) => undefinable(v, TypeNumber),
 
         prosedur : (v) => undefinable(v, TypeNumber),
         klausul : (v) => undefinable(v, (v) : v is number[] => ArrayOf(v, TypeNumber)),

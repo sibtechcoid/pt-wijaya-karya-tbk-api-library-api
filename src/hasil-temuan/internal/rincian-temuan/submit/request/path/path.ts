@@ -1,5 +1,5 @@
 import PathInterface from "../../../../../../path/path";
 
-export default interface Path extends PathInterface<'/hasil-temuan/internal-submit'> {
+export default interface Path extends PathInterface<'/hasil-temuan/internal/rincian-temuan-submit'> {
 
 }

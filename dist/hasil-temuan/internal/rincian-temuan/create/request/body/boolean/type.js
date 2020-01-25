@@ -11,6 +11,7 @@ function Type(value) {
     }
     let sort = {
         jadwalRinci: finite_1.default,
+        prosesBisnis: finite_1.default,
         prosedur: finite_1.default,
         klausul: (v) => array_of_1.default(v, finite_1.default),
         fungsi: (v) => array_of_1.default(v, finite_1.default),

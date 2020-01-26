@@ -13,7 +13,7 @@ export default interface Body extends Deactivate, Id, Schedule, Record  {
 
     status : AuditStatus;
     unitKerja : Object;
-    anggota : Omit<Member,'akses'|'created'|'updated'|'id'>[]
+    anggota : Omit<Member,'akses'>[]
     tipe : Type;
     penyetuju : Omit<User,'extraAkses'|'jabatan'|'akses'>|null
     penolakan : Penolakan[]

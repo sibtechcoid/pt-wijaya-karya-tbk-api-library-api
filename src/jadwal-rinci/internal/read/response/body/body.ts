@@ -6,7 +6,6 @@ import ProsesBisnis from "../../../../proses-bisnis/read/response/body/body";
 import Klausul from "../../../../klausul/read/response/body/body";
 import Audit from "../../../../../audit/read/response/body/body";
 import User from "../../../../../user/read/response/body/body";
-import Member from "../../../../../anggota/read/response/body/body";
 
 export default interface Body extends Record, Id  {
 
@@ -17,7 +16,7 @@ export default interface Body extends Record, Id  {
     prosedur : Omit<Prosedur,'prosesBisnis'>[];
     prosesBisnis : Omit<ProsesBisnis,'prosedur'>;
     klausul : Omit<Klausul,'auditProgram'>[];
-    auditor : Omit<Member,'akses'|'status'|'jabatan'|'user'>[]
+    auditor : Omit<User,'extraAkses'|'akses'|'jabatan'>[];
     pelaksanaan : boolean;
 
 }

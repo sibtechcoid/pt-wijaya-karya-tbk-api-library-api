@@ -3,6 +3,9 @@ export default interface Body {
     selesai: Date | string;
     mulai: Date | string;
     fungsi: number[];
+    /**
+     * User ids
+     */
     auditor: number[];
     prosedur: number[];
     prosesBisnis: number;

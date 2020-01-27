@@ -16,7 +16,7 @@ export default interface Body extends Record, Id  {
     klausul : Omit<Klausul,'auditProgram'>[];
     fungsi : Fungsi[];
 
-    problem : string[];
+    masalah : string[];
     objek : string[]
 
     kriteria : Kriteria[];

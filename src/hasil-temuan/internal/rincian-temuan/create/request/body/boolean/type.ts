@@ -21,7 +21,7 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
         klausul : (v) => ArrayOf(v, TypeNumber),
         fungsi : (v) => ArrayOf(v, TypeNumber),
 
-        problem : (v) => ArrayOf(v, TypeString),
+        masalah : (v) => ArrayOf(v, TypeString),
         objek : (v) => ArrayOf(v, TypeString),
 
         kriteria : (v) => ArrayOf(v, TypeNumber),

@@ -22,7 +22,7 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
         klausul : (v) => undefinable(v, (v) : v is number[] => ArrayOf(v, TypeNumber)),
         fungsi : (v) => undefinable(v, (v) : v is number[] => ArrayOf(v, TypeNumber)),
 
-        problem : (v) => undefinable(v, (v) : v is string[] => ArrayOf(v, TypeString)),
+        masalah : (v) => undefinable(v, (v) : v is string[] => ArrayOf(v, TypeString)),
         objek : (v) => undefinable(v, (v) : v is string[] => ArrayOf(v, TypeString)),
 
         kriteria : (v) => undefinable(v, (v) : v is number[] => ArrayOf(v, TypeNumber)),

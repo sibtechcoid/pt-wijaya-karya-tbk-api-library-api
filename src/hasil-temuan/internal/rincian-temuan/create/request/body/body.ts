@@ -5,7 +5,7 @@ export default interface Body {
     klausul : number[];
     fungsi : number[];
 
-    problem : string[];
+    masalah : string[];
     objek : string[]
 
 

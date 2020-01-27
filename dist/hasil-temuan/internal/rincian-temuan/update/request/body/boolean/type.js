@@ -17,7 +17,7 @@ function Type(value) {
         prosedur: (v) => undefinable_1.default(v, finite_1.default),
         klausul: (v) => undefinable_1.default(v, (v) => array_of_1.default(v, finite_1.default)),
         fungsi: (v) => undefinable_1.default(v, (v) => array_of_1.default(v, finite_1.default)),
-        problem: (v) => undefinable_1.default(v, (v) => array_of_1.default(v, type_2.default)),
+        masalah: (v) => undefinable_1.default(v, (v) => array_of_1.default(v, type_2.default)),
         objek: (v) => undefinable_1.default(v, (v) => array_of_1.default(v, type_2.default)),
         kriteria: (v) => undefinable_1.default(v, (v) => array_of_1.default(v, finite_1.default)),
         // lampiran file identifier from lampiran api

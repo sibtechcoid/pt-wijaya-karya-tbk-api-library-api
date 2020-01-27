@@ -15,7 +15,7 @@ function Type(value) {
         prosedur: finite_1.default,
         klausul: (v) => array_of_1.default(v, finite_1.default),
         fungsi: (v) => array_of_1.default(v, finite_1.default),
-        problem: (v) => array_of_1.default(v, type_2.default),
+        masalah: (v) => array_of_1.default(v, type_2.default),
         objek: (v) => array_of_1.default(v, type_2.default),
         kriteria: (v) => array_of_1.default(v, finite_1.default),
         // lampiran file identifier from lampiran api

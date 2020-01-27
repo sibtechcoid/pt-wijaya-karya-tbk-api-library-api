@@ -13,7 +13,7 @@ export default interface Body extends Record, Id {
     prosesBisnis: Omit<ProsesBisnis, 'prosedur'>;
     klausul: Omit<Klausul, 'auditProgram'>[];
     fungsi: Fungsi[];
-    problem: string[];
+    masalah: string[];
     objek: string[];
     kriteria: Kriteria[];
     status: Status;

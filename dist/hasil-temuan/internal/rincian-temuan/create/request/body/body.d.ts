@@ -4,7 +4,7 @@ export default interface Body {
     prosedur: number;
     klausul: number[];
     fungsi: number[];
-    problem: string[];
+    masalah: string[];
     objek: string[];
     kriteria: number[];
     lampiran: string[];

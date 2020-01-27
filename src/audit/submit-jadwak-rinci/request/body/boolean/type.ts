@@ -1,47 +1,20 @@
 import TypeInterface from "../body";
-import EnumType from "@dikac/t-enum/boolean/type";
-import TypeType from "../../../../type/type";
-import TypeId from "../../../../../id/boolean/type";
-import ScheduleType from "../../../../../jadwal/update/request/body/boolean/type";
-import IsNumber from "@dikac/t-number/boolean/finite";
-import ArrayOf from "@dikac/t-array/boolean/array-of";
-import TypeMember from "../../../../../anggota/create/request/body/boolean/type";
+import NotNull from "@dikac/t-object/boolean/type";
+import TypeNumber from "@dikac/t-number/boolean/finite";
+import Structure, {Validator} from "@dikac/t-object/boolean/structure";
 
 export default function Type<Extended extends TypeInterface = TypeInterface>(value : any) : value is Extended {
 
-    if(!TypeId<Extended>(value)) {
+    if(!NotNull<Extended>(value)) {
 
         return false;
     }
 
-    if(!ScheduleType(value)) {
+    let sort : Validator<Required<TypeInterface>> = {
 
-        return false;
-    }
+        id : TypeNumber,
+    };
 
-    if(value.unitKerja !== undefined){
+    return Structure(value, sort);
 
-        if(!IsNumber(value.unitKerja)) {
-
-            return false;
-        }
-    }
-
-    if(value.anggota !== undefined){
-
-        if(!ArrayOf(value.anggota, TypeMember)) {
-
-            return false;
-        }
-    }
-
-    if(value.tipe !== undefined){
-
-        if(!EnumType(value.tipe, TypeType)) {
-
-            return false;
-        }
-    }
-
-    return true;
 }

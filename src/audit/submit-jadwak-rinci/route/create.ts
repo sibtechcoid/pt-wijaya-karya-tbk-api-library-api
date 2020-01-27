@@ -1,13 +1,10 @@
+import Update from "../../../method/update-create";
+import IsType from "../request/body/boolean/type";
 import Route from "./route";
-import Path from "../request/path/create";
 import CreateRoute from "../../../route/create";
-import UpdateCreate from "../../../method/update-create";
-import TypeType from "../request/body/boolean/type";
+import Path from "../request/path/create";
 
-export default function Create () : Route {
+export default function Create() : Route {
 
-    return CreateRoute(
-        UpdateCreate(),
-        Path(), TypeType
-    );
+    return CreateRoute(Update(), Path(), IsType);
 }

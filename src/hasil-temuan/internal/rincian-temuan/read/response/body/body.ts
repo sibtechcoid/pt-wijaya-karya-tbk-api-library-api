@@ -8,7 +8,6 @@ import Kriteria from "../../../../../kriteria/read/response/body/body";
 import ProsesBisnis from "../../../../../../jadwal-rinci/proses-bisnis/read/response/body/body";
 import Status from "../../../status/status";
 
-// export default Body;
 
 export default interface Body extends Record, Id  {
 

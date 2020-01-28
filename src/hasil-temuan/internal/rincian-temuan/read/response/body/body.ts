@@ -7,7 +7,7 @@ import Klausul from "../../../../../../jadwal-rinci/klausul/read/response/body/b
 import Kriteria from "../../../../../kriteria/read/response/body/body";
 import ProsesBisnis from "../../../../../../jadwal-rinci/proses-bisnis/read/response/body/body";
 import Status from "../../../status/status";
-
+import Penolakan from "../penolakan/penolakan";
 
 export default interface Body extends Record, Id  {
 
@@ -25,6 +25,8 @@ export default interface Body extends Record, Id  {
     // lampiran file identifier from lampiran api
     lampiran : string[];
     status : Status;
+    penolakan : Penolakan[];
+
 
 
 }

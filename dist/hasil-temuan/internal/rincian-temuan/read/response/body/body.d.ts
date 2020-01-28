@@ -7,6 +7,7 @@ import Klausul from "../../../../../../jadwal-rinci/klausul/read/response/body/b
 import Kriteria from "../../../../../kriteria/read/response/body/body";
 import ProsesBisnis from "../../../../../../jadwal-rinci/proses-bisnis/read/response/body/body";
 import Status from "../../../status/status";
+import Penolakan from "../penolakan/penolakan";
 export default interface Body extends Record, Id {
     prosesBisnis: Omit<ProsesBisnis, 'prosedur'>;
     jadwalRinci: Omit<JadwalRinci, 'audit' | 'fungsi' | 'prosedur' | 'prosesBisnis' | 'klausul' | 'auditor'>;
@@ -18,4 +19,5 @@ export default interface Body extends Record, Id {
     kriteria: Kriteria[];
     lampiran: string[];
     status: Status;
+    penolakan: Penolakan[];
 }

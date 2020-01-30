@@ -1,9 +1,4 @@
-import Id from "../../../../id/id";
-export default interface Body extends Id {
+import CreateBody from "../../../create/request/body/body";
+export default interface Body extends CreateBody {
     path: string;
-    /**
-     * angular file buffer or node buffer
-     * type cannot be forced
-     */
-    data: File;
 }

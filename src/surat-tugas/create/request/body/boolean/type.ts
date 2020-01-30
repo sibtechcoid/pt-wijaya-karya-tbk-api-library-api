@@ -20,6 +20,11 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
 
         return false;
     }
+    
+    if(!ArrayOf(value.lampiran, IsString)) {
+
+        return false;
+    }
 
 
     return true;

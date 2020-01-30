@@ -7,6 +7,10 @@ export default interface Body extends Id, Record {
 
     audit : Omit<Project,'anggota'|'penolakan'|'penyetuju'>[];
     nomer : string;
-    lampiran : (Id & Omit<Lampiran,'data'>)[]
+
+    /**
+     * file path
+     */
+    lampiran : string[]
 
 }

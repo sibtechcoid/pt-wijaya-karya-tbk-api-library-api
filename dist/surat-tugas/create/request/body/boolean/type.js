@@ -14,6 +14,9 @@ function Type(value) {
     if (!array_of_1.default(value.audit, finite_1.default)) {
         return false;
     }
+    if (!array_of_1.default(value.lampiran, type_2.default)) {
+        return false;
+    }
     return true;
 }
 exports.default = Type;

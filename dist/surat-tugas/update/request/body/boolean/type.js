@@ -22,6 +22,11 @@ function Type(value) {
             return false;
         }
     }
+    if (value.lampiran !== undefined) {
+        if (!array_of_1.default(value.lampiran, type_2.default)) {
+            return false;
+        }
+    }
     return true;
 }
 exports.default = Type;

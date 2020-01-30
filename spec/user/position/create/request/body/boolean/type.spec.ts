@@ -10,7 +10,7 @@ import AuditProgram from "../../../../../../../dist/user/akses/audit-program/aks
 import Klausul from "../../../../../../../dist/user/akses/klausul/akses";
 import Prosedur from "../../../../../../../dist/user/akses/prosedur/akses";
 import Fungsi from "../../../../../../../dist/user/akses/fungsi/akses";
-import Level from "../../../../../../../dist/user/akses/jadwal-rinci-level/akses";
+import Level from "../../../../../../../dist/user/akses/level/akses";
 import Jabatan from "../../../../../../../dist/user/akses/jabatan/akses";
 
 it("force console log", () => { spyOn(console, 'log').and.callThrough();});

@@ -21,7 +21,7 @@ describe('qpass/object/type/update request', () => {
             prosedur: [],
             fungsi: [],
             klausul: [],
-            jadwalRinciLevel: [],
+            level: [],
             auditProgram: [],
         }
     );

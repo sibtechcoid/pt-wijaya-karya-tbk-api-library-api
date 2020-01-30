@@ -3,6 +3,8 @@ import Structure, {Validator} from "@dikac/t-object/boolean/structure";
 import ModeType from "../../../../../../../sort/mode/boolean/type";
 import Undefinable from "@dikac/t-undefined/boolean/undefinable";
 import NotNull from "@dikac/t-object/boolean/type";
+import LevelType from "../../../../../type/type";
+import EnumType from "@dikac/t-enum/boolean/type";
 
 export default function Type<
     Extended extends Sort = Sort
@@ -16,6 +18,7 @@ export default function Type<
     }
 
     let sort : Validator<Required<Sort>> = {
+        tipe    : (v) => Undefinable(v, ModeType),
         created    : (v) => Undefinable(v, ModeType),
         deactivate : (v) => Undefinable(v, ModeType),
         id         : (v) => Undefinable(v, ModeType),

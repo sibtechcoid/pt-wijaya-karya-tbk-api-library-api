@@ -6,6 +6,9 @@ import StringType from "@dikac/t-string/boolean/type";
 import NotNull from "@dikac/t-object/boolean/type";
 import Body from "../body";
 import Positive from "@dikac/t-number/boolean/positive";
+import Undefinable from "@dikac/t-undefined/boolean/undefinable";
+import LevelType from "../../../../type/type";
+import EnumType from "@dikac/t-enum/boolean/type";
 
 export default function Type<Extended extends TypeInterface = TypeInterface>(value : any) : value is Extended {
 
@@ -21,6 +24,7 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
         point : (v) => Nullable(v, Positive),
         parent : (v) => Nullable(v, Positive),
         judul : BooleanType,
+        tipe    : (v) : v is LevelType =>EnumType(v, LevelType),
     };
 
     return Structure(value, sort);

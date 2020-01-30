@@ -7,6 +7,8 @@ const finite_1 = require("@dikac/t-number/boolean/finite");
 const structure_1 = require("@dikac/t-object/boolean/structure");
 const undefinable_1 = require("@dikac/t-undefined/boolean/undefinable");
 const nullable_1 = require("@dikac/t-null/boolean/nullable");
+const type_4 = require("../../../../../type/type");
+const type_5 = require("@dikac/t-enum/boolean/type");
 function Type(value) {
     if (!type_1.default(value)) {
         return false;
@@ -19,6 +21,7 @@ function Type(value) {
         bobot: (p) => undefinable_1.default(p, (p) => nullable_1.default(p, (p) => finite_1.default(p))),
         point: (p) => undefinable_1.default(p, (p) => nullable_1.default(p, (p) => finite_1.default(p))),
         nama: (v) => undefinable_1.default(v, type_2.default),
+        tipe: (v) => undefinable_1.default(v, (v) => type_5.default(v, type_4.default)),
     };
     return structure_1.default(value, sort);
 }

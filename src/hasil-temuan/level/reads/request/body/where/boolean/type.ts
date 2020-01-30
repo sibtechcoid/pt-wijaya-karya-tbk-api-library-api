@@ -6,6 +6,8 @@ import FiniteType from "@dikac/t-number/boolean/finite";
 import Structure, {Validator} from "@dikac/t-object/boolean/structure";
 import Undefinable from "@dikac/t-undefined/boolean/undefinable";
 import Nullable from "@dikac/t-null/boolean/nullable";
+import LevelType from "../../../../../type/type";
+import EnumType from "@dikac/t-enum/boolean/type";
 
 
 export default function
@@ -24,6 +26,7 @@ export default function
         bobot    : (p) => Undefinable<number|null>(p, (p) : p is number|null => Nullable<number>(p, (p) : p is number => FiniteType(p))),
         point    : (p) => Undefinable<number|null>(p, (p) : p is number|null => Nullable<number>(p, (p) : p is number => FiniteType(p))),
         nama    : (v) => Undefinable(v, StringType),
+        tipe    : (v) => Undefinable(v, (v) : v is LevelType =>EnumType(v, LevelType)),
     };
 
     return Structure(value, sort);

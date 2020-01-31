@@ -1,0 +1,19 @@
+import JadwalRinci from "../../../../../jadwal-rinci/internal/read/response/body/body";
+import Record from "../../../../../record/record";
+import Id from "../../../../../id/id";
+import Fungsi from "../../../../../jadwal-rinci/fungsi/read/response/body/body";
+import Prosedur from "../../../../../jadwal-rinci/prosedur/read/response/body/body";
+import Klausul from "../../../../../jadwal-rinci/klausul/read/response/body/body";
+import Kriteria from "../../../../kriteria/read/response/body/body";
+import ProsesBisnis from "../../../../../jadwal-rinci/proses-bisnis/read/response/body/body";
+import Penolakan from "../penolakan/penolakan";
+import Level from "../../../../level/reads/response/body/body";
+import Audit from "../../../../../audit/read/response/body/body";
+
+export default interface Body extends Record  {
+
+    level : Omit<Level,'turunan'>;
+    audit : Omit<Audit, 'unitKerja'|'anggota'|'penyetuju'|'penolakan'>;
+    hasil : number;
+
+}

@@ -4,8 +4,9 @@ import Path from "./path/create";
 import Id from "../../../id/id";
 import Standard from "../../../method/standard";
 import Type from "../../../method/type/type";
+import Body from "./body/body";
 
-export default function Create(id : Id) : Request {
+export default function Create(body : Body) : Request {
 
-    return Object.assign(new Standard(Type.GET), Path(), new CreatBody<Id>(id))
+    return Object.assign(new Standard(Type.GET), Path(), new CreatBody<Body>(body))
 }

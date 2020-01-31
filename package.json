@@ -1,6 +1,6 @@
 {
   "name": "wika-aims-api-library",
-  "version": "0.217.12",
+  "version": "0.217.13",
   "description": "Wika API library",
   "dependencies": {
     "@dikac/deployer": "^0.1.4",
@@ -18,7 +18,6 @@
   },
   "devDependencies": {
     "@types/jasmine": "^3.5.1",
-    "@types/node": "^12.12.25",
     "cpy-cli": "^3.0.0",
     "jasmine": "^3.4.0",
     "json-properties-remover": "^0.1.2",

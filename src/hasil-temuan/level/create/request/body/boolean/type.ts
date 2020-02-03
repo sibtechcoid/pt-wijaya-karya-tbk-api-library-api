@@ -6,7 +6,6 @@ import StringType from "@dikac/t-string/boolean/type";
 import NotNull from "@dikac/t-object/boolean/type";
 import Body from "../body";
 import Positive from "@dikac/t-number/boolean/positive";
-import Undefinable from "@dikac/t-undefined/boolean/undefinable";
 import LevelType from "../../../../type/type";
 import EnumType from "@dikac/t-enum/boolean/type";
 

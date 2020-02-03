@@ -3,8 +3,6 @@ import Structure, {Validator} from "@dikac/t-object/boolean/structure";
 import ModeType from "../../../../../../../sort/mode/boolean/type";
 import Undefinable from "@dikac/t-undefined/boolean/undefinable";
 import NotNull from "@dikac/t-object/boolean/type";
-import LevelType from "../../../../../type/type";
-import EnumType from "@dikac/t-enum/boolean/type";
 
 export default function Type<
     Extended extends Sort = Sort

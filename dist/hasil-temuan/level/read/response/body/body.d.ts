@@ -6,7 +6,7 @@ import Type from "../../../type/type";
 import LevelUsaha from "../../../../../unit-kerja/level-usaha/reads/response/body/body";
 export default interface Body extends Deactivate, Record, Id, Nama {
     tipe: Type;
-    levelUsaha: null | Omit<LevelUsaha, 'jenisUnit'>;
+    levelUsaha: Omit<LevelUsaha, 'jenisUnit'>;
     judul: boolean;
     nama: string;
     bobot: null | number;

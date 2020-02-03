@@ -2,6 +2,6 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const create_1 = require("../../../../../path/create");
 function Create() {
-    return new create_1.default('/jadwal-rinci/internal-submit');
+    return new create_1.default('/jadwal-rinci/qpass-submit');
 }
 exports.default = Create;

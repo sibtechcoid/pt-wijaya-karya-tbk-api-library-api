@@ -1,3 +1,3 @@
 import PathInterface from "../../../../../path/path";
-export default interface Path extends PathInterface<'/jadwal-rinci/internal-submit'> {
+export default interface Path extends PathInterface<'/jadwal-rinci/qpass-submit'> {
 }

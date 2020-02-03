@@ -4,7 +4,7 @@ import Audit from "../../../../../audit/read/response/body/body";
 
 export default interface Body extends Record  {
 
-    level : Omit<Level,'turunan'>;
+    level : Omit<Level,'parent'>;
     audit : Omit<Audit, 'unitKerja'|'anggota'|'penyetuju'|'penolakan'>;
     hasil : number;
 

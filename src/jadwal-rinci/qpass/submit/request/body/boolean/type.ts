@@ -12,7 +12,7 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
 
     let sort : Validator<Required<TypeInterface>> = {
 
-        id : TypeNumber,
+        audit : TypeNumber,
     };
 
     return Structure(value, sort);

@@ -1,3 +1,3 @@
 import ReadBody from "../../../read/response/body/body";
-export default interface Body extends Omit<ReadBody, 'turunan'> {
+export default interface Body extends ReadBody {
 }

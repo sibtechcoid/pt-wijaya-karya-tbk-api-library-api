@@ -3,13 +3,14 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const type_1 = require("@dikac/t-object/boolean/type");
 const structure_1 = require("@dikac/t-object/boolean/structure");
 const positive_1 = require("@dikac/t-number/boolean/positive");
+const type_2 = require("@dikac/t-number/boolean/type");
 function Type(value) {
     if (!type_1.default(value)) {
         return false;
     }
     let sort = {
         level: positive_1.default,
-        hasil: positive_1.default,
+        hasil: type_2.default,
     };
     return structure_1.default(value, sort);
 }

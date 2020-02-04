@@ -1,5 +1,7 @@
 import Hasil from "./hasil/hasil";
 
-export default interface Body extends Array<Hasil> {
+export default interface Body {
 
+    audit : number;
+    hasil : Hasil[]
 }

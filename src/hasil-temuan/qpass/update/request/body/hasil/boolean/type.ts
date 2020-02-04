@@ -12,7 +12,6 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
 
     let sort : Validator<Required<TypeInterface>> = {
         level: TypeNumber,
-        audit: TypeNumber,
         hasil : TypeNumber,
     };
 

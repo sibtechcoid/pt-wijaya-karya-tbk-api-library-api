@@ -1,8 +1,9 @@
 import Path from "../../update/request/path/path";
 import Method from "../method/method";
 import Validator from "../../../../validator/validator";
-import Id from "../../../../id/id";
+import Body from "../request/body/body";
 
-export default interface Route extends Path, Validator<Id>, Method {
+
+export default interface Route extends Path, Validator<Body>, Method {
 
 }

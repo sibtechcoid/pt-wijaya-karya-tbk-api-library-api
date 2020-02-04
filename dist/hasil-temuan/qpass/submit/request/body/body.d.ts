@@ -1,3 +1,5 @@
+import LevelType from "../../../../level/type/type";
 export default interface Body {
-    id: number;
+    audit: number;
+    tipe: LevelType;
 }

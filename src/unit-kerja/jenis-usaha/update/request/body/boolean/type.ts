@@ -2,8 +2,8 @@ import TypeNama from "../../../../../../nama/update/boolean/type";
 import TypeSingkatan from "../../../../../../singkatan/update/boolean/type";
 import Body from "../body";
 import TypeId from "../../../../../../id/boolean/type";
-import IsFinite from "@dikac/t-number/boolean/finite";
 import Undefinable from "@dikac/t-undefined/boolean/undefinable";
+import Positive from "@dikac/t-number/boolean/positive";
 
 export default function Type<Extended extends Body = Body>(value : any) : value is Extended {
 
@@ -22,7 +22,7 @@ export default function Type<Extended extends Body = Body>(value : any) : value 
         return false;
     }
 
-    if(!Undefinable(value.jenisUnit, IsFinite)) {
+    if(!Undefinable(value.jenisUnit, Positive)) {
 
         return false;
     }

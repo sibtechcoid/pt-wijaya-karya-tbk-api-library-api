@@ -1,9 +1,9 @@
 import TypeInterface from "../body";
 import NotNull from "@dikac/t-object/boolean/type";
 import ArrayOf from "@dikac/t-array/boolean/array-of";
-import TypeNumber from "@dikac/t-number/boolean/finite";
 import TypeDateCompatible from "@dikac/t-date/boolean/compatible";
 import Structure, {Validator} from "@dikac/t-object/boolean/structure";
+import Positive from "@dikac/t-number/boolean/positive";
 
 export default function Type<Extended extends TypeInterface = TypeInterface>(value : any) : value is Extended {
 
@@ -13,12 +13,12 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
     }
 
     let create : Validator<Required<TypeInterface>> = {
-        auditor : (v) => ArrayOf(v, TypeNumber),
-        audit : TypeNumber,
-        level : TypeNumber,
+        auditor : (v) => ArrayOf(v, Positive),
+        audit : Positive,
+        level : Positive,
         selesai : TypeDateCompatible,
         mulai : TypeDateCompatible,
-        fungsi : (v) => ArrayOf(v, TypeNumber)
+        fungsi : (v) => ArrayOf(v, Positive)
     };
 
     return Structure(value, create);

@@ -2,9 +2,9 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const type_1 = require("@dikac/t-object/boolean/type");
 const type_2 = require("@dikac/t-string/boolean/type");
-const finite_1 = require("@dikac/t-number/boolean/finite");
 const type_3 = require("../../../../../id/boolean/type");
 const array_of_1 = require("@dikac/t-array/boolean/array-of");
+const positive_1 = require("@dikac/t-number/boolean/positive");
 function Type(value) {
     if (!type_1.default(value)) {
         return false;
@@ -18,7 +18,7 @@ function Type(value) {
         }
     }
     if (value.audit !== undefined) {
-        if (!array_of_1.default(value.audit, finite_1.default)) {
+        if (!array_of_1.default(value.audit, positive_1.default)) {
             return false;
         }
     }

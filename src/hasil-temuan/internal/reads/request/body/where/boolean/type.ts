@@ -3,7 +3,7 @@ import Where from "../where";
 import BooleanType from "@dikac/t-boolean/type";
 import Structure, {Validator} from "@dikac/t-object/boolean/structure";
 import Undefinable from "@dikac/t-undefined/boolean/undefinable";
-import TypeNumber from "@dikac/t-number/boolean/finite";
+import Positive from "@dikac/t-number/boolean/positive";
 
 
 export default function
@@ -15,7 +15,7 @@ export default function
     }
 
     let sort : Validator<Required<Where>> = {
-        jadwalRinci: (v) => Undefinable(v, TypeNumber),
+        jadwalRinci: (v) => Undefinable(v, Positive),
         deactivate : (v) => Undefinable(v, BooleanType)
     };
 

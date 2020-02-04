@@ -1,6 +1,6 @@
 import Member from "../member";
 import TypeObject from "@dikac/t-object/boolean/type";
-import IsNumber from "@dikac/t-number/boolean/finite";
+import Positive from "@dikac/t-number/boolean/positive";
 
 export default function Type<Extended extends Member = Member>(value : any) : value is Extended {
 
@@ -9,12 +9,12 @@ export default function Type<Extended extends Member = Member>(value : any) : va
         return false;
     }
 
-    if(!IsNumber(value.user)) {
+    if(!Positive(value.user)) {
 
         return false;
     }
 
-    if(!IsNumber(value.jabatan)) {
+    if(!Positive(value.jabatan)) {
 
         return false;
     }

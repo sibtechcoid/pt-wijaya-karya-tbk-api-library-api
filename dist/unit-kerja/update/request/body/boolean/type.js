@@ -6,6 +6,7 @@ const finite_1 = require("@dikac/t-number/boolean/finite");
 const type_3 = require("../../../../../nama/update/boolean/type");
 const type_4 = require("../../../../../singkatan/update/boolean/type");
 const type_5 = require("../../../../../id/boolean/type");
+const positive_1 = require("@dikac/t-number/boolean/positive");
 function Type(value) {
     if (!type_1.default(value)) {
         return false;
@@ -30,12 +31,12 @@ function Type(value) {
         }
     }
     if (value.jenisUnit !== undefined) {
-        if (!finite_1.default(value.jenisUnit)) {
+        if (!positive_1.default(value.jenisUnit)) {
             return false;
         }
     }
     if (value.jenisUsaha !== undefined) {
-        if (!finite_1.default(value.jenisUsaha)) {
+        if (!positive_1.default(value.jenisUsaha)) {
             return false;
         }
     }

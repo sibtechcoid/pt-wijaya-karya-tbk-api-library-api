@@ -3,8 +3,8 @@ import Where from "../where";
 import BooleanType from "@dikac/t-boolean/type";
 import Structure, {Validator} from "@dikac/t-object/boolean/structure";
 import Undefinable from "@dikac/t-undefined/boolean/undefinable";
-import Infinite from "@dikac/t-number/boolean/infinite";
 import Compatible from "@dikac/t-date/boolean/compatible";
+import Positive from "@dikac/t-number/boolean/positive";
 
 
 export default function
@@ -17,7 +17,7 @@ export default function
 
     let sort : Validator<Required<Where>> = {
         mulai: (v) => Undefinable(v, Compatible),
-        audit: (v) => Undefinable(v, Infinite),
+        audit: (v) => Undefinable(v, Positive),
         selesai: (v) => Undefinable(v, Compatible),
         deactivate : (v) => Undefinable(v, BooleanType)
     };

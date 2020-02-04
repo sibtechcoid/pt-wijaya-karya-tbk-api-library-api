@@ -46,8 +46,8 @@ import HasilTemuanQpassAccess from "../../../../hasil-temuan-qpass/akses";
 import HasilTemuanInternalAccess from "../../../../hasil-temuan-internal/akses";
 import HasilTemuanKriteriaAccess from "../../../../hasil-temuan-kriteria/akses";
 import HasilTemuanLevelAccess from "../../../../hasil-temuan-level/akses";
-import TypeNumber from "@dikac/t-number/boolean/finite";
 import Undefinable from "@dikac/t-undefined/boolean/undefinable";
+import Positive from "@dikac/t-number/boolean/positive";
 
 export default function Type(value : any) : value is Body {
 
@@ -57,7 +57,7 @@ export default function Type(value : any) : value is Body {
     }
 
     let sort : Validator<Required<Body>> = {
-        id : TypeNumber,
+        id : Positive,
         suratTugas            : (v)=>Undefinable(v,(v) : v is SuratTugasAccess[]           => ArrayOf(v, SuratTugasType)),
         user                  : (v)=>Undefinable(v,(v) : v is UserAksesAccess[]            => ArrayOf(v, UserAksesType)),
         jabatan               : (v)=>Undefinable(v,(v) : v is JabatanAccess[]              => ArrayOf(v, JabatanType)),

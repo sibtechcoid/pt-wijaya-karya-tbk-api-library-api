@@ -1,7 +1,7 @@
 import TypeInterface from "../hasil";
 import NotNull from "@dikac/t-object/boolean/type";
 import Structure, {Validator} from "@dikac/t-object/boolean/structure";
-import TypeNumber from "@dikac/t-number/boolean/finite";
+import Positive from "@dikac/t-number/boolean/positive";
 
 export default function Type<Extended extends TypeInterface = TypeInterface>(value : any) : value is Extended {
 
@@ -11,8 +11,8 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
     }
 
     let sort : Validator<Required<TypeInterface>> = {
-        level: TypeNumber,
-        hasil : TypeNumber,
+        level: Positive,
+        hasil : Positive,
     };
 
     return Structure(value, sort);

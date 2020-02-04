@@ -1,4 +1,3 @@
-
 import NotNull from "@dikac/t-object/boolean/type";
 import IsString from "@dikac/t-string/boolean/type";
 import TypeNumber from "@dikac/t-number/boolean/finite";

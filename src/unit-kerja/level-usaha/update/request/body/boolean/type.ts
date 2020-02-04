@@ -1,6 +1,6 @@
 import Level from "../body";
 import InternalType from "../../../../../jenis-unit/update/request/body/boolean/type";
-import IsFinite from "@dikac/t-number/boolean/finite";
+import Positive from "@dikac/t-number/boolean/positive";
 
 export default function Type(value : any) : value is Level {
 
@@ -11,7 +11,7 @@ export default function Type(value : any) : value is Level {
 
     if(value.jenisUnit !== undefined) {
 
-        if(!IsFinite(value.jenisUnit)) {
+        if(!Positive(value.jenisUnit)) {
 
             return false;
         }

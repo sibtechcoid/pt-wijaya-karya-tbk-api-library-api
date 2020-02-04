@@ -2,7 +2,6 @@ import Request from './request';
 import CreatBody from "../../../../body/create";
 import Path from "../../update/request/path/create";
 import ReadCreate from "../../../../method/read-create";
-import Id from "../../../../id/id";
 import Body from "./body/body";
 
 export default function Create(body : Body) : Request {

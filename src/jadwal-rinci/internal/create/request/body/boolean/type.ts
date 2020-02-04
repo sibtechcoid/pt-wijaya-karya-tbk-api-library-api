@@ -4,6 +4,7 @@ import ArrayOf from "@dikac/t-array/boolean/array-of";
 import TypeNumber from "@dikac/t-number/boolean/finite";
 import TypeDateCompatible from "@dikac/t-date/boolean/compatible";
 import Structure, {Validator} from "@dikac/t-object/boolean/structure";
+import Positive from "@dikac/t-number/boolean/positive";
 
 export default function Type<Extended extends TypeInterface = TypeInterface>(value : any) : value is Extended {
 
@@ -17,11 +18,11 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
         audit : TypeNumber,
         selesai : TypeDateCompatible,
         mulai : TypeDateCompatible,
-        fungsi : (v) => ArrayOf(v, TypeNumber),
-        prosedur : (v) => ArrayOf(v, TypeNumber),
+        fungsi : (v) => ArrayOf(v, Positive),
+        prosedur : (v) => ArrayOf(v, Positive),
         prosesBisnis : TypeNumber,
-        klausul : (v) => ArrayOf(v, TypeNumber),
-        auditor : (v) => ArrayOf(v, TypeNumber),
+        klausul : (v) => ArrayOf(v, Positive),
+        auditor : (v) => ArrayOf(v, Positive),
 
     };
 

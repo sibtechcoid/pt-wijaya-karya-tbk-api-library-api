@@ -2,7 +2,7 @@ import TypeInterface from "../body";
 import NotNull from "@dikac/t-object/boolean/type";
 import TypeNama from "../../../../../../nama/create/boolean/type";
 import TypeSingkatan from "../../../../../../singkatan/create/boolean/type";
-import IsFinite from "@dikac/t-number/boolean/finite";
+import Positive from "@dikac/t-number/boolean/positive";
 
 export default function Type<Extended extends TypeInterface = TypeInterface>(value : any) : value is Extended {
 
@@ -11,7 +11,7 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
         return false;
     }
 
-    if(!IsFinite(value.jenisUnit)) {
+    if(!Positive(value.jenisUnit)) {
 
         return false;
     }

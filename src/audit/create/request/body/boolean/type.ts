@@ -4,9 +4,9 @@ import IsEnum from "@dikac/t-enum/boolean/type";
 import Status from "../../../../status/status";
 import TypeType from "../../../../type/type";
 import ScheduleType from "../../../../../jadwal/create/request/body/boolean/type";
-import IsNumber from "@dikac/t-number/boolean/finite";
 import ArrayOf from "@dikac/t-array/boolean/array-of";
 import TypeMember from "../../../../../anggota/create/request/body/boolean/type";
+import Positive from "@dikac/t-number/boolean/positive";
 
 export default function Type<Extended extends TypeInterface = TypeInterface>(value : any) : value is Extended {
 
@@ -20,7 +20,7 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
         return false;
     }
 
-    if(!IsNumber(value.unitKerja)) {
+    if(!Positive(value.unitKerja)) {
 
         return false;
     }

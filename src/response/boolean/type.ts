@@ -1,8 +1,8 @@
 import NotNull from "@dikac/t-object/boolean/type";
-import Finite from "@dikac/t-number/boolean/finite";
 import Code from "../../code/code";
 import Message from "../../message/message";
 import StringType from "@dikac/t-string/boolean/type";
+import Positive from "@dikac/t-number/boolean/positive";
 
 export default function Type<Extended extends Code<number> & Message = Code<number> & Message>(value : any) : value is Extended {
 
@@ -11,7 +11,7 @@ export default function Type<Extended extends Code<number> & Message = Code<numb
         return false;
     }
 
-    if(!Finite(value.code)) {
+    if(!Positive(value.code)) {
 
         return false;
     }

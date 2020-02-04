@@ -25,14 +25,14 @@ const type_20 = require("../../../../hasil-temuan-qpass/boolean/type");
 const type_21 = require("../../../../hasil-temuan-internal/boolean/type");
 const type_22 = require("../../../../hasil-temuan-kriteria/boolean/type");
 const type_23 = require("../../../../hasil-temuan-level/boolean/type");
-const finite_1 = require("@dikac/t-number/boolean/finite");
 const undefinable_1 = require("@dikac/t-undefined/boolean/undefinable");
+const positive_1 = require("@dikac/t-number/boolean/positive");
 function Type(value) {
     if (!type_1.default(value)) {
         return false;
     }
     let sort = {
-        id: finite_1.default,
+        id: positive_1.default,
         suratTugas: (v) => undefinable_1.default(v, (v) => array_of_1.default(v, type_2.default)),
         user: (v) => undefinable_1.default(v, (v) => array_of_1.default(v, type_3.default)),
         jabatan: (v) => undefinable_1.default(v, (v) => array_of_1.default(v, type_4.default)),

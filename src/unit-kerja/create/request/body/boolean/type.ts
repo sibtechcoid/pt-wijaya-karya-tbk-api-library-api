@@ -1,10 +1,10 @@
 import TypeInterface from "../body";
 import NotNull from "@dikac/t-object/boolean/type";
 import IsString from "@dikac/t-string/boolean/type";
-import IsNumber from "@dikac/t-number/boolean/finite";
 import TypeNama from "../../../../../nama/create/boolean/type";
 import TypeSingkatan from "../../../../../singkatan/create/boolean/type";
 import Nullable from "@dikac/t-null/boolean/nullable";
+import Positive from "@dikac/t-number/boolean/positive";
 
 export default function Type<Extended extends TypeInterface = TypeInterface>(value : any) : value is Extended {
 
@@ -28,17 +28,17 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
         return false;
     }
 
-    if(!IsNumber(value.jenisUsaha)) {
+    if(!Positive(value.jenisUsaha)) {
 
         return false;
     }
 
-    if(!Nullable(value.levelUsaha, IsNumber)) {
+    if(!Nullable(value.levelUsaha, Positive)) {
 
         return false;
     }
 
-    if(!IsNumber(value.jenisUnit)) {
+    if(!Positive(value.jenisUnit)) {
 
         return false;
     }

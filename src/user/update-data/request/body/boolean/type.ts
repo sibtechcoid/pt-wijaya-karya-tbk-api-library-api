@@ -1,8 +1,9 @@
 import TypeInterface from "../body";
 import TypeNumber from "@dikac/t-number/boolean/finite";
 import ProfileType from "../../../../update-profile/request/body/boolean/type";
+import Positive from "@dikac/t-number/boolean/positive";
 
-export default function Typez<Extended extends TypeInterface = TypeInterface>(value : any) : value is Extended {
+export default function Type<Extended extends TypeInterface = TypeInterface>(value : any) : value is Extended {
 
     if(!ProfileType<Extended>(value)) {
 
@@ -17,7 +18,7 @@ export default function Typez<Extended extends TypeInterface = TypeInterface>(va
         }
     }
 
-    if(!TypeNumber(value.id)) {
+    if(!Positive(value.id)) {
 
         return false;
     }

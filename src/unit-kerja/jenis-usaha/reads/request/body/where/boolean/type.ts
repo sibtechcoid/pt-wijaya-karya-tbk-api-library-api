@@ -2,9 +2,9 @@ import NotNull from "@dikac/t-object/boolean/type";
 import Where from "../where";
 import StringType from "@dikac/t-string/boolean/type";
 import BooleanType from "@dikac/t-boolean/type";
-import NumberType from "@dikac/t-number/boolean/finite";
 import Structure, {Validator} from "@dikac/t-object/boolean/structure";
 import Undefinable from "@dikac/t-undefined/boolean/undefinable";
+import Positive from "@dikac/t-number/boolean/positive";
 
 
 export default function
@@ -19,7 +19,7 @@ export default function
         deactivate : (v) => Undefinable(v, BooleanType),
         nama    : (v) => Undefinable(v, StringType),
         singkatan    : (v) => Undefinable(v, StringType),
-        jenisUnit    : (v) => Undefinable(v, NumberType),
+        jenisUnit    : (v) => Undefinable(v, Positive),
     };
 
     return Structure(value, sort);

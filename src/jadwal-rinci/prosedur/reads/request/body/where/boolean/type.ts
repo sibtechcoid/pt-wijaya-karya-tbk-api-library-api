@@ -2,9 +2,9 @@ import NotNull from "@dikac/t-object/boolean/type";
 import Where from "../where";
 import StringType from "@dikac/t-string/boolean/type";
 import BooleanType from "@dikac/t-boolean/type";
-import FiniteType from "@dikac/t-number/boolean/finite";
 import Structure, {Validator} from "@dikac/t-object/boolean/structure";
 import Undefinable from "@dikac/t-undefined/boolean/undefinable";
+import Positive from "@dikac/t-number/boolean/positive";
 
 
 export default function
@@ -16,7 +16,7 @@ export default function
     }
 
     let sort : Validator<Required<Where>> = {
-        prosesBisnis    : (v) => Undefinable(v, FiniteType),
+        prosesBisnis    : (v) => Undefinable(v, Positive),
         deactivate : (v) => Undefinable(v, BooleanType),
         nama    : (v) => Undefinable(v, StringType),
     };

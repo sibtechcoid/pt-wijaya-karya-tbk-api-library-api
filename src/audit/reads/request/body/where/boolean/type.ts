@@ -1,5 +1,4 @@
 import NotNull from "@dikac/t-object/boolean/type";
-import TypeNumber from "@dikac/t-number/boolean/finite";
 import DeactivatedType from "../../../../../../deactivate/read/request/body/boolean/type";
 import Where from "../where";
 import EnumType from "@dikac/t-enum/boolean/type";
@@ -7,6 +6,7 @@ import Status from "../../../../../status/status";
 import ArrayOf from "@dikac/t-array/boolean/array-of";
 import TypeDateCompatible from "@dikac/t-date/boolean/compatible";
 import AuditType from "../../../../../type/type";
+import Positive from "@dikac/t-number/boolean/positive";
 
 export default function
     Type<Extended extends Where = Where>(value : any
@@ -24,7 +24,7 @@ export default function
 
     if(value.unitKerja !== undefined) {
 
-        if(!TypeNumber(value.unitKerja)) {
+        if(!Positive(value.unitKerja)) {
 
             return false;
         }

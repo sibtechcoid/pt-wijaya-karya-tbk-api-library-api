@@ -5,9 +5,9 @@ const type_2 = require("@dikac/t-enum/boolean/type");
 const status_1 = require("../../../../status/status");
 const type_3 = require("../../../../type/type");
 const type_4 = require("../../../../../jadwal/create/request/body/boolean/type");
-const finite_1 = require("@dikac/t-number/boolean/finite");
 const array_of_1 = require("@dikac/t-array/boolean/array-of");
 const type_5 = require("../../../../../anggota/create/request/body/boolean/type");
+const positive_1 = require("@dikac/t-number/boolean/positive");
 function Type(value) {
     if (!type_1.default(value)) {
         return false;
@@ -15,7 +15,7 @@ function Type(value) {
     if (!type_4.default(value)) {
         return false;
     }
-    if (!finite_1.default(value.unitKerja)) {
+    if (!positive_1.default(value.unitKerja)) {
         return false;
     }
     if (!array_of_1.default(value.anggota, type_5.default)) {

@@ -5,6 +5,7 @@ import IsNumber from "@dikac/t-number/boolean/finite";
 import TypeNama from "../../../../../nama/update/boolean/type";
 import TypeSingkatan from "../../../../../singkatan/update/boolean/type";
 import TypeId from "../../../../../id/boolean/type";
+import Positive from "@dikac/t-number/boolean/positive";
 
 export default function Type<Extended extends TypeInterface = TypeInterface>(value : any) : value is Extended {
 
@@ -47,7 +48,7 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
 
     if(value.jenisUnit !== undefined) {
 
-        if(!IsNumber(value.jenisUnit)) {
+        if(!Positive(value.jenisUnit)) {
 
             return false;
         }
@@ -55,7 +56,7 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
 
     if(value.jenisUsaha !== undefined) {
 
-        if(!IsNumber(value.jenisUsaha)) {
+        if(!Positive(value.jenisUsaha)) {
 
             return false;
         }

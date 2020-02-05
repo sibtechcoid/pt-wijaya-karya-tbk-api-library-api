@@ -5,7 +5,7 @@ import Standard from "../../../method/standard";
 import Type from "../../../method/type/type";
 import Body from "./body/body";
 
-export default function Create(body : Body) : Request {
+export default function Create(path : string) : Request {
 
-    return Object.assign(new Standard(Type.GET), Path(), new CreatBody<Body>(body))
+    return Object.assign(new Standard(Type.GET), Path(path), new CreatBody<undefined>(undefined))
 }

@@ -7,5 +7,5 @@ import Type from "../request/body/boolean/type";
 
 export default function Create () : Route {
 
-    return CreateRoute(new Standard(MethodType.GET), Path(), Type);
+    return CreateRoute(new Standard(MethodType.GET), Path(''), (v) : v is undefined => true);
 }

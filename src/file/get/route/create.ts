@@ -3,7 +3,6 @@ import Path from "../request/path/create";
 import CreateRoute from "../../../route/create";
 import Standard from "../../../method/standard";
 import MethodType from "../../../method/type/type";
-import Type from "../request/body/boolean/type";
 
 export default function Create () : Route {
 

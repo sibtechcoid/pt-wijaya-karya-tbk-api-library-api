@@ -9,7 +9,7 @@ import User from "../../../../../user/read/response/body/body";
 
 export default interface Body extends Record, Id  {
 
-    audit: Omit<Audit, 'unitKerja'|'penyetuju'|'penolakan'|'anggota'>;
+    audit: Omit<Audit, 'unitKerja'|'penyetuju'|'penolakan'|'anggota'|'suratTugas'>;
     selesai  : Date|string;
     mulai  : Date|string;
     fungsi : Fungsi[];

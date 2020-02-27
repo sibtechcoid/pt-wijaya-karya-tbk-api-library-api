@@ -1,14 +1,7 @@
-import UnitKerja from "../../../../unit-kerja/read/response/body/body";
 import Member from "../../../../anggota/read/response/body/body";
-import AuditStatus from "../../../status/status";
 import Type from "../../../type/type";
-import Deactivate from "../../../../deactivate/read/response/body/body";
-import Id from "../../../../id/id";
-import Schedule from "../../../../jadwal/read/response/body/body";
-import Record from "../../../../record/record";
-export default interface Body extends Deactivate, Id, Schedule, Record {
-    status: AuditStatus;
-    unitKerja: UnitKerja;
+import Read from "../../../read/response/body/body";
+export default interface Body extends Omit<Read, 'anggota' | 'penyetuju' | 'penolakan' | 'suratTugas'> {
     anggota: Omit<Member, 'akses'>[];
     tipe: Type;
 }

@@ -1,4 +1,4 @@
 import Success from "../../../response/success";
-import Jumlah from "../../../jumlah/jumlah";
-declare type Response = Success<Jumlah>;
+import Body from "./body/body";
+declare type Response = Success<Body>;
 export default Response;

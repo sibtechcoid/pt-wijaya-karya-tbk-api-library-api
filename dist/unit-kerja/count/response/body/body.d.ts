@@ -1,3 +1,3 @@
-import Where from "../../../reads/request/body/where/where";
-export default interface Body extends Where {
+import Jumlah from "../../../../jumlah/jumlah";
+export default interface Body extends Jumlah {
 }

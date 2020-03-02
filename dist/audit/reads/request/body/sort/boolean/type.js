@@ -7,6 +7,7 @@ const array_of_1 = require("@dikac/t-array/boolean/array-of");
 function Type(value) {
     let sort = {
         created: (v) => undefinable_1.default(v, type_1.default),
+        fase: (v) => undefinable_1.default(v, type_1.default),
         deactivate: (v) => undefinable_1.default(v, type_1.default),
         id: (v) => undefinable_1.default(v, type_1.default),
         rencana: (v) => undefinable_1.default(v, (v) => array_of_1.default(v, type_1.default)),

@@ -9,6 +9,7 @@ import Record from "../../../../record/record";
 import User from "../../../../user/reads/response/body/body";
 import Penolakan from "../penolakan/penolakan";
 import SuratTugas from "../../../../surat-tugas/read/response/body/body";
+import Fase from "../../../fase/fase";
 export default interface Body extends Deactivate, Id, Schedule, Record {
     status: AuditStatus;
     unitKerja: Object;
@@ -17,4 +18,5 @@ export default interface Body extends Deactivate, Id, Schedule, Record {
     penyetuju: Omit<User, 'extraAkses' | 'jabatan' | 'akses'> | null;
     penolakan: Penolakan[];
     suratTugas: null | Omit<SuratTugas, 'audit' | 'lampiran'>;
+    fase: Fase;
 }

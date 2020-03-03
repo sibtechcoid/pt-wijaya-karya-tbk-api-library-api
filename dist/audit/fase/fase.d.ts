@@ -1,6 +1,7 @@
 declare enum Fase {
     AUDIT = "AUDIT",
-    JADWAL_RINCI = "JADWAL_RINCI",
-    HASIL_TEMUAN = "HASIL_TEMUAN"
+    JADWAL = "JADWAL",
+    TEMUAN = "TEMUAN",
+    PERBAIKAN = "PERBAIKAN"
 }
 export default Fase;

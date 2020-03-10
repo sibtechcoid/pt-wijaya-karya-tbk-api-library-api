@@ -24,6 +24,7 @@ export default function Type<
         audit      : (v) => Undefinable(v, ModeType),
         mulai      : (v) => Undefinable(v, ModeType),
         level      : (v) => Undefinable(v, ModeType),
+        deactivate      : (v) => Undefinable(v, ModeType),
     };
 
     return Structure(value, sort);

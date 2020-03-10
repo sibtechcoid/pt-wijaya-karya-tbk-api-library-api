@@ -9,6 +9,7 @@ function Type(value) {
         return false;
     }
     let sort = {
+        deactivate: (v) => undefinable_1.default(v, type_1.default),
         created: (v) => undefinable_1.default(v, type_1.default),
         id: (v) => undefinable_1.default(v, type_1.default),
         updated: (v) => undefinable_1.default(v, type_1.default),

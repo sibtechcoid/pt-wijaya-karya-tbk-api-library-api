@@ -1,6 +1,6 @@
 import Record from "../../../../../record/record";
 import Id from "../../../../../id/id";
-import Level from "../../../../level/read/response/body/body";
+import Level from "../../../../../hasil-temuan/level/read/response/body/body";
 import Fungsi from "../../../../fungsi/read/response/body/body";
 import Audit from "../../../../../audit/read/response/body/body";
 import User from "../../../../../user/read/response/body/body";

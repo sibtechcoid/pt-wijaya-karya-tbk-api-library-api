@@ -15,8 +15,6 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
     let sort : Validator<Required<TypeInterface>> = {
 
         audit : Positive,
-        tipe : (v)=>TypeEnum(v, LevelType),
-
     };
 
     return Structure(value, sort);

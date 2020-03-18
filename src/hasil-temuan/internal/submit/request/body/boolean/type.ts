@@ -12,7 +12,7 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
 
     let sort : Validator<Required<TypeInterface>> = {
 
-        id : Positive,
+        audit : Positive,
 
     };
 

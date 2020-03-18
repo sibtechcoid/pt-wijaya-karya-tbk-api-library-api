@@ -8,7 +8,7 @@ function Type(value) {
         return false;
     }
     let sort = {
-        id: positive_1.default,
+        audit: positive_1.default,
     };
     return structure_1.default(value, sort);
 }

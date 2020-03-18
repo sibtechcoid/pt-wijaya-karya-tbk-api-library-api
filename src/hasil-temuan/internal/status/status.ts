@@ -1,6 +1,6 @@
 enum Status {
     REJECT = "REJECT",
-    DRAFT = 'DRAFT',
+    //DRAFT = 'DRAFT',
     APPROVE = 'APPROVE',
     WAITING = 'WAITING',
 }

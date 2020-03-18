@@ -23,7 +23,8 @@ export default function Type<
         selesai    : (v) => Undefinable(v, ModeType),
         audit      : (v) => Undefinable(v, ModeType),
         mulai      : (v) => Undefinable(v, ModeType),
-        pelaksanaan: (v) => Undefinable(v, ModeType),
+        pembuatan  : (v) => Undefinable(v, ModeType),
+        submit     : (v) => Undefinable(v, ModeType),
     };
 
     return Structure(value, sort);

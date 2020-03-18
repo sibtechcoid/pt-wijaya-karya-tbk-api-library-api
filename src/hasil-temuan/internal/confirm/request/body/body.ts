@@ -1,3 +1,3 @@
 export default interface Body {
-    jadwalRinci: number;
+    audit : number;
 }

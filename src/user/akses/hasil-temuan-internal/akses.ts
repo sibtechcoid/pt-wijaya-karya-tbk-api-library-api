@@ -3,8 +3,9 @@ enum Akses  {
     UPDATE = 'UPDATE',
     DELETE  = 'DELETE',
     READ  = 'READ',
-    APROOVE  = 'APROOVE',
+    APPROVE  = 'APPROVE',
     SUBMIT  = 'SUBMIT',
+    CONFIRM  = 'CONFIRM',
 }
 
 export default  Akses;

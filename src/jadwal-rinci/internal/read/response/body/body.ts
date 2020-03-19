@@ -7,7 +7,7 @@ import Klausul from "../../../../klausul/read/response/body/body";
 import Audit from "../../../../../audit/read/response/body/body";
 import User from "../../../../../user/read/response/body/body";
 import Deactivate from "../../../../../deactivate/read/response/body/body";
-import Pembuatan from "../../../pembuatan/pembuatan";
+import Status from "../../../status/status";
 
 export default interface Body extends Record, Id, Deactivate  {
 
@@ -20,11 +20,6 @@ export default interface Body extends Record, Id, Deactivate  {
     klausul : Omit<Klausul,'auditProgram'>[];
     auditor : Omit<User,'extraAkses'|'akses'|'jabatan'>[];
     pelaksanaan : boolean;
-    //pembuatan : Pembuatan;
-
-    // /**
-    //  * approved in hasil temuan
-    //  */
-    // approved : boolean;
+    status : Status;
 
 }

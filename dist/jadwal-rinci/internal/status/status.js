@@ -5,11 +5,10 @@ var Status;
     /**
      * status awal
      */
-    Status["JADWAL"] = "JADWAL";
+    Status["WAITING"] = "WAITING";
     /**
-     * di approve
+     * di approve di hasil temuan
      */
-    Status["TEMUAN"] = "TEMUAN";
-    Status["PERBAIKAN"] = "PERBAIKAN";
+    Status["APPROVE"] = "APPROVE";
 })(Status || (Status = {}));
 exports.default = Status;

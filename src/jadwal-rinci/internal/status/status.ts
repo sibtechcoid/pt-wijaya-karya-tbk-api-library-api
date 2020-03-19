@@ -1,11 +1,14 @@
-declare enum Status {
+enum Status {
     /**
      * status awal
      */
     WAITING = "WAITING",
+
     /**
      * di approve di hasil temuan
      */
-    APPROVE = "APPROVE"
+    APPROVE = "APPROVE",
+
 }
+
 export default Status;

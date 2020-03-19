@@ -16,15 +16,15 @@ export default function Type<
     }
 
     let sort : Validator<Required<Sort>> = {
-        deactivate : (v) => Undefinable(v, ModeType),
-        created    : (v) => Undefinable(v, ModeType),
-        id         : (v) => Undefinable(v, ModeType),
-        updated    : (v) => Undefinable(v, ModeType),
-        selesai    : (v) => Undefinable(v, ModeType),
-        audit      : (v) => Undefinable(v, ModeType),
-        mulai      : (v) => Undefinable(v, ModeType),
-        pelaksanaan: (v) => Undefinable(v, ModeType),
-       // approved   : (v) => Undefinable(v, ModeType),
+        deactivate  : (v) => Undefinable(v, ModeType),
+        created     : (v) => Undefinable(v, ModeType),
+        id          : (v) => Undefinable(v, ModeType),
+        updated     : (v) => Undefinable(v, ModeType),
+        selesai     : (v) => Undefinable(v, ModeType),
+        audit       : (v) => Undefinable(v, ModeType),
+        mulai       : (v) => Undefinable(v, ModeType),
+        pelaksanaan : (v) => Undefinable(v, ModeType),
+        status      : (v) => Undefinable(v, ModeType),
     };
 
     return Structure(value, sort);

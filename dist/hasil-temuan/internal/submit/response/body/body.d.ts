@@ -1,3 +1,5 @@
-import ReadBody from "../../../read/response/body/body";
-export default interface Body extends ReadBody {
+import ReadBody from "../../../../../jadwal-rinci/internal/read/response/body/body";
+import Record from "../../../../../record/record";
+import Id from "../../../../../id/id";
+export default interface Body extends Pick<ReadBody, 'status' | keyof Record | keyof Id> {
 }

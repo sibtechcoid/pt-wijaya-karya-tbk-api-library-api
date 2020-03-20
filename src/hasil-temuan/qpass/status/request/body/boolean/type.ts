@@ -1,8 +1,6 @@
 import TypeInterface from "../body";
 import NotNull from "@dikac/t-object/boolean/type";
-import TypeEnum from "@dikac/t-enum/boolean/type";
 import Structure, {Validator} from "@dikac/t-object/boolean/structure";
-import LevelType from "../../../../../level/type/type";
 import Positive from "@dikac/t-number/boolean/positive";
 
 export default function Type<Extended extends TypeInterface = TypeInterface>(value : any) : value is Extended {

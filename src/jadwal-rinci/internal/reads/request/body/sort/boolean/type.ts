@@ -24,7 +24,7 @@ export default function Type<
         audit       : (v) => Undefinable(v, ModeType),
         mulai       : (v) => Undefinable(v, ModeType),
         pelaksanaan : (v) => Undefinable(v, ModeType),
-        status      : (v) => Undefinable(v, ModeType),
+        diselesaikan: (v) => Undefinable(v, ModeType),
     };
 
     return Structure(value, sort);

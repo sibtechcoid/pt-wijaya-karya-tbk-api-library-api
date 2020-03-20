@@ -20,6 +20,6 @@ export default interface Body extends Record, Id, Deactivate  {
     klausul : Omit<Klausul,'auditProgram'>[];
     auditor : Omit<User,'extraAkses'|'akses'|'jabatan'>[];
     pelaksanaan : boolean;
-    status : Status;
+    diselesaikan : boolean;
 
 }

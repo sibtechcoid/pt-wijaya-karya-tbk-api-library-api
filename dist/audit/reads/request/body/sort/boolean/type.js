@@ -13,6 +13,7 @@ function Type(value) {
         rencana: (v) => undefinable_1.default(v, (v) => array_of_1.default(v, type_1.default)),
         realisasi: (v) => undefinable_1.default(v, (v) => array_of_1.default(v, type_1.default)),
         updated: (v) => undefinable_1.default(v, type_1.default),
+        suratTugas: (v) => undefinable_1.default(v, type_1.default),
         tipe: (v) => undefinable_1.default(v, type_1.default),
     };
     return structure_1.default(value, sort);

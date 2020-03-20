@@ -19,6 +19,7 @@ export default function Type<
         rencana       : (v) => Undefinable(v, (v) : v is Mode =>ArrayOf(v, ModeType)),
         realisasi    : (v) => Undefinable(v, (v) : v is Mode =>ArrayOf(v, ModeType)),
         updated    : (v) => Undefinable(v, ModeType),
+        suratTugas    : (v) => Undefinable(v, ModeType),
         tipe    : (v) => Undefinable(v, ModeType),
     };
 

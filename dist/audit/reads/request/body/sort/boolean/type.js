@@ -15,6 +15,7 @@ function Type(value) {
         updated: (v) => undefinable_1.default(v, type_1.default),
         suratTugas: (v) => undefinable_1.default(v, type_1.default),
         tipe: (v) => undefinable_1.default(v, type_1.default),
+        perbaikan: (v) => undefinable_1.default(v, type_1.default),
     };
     return structure_1.default(value, sort);
 }

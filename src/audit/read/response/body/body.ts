@@ -10,6 +10,7 @@ import User from "../../../../user/reads/response/body/body";
 import Penolakan from "../penolakan/penolakan";
 import SuratTugas from "../../../../surat-tugas/read/response/body/body";
 import Fase from "../../../fase/fase";
+import Perbaikan from "../../../perbaikan/perbaikan";
 
 export default interface Body extends Deactivate, Id, Schedule, Record  {
 
@@ -21,4 +22,5 @@ export default interface Body extends Deactivate, Id, Schedule, Record  {
     penolakan : Penolakan[]
     suratTugas : null|Omit<SuratTugas,'audit'| 'lampiran'>;
     fase : Fase;
+    perbaikan : null|Perbaikan;
 }

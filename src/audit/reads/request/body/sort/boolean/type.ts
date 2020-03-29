@@ -21,6 +21,7 @@ export default function Type<
         updated    : (v) => Undefinable(v, ModeType),
         suratTugas    : (v) => Undefinable(v, ModeType),
         tipe    : (v) => Undefinable(v, ModeType),
+        perbaikan    : (v) => Undefinable(v, ModeType),
     };
 
     return Structure(value, sort);

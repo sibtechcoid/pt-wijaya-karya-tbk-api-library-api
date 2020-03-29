@@ -1,5 +1,5 @@
 import Success from "../../../response/success";
-import audit from "./body/body";
+import Audit from "./body/body";
 
-type Response = Success<audit[]>;
+type Response = Success<Audit[]>;
 export default Response;

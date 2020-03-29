@@ -9,15 +9,9 @@ function Type(value) {
         return false;
     }
     let sort = {
-        // deactivate  : (v) => Undefinable(v, ModeType),
         created: (v) => undefinable_1.default(v, type_1.default),
         id: (v) => undefinable_1.default(v, type_1.default),
         updated: (v) => undefinable_1.default(v, type_1.default),
-        //  selesai     : (v) => Undefinable(v, ModeType),
-        //  audit       : (v) => Undefinable(v, ModeType),
-        //  mulai       : (v) => Undefinable(v, ModeType),
-        //  pelaksanaan : (v) => Undefinable(v, ModeType),
-        //  diselesaikan: (v) => Undefinable(v, ModeType),
         hasilTemuan: (v) => undefinable_1.default(v, type_1.default),
         faktor: (v) => undefinable_1.default(v, type_1.default),
         analisis: (v) => undefinable_1.default(v, type_1.default),
@@ -26,7 +20,7 @@ function Type(value) {
         perbaikan: (v) => undefinable_1.default(v, type_1.default),
         closing: (v) => undefinable_1.default(v, type_1.default),
         pic: (v) => undefinable_1.default(v, type_1.default),
-        prsedur: (v) => undefinable_1.default(v, type_1.default),
+        prosedur: (v) => undefinable_1.default(v, type_1.default),
         noPtka: (v) => undefinable_1.default(v, type_1.default),
         konsekuensi: (v) => undefinable_1.default(v, type_1.default),
         referensi: (v) => undefinable_1.default(v, type_1.default),

@@ -18,7 +18,7 @@ export default interface Body extends Record, Id {
     /**
      * PTKA
      */
-    prsedur: number;
+    prosedur: number;
     noPtka: null | string;
     konsekuensi: null | string;
     referensi: null | string;

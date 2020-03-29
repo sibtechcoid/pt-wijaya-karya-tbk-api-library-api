@@ -8,7 +8,7 @@ const positive_1 = require("@dikac/t-number/boolean/positive");
 const type_1 = require("@dikac/t-string/boolean/type");
 const type_2 = require("@dikac/t-enum/boolean/type");
 const tinjauan_1 = require("../../../../tinjauan/tinjauan");
-const keputusan_1 = require("../../../../keputusan/keputusan");
+const keputusan_1 = require("../../../../../keputusan/keputusan");
 const type_3 = require("@dikac/t-object/boolean/type");
 function Type(value) {
     if (!type_3.default(value)) {

@@ -10,7 +10,7 @@ const type_3 = require("@dikac/t-string/boolean/type");
 const tinjauan_1 = require("../../../../../tinjauan/tinjauan");
 const type_4 = require("@dikac/t-enum/boolean/type");
 const array_of_1 = require("@dikac/t-array/boolean/array-of");
-const keputusan_1 = require("../../../../../keputusan/keputusan");
+const keputusan_1 = require("../../../../../../keputusan/keputusan");
 function Type(value) {
     if (!type_1.default(value)) {
         return false;
@@ -46,10 +46,6 @@ function Type(value) {
          */
         ditutup: (v) => undefinable_1.default(v, type_2.default),
         catatan: (v) => undefinable_1.default(v, type_3.default),
-        /**
-         * submitted
-         */
-        submit: (v) => undefinable_1.default(v, type_2.default),
     };
     return structure_1.default(value, sort);
 }

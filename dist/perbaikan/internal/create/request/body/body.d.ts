@@ -1,5 +1,5 @@
 import Tinjauan from "../../../tinjauan/tinjauan";
-import Keputusan from "../../../keputusan/keputusan";
+import Keputusan from "../../../../keputusan/keputusan";
 export default interface Body {
     hasilTemuan: number;
     /**
@@ -26,8 +26,4 @@ export default interface Body {
      */
     ditutup: boolean;
     catatan: string;
-    /**
-     * submitted
-     */
-    submit: boolean;
 }

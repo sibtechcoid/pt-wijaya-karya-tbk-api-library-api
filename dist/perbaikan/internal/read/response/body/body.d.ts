@@ -1,4 +1,4 @@
-import Keputusan from "../../../../internal/keputusan/keputusan";
+import Keputusan from "../../../../keputusan/keputusan";
 import Tinjauan from "../../../tinjauan/tinjauan";
 import User from "../../../../../user/read/response/body/body";
 import Record from "../../../../../record/record";
@@ -29,8 +29,4 @@ export default interface Body extends Record, Id {
      */
     ditutup: boolean;
     catatan: null | string;
-    /**
-     * submitted
-     */
-    submit: boolean;
 }

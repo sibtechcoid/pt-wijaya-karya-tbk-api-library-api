@@ -6,7 +6,7 @@ const compatible_1 = require("@dikac/t-date/boolean/compatible");
 const structure_1 = require("@dikac/t-object/boolean/structure");
 const positive_1 = require("@dikac/t-number/boolean/positive");
 const tinjauan_1 = require("../../../../tinjauan/tinjauan");
-const keputusan_1 = require("../../../../keputusan/keputusan");
+const keputusan_1 = require("../../../../../keputusan/keputusan");
 const type_2 = require("@dikac/t-string/boolean/type");
 const type_3 = require("@dikac/t-boolean/type");
 const type_4 = require("@dikac/t-enum/boolean/type");
@@ -40,10 +40,6 @@ function Type(value) {
          */
         ditutup: type_3.default,
         catatan: type_2.default,
-        /**
-         * submitted
-         */
-        submit: type_3.default,
     };
     return structure_1.default(value, sort);
 }

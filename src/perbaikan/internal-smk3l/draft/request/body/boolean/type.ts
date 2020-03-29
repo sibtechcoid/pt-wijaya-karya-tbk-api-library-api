@@ -1,7 +1,6 @@
 import Body from "../body";
 import ArrayOf from "@dikac/t-array/boolean/array-of";
 import TypeDateCompatible from "@dikac/t-date/boolean/compatible";
-import TypeId from "../../../../../../id/boolean/type";
 import Structure, {Validator} from "@dikac/t-object/boolean/structure";
 import TypeInterface from "../body";
 import Undefinable from "@dikac/t-undefined/boolean/undefinable";
@@ -10,7 +9,6 @@ import StringType from "@dikac/t-string/boolean/type";
 import TypeEnum from "@dikac/t-enum/boolean/type";
 import Tinjauan from "../../../../tinjauan/tinjauan";
 import Keputusan from "../../../../../keputusan/keputusan";
-import BooleanType from "@dikac/t-boolean/type";
 import TypeObject from "@dikac/t-object/boolean/type";
 
 export default function Type<Extended extends Body = Body>(value : any) : value is Extended {

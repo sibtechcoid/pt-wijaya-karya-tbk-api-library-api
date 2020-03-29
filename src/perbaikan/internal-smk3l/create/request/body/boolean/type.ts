@@ -1,7 +1,6 @@
 import TypeInterface from "../body";
 import NotNull from "@dikac/t-object/boolean/type";
 import ArrayOf from "@dikac/t-array/boolean/array-of";
-import TypeNumber from "@dikac/t-number/boolean/finite";
 import TypeDateCompatible from "@dikac/t-date/boolean/compatible";
 import Structure, {Validator} from "@dikac/t-object/boolean/structure";
 import Positive from "@dikac/t-number/boolean/positive";

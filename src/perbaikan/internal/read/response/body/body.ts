@@ -13,7 +13,7 @@ export default interface Body extends Record, Id {
      */
     faktor : null|string;
     analisis : null|string;
-    tinjauan : null|Tinjauan;
+    tinjauan : Tinjauan;
     tinjauanCatatan : null|string;
     perbaikan : null|string|Date;
     closing : string[];
@@ -23,9 +23,9 @@ export default interface Body extends Record, Id {
      * PTKA
      */
     prosedur : number;
-    noPtka : null|string;
-    konsekuensi : null|string;
-    referensi : null|string;
+    noPtka : string;
+    konsekuensi : string;
+    referensi : string;
     keputusan : null|Keputusan;
     selesai : null|string|Date;
 

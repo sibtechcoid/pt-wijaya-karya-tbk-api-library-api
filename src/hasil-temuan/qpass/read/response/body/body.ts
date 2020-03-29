@@ -5,5 +5,6 @@ export default interface Body extends Record  {
 
     level : Omit<Level,'parent'|'levelUsaha'>;
     hasil : number;
-
+    catatan : string;
+    lampiran : string[];
 }

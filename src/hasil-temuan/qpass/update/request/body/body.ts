@@ -4,6 +4,4 @@ export default interface Body {
 
     audit : number;
     hasil : Hasil[]
-    catatan : string;
-    lampiran : string[];
 }

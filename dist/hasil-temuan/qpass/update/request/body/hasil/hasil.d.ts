@@ -4,4 +4,6 @@ export default interface Hasil {
      */
     level: number;
     hasil: number;
+    catatan: string;
+    lampiran: string[];
 }

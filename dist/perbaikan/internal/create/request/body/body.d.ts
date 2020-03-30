@@ -5,6 +5,7 @@ export default interface Body {
     /**
      * perintah
      */
+    prosesBisnis: number;
     faktor: string;
     analisis: string;
     tinjauan: Tinjauan;
@@ -15,8 +16,8 @@ export default interface Body {
     /**
      * PTKA
      */
-    prsedur: number;
-    noPtka: string;
+    prosedur: number;
+    ptka: string;
     konsekuensi: string;
     referensi: string;
     keputusan: Keputusan;

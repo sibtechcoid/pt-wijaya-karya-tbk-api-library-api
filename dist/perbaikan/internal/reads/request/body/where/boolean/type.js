@@ -25,6 +25,7 @@ function Type(value) {
         /**
          * perintah
          */
+        prosesBisnis: (v) => undefinable_1.default(v, positive_1.default),
         faktor: (v) => undefinable_1.default(v, type_3.default),
         analisis: (v) => undefinable_1.default(v, type_3.default),
         tinjauan: (v) => undefinable_1.default(v, (v) => type_4.default(v, tinjauan_1.default)),
@@ -35,8 +36,8 @@ function Type(value) {
         /**
          * PTKA
          */
-        prsedur: (v) => undefinable_1.default(v, positive_1.default),
-        noPtka: (v) => undefinable_1.default(v, type_3.default),
+        prosedur: (v) => undefinable_1.default(v, positive_1.default),
+        ptka: (v) => undefinable_1.default(v, type_3.default),
         konsekuensi: (v) => undefinable_1.default(v, type_3.default),
         referensi: (v) => undefinable_1.default(v, type_3.default),
         keputusan: (v) => undefinable_1.default(v, (v) => type_4.default(v, keputusan_1.default)),

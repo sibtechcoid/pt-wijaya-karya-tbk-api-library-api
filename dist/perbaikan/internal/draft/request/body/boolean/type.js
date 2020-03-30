@@ -36,11 +36,12 @@ function Type(value) {
         perbaikan: (v) => undefinable_1.default(v, compatible_1.default),
         closing: (v) => undefinable_1.default(v, (v) => array_of_1.default(v, type_1.default)),
         pic: (v) => undefinable_1.default(v, positive_1.default),
+        prosesBisnis: (v) => undefinable_1.default(v, positive_1.default),
         /**
          * PTKA
          */
-        prsedur: (v) => undefinable_1.default(v, positive_1.default),
-        noPtka: (v) => undefinable_1.default(v, type_1.default),
+        prosedur: (v) => undefinable_1.default(v, positive_1.default),
+        ptka: (v) => undefinable_1.default(v, type_1.default),
         konsekuensi: (v) => undefinable_1.default(v, type_1.default),
         referensi: (v) => undefinable_1.default(v, type_1.default),
         keputusan: (v) => undefinable_1.default(v, (v) => type_2.default(v, keputusan_1.default)),

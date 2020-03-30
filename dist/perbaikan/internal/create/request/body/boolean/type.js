@@ -26,11 +26,12 @@ function Type(value) {
         perbaikan: compatible_1.default,
         closing: (v) => array_of_1.default(v, type_2.default),
         pic: positive_1.default,
+        prosesBisnis: positive_1.default,
         /**
          * PTKA
          */
-        prsedur: positive_1.default,
-        noPtka: type_2.default,
+        prosedur: positive_1.default,
+        ptka: type_2.default,
         konsekuensi: type_2.default,
         referensi: type_2.default,
         keputusan: (v) => type_4.default(v, keputusan_1.default),

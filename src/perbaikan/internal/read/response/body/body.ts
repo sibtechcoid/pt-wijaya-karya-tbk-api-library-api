@@ -3,18 +3,20 @@ import Tinjauan from "../../../tinjauan/tinjauan";
 import User from "../../../../../user/read/response/body/body";
 import Record from "../../../../../record/record";
 import Id from "../../../../../id/id";
+import Prosedur from "../../../../../jadwal-rinci/prosedur/read/response/body/body";
+import HasilTemuan from "../../../../../hasil-temuan/internal/read/response/body/body";
 
 export default interface Body extends Record, Id {
 
-    hasilTemuan: number;
+    hasilTemuan: Omit<HasilTemuan, 'prosesBisnis'|'jadwalRinci'|'prosedur'|'klausul'|'fungsi'|'masalah'|'objek'|'kriteria'|'lampiran'|'penolakan'>;
 
     /**
      * perintah
      */
-    faktor : null|string;
-    analisis : null|string;
+    faktor : string;
+    analisis : string;
     tinjauan : Tinjauan;
-    tinjauanCatatan : null|string;
+    tinjauanCatatan : string;
     perbaikan : null|string|Date;
     closing : string[];
     pic : Omit<User,'extraAkses'|'akses'|'jabatan'>|null;
@@ -22,7 +24,7 @@ export default interface Body extends Record, Id {
     /**
      * PTKA
      */
-    prosedur : number;
+    prosedur : Omit<Prosedur,'prosesBisnis'>;
     noPtka : string;
     konsekuensi : string;
     referensi : string;
@@ -33,6 +35,6 @@ export default interface Body extends Record, Id {
      * remark
      */
     ditutup : boolean;
-    catatan : null|string
+    catatan : string
 
 }

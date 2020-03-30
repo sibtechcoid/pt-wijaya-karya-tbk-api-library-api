@@ -29,7 +29,7 @@ export default function Type<
         pic: (v) => Undefinable(v, ModeType),
         prosedur: (v) => Undefinable(v, ModeType),
         prosesBisnis: (v) => Undefinable(v, ModeType),
-        noPtka: (v) => Undefinable(v, ModeType),
+        ptka: (v) => Undefinable(v, ModeType),
         konsekuensi: (v) => Undefinable(v, ModeType),
         referensi: (v) => Undefinable(v, ModeType),
         keputusan: (v) => Undefinable(v, ModeType),

@@ -22,7 +22,7 @@ function Type(value) {
         pic: (v) => undefinable_1.default(v, type_1.default),
         prosedur: (v) => undefinable_1.default(v, type_1.default),
         prosesBisnis: (v) => undefinable_1.default(v, type_1.default),
-        noPtka: (v) => undefinable_1.default(v, type_1.default),
+        ptka: (v) => undefinable_1.default(v, type_1.default),
         konsekuensi: (v) => undefinable_1.default(v, type_1.default),
         referensi: (v) => undefinable_1.default(v, type_1.default),
         keputusan: (v) => undefinable_1.default(v, type_1.default),

@@ -27,7 +27,7 @@ export default interface Body extends Record, Id {
      * PTKA
      */
     prosedur : Omit<Prosedur,'prosesBisnis'>;
-    noPtka : string;
+    ptka : string;
     konsekuensi : string;
     referensi : string;
     keputusan : null|Keputusan;

@@ -43,12 +43,12 @@ export default function Type<Extended extends Body = Body>(value : any) : value 
         perbaikan : (v) => Undefinable(v, TypeDateCompatible),
         closing :  (v) => Undefinable(v,(v) : v is  string[] => ArrayOf(v, StringType)),
         pic : (v) => Undefinable(v, Positive),
-
+        prosesBisnis : (v) => Undefinable(v, Positive),
         /**
          * PTKA
          */
-        prsedur : (v) => Undefinable(v, Positive),
-        noPtka : (v) => Undefinable(v, StringType),
+        prosedur : (v) => Undefinable(v, Positive),
+        ptka : (v) => Undefinable(v, StringType),
         konsekuensi : (v) => Undefinable(v, StringType),
         referensi : (v) => Undefinable(v, StringType),
         keputusan : (v) => Undefinable(v, (v) : v is Keputusan =>TypeEnum(v, Keputusan)),

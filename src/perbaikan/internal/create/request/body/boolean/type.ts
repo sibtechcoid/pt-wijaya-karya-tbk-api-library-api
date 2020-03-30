@@ -31,12 +31,13 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
         perbaikan : TypeDateCompatible,
         closing :  (v) => ArrayOf(v, StringType),
         pic : Positive,
-
+        prosesBisnis : Positive,
         /**
          * PTKA
          */
-        prsedur : Positive,
-        noPtka : StringType,
+
+        prosedur : Positive,
+        ptka : StringType,
         konsekuensi : StringType,
         referensi : StringType,
         keputusan : (v) =>TypeEnum(v, Keputusan),

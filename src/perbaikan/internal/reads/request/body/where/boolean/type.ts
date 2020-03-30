@@ -33,6 +33,7 @@ export default function
         /**
          * perintah
          */
+        prosesBisnis : (v) => Undefinable(v, Positive),
         faktor : (v) => Undefinable(v, StringType),
         analisis : (v) => Undefinable(v, StringType),
         tinjauan : (v) => Undefinable(v,(v) : v is Tinjauan => TypeEnum(v, Tinjauan)),
@@ -44,8 +45,9 @@ export default function
         /**
          * PTKA
          */
-        prsedur : (v) => Undefinable(v, Positive),
-        noPtka : (v) => Undefinable(v, StringType),
+        prosedur : (v) => Undefinable(v, Positive),
+
+        ptka : (v) => Undefinable(v, StringType),
         konsekuensi : (v) => Undefinable(v, StringType),
         referensi : (v) => Undefinable(v, StringType),
         keputusan : (v) => Undefinable(v, (v) : v is Keputusan =>TypeEnum(v, Keputusan)),

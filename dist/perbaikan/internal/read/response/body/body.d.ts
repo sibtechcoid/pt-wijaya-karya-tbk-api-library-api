@@ -18,11 +18,11 @@ export default interface Body extends Record, Id {
     perbaikan: null | string | Date;
     closing: string[];
     pic: Omit<User, 'extraAkses' | 'akses' | 'jabatan'> | null;
-    prosesBisnis: Omit<ProsesBisnis, 'prosedur'>;
+    prosesBisnis: Omit<ProsesBisnis, 'prosedur'> | null;
     /**
      * PTKA
      */
-    prosedur: Omit<Prosedur, 'prosesBisnis'>;
+    prosedur: Omit<Prosedur, 'prosesBisnis'> | null;
     ptka: string;
     konsekuensi: string;
     referensi: string;

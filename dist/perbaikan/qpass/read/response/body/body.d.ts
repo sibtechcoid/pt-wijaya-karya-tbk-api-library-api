@@ -2,13 +2,14 @@ import Keputusan from "../../../../keputusan/keputusan";
 import User from "../../../../../user/read/response/body/body";
 import Record from "../../../../../record/record";
 import Id from "../../../../../id/id";
-import HasilTemuan from "../../../../../hasil-temuan/internal/read/response/body/body";
+import HasilTemuan from "../../../../../hasil-temuan/qpass/read/response/body/body";
+import Level from "../../../../../hasil-temuan/level/reads/response/body/body";
 export default interface Body extends Record, Id {
-    hasilTemuan: Omit<HasilTemuan, 'prosesBisnis' | 'jadwalRinci' | 'prosedur' | 'klausul' | 'fungsi' | 'masalah' | 'objek' | 'kriteria' | 'lampiran' | 'penolakan'>;
+    hasilTemuan: Omit<HasilTemuan, 'level' | 'perbaikan'>;
     /**
      * perintah
      */
-    prosesBisnis: string;
+    prosesBisnis: Omit<Level, 'parent' | 'levelUsaha'>;
     faktor: string;
     analisis: string;
     tindakan: string;
@@ -18,7 +19,7 @@ export default interface Body extends Record, Id {
     /**
      * PTKA
      */
-    prosedur: number;
+    prosedur: Omit<Level, 'parent' | 'levelUsaha'>;
     ptka: string;
     konsekuensi: string;
     referensi: string;

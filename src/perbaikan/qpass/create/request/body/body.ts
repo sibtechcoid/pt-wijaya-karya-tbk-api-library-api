@@ -10,7 +10,7 @@ export default interface Body {
     /**
      * perintah
      */
-    prosesBisnis : string;
+    prosesBisnis : number;
     faktor : string;
     analisis : string;
     tindakan : string;
@@ -21,7 +21,7 @@ export default interface Body {
     /**
      * PTKA
      */
-    prosedur : string;
+    prosedur : number;
     ptka : string;
     konsekuensi : string;
     keputusan : null|Keputusan;

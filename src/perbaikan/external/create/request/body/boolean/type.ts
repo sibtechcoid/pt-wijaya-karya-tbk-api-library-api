@@ -10,6 +10,7 @@ import StringType from "@dikac/t-string/boolean/type";
 import BooleanType from "@dikac/t-boolean/type";
 import TypeEnum from "@dikac/t-enum/boolean/type";
 import Undefinable from "@dikac/t-undefined/boolean/undefinable";
+import Status from "../../../../status/status";
 
 export default function Type<Extended extends TypeInterface = TypeInterface>(value : any) : value is Extended {
 
@@ -57,8 +58,8 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
         //  * submitted
         //  */
         // submit : BooleanType,
-
-        ditutup : (v) => Undefinable(v, BooleanType),
+        status : (v) => Undefinable(v,(v) : v is Status => TypeEnum(v, Status)),
+        //ditutup : (v) => Undefinable(v, BooleanType),
     };
 
     return Structure(value, sort);

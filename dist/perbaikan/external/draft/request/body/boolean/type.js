@@ -9,6 +9,7 @@ const type_1 = require("@dikac/t-string/boolean/type");
 const type_2 = require("@dikac/t-enum/boolean/type");
 const tinjauan_1 = require("../../../../tinjauan/tinjauan");
 const type_3 = require("@dikac/t-object/boolean/type");
+const status_1 = require("../../../../status/status");
 function Type(value) {
     if (!type_3.default(value)) {
         return false;
@@ -48,6 +49,17 @@ function Type(value) {
         konsekuensi: (v) => undefinable_1.default(v, type_1.default),
         dibuat: (v) => undefinable_1.default(v, compatible_1.default),
         tanggal: (v) => undefinable_1.default(v, compatible_1.default),
+        // /**
+        //  * remark
+        //  */
+        //ditutup : (v) => Undefinable(v, BooleanType),
+        // catatan : (v) => Undefinable(v, StringType),
+        //
+        // /**
+        //  * submitted
+        //  */
+        // submit : (v) => Undefinable(v, BooleanType),
+        status: (v) => undefinable_1.default(v, (v) => type_2.default(v, status_1.default)),
     };
     return structure_1.default(value, update);
 }

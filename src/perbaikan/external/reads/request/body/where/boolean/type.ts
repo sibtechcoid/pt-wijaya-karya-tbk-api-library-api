@@ -30,6 +30,7 @@ export default function
          */
         kategori : (v) => Undefinable(v,(v) : v is Tinjauan => TypeEnum(v, Tinjauan)),
 
+
         klausul : (v) => Undefinable(v, StringType),
         auditor : (v) => Undefinable(v, StringType),
         deskripsi : (v) => Undefinable(v, StringType),
@@ -59,7 +60,7 @@ export default function
         // /**
         //  * submitted
         //  */
-        ditutup : (v) => Undefinable(v, BooleanType),
+        status : (v) => Undefinable(v,(v) : v is Status => TypeEnum(v, Status))
     };
 
     return Structure(value, sort);

@@ -37,6 +37,6 @@ export default interface Body {
      * remark
      */
    // status : Status;
-    ditutup : boolean;
+    status : Status;
 
 }

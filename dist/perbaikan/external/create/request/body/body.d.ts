@@ -1,4 +1,5 @@
 import Tinjauan from "../../../tinjauan/tinjauan";
+import Status from "../../../status/status";
 export default interface Body {
     audit: number;
     /**
@@ -27,5 +28,5 @@ export default interface Body {
     /**
      * remark
      */
-    ditutup: boolean;
+    status: Status;
 }

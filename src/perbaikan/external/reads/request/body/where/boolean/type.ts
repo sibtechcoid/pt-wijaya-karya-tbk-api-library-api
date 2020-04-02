@@ -36,7 +36,7 @@ export default function
         deadline : (v) => Undefinable(v, StringType),
         penyebab : (v) => Undefinable(v, StringType),
         koreksi : (v) => Undefinable(v, StringType),
-        unitKerka : (v) => Undefinable(v, StringType),
+        unitKerja : (v) => Undefinable(v, StringType),
         bukti :  (v) => Undefinable(v,(v) : v is  string[] => ArrayOf(v, StringType)),
 
         /**

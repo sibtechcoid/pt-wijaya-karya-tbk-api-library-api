@@ -34,7 +34,7 @@ function Type(value) {
         deadline: (v) => undefinable_1.default(v, type_1.default),
         penyebab: (v) => undefinable_1.default(v, type_1.default),
         koreksi: (v) => undefinable_1.default(v, type_1.default),
-        unitKerka: (v) => undefinable_1.default(v, type_1.default),
+        unitKerja: (v) => undefinable_1.default(v, type_1.default),
         kategori: (v) => undefinable_1.default(v, (v) => type_2.default(v, tinjauan_1.default)),
         bukti: (v) => undefinable_1.default(v, (v) => array_of_1.default(v, type_1.default)),
         /**

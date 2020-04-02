@@ -26,7 +26,7 @@ function Type(value) {
         deadline: (v) => undefinable_1.default(v, type_3.default),
         penyebab: (v) => undefinable_1.default(v, type_3.default),
         koreksi: (v) => undefinable_1.default(v, type_3.default),
-        unitKerka: (v) => undefinable_1.default(v, type_3.default),
+        unitKerja: (v) => undefinable_1.default(v, type_3.default),
         bukti: (v) => undefinable_1.default(v, (v) => array_of_1.default(v, type_3.default)),
         /**
          * PTKA

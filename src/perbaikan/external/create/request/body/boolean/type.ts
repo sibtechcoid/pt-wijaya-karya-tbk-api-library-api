@@ -34,7 +34,7 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
         deadline: (v) => Undefinable(v, StringType),
         penyebab: (v) => Undefinable(v, StringType),
         koreksi: (v) => Undefinable(v, StringType),
-        unitKerka: (v) => Undefinable(v, StringType),
+        unitKerja: (v) => Undefinable(v, StringType),
 
         kategori : (v) => Undefinable(v,(v) : v is Tinjauan => TypeEnum(v, Tinjauan)),
         bukti :  (v) => Undefinable(v,(v) : v is  string[] => ArrayOf(v, StringType)),

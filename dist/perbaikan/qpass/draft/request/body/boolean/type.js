@@ -14,33 +14,21 @@ function Type(value) {
         return false;
     }
     let update = {
-        // id : Positive,
-        // audit : (v) => Undefinable(v, Positive),
-        // selesai : (v) => Undefinable(v, TypeDateCompatible),
-        // mulai : (v) => Undefinable(v, TypeDateCompatible),
-        // fungsi :  (v) => Undefinable(v, (v) : v is number[] => ArrayOf(v, Positive)),
-        // prosedur :  (v) => Undefinable(v, (v) : v is number[] => ArrayOf(v, Positive)),
-        // prosesBisnis : (v) => Undefinable(v, Positive),
-        // klausul :  (v) => Undefinable(v, (v) : v is number[] => ArrayOf(v, Positive)),
-        // auditor :  (v) => Undefinable(v, (v) : v is number[] => ArrayOf(v, Positive)),
         id: (v) => undefinable_1.default(v, positive_1.default),
         hasilTemuan: (v) => undefinable_1.default(v, positive_1.default),
         /**
          * perintah
          */
         prosesBisnis: (v) => undefinable_1.default(v, type_1.default),
-        tindakLanjut: (v) => undefinable_1.default(v, type_1.default),
+        tindakan: (v) => undefinable_1.default(v, type_1.default),
         faktor: (v) => undefinable_1.default(v, type_1.default),
         analisis: (v) => undefinable_1.default(v, type_1.default),
-        // tinjauan : (v) => Undefinable(v,(v) : v is Tinjauan => TypeEnum(v, Tinjauan)),
-        // tinjauanCatatan : (v) => Undefinable(v, StringType),
         perbaikan: (v) => undefinable_1.default(v, compatible_1.default),
         closing: (v) => undefinable_1.default(v, (v) => array_of_1.default(v, type_1.default)),
         pic: (v) => undefinable_1.default(v, positive_1.default),
         /**
          * PTKA
          */
-        // prosedur : (v) => Undefinable(v, Positive),
         ptka: (v) => undefinable_1.default(v, type_1.default),
         konsekuensi: (v) => undefinable_1.default(v, type_1.default),
         prosedur: (v) => undefinable_1.default(v, type_1.default),

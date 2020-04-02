@@ -19,7 +19,7 @@ export default interface Body {
     koreksi : string;
 
     bukti : string[];
-    unitKerka : string;
+    unitKerja : string;
 
     /**
      * PTKA

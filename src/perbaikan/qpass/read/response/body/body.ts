@@ -12,19 +12,19 @@ export default interface Body extends Record, Id {
     /**
      * perintah
      */
+    prosesBisnis : string;
     faktor : string;
     analisis : string;
-    tinjauan : Tinjauan;
-    tinjauanCatatan : string;
+    tindakan : string;
     perbaikan : null|string|Date;
-    closing : string[];
     pic : Omit<User,'extraAkses'|'akses'|'jabatan'>|null;
+    closing : string[];
 
     /**
      * PTKA
      */
     prosedur : number;
-    noPtka : string;
+    ptka : string;
     konsekuensi : string;
     referensi : string;
     keputusan : null|Keputusan;

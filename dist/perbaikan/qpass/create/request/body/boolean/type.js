@@ -20,22 +20,17 @@ function Type(value) {
          */
         faktor: type_2.default,
         prosesBisnis: type_2.default,
-        tindakLanjut: type_2.default,
+        tindakan: type_2.default,
         analisis: type_2.default,
-        //tinjauan : (v) =>TypeEnum(v, Tinjauan),
-        //tinjauanCatatan : StringType,
         perbaikan: compatible_1.default,
         closing: (v) => array_of_1.default(v, type_2.default),
         pic: positive_1.default,
         /**
          * PTKA
          */
-        //prsedur : Positive,
-        // noPtka : StringType,
         konsekuensi: type_2.default,
         prosedur: type_2.default,
         ptka: type_2.default,
-        //referensi : StringType,
         keputusan: (v) => type_4.default(v, keputusan_1.default),
         selesai: compatible_1.default,
         /**

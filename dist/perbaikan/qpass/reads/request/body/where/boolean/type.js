@@ -15,11 +15,6 @@ function Type(value) {
         return false;
     }
     let sort = {
-        // mulai: (v) => Undefinable(v, Compatible),
-        // audit: (v) => Undefinable(v, Positive),
-        // selesai: (v) => Undefinable(v, Compatible),
-        // deactivate : (v) => Undefinable(v, BooleanType)
-        // id: (v) => Undefinable(v, Positive),
         hasilTemuan: (v) => undefinable_1.default(v, (v) => array_of_1.default(v, positive_1.default)),
         /**
          * perintah
@@ -27,21 +22,16 @@ function Type(value) {
         faktor: (v) => undefinable_1.default(v, type_3.default),
         prosesBisnis: (v) => undefinable_1.default(v, type_3.default),
         analisis: (v) => undefinable_1.default(v, type_3.default),
-        tindakLanjut: (v) => undefinable_1.default(v, type_3.default),
-        //tinjauan : (v) => Undefinable(v,(v) : v is Tinjauan => TypeEnum(v, Tinjauan)),
-        //tinjauanCatatan : (v) => Undefinable(v, StringType),
+        tindakan: (v) => undefinable_1.default(v, type_3.default),
         perbaikan: (v) => undefinable_1.default(v, compatible_1.default),
         closing: (v) => undefinable_1.default(v, (v) => array_of_1.default(v, type_3.default)),
         pic: (v) => undefinable_1.default(v, positive_1.default),
         /**
          * PTKA
          */
-        // prsedur : (v) => Undefinable(v, Positive),
-        // noPtka : (v) => Undefinable(v, StringType),
         konsekuensi: (v) => undefinable_1.default(v, type_3.default),
         ptka: (v) => undefinable_1.default(v, type_3.default),
         prosedur: (v) => undefinable_1.default(v, type_3.default),
-        // referensi : (v) => Undefinable(v, StringType),
         keputusan: (v) => undefinable_1.default(v, (v) => type_4.default(v, keputusan_1.default)),
         selesai: (v) => undefinable_1.default(v, compatible_1.default),
         /**

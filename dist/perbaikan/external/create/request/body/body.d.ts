@@ -12,7 +12,7 @@ export default interface Body {
     penyebab: string;
     koreksi: string;
     bukti: string[];
-    unitKerka: string;
+    unitKerja: string;
     /**
      * PTKA
      */

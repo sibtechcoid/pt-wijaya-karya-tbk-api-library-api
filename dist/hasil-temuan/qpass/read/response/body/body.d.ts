@@ -2,7 +2,8 @@ import Record from "../../../../../record/record";
 import Level from "../../../../level/reads/response/body/body";
 import Deactivate from "../../../../../deactivate/read/response/body/body";
 import Perbaikan from "../../../../../perbaikan/qpass/read/response/body/body";
-export default interface Bodyz extends Record, Deactivate {
+import Id from "../../../../../id/id";
+export default interface Body extends Record, Deactivate, Id {
     level: Omit<Level, 'parent' | 'levelUsaha'>;
     hasil: number;
     catatan: string;

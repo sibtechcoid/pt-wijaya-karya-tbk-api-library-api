@@ -22,5 +22,5 @@ export default interface Body extends Deactivate, Id, Schedule, Record {
     fase: Fase;
     perbaikan: null | Perbaikan;
     catatanAuditor: null | string;
-    catatanAditee: null | string;
+    catatanAuditee: null | string;
 }

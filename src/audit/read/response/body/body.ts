@@ -25,5 +25,5 @@ export default interface Body extends Deactivate, Id, Schedule, Record  {
     perbaikan : null|Perbaikan;
 
     catatanAuditor : null|string;
-    catatanAditee : null|string;
+    catatanAuditee : null|string;
 }

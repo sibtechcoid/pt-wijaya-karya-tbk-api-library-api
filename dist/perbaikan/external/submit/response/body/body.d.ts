@@ -1,4 +1,3 @@
-import Id from "../../../../../id/id";
-export default interface Body {
-    audit: Id;
+import Audit from "../../../../../audit/read/response/body/body";
+export default interface Body extends Pick<Audit, 'id' | 'perbaikan' | 'catatanAuditee'> {
 }

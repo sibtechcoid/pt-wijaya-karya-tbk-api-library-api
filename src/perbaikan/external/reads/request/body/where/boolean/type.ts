@@ -43,7 +43,7 @@ export default function
          * PTKA
          */
         kontak: (v) => Undefinable(v, StringType),
-        noPtka: (v) => Undefinable(v, StringType),
+        ptka: (v) => Undefinable(v, StringType),
         fungsi: (v) => Undefinable(v, StringType),
         penemu: (v) => Undefinable(v, StringType),
         biro: (v) => Undefinable(v, StringType),

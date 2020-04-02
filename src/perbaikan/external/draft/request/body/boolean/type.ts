@@ -54,7 +54,7 @@ export default function Type<Extended extends Body = Body>(value : any) : value 
 
 
         kontak: (v) => Undefinable(v, StringType),
-        noPtka: (v) => Undefinable(v, StringType),
+        ptka: (v) => Undefinable(v, StringType),
         fungsi: (v) => Undefinable(v, StringType),
         penemu: (v) => Undefinable(v, StringType),
         biro: (v) => Undefinable(v, StringType),

@@ -41,7 +41,7 @@ function Type(value) {
          * PTKA
          */
         kontak: (v) => undefinable_1.default(v, type_1.default),
-        noPtka: (v) => undefinable_1.default(v, type_1.default),
+        ptka: (v) => undefinable_1.default(v, type_1.default),
         fungsi: (v) => undefinable_1.default(v, type_1.default),
         penemu: (v) => undefinable_1.default(v, type_1.default),
         biro: (v) => undefinable_1.default(v, type_1.default),

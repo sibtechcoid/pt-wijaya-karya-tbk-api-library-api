@@ -25,7 +25,7 @@ export default interface Body {
      * PTKA
      */
     kontak : string;
-    noPtka : string;
+    ptka : string;
     fungsi : string;
 
     dibuat : string|Date;

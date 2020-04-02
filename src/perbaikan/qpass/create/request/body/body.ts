@@ -14,8 +14,8 @@ export default interface Body {
     faktor : string;
     analisis : string;
     tindakan : string;
-    perbaikan : null|string|Date;
-    pic : number|null;
+    perbaikan : string|Date;
+    pic : number;
     closing : string[];
 
     /**
@@ -24,9 +24,9 @@ export default interface Body {
     prosedur : number;
     ptka : string;
     konsekuensi : string;
-    keputusan : null|Keputusan;
+    keputusan : Keputusan;
 
-    selesai : null|string|Date;
+    selesai : string|Date;
 
     /**
      * remarks

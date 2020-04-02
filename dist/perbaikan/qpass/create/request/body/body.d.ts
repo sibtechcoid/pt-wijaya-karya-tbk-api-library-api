@@ -8,8 +8,8 @@ export default interface Body {
     faktor: string;
     analisis: string;
     tindakan: string;
-    perbaikan: null | string | Date;
-    pic: number | null;
+    perbaikan: string | Date;
+    pic: number;
     closing: string[];
     /**
      * PTKA
@@ -17,8 +17,8 @@ export default interface Body {
     prosedur: number;
     ptka: string;
     konsekuensi: string;
-    keputusan: null | Keputusan;
-    selesai: null | string | Date;
+    keputusan: Keputusan;
+    selesai: string | Date;
     /**
      * remarks
      */

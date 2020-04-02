@@ -7,19 +7,15 @@ export default interface Body {
 
     hasilTemuan: number;
 
-
+    /**
+     * perintah
+     */
     prosesBisnis : string;
-
     faktor : string;
-
     analisis : string;
-
-    tindakLanjut : string;
-
+    tindakan : string;
     perbaikan : null|string|Date;
-
     pic : number|null;
-
     closing : string[];
 
     /**

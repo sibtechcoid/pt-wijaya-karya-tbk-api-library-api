@@ -4,6 +4,7 @@ import ModeType from "../../../../../../sort/mode/boolean/type";
 import Undefinable from "@dikac/t-undefined/boolean/undefinable";
 import ArrayOf from "@dikac/t-array/boolean/array-of";
 import Mode from "../../../../../../sort/mode/mode";
+import TypeString from "@dikac/t-string/boolean/type";
 
 export default function Type<
     Extended extends Sort = Sort

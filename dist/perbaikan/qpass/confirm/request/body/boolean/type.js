@@ -3,11 +3,13 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const type_1 = require("@dikac/t-object/boolean/type");
 const structure_1 = require("@dikac/t-object/boolean/structure");
 const positive_1 = require("@dikac/t-number/boolean/positive");
+const type_2 = require("@dikac/t-string/boolean/type");
 function Type(value) {
     if (!type_1.default(value)) {
         return false;
     }
     let sort = {
+        catatanAuditor: type_2.default,
         audit: positive_1.default,
     };
     return structure_1.default(value, sort);

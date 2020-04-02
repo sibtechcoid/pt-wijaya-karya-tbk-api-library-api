@@ -16,7 +16,7 @@ export default function Type<Extended extends Body = Body>(value : any) : value 
 
     let update : Validator<Required<TypeInterface>> = {
         id: (v) => Undefinable(v, Positive),
-        audit: (v) => Undefinable(v, Positive),
+        //audit: (v) => Undefinable(v, Positive),
        // ditutup : (v) => Undefinable(v, BooleanType),
        // catatan : (v) => Undefinable(v, StringType),
     };

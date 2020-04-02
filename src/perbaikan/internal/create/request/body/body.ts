@@ -13,6 +13,7 @@ export default interface Body {
     analisis : string;
     tinjauan : Tinjauan;
     tinjauanCatatan : string;
+    rencanaPerbaikan : string;
     perbaikan : string|Date;
     closing : string[];
     pic : number;

@@ -37,6 +37,7 @@ export default function Type<Extended extends Body = Body>(value : any) : value 
          * perintah
          */
         faktor : (v) => Undefinable(v, StringType),
+        rencanaPerbaikan : (v) => Undefinable(v, StringType),
         analisis : (v) => Undefinable(v, StringType),
         tinjauan : (v) => Undefinable(v,(v) : v is Tinjauan => TypeEnum(v, Tinjauan)),
         tinjauanCatatan : (v) => Undefinable(v, StringType),

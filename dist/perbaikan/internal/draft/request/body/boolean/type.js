@@ -30,6 +30,7 @@ function Type(value) {
          * perintah
          */
         faktor: (v) => undefinable_1.default(v, type_1.default),
+        rencanaPerbaikan: (v) => undefinable_1.default(v, type_1.default),
         analisis: (v) => undefinable_1.default(v, type_1.default),
         tinjauan: (v) => undefinable_1.default(v, (v) => type_2.default(v, tinjauan_1.default)),
         tinjauanCatatan: (v) => undefinable_1.default(v, type_1.default),

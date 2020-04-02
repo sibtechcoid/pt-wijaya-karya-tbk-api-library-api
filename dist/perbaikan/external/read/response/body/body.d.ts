@@ -20,7 +20,7 @@ export default interface Body extends Record, Id {
     /**
      * PTKA
      */
-    kontak: number;
+    kontak: string;
     ptka: string;
     fungsi: string;
     dibuat: string | Date;

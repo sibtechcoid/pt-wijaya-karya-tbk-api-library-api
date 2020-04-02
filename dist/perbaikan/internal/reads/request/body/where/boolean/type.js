@@ -30,6 +30,7 @@ function Type(value) {
         analisis: (v) => undefinable_1.default(v, type_3.default),
         tinjauan: (v) => undefinable_1.default(v, (v) => type_4.default(v, tinjauan_1.default)),
         tinjauanCatatan: (v) => undefinable_1.default(v, type_3.default),
+        rencanaPerbaikan: (v) => undefinable_1.default(v, type_3.default),
         perbaikan: (v) => undefinable_1.default(v, compatible_1.default),
         closing: (v) => undefinable_1.default(v, (v) => array_of_1.default(v, type_3.default)),
         pic: (v) => undefinable_1.default(v, positive_1.default),

@@ -38,6 +38,7 @@ export default function
         analisis : (v) => Undefinable(v, StringType),
         tinjauan : (v) => Undefinable(v,(v) : v is Tinjauan => TypeEnum(v, Tinjauan)),
         tinjauanCatatan : (v) => Undefinable(v, StringType),
+        rencanaPerbaikan : (v) => Undefinable(v, StringType),
         perbaikan : (v) => Undefinable(v, TypeDateCompatible),
         closing :  (v) => Undefinable(v,(v) : v is  string[] => ArrayOf(v, StringType)),
         pic : (v) => Undefinable(v, Positive),

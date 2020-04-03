@@ -2,6 +2,6 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const create_1 = require("../../../../../path/create");
 function Create() {
-    return new create_1.default('/perbaikan/internal-confirm');
+    return new create_1.default('/perbaikan/qpass-confirm');
 }
 exports.default = Create;

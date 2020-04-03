@@ -3,5 +3,5 @@ import Path from "./path";
 
 export default function Create() : Path {
 
-    return new CreatePath('/perbaikan/internal-draft');
+    return new CreatePath('/perbaikan/qpass-draft');
 }

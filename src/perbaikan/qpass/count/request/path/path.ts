@@ -1,5 +1,5 @@
 import PathInterface from "../../../../../path/path";
 
-export default interface Path extends PathInterface<'/perbaikan/internal-jumlah'> {
+export default interface Path extends PathInterface<'/perbaikan/qpass-jumlah'> {
 
 }

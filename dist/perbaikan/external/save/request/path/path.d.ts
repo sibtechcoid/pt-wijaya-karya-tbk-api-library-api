@@ -1,3 +1,3 @@
 import PathInterface from "../../../../../path/path";
-export default interface Path extends PathInterface<'/perbaikan/internal-save'> {
+export default interface Path extends PathInterface<'/perbaikan/external-save'> {
 }

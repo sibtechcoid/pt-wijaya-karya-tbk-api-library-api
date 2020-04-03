@@ -23,6 +23,7 @@ function Type(value) {
         analisis: type_2.default,
         tinjauan: (v) => type_4.default(v, tinjauan_1.default),
         tinjauanCatatan: type_2.default,
+        rencanaPerbaikan: type_2.default,
         perbaikan: compatible_1.default,
         closing: (v) => array_of_1.default(v, type_2.default),
         pic: positive_1.default,

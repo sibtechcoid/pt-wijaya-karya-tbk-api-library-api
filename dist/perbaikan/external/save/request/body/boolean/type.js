@@ -10,7 +10,6 @@ function Type(value) {
     }
     let update = {
         id: (v) => undefinable_1.default(v, positive_1.default),
-        audit: (v) => undefinable_1.default(v, positive_1.default),
     };
     return structure_1.default(value, update);
 }

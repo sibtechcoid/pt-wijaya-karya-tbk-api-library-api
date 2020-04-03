@@ -9,6 +9,7 @@ const type_1 = require("@dikac/t-string/boolean/type");
 const type_2 = require("@dikac/t-enum/boolean/type");
 const tinjauan_1 = require("../../../../tinjauan/tinjauan");
 const type_3 = require("@dikac/t-object/boolean/type");
+const status_1 = require("../../../../status/status");
 function Type(value) {
     if (!type_3.default(value)) {
         return false;
@@ -34,20 +35,31 @@ function Type(value) {
         deadline: (v) => undefinable_1.default(v, type_1.default),
         penyebab: (v) => undefinable_1.default(v, type_1.default),
         koreksi: (v) => undefinable_1.default(v, type_1.default),
-        unitKerka: (v) => undefinable_1.default(v, type_1.default),
+        unitKerja: (v) => undefinable_1.default(v, type_1.default),
         kategori: (v) => undefinable_1.default(v, (v) => type_2.default(v, tinjauan_1.default)),
         bukti: (v) => undefinable_1.default(v, (v) => array_of_1.default(v, type_1.default)),
         /**
          * PTKA
          */
         kontak: (v) => undefinable_1.default(v, type_1.default),
-        noPtka: (v) => undefinable_1.default(v, type_1.default),
+        ptka: (v) => undefinable_1.default(v, type_1.default),
         fungsi: (v) => undefinable_1.default(v, type_1.default),
         penemu: (v) => undefinable_1.default(v, type_1.default),
         biro: (v) => undefinable_1.default(v, type_1.default),
         konsekuensi: (v) => undefinable_1.default(v, type_1.default),
         dibuat: (v) => undefinable_1.default(v, compatible_1.default),
         tanggal: (v) => undefinable_1.default(v, compatible_1.default),
+        // /**
+        //  * remark
+        //  */
+        //ditutup : (v) => Undefinable(v, BooleanType),
+        // catatan : (v) => Undefinable(v, StringType),
+        //
+        // /**
+        //  * submitted
+        //  */
+        // submit : (v) => Undefinable(v, BooleanType),
+        status: (v) => undefinable_1.default(v, (v) => type_2.default(v, status_1.default)),
     };
     return structure_1.default(value, update);
 }

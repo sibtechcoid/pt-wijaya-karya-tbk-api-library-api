@@ -28,6 +28,7 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
         analisis : StringType,
         tinjauan : (v) =>TypeEnum(v, Tinjauan),
         tinjauanCatatan : StringType,
+        rencanaPerbaikan : StringType,
         perbaikan : TypeDateCompatible,
         closing :  (v) => ArrayOf(v, StringType),
         pic : Positive,
@@ -48,11 +49,7 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
          */
         ditutup : BooleanType,
         catatan : StringType,
-        //
-        // /**
-        //  * submitted
-        //  */
-        // submit : BooleanType,
+
     };
 
     return Structure(value, sort);

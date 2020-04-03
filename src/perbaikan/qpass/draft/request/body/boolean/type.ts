@@ -19,15 +19,6 @@ export default function Type<Extended extends Body = Body>(value : any) : value 
     }
 
     let update : Validator<Required<TypeInterface>> = {
-        // id : Positive,
-        // audit : (v) => Undefinable(v, Positive),
-        // selesai : (v) => Undefinable(v, TypeDateCompatible),
-        // mulai : (v) => Undefinable(v, TypeDateCompatible),
-        // fungsi :  (v) => Undefinable(v, (v) : v is number[] => ArrayOf(v, Positive)),
-        // prosedur :  (v) => Undefinable(v, (v) : v is number[] => ArrayOf(v, Positive)),
-        // prosesBisnis : (v) => Undefinable(v, Positive),
-        // klausul :  (v) => Undefinable(v, (v) : v is number[] => ArrayOf(v, Positive)),
-        // auditor :  (v) => Undefinable(v, (v) : v is number[] => ArrayOf(v, Positive)),
 
         id: (v) => Undefinable(v, Positive),
 
@@ -37,11 +28,9 @@ export default function Type<Extended extends Body = Body>(value : any) : value 
          * perintah
          */
         prosesBisnis : (v) => Undefinable(v, StringType),
-        tindakLanjut : (v) => Undefinable(v, StringType),
+        tindakan : (v) => Undefinable(v, StringType),
         faktor : (v) => Undefinable(v, StringType),
         analisis : (v) => Undefinable(v, StringType),
-       // tinjauan : (v) => Undefinable(v,(v) : v is Tinjauan => TypeEnum(v, Tinjauan)),
-       // tinjauanCatatan : (v) => Undefinable(v, StringType),
         perbaikan : (v) => Undefinable(v, TypeDateCompatible),
         closing :  (v) => Undefinable(v,(v) : v is  string[] => ArrayOf(v, StringType)),
         pic : (v) => Undefinable(v, Positive),
@@ -49,23 +38,12 @@ export default function Type<Extended extends Body = Body>(value : any) : value 
         /**
          * PTKA
          */
-       // prosedur : (v) => Undefinable(v, Positive),
+
         ptka : (v) => Undefinable(v, StringType),
         konsekuensi : (v) => Undefinable(v, StringType),
         prosedur : (v) => Undefinable(v, StringType),
         keputusan : (v) => Undefinable(v, (v) : v is Keputusan =>TypeEnum(v, Keputusan)),
         selesai : (v) => Undefinable(v, TypeDateCompatible),
-
-        // /**
-        //  * remark
-        //  */
-        // ditutup : (v) => Undefinable(v, BooleanType),
-        // catatan : (v) => Undefinable(v, StringType),
-        //
-        // /**
-        //  * submitted
-        //  */
-        // submit : (v) => Undefinable(v, BooleanType),
 
     };
 

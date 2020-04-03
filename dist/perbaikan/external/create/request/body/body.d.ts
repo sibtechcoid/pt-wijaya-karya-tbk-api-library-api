@@ -1,4 +1,5 @@
 import Tinjauan from "../../../tinjauan/tinjauan";
+import Status from "../../../status/status";
 export default interface Body {
     audit: number;
     /**
@@ -12,12 +13,12 @@ export default interface Body {
     penyebab: string;
     koreksi: string;
     bukti: string[];
-    unitKerka: string;
+    unitKerja: string;
     /**
      * PTKA
      */
     kontak: string;
-    noPtka: string;
+    ptka: string;
     fungsi: string;
     dibuat: string | Date;
     penemu: string;
@@ -27,5 +28,5 @@ export default interface Body {
     /**
      * remark
      */
-    ditutup: boolean;
+    status: Status;
 }

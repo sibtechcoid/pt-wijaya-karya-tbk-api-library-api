@@ -16,12 +16,12 @@ export default interface Body extends Record, Id {
     penyebab: string;
     koreksi: string;
     bukti: string[];
-    unitKerka: string;
+    unitKerja: string;
     /**
      * PTKA
      */
-    kontak: number;
-    noPtka: string;
+    kontak: string;
+    ptka: string;
     fungsi: string;
     dibuat: string | Date;
     penemu: string;

@@ -1,4 +1,5 @@
 export default interface Body /*extends AuditeeBody */ {
 
-    audit : number
+    audit : number,
+    catatanAuditor : string,
 }

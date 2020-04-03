@@ -10,6 +10,7 @@ import StringType from "@dikac/t-string/boolean/type";
 import BooleanType from "@dikac/t-boolean/type";
 import TypeEnum from "@dikac/t-enum/boolean/type";
 import Undefinable from "@dikac/t-undefined/boolean/undefinable";
+import Status from "../../../../status/status";
 
 export default function Type<Extended extends TypeInterface = TypeInterface>(value : any) : value is Extended {
 
@@ -34,7 +35,7 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
         deadline: (v) => Undefinable(v, StringType),
         penyebab: (v) => Undefinable(v, StringType),
         koreksi: (v) => Undefinable(v, StringType),
-        unitKerka: (v) => Undefinable(v, StringType),
+        unitKerja: (v) => Undefinable(v, StringType),
 
         kategori : (v) => Undefinable(v,(v) : v is Tinjauan => TypeEnum(v, Tinjauan)),
         bukti :  (v) => Undefinable(v,(v) : v is  string[] => ArrayOf(v, StringType)),
@@ -45,7 +46,7 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
 
 
         kontak: (v) => Undefinable(v, StringType),
-        noPtka: (v) => Undefinable(v, StringType),
+        ptka: (v) => Undefinable(v, StringType),
         fungsi: (v) => Undefinable(v, StringType),
         penemu: (v) => Undefinable(v, StringType),
         biro: (v) => Undefinable(v, StringType),
@@ -57,8 +58,8 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
         //  * submitted
         //  */
         // submit : BooleanType,
-
-        ditutup : (v) => Undefinable(v, BooleanType),
+        status : (v) => Undefinable(v,(v) : v is Status => TypeEnum(v, Status)),
+        //ditutup : (v) => Undefinable(v, BooleanType),
     };
 
     return Structure(value, sort);

@@ -23,13 +23,13 @@ export default interface Body extends Record, Id {
     koreksi : string;
 
     bukti : string[];
-    unitKerka : string;
+    unitKerja : string;
 
     /**
      * PTKA
      */
-    kontak : number;
-    noPtka : string;
+    kontak : string;
+    ptka : string;
     fungsi : string;
 
     dibuat : string|Date;

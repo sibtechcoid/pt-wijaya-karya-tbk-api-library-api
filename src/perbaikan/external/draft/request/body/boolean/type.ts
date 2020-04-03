@@ -11,6 +11,7 @@ import Tinjauan from "../../../../tinjauan/tinjauan";
 import Keputusan from "../../../../../keputusan/keputusan";
 import TypeObject from "@dikac/t-object/boolean/type";
 import BooleanType from "@dikac/t-boolean/type";
+import Status from "../../../../status/status";
 
 export default function Type<Extended extends Body = Body>(value : any) : value is Extended {
 
@@ -43,7 +44,7 @@ export default function Type<Extended extends Body = Body>(value : any) : value 
         deadline: (v) => Undefinable(v, StringType),
         penyebab: (v) => Undefinable(v, StringType),
         koreksi: (v) => Undefinable(v, StringType),
-        unitKerka: (v) => Undefinable(v, StringType),
+        unitKerja: (v) => Undefinable(v, StringType),
 
         kategori : (v) => Undefinable(v,(v) : v is Tinjauan => TypeEnum(v, Tinjauan)),
         bukti :  (v) => Undefinable(v,(v) : v is  string[] => ArrayOf(v, StringType)),
@@ -54,7 +55,7 @@ export default function Type<Extended extends Body = Body>(value : any) : value 
 
 
         kontak: (v) => Undefinable(v, StringType),
-        noPtka: (v) => Undefinable(v, StringType),
+        ptka: (v) => Undefinable(v, StringType),
         fungsi: (v) => Undefinable(v, StringType),
         penemu: (v) => Undefinable(v, StringType),
         biro: (v) => Undefinable(v, StringType),
@@ -72,7 +73,7 @@ export default function Type<Extended extends Body = Body>(value : any) : value 
         //  * submitted
         //  */
         // submit : (v) => Undefinable(v, BooleanType),
-
+        status : (v) => Undefinable(v,(v) : v is Status => TypeEnum(v, Status)),
     };
 
     return Structure(value, update);

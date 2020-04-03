@@ -14,6 +14,7 @@ export default interface Body extends Record, Id {
     /**
      * perintah
      */
+    rencanaPerbaikan : string;
     faktor : string;
     analisis : string;
     tinjauan : Tinjauan;

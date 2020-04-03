@@ -19,13 +19,13 @@ export default interface Body {
     koreksi : string;
 
     bukti : string[];
-    unitKerka : string;
+    unitKerja : string;
 
     /**
      * PTKA
      */
     kontak : string;
-    noPtka : string;
+    ptka : string;
     fungsi : string;
 
     dibuat : string|Date;
@@ -37,6 +37,6 @@ export default interface Body {
      * remark
      */
    // status : Status;
-    ditutup : boolean;
+    status : Status;
 
 }

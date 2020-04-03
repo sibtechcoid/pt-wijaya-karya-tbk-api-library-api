@@ -26,10 +26,8 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
          */
         faktor : StringType,
         prosesBisnis : StringType,
-        tindakLanjut : StringType,
+        tindakan : StringType,
         analisis : StringType,
-        //tinjauan : (v) =>TypeEnum(v, Tinjauan),
-        //tinjauanCatatan : StringType,
         perbaikan : TypeDateCompatible,
         closing :  (v) => ArrayOf(v, StringType),
         pic : Positive,
@@ -37,12 +35,9 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
         /**
          * PTKA
          */
-        //prsedur : Positive,
-       // noPtka : StringType,
         konsekuensi : StringType,
         prosedur : StringType,
         ptka : StringType,
-        //referensi : StringType,
         keputusan : (v) =>TypeEnum(v, Keputusan),
         selesai : TypeDateCompatible,
 
@@ -51,11 +46,6 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
          */
         ditutup : BooleanType,
         catatan : StringType,
-        //
-        // /**
-        //  * submitted
-        //  */
-        // submit : BooleanType,
     };
 
     return Structure(value, sort);

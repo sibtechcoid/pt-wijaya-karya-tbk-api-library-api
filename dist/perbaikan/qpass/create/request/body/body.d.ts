@@ -1,21 +1,24 @@
 import Keputusan from "../../../../keputusan/keputusan";
 export default interface Body {
     hasilTemuan: number;
-    prosesBisnis: string;
+    /**
+     * perintah
+     */
+    prosesBisnis: number;
     faktor: string;
     analisis: string;
-    tindakLanjut: string;
-    perbaikan: null | string | Date;
-    pic: number | null;
+    tindakan: string;
+    perbaikan: string | Date;
+    pic: number;
     closing: string[];
     /**
      * PTKA
      */
-    prosedur: string;
+    prosedur: number;
     ptka: string;
     konsekuensi: string;
-    keputusan: null | Keputusan;
-    selesai: null | string | Date;
+    keputusan: Keputusan;
+    selesai: string | Date;
     /**
      * remarks
      */

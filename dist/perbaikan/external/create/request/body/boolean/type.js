@@ -15,11 +15,7 @@ function Type(value) {
         return false;
     }
     let sort = {
-        // id: (v) => Undefinable(v, Positive),
         audit: (v) => undefinable_1.default(v, positive_1.default),
-        /**
-         * perintah
-         */
         klausul: (v) => undefinable_1.default(v, type_2.default),
         auditor: (v) => undefinable_1.default(v, type_2.default),
         deskripsi: (v) => undefinable_1.default(v, type_2.default),
@@ -29,9 +25,6 @@ function Type(value) {
         unitKerja: (v) => undefinable_1.default(v, type_2.default),
         kategori: (v) => undefinable_1.default(v, (v) => type_3.default(v, tinjauan_1.default)),
         bukti: (v) => undefinable_1.default(v, (v) => array_of_1.default(v, type_2.default)),
-        /**
-         * PTKA
-         */
         kontak: (v) => undefinable_1.default(v, type_2.default),
         ptka: (v) => undefinable_1.default(v, type_2.default),
         fungsi: (v) => undefinable_1.default(v, type_2.default),
@@ -40,11 +33,7 @@ function Type(value) {
         konsekuensi: (v) => undefinable_1.default(v, type_2.default),
         dibuat: (v) => undefinable_1.default(v, compatible_1.default),
         tanggal: (v) => undefinable_1.default(v, compatible_1.default),
-        //
-        // /**
-        //  * submitted
-        //  */
-        // submit : BooleanType,
+        catatan: (v) => undefinable_1.default(v, type_2.default),
         status: (v) => undefinable_1.default(v, (v) => type_3.default(v, status_1.default)),
     };
     return structure_1.default(value, sort);

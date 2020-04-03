@@ -16,9 +16,6 @@ function Type(value) {
     }
     let sort = {
         audit: (v) => undefinable_1.default(v, positive_1.default),
-        /**
-         * perintah
-         */
         kategori: (v) => undefinable_1.default(v, (v) => type_3.default(v, tinjauan_1.default)),
         klausul: (v) => undefinable_1.default(v, type_2.default),
         auditor: (v) => undefinable_1.default(v, type_2.default),
@@ -28,10 +25,8 @@ function Type(value) {
         koreksi: (v) => undefinable_1.default(v, type_2.default),
         unitKerja: (v) => undefinable_1.default(v, type_2.default),
         bukti: (v) => undefinable_1.default(v, (v) => array_of_1.default(v, type_2.default)),
-        /**
-         * PTKA
-         */
         kontak: (v) => undefinable_1.default(v, type_2.default),
+        catatan: (v) => undefinable_1.default(v, type_2.default),
         ptka: (v) => undefinable_1.default(v, type_2.default),
         fungsi: (v) => undefinable_1.default(v, type_2.default),
         penemu: (v) => undefinable_1.default(v, type_2.default),
@@ -39,14 +34,6 @@ function Type(value) {
         konsekuensi: (v) => undefinable_1.default(v, type_2.default),
         dibuat: (v) => undefinable_1.default(v, compatible_1.default),
         tanggal: (v) => undefinable_1.default(v, compatible_1.default),
-        /**
-         * remark
-         */
-        // status : (v) => Undefinable(v,(v) : v is Status => TypeEnum(v, Status)),
-        //
-        // /**
-        //  * submitted
-        //  */
         status: (v) => undefinable_1.default(v, (v) => type_3.default(v, status_1.default))
     };
     return structure_1.default(value, sort);

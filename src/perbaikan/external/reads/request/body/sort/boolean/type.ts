@@ -37,6 +37,7 @@ export default function Type<
         penemu: (v) => Undefinable(v, ModeType),
         biro: (v) => Undefinable(v, ModeType),
         tanggal: (v) => Undefinable(v, ModeType),
+        catatan: (v) => Undefinable(v, ModeType),
         status: (v) => Undefinable(v, ModeType),
 
     };

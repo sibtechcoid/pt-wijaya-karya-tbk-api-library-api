@@ -30,6 +30,7 @@ function Type(value) {
         penemu: (v) => undefinable_1.default(v, type_1.default),
         biro: (v) => undefinable_1.default(v, type_1.default),
         tanggal: (v) => undefinable_1.default(v, type_1.default),
+        catatan: (v) => undefinable_1.default(v, type_1.default),
         status: (v) => undefinable_1.default(v, type_1.default),
     };
     return structure_1.default(value, sort);

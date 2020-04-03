@@ -19,14 +19,7 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
 
     let sort : Validator<Required<TypeInterface>> = {
 
-
-       // id: (v) => Undefinable(v, Positive),
-
         audit: (v) => Undefinable(v, Positive),
-
-        /**
-         * perintah
-         */
         klausul: (v) => Undefinable(v, StringType),
         auditor: (v) => Undefinable(v, StringType),
         deskripsi: (v) => Undefinable(v, StringType),
@@ -34,15 +27,8 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
         penyebab: (v) => Undefinable(v, StringType),
         koreksi: (v) => Undefinable(v, StringType),
         unitKerja: (v) => Undefinable(v, StringType),
-
         kategori : (v) => Undefinable(v,(v) : v is Tinjauan => TypeEnum(v, Tinjauan)),
         bukti :  (v) => Undefinable(v,(v) : v is  string[] => ArrayOf(v, StringType)),
-
-        /**
-         * PTKA
-         */
-
-
         kontak: (v) => Undefinable(v, StringType),
         ptka: (v) => Undefinable(v, StringType),
         fungsi: (v) => Undefinable(v, StringType),
@@ -51,13 +37,8 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
         konsekuensi: (v) => Undefinable(v, StringType),
         dibuat : (v) => Undefinable(v, TypeDateCompatible),
         tanggal : (v) => Undefinable(v, TypeDateCompatible),
-        //
-        // /**
-        //  * submitted
-        //  */
-        // submit : BooleanType,
+        catatan: (v) => Undefinable(v, StringType),
         status : (v) => Undefinable(v,(v) : v is Status => TypeEnum(v, Status)),
-        //ditutup : (v) => Undefinable(v, BooleanType),
     };
 
     return Structure(value, sort);

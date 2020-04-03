@@ -39,5 +39,5 @@ export default interface Body extends Record, Id {
      * remark
      */
     status : Status
-
+    catatan : string;
 }

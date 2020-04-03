@@ -37,5 +37,5 @@ export default interface Body {
      */
    // status : Status;
     status : Status;
-
+    catatan : string
 }

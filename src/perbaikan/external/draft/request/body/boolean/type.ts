@@ -19,23 +19,8 @@ export default function Type<Extended extends Body = Body>(value : any) : value 
     }
 
     let update : Validator<Required<TypeInterface>> = {
-        // id : Positive,
-        // audit : (v) => Undefinable(v, Positive),
-        // selesai : (v) => Undefinable(v, TypeDateCompatible),
-        // mulai : (v) => Undefinable(v, TypeDateCompatible),
-        // fungsi :  (v) => Undefinable(v, (v) : v is number[] => ArrayOf(v, Positive)),
-        // prosedur :  (v) => Undefinable(v, (v) : v is number[] => ArrayOf(v, Positive)),
-        // prosesBisnis : (v) => Undefinable(v, Positive),
-        // klausul :  (v) => Undefinable(v, (v) : v is number[] => ArrayOf(v, Positive)),
-        // auditor :  (v) => Undefinable(v, (v) : v is number[] => ArrayOf(v, Positive)),
-
         id: (v) => Undefinable(v, Positive),
-
         audit: (v) => Undefinable(v, Positive),
-
-        /**
-         * perintah
-         */
         klausul: (v) => Undefinable(v, StringType),
         auditor: (v) => Undefinable(v, StringType),
         deskripsi: (v) => Undefinable(v, StringType),
@@ -43,15 +28,8 @@ export default function Type<Extended extends Body = Body>(value : any) : value 
         penyebab: (v) => Undefinable(v, StringType),
         koreksi: (v) => Undefinable(v, StringType),
         unitKerja: (v) => Undefinable(v, StringType),
-
         kategori : (v) => Undefinable(v,(v) : v is Tinjauan => TypeEnum(v, Tinjauan)),
         bukti :  (v) => Undefinable(v,(v) : v is  string[] => ArrayOf(v, StringType)),
-
-        /**
-         * PTKA
-         */
-
-
         kontak: (v) => Undefinable(v, StringType),
         ptka: (v) => Undefinable(v, StringType),
         fungsi: (v) => Undefinable(v, StringType),
@@ -61,17 +39,6 @@ export default function Type<Extended extends Body = Body>(value : any) : value 
         dibuat : (v) => Undefinable(v, TypeDateCompatible),
         tanggal : (v) => Undefinable(v, TypeDateCompatible),
 
-        // /**
-        //  * remark
-        //  */
-        //ditutup : (v) => Undefinable(v, BooleanType),
-        // catatan : (v) => Undefinable(v, StringType),
-        //
-        // /**
-        //  * submitted
-        //  */
-        // submit : (v) => Undefinable(v, BooleanType),
-        status : (v) => Undefinable(v,(v) : v is Status => TypeEnum(v, Status)),
     };
 
     return Structure(value, update);

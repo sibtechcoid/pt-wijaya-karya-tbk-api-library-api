@@ -20,15 +20,8 @@ export default function
     }
 
     let sort : Validator<Required<Where>> = {
-
         audit: (v) => Undefinable(v, Positive),
-
-        /**
-         * perintah
-         */
         kategori : (v) => Undefinable(v,(v) : v is Tinjauan => TypeEnum(v, Tinjauan)),
-
-
         klausul : (v) => Undefinable(v, StringType),
         auditor : (v) => Undefinable(v, StringType),
         deskripsi : (v) => Undefinable(v, StringType),
@@ -37,27 +30,15 @@ export default function
         koreksi : (v) => Undefinable(v, StringType),
         unitKerja : (v) => Undefinable(v, StringType),
         bukti :  (v) => Undefinable(v,(v) : v is  string[] => ArrayOf(v, StringType)),
-
-        /**
-         * PTKA
-         */
         kontak: (v) => Undefinable(v, StringType),
+        catatan: (v) => Undefinable(v, StringType),
         ptka: (v) => Undefinable(v, StringType),
         fungsi: (v) => Undefinable(v, StringType),
         penemu: (v) => Undefinable(v, StringType),
         biro: (v) => Undefinable(v, StringType),
         konsekuensi: (v) => Undefinable(v, StringType),
-
         dibuat : (v) => Undefinable(v, TypeDateCompatible),
         tanggal : (v) => Undefinable(v, TypeDateCompatible),
-        /**
-         * remark
-         */
-        // status : (v) => Undefinable(v,(v) : v is Status => TypeEnum(v, Status)),
-        //
-        // /**
-        //  * submitted
-        //  */
         status : (v) => Undefinable(v,(v) : v is Status => TypeEnum(v, Status))
     };
 

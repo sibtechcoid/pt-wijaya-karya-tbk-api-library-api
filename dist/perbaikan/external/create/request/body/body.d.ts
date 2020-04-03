@@ -29,4 +29,5 @@ export default interface Body {
      * remark
      */
     status: Status;
+    catatan: string;
 }

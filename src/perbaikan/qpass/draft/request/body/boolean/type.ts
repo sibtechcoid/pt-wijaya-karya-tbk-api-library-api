@@ -7,7 +7,6 @@ import Undefinable from "@dikac/t-undefined/boolean/undefinable";
 import Positive from "@dikac/t-number/boolean/positive";
 import StringType from "@dikac/t-string/boolean/type";
 import TypeEnum from "@dikac/t-enum/boolean/type";
-import Tinjauan from "../../../../tinjauan/tinjauan";
 import Keputusan from "../../../../../keputusan/keputusan";
 import TypeObject from "@dikac/t-object/boolean/type";
 

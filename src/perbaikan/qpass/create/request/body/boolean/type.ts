@@ -4,7 +4,6 @@ import ArrayOf from "@dikac/t-array/boolean/array-of";
 import TypeDateCompatible from "@dikac/t-date/boolean/compatible";
 import Structure, {Validator} from "@dikac/t-object/boolean/structure";
 import Positive from "@dikac/t-number/boolean/positive";
-import Tinjauan from "../../../../tinjauan/tinjauan";
 import Keputusan from "../../../../../keputusan/keputusan";
 import StringType from "@dikac/t-string/boolean/type";
 import BooleanType from "@dikac/t-boolean/type";

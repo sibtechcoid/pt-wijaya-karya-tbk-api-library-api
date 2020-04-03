@@ -6,7 +6,6 @@ import Undefinable from "@dikac/t-undefined/boolean/undefinable";
 import TypeDateCompatible from "@dikac/t-date/boolean/compatible";
 import Positive from "@dikac/t-number/boolean/positive";
 import StringType from "@dikac/t-string/boolean/type";
-import Tinjauan from "../../../../../tinjauan/tinjauan";
 import TypeEnum from "@dikac/t-enum/boolean/type";
 import ArrayOf from "@dikac/t-array/boolean/array-of";
 import Keputusan from "../../../../../../keputusan/keputusan";

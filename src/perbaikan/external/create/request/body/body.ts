@@ -1,6 +1,5 @@
 import Tinjauan from "../../../tinjauan/tinjauan";
 import Status from "../../../status/status";
-import Audit from "../../../../../audit/read/response/body/body";
 
 export default interface Body {
 

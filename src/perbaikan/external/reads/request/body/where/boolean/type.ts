@@ -1,6 +1,5 @@
 import NotNull from "@dikac/t-object/boolean/type";
 import Where from "../where";
-import BooleanType from "@dikac/t-boolean/type";
 import Structure, {Validator} from "@dikac/t-object/boolean/structure";
 import Undefinable from "@dikac/t-undefined/boolean/undefinable";
 import TypeDateCompatible from "@dikac/t-date/boolean/compatible";
@@ -9,7 +8,6 @@ import StringType from "@dikac/t-string/boolean/type";
 import Tinjauan from "../../../../../tinjauan/tinjauan";
 import TypeEnum from "@dikac/t-enum/boolean/type";
 import ArrayOf from "@dikac/t-array/boolean/array-of";
-import Keputusan from "../../../../../../keputusan/keputusan";
 import Status from "../../../../../status/status";
 
 

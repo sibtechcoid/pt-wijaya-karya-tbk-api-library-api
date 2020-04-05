@@ -1,4 +1,4 @@
-export default interface Body /*extends AuditeeBody */ {
+export default interface Body  {
 
     audit : number
 }

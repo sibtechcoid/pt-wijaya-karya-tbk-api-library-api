@@ -9,26 +9,13 @@ const type_1 = require("@dikac/t-string/boolean/type");
 const type_2 = require("@dikac/t-enum/boolean/type");
 const tinjauan_1 = require("../../../../tinjauan/tinjauan");
 const type_3 = require("@dikac/t-object/boolean/type");
-const status_1 = require("../../../../status/status");
 function Type(value) {
     if (!type_3.default(value)) {
         return false;
     }
     let update = {
-        // id : Positive,
-        // audit : (v) => Undefinable(v, Positive),
-        // selesai : (v) => Undefinable(v, TypeDateCompatible),
-        // mulai : (v) => Undefinable(v, TypeDateCompatible),
-        // fungsi :  (v) => Undefinable(v, (v) : v is number[] => ArrayOf(v, Positive)),
-        // prosedur :  (v) => Undefinable(v, (v) : v is number[] => ArrayOf(v, Positive)),
-        // prosesBisnis : (v) => Undefinable(v, Positive),
-        // klausul :  (v) => Undefinable(v, (v) : v is number[] => ArrayOf(v, Positive)),
-        // auditor :  (v) => Undefinable(v, (v) : v is number[] => ArrayOf(v, Positive)),
         id: (v) => undefinable_1.default(v, positive_1.default),
         audit: (v) => undefinable_1.default(v, positive_1.default),
-        /**
-         * perintah
-         */
         klausul: (v) => undefinable_1.default(v, type_1.default),
         auditor: (v) => undefinable_1.default(v, type_1.default),
         deskripsi: (v) => undefinable_1.default(v, type_1.default),
@@ -38,9 +25,6 @@ function Type(value) {
         unitKerja: (v) => undefinable_1.default(v, type_1.default),
         kategori: (v) => undefinable_1.default(v, (v) => type_2.default(v, tinjauan_1.default)),
         bukti: (v) => undefinable_1.default(v, (v) => array_of_1.default(v, type_1.default)),
-        /**
-         * PTKA
-         */
         kontak: (v) => undefinable_1.default(v, type_1.default),
         ptka: (v) => undefinable_1.default(v, type_1.default),
         fungsi: (v) => undefinable_1.default(v, type_1.default),
@@ -49,17 +33,6 @@ function Type(value) {
         konsekuensi: (v) => undefinable_1.default(v, type_1.default),
         dibuat: (v) => undefinable_1.default(v, compatible_1.default),
         tanggal: (v) => undefinable_1.default(v, compatible_1.default),
-        // /**
-        //  * remark
-        //  */
-        //ditutup : (v) => Undefinable(v, BooleanType),
-        // catatan : (v) => Undefinable(v, StringType),
-        //
-        // /**
-        //  * submitted
-        //  */
-        // submit : (v) => Undefinable(v, BooleanType),
-        status: (v) => undefinable_1.default(v, (v) => type_2.default(v, status_1.default)),
     };
     return structure_1.default(value, update);
 }

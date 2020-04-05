@@ -9,7 +9,6 @@ import StringType from "@dikac/t-string/boolean/type";
 import TypeEnum from "@dikac/t-enum/boolean/type";
 import Tinjauan from "../../../../tinjauan/tinjauan";
 import TypeObject from "@dikac/t-object/boolean/type";
-import Status from "../../../../status/status";
 
 export default function Type<Extended extends Body = Body>(value : any) : value is Extended {
 

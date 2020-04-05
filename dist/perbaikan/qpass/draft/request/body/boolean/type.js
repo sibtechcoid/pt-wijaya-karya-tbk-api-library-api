@@ -19,7 +19,7 @@ function Type(value) {
         /**
          * perintah
          */
-        prosesBisnis: (v) => undefinable_1.default(v, type_1.default),
+        prosesBisnis: (v) => undefinable_1.default(v, positive_1.default),
         tindakan: (v) => undefinable_1.default(v, type_1.default),
         faktor: (v) => undefinable_1.default(v, type_1.default),
         analisis: (v) => undefinable_1.default(v, type_1.default),

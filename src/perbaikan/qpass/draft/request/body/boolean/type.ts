@@ -26,7 +26,7 @@ export default function Type<Extended extends Body = Body>(value : any) : value 
         /**
          * perintah
          */
-        prosesBisnis : (v) => Undefinable(v, StringType),
+        prosesBisnis : (v) => Undefinable(v, Positive),
         tindakan : (v) => Undefinable(v, StringType),
         faktor : (v) => Undefinable(v, StringType),
         analisis : (v) => Undefinable(v, StringType),

@@ -40,7 +40,7 @@ export default function Type<Extended extends Body = Body>(value : any) : value 
 
         ptka : (v) => Undefinable(v, StringType),
         konsekuensi : (v) => Undefinable(v, StringType),
-        prosedur : (v) => Undefinable(v, StringType),
+        prosedur : (v) => Undefinable(v, Positive),
         keputusan : (v) => Undefinable(v, (v) : v is Keputusan =>TypeEnum(v, Keputusan)),
         selesai : (v) => Undefinable(v, TypeDateCompatible),
 

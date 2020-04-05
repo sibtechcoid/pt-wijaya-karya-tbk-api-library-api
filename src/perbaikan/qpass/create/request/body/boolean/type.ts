@@ -24,7 +24,7 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
          * perintah
          */
         faktor : StringType,
-        prosesBisnis : StringType,
+        prosesBisnis : Positive,
         tindakan : StringType,
         analisis : StringType,
         perbaikan : TypeDateCompatible,
@@ -35,7 +35,7 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
          * PTKA
          */
         konsekuensi : StringType,
-        prosedur : StringType,
+        prosedur : Positive,
         ptka : StringType,
         keputusan : (v) =>TypeEnum(v, Keputusan),
         selesai : TypeDateCompatible,

@@ -19,7 +19,7 @@ function Type(value) {
          * perintah
          */
         faktor: type_2.default,
-        prosesBisnis: type_2.default,
+        prosesBisnis: positive_1.default,
         tindakan: type_2.default,
         analisis: type_2.default,
         perbaikan: compatible_1.default,
@@ -29,7 +29,7 @@ function Type(value) {
          * PTKA
          */
         konsekuensi: type_2.default,
-        prosedur: type_2.default,
+        prosedur: positive_1.default,
         ptka: type_2.default,
         keputusan: (v) => type_4.default(v, keputusan_1.default),
         selesai: compatible_1.default,

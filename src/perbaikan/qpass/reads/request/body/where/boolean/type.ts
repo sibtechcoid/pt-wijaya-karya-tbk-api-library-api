@@ -38,6 +38,7 @@ export default function
          */
         konsekuensi : (v) => Undefinable(v, StringType),
         ptka : (v) => Undefinable(v, StringType),
+        referensi : (v) => Undefinable(v, StringType),
         prosedur : (v) => Undefinable(v, StringType),
         keputusan : (v) => Undefinable(v, (v) : v is Keputusan =>TypeEnum(v, Keputusan)),
         selesai : (v) => Undefinable(v, TypeDateCompatible),

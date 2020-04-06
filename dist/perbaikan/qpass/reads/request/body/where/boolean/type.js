@@ -31,6 +31,7 @@ function Type(value) {
          */
         konsekuensi: (v) => undefinable_1.default(v, type_3.default),
         ptka: (v) => undefinable_1.default(v, type_3.default),
+        referensi: (v) => undefinable_1.default(v, type_3.default),
         prosedur: (v) => undefinable_1.default(v, type_3.default),
         keputusan: (v) => undefinable_1.default(v, (v) => type_4.default(v, keputusan_1.default)),
         selesai: (v) => undefinable_1.default(v, compatible_1.default),

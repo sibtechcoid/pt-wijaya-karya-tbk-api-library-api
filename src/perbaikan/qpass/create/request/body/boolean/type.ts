@@ -35,6 +35,7 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
          * PTKA
          */
         konsekuensi : StringType,
+        referensi : StringType,
         prosedur : Positive,
         ptka : StringType,
         keputusan : (v) =>TypeEnum(v, Keputusan),

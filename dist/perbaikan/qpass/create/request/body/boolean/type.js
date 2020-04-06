@@ -29,6 +29,7 @@ function Type(value) {
          * PTKA
          */
         konsekuensi: type_2.default,
+        referensi: type_2.default,
         prosedur: positive_1.default,
         ptka: type_2.default,
         keputusan: (v) => type_4.default(v, keputusan_1.default),

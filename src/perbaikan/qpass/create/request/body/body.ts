@@ -21,6 +21,7 @@ export default interface Body {
     prosedur : number;
     ptka : string;
     konsekuensi : string;
+    referensi : string;
     keputusan : Keputusan;
 
     selesai : string|Date;

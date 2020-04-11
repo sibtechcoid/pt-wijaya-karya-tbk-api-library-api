@@ -8,13 +8,13 @@ enum Akses  {
     /**
      * allow to update user, schedule
      */
-    UPDATE_USER_SCHEDULE = 'UPDATE',
+    UPDATE_USER_SCHEDULE = 'UPDATE_USER_SCHEDULE',
 
     /**
      * allow to update any data other than user, schedule
      */
     UPDATE_DATA = 'UPDATE_DATA',
-    SUBMIT_EMAIL_NOTIFICATION = 'EMAIL_NOTIFICATION',
+    SUBMIT_EMAIL_NOTIFICATION = 'SUBMIT_EMAIL_NOTIFICATION',
 }
 
 export default  Akses;

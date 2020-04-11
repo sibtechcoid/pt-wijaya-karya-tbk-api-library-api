@@ -9,11 +9,11 @@ var Akses;
     /**
      * allow to update user, schedule
      */
-    Akses["UPDATE_USER_SCHEDULE"] = "UPDATE";
+    Akses["UPDATE_USER_SCHEDULE"] = "UPDATE_USER_SCHEDULE";
     /**
      * allow to update any data other than user, schedule
      */
     Akses["UPDATE_DATA"] = "UPDATE_DATA";
-    Akses["SUBMIT_EMAIL_NOTIFICATION"] = "EMAIL_NOTIFICATION";
+    Akses["SUBMIT_EMAIL_NOTIFICATION"] = "SUBMIT_EMAIL_NOTIFICATION";
 })(Akses || (Akses = {}));
 exports.default = Akses;

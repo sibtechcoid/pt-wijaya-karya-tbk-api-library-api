@@ -6,5 +6,7 @@ var Fase;
     Fase["JADWAL"] = "JADWAL";
     Fase["TEMUAN"] = "TEMUAN";
     Fase["PERBAIKAN"] = "PERBAIKAN";
+    Fase["EVALUASI"] = "EVALUASI";
+    Fase["SELESAI"] = "SELESAI";
 })(Fase || (Fase = {}));
 exports.default = Fase;

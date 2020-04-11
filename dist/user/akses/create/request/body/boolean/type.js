@@ -25,11 +25,21 @@ const type_22 = require("../../../../surat-tugas/boolean/type");
 const type_23 = require("../../../../proses-bisnis/boolean/type");
 const array_of_1 = require("@dikac/t-array/boolean/array-of");
 const structure_1 = require("@dikac/t-object/boolean/structure");
+const type_24 = require("../../../../kuisioner/boolean/type");
+const type_25 = require("../../../../evaluasi/boolean/type");
+const type_26 = require("../../../../perbaikan-internal/boolean/type");
+const type_27 = require("../../../../perbaikan-qpass/boolean/type");
+const type_28 = require("../../../../perbaikan-external/boolean/type");
 function Type(value) {
     if (!type_1.default(value)) {
         return false;
     }
     let sort = {
+        kuisioner: (v) => array_of_1.default(v, type_24.default),
+        evaluasi: (v) => array_of_1.default(v, type_25.default),
+        perbaikanInternal: (v) => array_of_1.default(v, type_26.default),
+        perbaikanQpass: (v) => array_of_1.default(v, type_27.default),
+        perbaikanExternal: (v) => array_of_1.default(v, type_28.default),
         suratTugas: (v) => array_of_1.default(v, type_22.default),
         user: (v) => array_of_1.default(v, type_3.default),
         jabatan: (v) => array_of_1.default(v, type_13.default),

@@ -3,6 +3,8 @@ enum Fase {
     JADWAL = "JADWAL",
     TEMUAN = "TEMUAN",
     PERBAIKAN = "PERBAIKAN",
+    EVALUASI = "EVALUASI",
+    SELESAI = "SELESAI",
 }
 
 export default Fase;

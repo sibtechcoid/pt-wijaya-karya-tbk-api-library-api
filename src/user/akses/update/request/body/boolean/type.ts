@@ -67,7 +67,7 @@ export default function Type(value : any) : value is Body {
     }
 
     let sort : Validator<Required<Body>> = {
-        //id : Positive,
+        id : Positive,
         kuisioner             : (v)=>Undefinable(v,(v) : v is KuisionerlAccess[]           => ArrayOf(v, KuisionerType)),
         evaluasi              : (v)=>Undefinable(v,(v) : v is EvaluasiAccess[]             => ArrayOf(v, EvaluasiType)),
 

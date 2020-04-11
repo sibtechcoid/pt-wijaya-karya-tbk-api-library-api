@@ -31,12 +31,13 @@ const type_26 = require("../../../../perbaikan-qpass/boolean/type");
 const type_27 = require("../../../../kuisioner/boolean/type");
 const type_28 = require("../../../../evaluasi/boolean/type");
 const undefinable_1 = require("@dikac/t-undefined/boolean/undefinable");
+const positive_1 = require("@dikac/t-number/boolean/positive");
 function Type(value) {
     if (!type_1.default(value)) {
         return false;
     }
     let sort = {
-        //id : Positive,
+        id: positive_1.default,
         kuisioner: (v) => undefinable_1.default(v, (v) => array_of_1.default(v, type_27.default)),
         evaluasi: (v) => undefinable_1.default(v, (v) => array_of_1.default(v, type_28.default)),
         perbaikanInternal: (v) => undefinable_1.default(v, (v) => array_of_1.default(v, type_25.default)),

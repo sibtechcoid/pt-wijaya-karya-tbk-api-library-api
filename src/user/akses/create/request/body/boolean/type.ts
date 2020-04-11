@@ -24,16 +24,10 @@ import SuratTugasType from "../../../../surat-tugas/boolean/type";
 import ProsesBisnisType from "../../../../proses-bisnis/boolean/type";
 import ArrayOf from "@dikac/t-array/boolean/array-of";
 import Structure, {Validator} from "@dikac/t-object/boolean/structure";
-import Undefinable from "@dikac/t-undefined/boolean/undefinable";
-import KuisionerlAccess from "../../../../kuisioner/akses";
 import KuisionerType from "../../../../kuisioner/boolean/type";
-import EvaluasiAccess from "../../../../evaluasi/akses";
 import EvaluasiType from "../../../../evaluasi/boolean/type";
-import PerbaikanInternalAccess from "../../../../perbaikan-internal/akses";
 import PerbaikanInternalType from "../../../../perbaikan-internal/boolean/type";
-import PerbaikanQpassAccess from "../../../../perbaikan-qpass/akses";
 import PerbaikanQpassType from "../../../../perbaikan-qpass/boolean/type";
-import PerbaikanExternalAccess from "../../../../perbaikan-external/akses";
 import PerbaikanExternalType from "../../../../perbaikan-external/boolean/type";
 
 

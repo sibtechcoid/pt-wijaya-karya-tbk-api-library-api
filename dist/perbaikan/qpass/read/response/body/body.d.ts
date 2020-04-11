@@ -14,7 +14,7 @@ export default interface Body extends Record, Id {
     analisis: string;
     tindakan: string;
     perbaikan: null | string | Date;
-    pic: Omit<User, 'extraAkses' | 'akses' | 'jabatan'> | null;
+    pic: Omit<User, 'akses' | 'jabatan'> | null;
     closing: string[];
     /**
      * PTKA

@@ -1,3 +1,3 @@
 import ReadBody from "../../../read/response/body/body";
-export default interface Body extends Omit<ReadBody, 'extraAkses' | 'akses'> {
+export default interface Body extends Omit<ReadBody, 'akses'> {
 }

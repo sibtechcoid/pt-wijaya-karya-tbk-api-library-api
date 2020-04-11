@@ -4,7 +4,7 @@ import Akses from "../../../../user/akses/create/request/body/body";
 export default interface Body extends UserRead {
 
     token : string;
-    extraAkses : Akses;
+    //extraAkses : Akses;
     akses : Akses;
 
 }

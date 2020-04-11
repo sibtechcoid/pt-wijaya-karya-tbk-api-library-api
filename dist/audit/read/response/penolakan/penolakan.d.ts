@@ -6,7 +6,7 @@ import MemberJabatan from "../../../../anggota/jabatan/read/response/body/body";
 export default interface Penolakan extends Id, Record {
     realisasi: [Date | string, Date | string];
     alasan: string;
-    user: Omit<User, 'extraAkses' | 'jabatan' | 'akses'>;
+    user: Omit<User, 'jabatan' | 'akses'>;
     jabatan: Omit<UserJabatan, 'akses'> | null;
     jabatanMember: Omit<MemberJabatan, 'akses'> | null;
 }

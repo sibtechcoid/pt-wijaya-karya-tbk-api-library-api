@@ -16,7 +16,7 @@ export default interface Body extends Deactivate, Id, Schedule, Record {
     unitKerja: Object;
     anggota: Omit<Member, 'akses' | 'created' | 'updated' | 'id'>[];
     tipe: Type;
-    penyetuju: Omit<User, 'extraAkses' | 'jabatan' | 'akses'> | null;
+    penyetuju: Omit<User, 'jabatan' | 'akses'> | null;
     penolakan: Penolakan[];
     suratTugas: null | Omit<SuratTugas, 'audit' | 'lampiran'>;
     fase: Fase;

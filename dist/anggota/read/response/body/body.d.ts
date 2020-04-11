@@ -6,5 +6,5 @@ import Id from "../../../../id/id";
 export default interface Body extends Record, Id {
     status: Status;
     jabatan: Omit<Jabatan, 'akses'>;
-    user: Omit<User, 'extraAkses' | 'jabatan' | 'akses'>;
+    user: Omit<User, 'jabatan' | 'akses'>;
 }

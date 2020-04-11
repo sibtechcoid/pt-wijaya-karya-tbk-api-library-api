@@ -28,9 +28,9 @@ import Kuisioner from "../../../kuisioner/akses";
 export default interface Body {
     evaluasi: Evaluasi[];
     kuisioner: Kuisioner[];
-    perbaikanInternal: PerbaikanExternal[];
-    perbaikanQpass: PerbaikanInternal[];
-    perbaikanExternal: PerbaikanQpass[];
+    perbaikanInternal: PerbaikanInternal[];
+    perbaikanQpass: PerbaikanQpass[];
+    perbaikanExternal: PerbaikanExternal[];
     suratTugas: SuratTugas[];
     proyek: Project[];
     rencana: Rencana[];

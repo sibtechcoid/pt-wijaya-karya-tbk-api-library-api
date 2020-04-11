@@ -10,7 +10,7 @@ var Akses;
     /**
      * allow to update user, schedule
      */
-    Akses["UPDATE_USER_SCHEDULE"] = "UPDATE";
+    Akses["UPDATE_USER_SCHEDULE"] = "UPDATE_USER_SCHEDULE";
     /**
      * allow to update any data other than user, schedule
      */

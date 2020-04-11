@@ -8,7 +8,7 @@ enum Akses  {
     /**
      * allow to update user, schedule
      */
-    UPDATE_USER_SCHEDULE = 'UPDATE',
+    UPDATE_USER_SCHEDULE = 'UPDATE_USER_SCHEDULE',
 
     /**
      * allow to update any data other than user, schedule

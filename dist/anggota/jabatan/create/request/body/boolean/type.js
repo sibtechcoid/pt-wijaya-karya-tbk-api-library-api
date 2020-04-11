@@ -4,7 +4,7 @@ const type_1 = require("@dikac/t-enum/boolean/type");
 const group_1 = require("../../../../group/group");
 const type_2 = require("../../../../../../nama/create/boolean/type");
 const type_3 = require("../../../../../../singkatan/create/boolean/type");
-const type_4 = require("../../../../../akses/create/request/body/boolean/type");
+const type_4 = require("../../../../../../user/akses/create/request/body/boolean/type");
 function Type(value) {
     if (!type_2.default(value)) {
         return false;

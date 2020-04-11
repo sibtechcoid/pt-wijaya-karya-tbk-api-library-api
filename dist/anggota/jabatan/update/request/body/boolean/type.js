@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const type_1 = require("../../../../../akses/create/request/body/boolean/type");
+const type_1 = require("../../../../../../user/akses/create/request/body/boolean/type");
 const type_2 = require("../../../../../../nama/update/boolean/type");
 const type_3 = require("../../../../../../singkatan/update/boolean/type");
 const type_4 = require("@dikac/t-enum/boolean/type");

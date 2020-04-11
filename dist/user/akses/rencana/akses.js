@@ -8,6 +8,7 @@ var Akses;
     Akses["UPDATE_PUBLISH"] = "UPDATE_PUBLISH";
     Akses["DELETE"] = "DELETE";
     Akses["READ"] = "READ";
+    Akses["EMAIL_PUBLISH"] = "EMAIL_PUBLISH";
     Akses["EMAIL_SUBMIT"] = "EMAIL_SUBMIT";
 })(Akses || (Akses = {}));
 exports.default = Akses;

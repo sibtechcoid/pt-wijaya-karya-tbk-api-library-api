@@ -20,8 +20,20 @@ import HasilTemuanKriteria from "../../../hasil-temuan-kriteria/akses";
 import HasilTemuanLevel from "../../../hasil-temuan-level/akses";
 import ProsesBisnis from "../../../proses-bisnis/akses";
 import AuditProgram from "../../../audit-program/akses";
+import PerbaikanExternal from "../../../perbaikan-external/akses";
+import PerbaikanInternal from "../../../perbaikan-internal/akses";
+import PerbaikanQpass from "../../../perbaikan-qpass/akses";
+import Evaluasi from "../../../evaluasi/akses";
+import Kuisioner from "../../../kuisioner/akses";
 
 export default interface Body {
+
+    evaluasi : Evaluasi[];
+    kuisioner : Kuisioner[];
+
+    perbaikanInternal : PerbaikanExternal[];
+    perbaikanQpass : PerbaikanInternal[];
+    perbaikanExternal : PerbaikanQpass[];
 
     suratTugas : SuratTugas[];
     proyek : Project[];

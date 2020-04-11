@@ -24,6 +24,18 @@ import SuratTugasType from "../../../../surat-tugas/boolean/type";
 import ProsesBisnisType from "../../../../proses-bisnis/boolean/type";
 import ArrayOf from "@dikac/t-array/boolean/array-of";
 import Structure, {Validator} from "@dikac/t-object/boolean/structure";
+import Undefinable from "@dikac/t-undefined/boolean/undefinable";
+import KuisionerlAccess from "../../../../kuisioner/akses";
+import KuisionerType from "../../../../kuisioner/boolean/type";
+import EvaluasiAccess from "../../../../evaluasi/akses";
+import EvaluasiType from "../../../../evaluasi/boolean/type";
+import PerbaikanInternalAccess from "../../../../perbaikan-internal/akses";
+import PerbaikanInternalType from "../../../../perbaikan-internal/boolean/type";
+import PerbaikanQpassAccess from "../../../../perbaikan-qpass/akses";
+import PerbaikanQpassType from "../../../../perbaikan-qpass/boolean/type";
+import PerbaikanExternalAccess from "../../../../perbaikan-external/akses";
+import PerbaikanExternalType from "../../../../perbaikan-external/boolean/type";
+
 
 export default function Type(value : any) : value is Body {
 
@@ -32,7 +44,15 @@ export default function Type(value : any) : value is Body {
         return false;
     }
 
+
     let sort : Validator<Required<Body>> = {
+
+        kuisioner             : (v)=>ArrayOf(v, KuisionerType),
+        evaluasi              : (v)=>ArrayOf(v, EvaluasiType),
+        perbaikanInternal     : (v)=>ArrayOf(v, PerbaikanInternalType),
+        perbaikanQpass        : (v)=>ArrayOf(v, PerbaikanQpassType),
+        perbaikanExternal     : (v)=>ArrayOf(v, PerbaikanExternalType),
+
         suratTugas          : (v)=>ArrayOf(v, SuratTugasType),
         user                : (v)=>ArrayOf(v, UserAksesType),
         jabatan             : (v)=>ArrayOf(v, JabatanType),

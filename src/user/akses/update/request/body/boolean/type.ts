@@ -24,6 +24,11 @@ import HasilTemuanQpassType from "../../../../hasil-temuan-qpass/boolean/type";
 import HasilTemuanInternalType from "../../../../hasil-temuan-internal/boolean/type";
 import HasilTemuanKriteriaType from "../../../../hasil-temuan-kriteria/boolean/type";
 import HasilTemuanLevelType from "../../../../hasil-temuan-level/boolean/type";
+import PerbaikanExternalType from "../../../../perbaikan-external/boolean/type";
+import PerbaikanInternalType from "../../../../perbaikan-internal/boolean/type";
+import PerbaikanQpassType from "../../../../perbaikan-qpass/boolean/type";
+import KuisionerType from "../../../../kuisioner/boolean/type";
+import EvaluasiType from "../../../../evaluasi/boolean/type";
 import SuratTugasAccess from "../../../../surat-tugas/akses";
 import UserAksesAccess from "../../../../user/akses";
 import JabatanAccess from "../../../../jabatan/akses";
@@ -46,6 +51,11 @@ import HasilTemuanQpassAccess from "../../../../hasil-temuan-qpass/akses";
 import HasilTemuanInternalAccess from "../../../../hasil-temuan-internal/akses";
 import HasilTemuanKriteriaAccess from "../../../../hasil-temuan-kriteria/akses";
 import HasilTemuanLevelAccess from "../../../../hasil-temuan-level/akses";
+import PerbaikanInternalAccess from "../../../../perbaikan-internal/akses";
+import PerbaikanQpassAccess from "../../../../perbaikan-qpass/akses";
+import PerbaikanExternalAccess from "../../../../perbaikan-external/akses";
+import KuisionerlAccess from "../../../../kuisioner/akses";
+import EvaluasiAccess from "../../../../evaluasi/akses";
 import Undefinable from "@dikac/t-undefined/boolean/undefinable";
 import Positive from "@dikac/t-number/boolean/positive";
 
@@ -57,7 +67,14 @@ export default function Type(value : any) : value is Body {
     }
 
     let sort : Validator<Required<Body>> = {
-        id : Positive,
+        //id : Positive,
+        kuisioner             : (v)=>Undefinable(v,(v) : v is KuisionerlAccess[]           => ArrayOf(v, KuisionerType)),
+        evaluasi              : (v)=>Undefinable(v,(v) : v is EvaluasiAccess[]             => ArrayOf(v, EvaluasiType)),
+
+        perbaikanInternal     : (v)=>Undefinable(v,(v) : v is PerbaikanInternalAccess[]    => ArrayOf(v, PerbaikanInternalType)),
+        perbaikanQpass        : (v)=>Undefinable(v,(v) : v is PerbaikanQpassAccess[]       => ArrayOf(v, PerbaikanQpassType)),
+        perbaikanExternal     : (v)=>Undefinable(v,(v) : v is PerbaikanExternalAccess[]    => ArrayOf(v, PerbaikanExternalType)),
+
         suratTugas            : (v)=>Undefinable(v,(v) : v is SuratTugasAccess[]           => ArrayOf(v, SuratTugasType)),
         user                  : (v)=>Undefinable(v,(v) : v is UserAksesAccess[]            => ArrayOf(v, UserAksesType)),
         jabatan               : (v)=>Undefinable(v,(v) : v is JabatanAccess[]              => ArrayOf(v, JabatanType)),
@@ -81,6 +98,7 @@ export default function Type(value : any) : value is Body {
         hasilTemuanKriteria   : (v)=>Undefinable(v,(v) : v is HasilTemuanKriteriaAccess[]  => ArrayOf(v, HasilTemuanKriteriaType)),
         hasilTemuanLevel      : (v)=>Undefinable(v, (v) : v is HasilTemuanLevelAccess[]    => ArrayOf(v, HasilTemuanLevelType)),
     };
+
     return Structure(value, sort);
 
 }

@@ -2,6 +2,8 @@ import Sort from "../sort";
 import Structure, {Validator} from "@dikac/t-object/boolean/structure";
 import ModeType from "../../../../../../../sort/mode/boolean/type";
 import Undefinable from "@dikac/t-undefined/boolean/undefinable";
+import TypeType from "../../../../../type/type";
+import EnumType from "@dikac/t-enum/boolean/type";
 
 export default function Type<
     Extended extends Sort = Sort
@@ -16,6 +18,7 @@ export default function Type<
         updated    : (v) => Undefinable(v, ModeType),
         nama    : (v) => Undefinable(v, ModeType),
         singkatan    : (v) => Undefinable(v, ModeType),
+        tipe    : (v) => Undefinable(v, ModeType),
     };
 
     return Structure(value, sort);

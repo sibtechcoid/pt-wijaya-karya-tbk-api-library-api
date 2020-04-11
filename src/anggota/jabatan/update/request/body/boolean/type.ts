@@ -1,5 +1,5 @@
 import Body from "../body";
-import TypeAkses from "../../../../../akses/create/request/body/boolean/type";
+import TypeAkses from "../../../../../../user/akses/create/request/body/boolean/type";
 import TypeNama from "../../../../../../nama/update/boolean/type";
 import TypeSingkatan from "../../../../../../singkatan/update/boolean/type";
 import EnumType from "@dikac/t-enum/boolean/type";

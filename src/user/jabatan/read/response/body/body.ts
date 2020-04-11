@@ -5,4 +5,5 @@ import Deactivate from "../../../../../deactivate/read/response/body/body";
 
 export default interface Body extends JabatanCreate, Id, Record, Deactivate {
 
+
 }

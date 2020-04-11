@@ -3,7 +3,7 @@ import EnumType from "@dikac/t-enum/boolean/type";
 import Group from "../../../../group/group";
 import TypeNama from "../../../../../../nama/create/boolean/type";
 import TypeSingkatan from "../../../../../../singkatan/create/boolean/type";
-import TypeAkses from "../../../../../akses/create/request/body/boolean/type";
+import TypeAkses from "../../../../../../user/akses/create/request/body/boolean/type";
 
 export default function Type<Extended extends TypeInterface = TypeInterface>(value : any) : value is Extended {
 

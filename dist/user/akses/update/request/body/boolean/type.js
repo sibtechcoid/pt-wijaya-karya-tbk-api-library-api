@@ -25,14 +25,23 @@ const type_20 = require("../../../../hasil-temuan-qpass/boolean/type");
 const type_21 = require("../../../../hasil-temuan-internal/boolean/type");
 const type_22 = require("../../../../hasil-temuan-kriteria/boolean/type");
 const type_23 = require("../../../../hasil-temuan-level/boolean/type");
+const type_24 = require("../../../../perbaikan-external/boolean/type");
+const type_25 = require("../../../../perbaikan-internal/boolean/type");
+const type_26 = require("../../../../perbaikan-qpass/boolean/type");
+const type_27 = require("../../../../kuisioner/boolean/type");
+const type_28 = require("../../../../evaluasi/boolean/type");
 const undefinable_1 = require("@dikac/t-undefined/boolean/undefinable");
-const positive_1 = require("@dikac/t-number/boolean/positive");
 function Type(value) {
     if (!type_1.default(value)) {
         return false;
     }
     let sort = {
-        id: positive_1.default,
+        //id : Positive,
+        kuisioner: (v) => undefinable_1.default(v, (v) => array_of_1.default(v, type_27.default)),
+        evaluasi: (v) => undefinable_1.default(v, (v) => array_of_1.default(v, type_28.default)),
+        perbaikanInternal: (v) => undefinable_1.default(v, (v) => array_of_1.default(v, type_25.default)),
+        perbaikanQpass: (v) => undefinable_1.default(v, (v) => array_of_1.default(v, type_26.default)),
+        perbaikanExternal: (v) => undefinable_1.default(v, (v) => array_of_1.default(v, type_24.default)),
         suratTugas: (v) => undefinable_1.default(v, (v) => array_of_1.default(v, type_2.default)),
         user: (v) => undefinable_1.default(v, (v) => array_of_1.default(v, type_3.default)),
         jabatan: (v) => undefinable_1.default(v, (v) => array_of_1.default(v, type_4.default)),

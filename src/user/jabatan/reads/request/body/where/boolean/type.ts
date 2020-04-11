@@ -20,7 +20,6 @@ export default function
         deactivate    : (v) => Undefinable(v, BooleanType),
         nama    : (v) => Undefinable(v, StringType),
         singkatan    : (v) => Undefinable(v, StringType),
-        tipe    : (v) => Undefinable(v, (v) : v is TypeType =>EnumType(v, TypeType)),
     };
 
     return Structure(value, sort);

@@ -5,5 +5,4 @@ import Type from "../../../type/type";
 
 export default interface Body extends Singkatan, Nama {
     akses : Akses
-    tipe : Type;
 }

@@ -18,7 +18,6 @@ export default function Type<
         updated    : (v) => Undefinable(v, ModeType),
         nama    : (v) => Undefinable(v, ModeType),
         singkatan    : (v) => Undefinable(v, ModeType),
-        tipe    : (v) => Undefinable(v, ModeType),
     };
 
     return Structure(value, sort);

@@ -1,4 +1,6 @@
 import Id from "../../../../../id/id";
 import CreateBody from "../../../create/request/body/body";
-export default interface Body extends Partial<CreateBody>, Id {
+import Akses from "../../../../../user/akses/update/request/body/body";
+export default interface Body extends Partial<Omit<CreateBody, 'akses'>>, Id {
+    akses?: Akses;
 }

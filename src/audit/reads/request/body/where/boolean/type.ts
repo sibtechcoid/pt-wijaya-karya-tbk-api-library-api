@@ -32,7 +32,8 @@ export default function
         deactivate: (v) => Undefinable(v, DeactivatedType),
         rencana: (v) => Undefinable(v, (v) : v is Date[] => ArrayOf(v, TypeDateCompatible)),
         realisasi: (v) => Undefinable(v, (v) : v is Date[] => ArrayOf(v, TypeDateCompatible)),
-        status: (v) => Undefinable(v, (v) : v is Status => EnumType(v, Status)),
+
+        status: (v) => Undefinable(v, (v) : v is Status[] =>  ArrayOf(v, (v) : v is Status => EnumType(v, Status))),
         tipe: (v) => Undefinable(v, (v) : v is AuditType[] =>  ArrayOf(v, (v) : v is AuditType=>EnumType(v, AuditType))),
         fase: (v) => Undefinable(v, (v) : v is Fase[] =>  ArrayOf(v, (v) : v is Fase=>EnumType(v, Fase))),
 

@@ -1,6 +1,7 @@
 enum Akses  {
 
-    ANSWER  = 'ANSWER',
+    EVALUATOR  = 'EVALUATOR',
+    EVALUATEE  = 'EVALUATEE',
 }
 
 export default  Akses;

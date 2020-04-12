@@ -26,8 +26,8 @@ function Type(value) {
         rencana: (v) => undefinable_1.default(v, (v) => array_of_1.default(v, compatible_1.default)),
         realisasi: (v) => undefinable_1.default(v, (v) => array_of_1.default(v, compatible_1.default)),
         status: (v) => undefinable_1.default(v, (v) => type_3.default(v, status_1.default)),
-        tipe: (v) => undefinable_1.default(v, (v) => type_3.default(v, type_5.default)),
-        fase: (v) => undefinable_1.default(v, (v) => type_3.default(v, fase_1.default)),
+        tipe: (v) => undefinable_1.default(v, (v) => array_of_1.default(v, (v) => type_3.default(v, type_5.default))),
+        fase: (v) => undefinable_1.default(v, (v) => array_of_1.default(v, (v) => type_3.default(v, fase_1.default))),
     };
     return structure_1.default(value, count) && structure_1.default(value, sort);
     if (!type_2.default(value)) {

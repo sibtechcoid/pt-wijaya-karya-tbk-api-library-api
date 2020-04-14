@@ -1,3 +1,35 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+var Akses;
+(function (Akses) {
+    /**
+     * allow to create any data other than user, schedule
+     * allowed at jadwal rinci
+     */
+    Akses["CREATE"] = "CREATE";
+    /**
+     * allow to create any data
+     * allowed at hasil temuan
+     */
+    Akses["CREATE_EXECUTION"] = "CREATE_EXECUTION";
+    /**
+     * allow to update any data
+     * allowed at hasil temuan
+     */
+    Akses["UPDATE_EXECUTION"] = "UPDATE_EXECUTION";
+    Akses["DELETE"] = "DELETE";
+    Akses["READ"] = "READ";
+    Akses["SUBMIT"] = "SUBMIT";
+    /**
+     * allow to update user, schedule at jadwal rinci
+     * allowed at jadwal rinci
+     */
+    Akses["UPDATE_USER_SCHEDULE"] = "UPDATE_USER_SCHEDULE";
+    /**
+     * allow to update any data other than user, schedule
+     * allowed at jadwal rinci
+     */
+    Akses["UPDATE_DATA"] = "UPDATE_DATA";
+    Akses["SUBMIT_EMAIL_NOTIFICATION"] = "SUBMIT_EMAIL_NOTIFICATION";
+})(Akses || (Akses = {}));
 exports.default = Akses;

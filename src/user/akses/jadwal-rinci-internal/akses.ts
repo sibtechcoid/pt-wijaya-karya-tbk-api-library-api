@@ -1,4 +1,4 @@
-declare enum Akses {
+enum Akses {
     /**
      * allow to create any data other than user, schedule
      * allowed at jadwal rinci

@@ -4,7 +4,7 @@ import Id from "../../../../../id/id";
 import Audit from "../../../../../audit/read/response/body/body";
 import Status from "../../../status/status";
 export default interface Body extends Record, Id {
-    audit: Omit<Audit, 'unitKerja' | 'penyetuju' | 'penolakan' | 'anggota' | 'suratTugas'>;
+    audit: Omit<Audit, 'unitKerja' | 'penyetuju' | 'penolakan' | 'anggota' | 'suratTugas' | 'jabatan'>;
     /**
      * perintah
      */

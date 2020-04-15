@@ -6,7 +6,7 @@ import Status from "../../../status/status";
 
 export default interface Body extends Record, Id {
 
-    audit : Omit<Audit, 'unitKerja'|'penyetuju'|'penolakan'|'anggota'|'suratTugas'>;
+    audit : Omit<Audit, 'unitKerja'|'penyetuju'|'penolakan'|'anggota'|'suratTugas'|'jabatan'>;
 
     /**
      * perintah

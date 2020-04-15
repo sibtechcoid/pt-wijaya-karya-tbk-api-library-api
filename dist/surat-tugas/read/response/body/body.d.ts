@@ -1,7 +1,7 @@
 import Id from "../../../../id/id";
 import Audit from "../../../../audit/read/response/body/body";
 import Record from "../../../../record/record";
-export interface LimitedAudit extends Omit<Audit, 'anggota' | 'penolakan' | 'penyetuju' | 'unitKerja' | 'suratTugas'> {
+export interface LimitedAudit extends Omit<Audit, 'anggota' | 'penolakan' | 'penyetuju' | 'unitKerja' | 'suratTugas' | 'jabatan'> {
     unitKerja: Omit<Object, 'levelUsaha' | 'jenisUnit' | 'jenisUsaha'>;
 }
 export default interface Body extends Id, Record {

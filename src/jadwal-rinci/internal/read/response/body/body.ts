@@ -10,7 +10,7 @@ import Deactivate from "../../../../../deactivate/read/response/body/body";
 
 export default interface Body extends Record, Id, Deactivate  {
 
-    audit: Omit<Audit, 'unitKerja'|'penyetuju'|'penolakan'|'anggota'|'suratTugas'>;
+    audit: Omit<Audit, 'unitKerja'|'penyetuju'|'penolakan'|'anggota'|'suratTugas'|'jabatan'>;
     selesai  : Date|string;
     mulai  : Date|string;
     fungsi : Fungsi[];

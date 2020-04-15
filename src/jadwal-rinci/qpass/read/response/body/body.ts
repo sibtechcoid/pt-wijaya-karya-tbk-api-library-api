@@ -10,7 +10,7 @@ export default interface Body extends Deactivate, Record, Id  {
 
    // pelaksanaan : boolean;
     auditor : Omit<User,'akses'|'jabatan'>[];
-    audit: Omit<Audit, 'unitKerja'|'penyetuju'|'penolakan'|'anggota'|'suratTugas'>;
+    audit: Omit<Audit, 'unitKerja'|'penyetuju'|'penolakan'|'anggota'|'suratTugas'|'jabatan'>;
     selesai  : Date|string;
     mulai  : Date|string;
     fungsi : Fungsi[];

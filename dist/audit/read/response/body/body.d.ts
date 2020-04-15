@@ -27,5 +27,5 @@ export default interface Body extends Deactivate, Id, Schedule, Record {
     /**
      * virual property
      */
-    jabatan: Omit<Jabatan, 'akses'> | null;
+    jabatan: Jabatan | null;
 }

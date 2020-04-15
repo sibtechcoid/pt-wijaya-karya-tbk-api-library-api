@@ -11,6 +11,7 @@ import Penolakan from "../penolakan/penolakan";
 import SuratTugas from "../../../../surat-tugas/read/response/body/body";
 import Fase from "../../../fase/fase";
 import Perbaikan from "../../../perbaikan/perbaikan";
+import Jabatan from "../../../../anggota/jabatan/read/response/body/body";
 
 export default interface Body extends Deactivate, Id, Schedule, Record  {
 
@@ -26,4 +27,9 @@ export default interface Body extends Deactivate, Id, Schedule, Record  {
 
     catatanAuditor : null|string;
     catatanAuditee : null|string;
+
+    /**
+     * virual property
+     */
+    jabatan : Omit<Jabatan, 'akses'>|null;
 }

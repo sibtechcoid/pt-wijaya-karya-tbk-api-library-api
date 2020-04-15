@@ -11,6 +11,7 @@ import Penolakan from "../penolakan/penolakan";
 import SuratTugas from "../../../../surat-tugas/read/response/body/body";
 import Fase from "../../../fase/fase";
 import Perbaikan from "../../../perbaikan/perbaikan";
+import Jabatan from "../../../../anggota/jabatan/read/response/body/body";
 export default interface Body extends Deactivate, Id, Schedule, Record {
     status: AuditStatus;
     unitKerja: Object;
@@ -23,4 +24,8 @@ export default interface Body extends Deactivate, Id, Schedule, Record {
     perbaikan: null | Perbaikan;
     catatanAuditor: null | string;
     catatanAuditee: null | string;
+    /**
+     * virual property
+     */
+    jabatan: Omit<Jabatan, 'akses'> | null;
 }

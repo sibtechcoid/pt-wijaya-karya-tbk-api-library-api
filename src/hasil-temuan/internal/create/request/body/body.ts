@@ -8,7 +8,6 @@ export default interface Body {
     masalah : string[];
     objek : string[]
 
-
     kriteria : number[];
 
     lampiran : string[]

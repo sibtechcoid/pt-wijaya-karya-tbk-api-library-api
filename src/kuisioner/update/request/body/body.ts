@@ -1,8 +1,6 @@
 import Id from "../../../../id/id";
-import Group from "../../../../anggota/jabatan/group/group";
+import CreateBody from "../../../create/request/body/body";
 
-export default interface Body extends Id {
+export default interface Body extends Id, Partial<CreateBody> {
 
-    pertanyaan ?: string;
-    dari ?: Group;
 }

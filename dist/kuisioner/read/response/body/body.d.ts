@@ -1,7 +1,8 @@
 import Id from "../../../../id/id";
-import Deactivate from "../../../../deactivate/read/response/body/body";
+import Record from "../../../../record/record";
 import Group from "../../../../anggota/jabatan/group/group";
-export default interface Body extends Id, Deactivate {
+import Deactivate from "../../../../deactivate/read/response/body/body";
+export default interface Body extends Id, Record, Deactivate {
     pertanyaan: string;
     dari: Group;
 }

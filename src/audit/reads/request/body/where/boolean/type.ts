@@ -10,7 +10,6 @@ import AuditType from "../../../../../type/type";
 import Positive from "@dikac/t-number/boolean/positive";
 import Structure, {Validator} from "@dikac/t-object/boolean/structure";
 import Undefinable from "@dikac/t-undefined/boolean/undefinable";
-import BooleanType from "@dikac/t-boolean/type";
 import Fase from "../../../../../fase/fase";
 
 export default function

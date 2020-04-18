@@ -1,5 +1,5 @@
-import Type from "../../create/request/body/body";
 import Success from "../../../response/success";
+import Body from "./body/body";
 
-type Response = Success<Type[]>;
+type Response = Success<Body>;
 export default Response;

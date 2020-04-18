@@ -6,8 +6,5 @@ import TypeType from "../request/body/boolean/type";
 
 export default function Create () : Route {
 
-    return CreateRoute(
-        UpdateCreate(),
-        Path(), TypeType
-    );
+    return CreateRoute(UpdateCreate(), Path(), TypeType);
 }

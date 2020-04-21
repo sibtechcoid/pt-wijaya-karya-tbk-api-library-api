@@ -10,7 +10,7 @@ import Status from "../../../status/status";
 import Penolakan from "../penolakan/penolakan";
 export default interface Body extends Record, Id {
     prosesBisnis: Omit<ProsesBisnis, 'prosedur'>;
-    jadwalRinci: Omit<JadwalRinci, 'audit' | 'fungsi' | 'prosedur' | 'prosesBisnis' | 'klausul' | 'auditor'>;
+    jadwalRinci: Omit<JadwalRinci, 'audit' | 'fungsi' | 'prosedur' | 'prosesBisnis' | 'klausul' | 'auditor' | 'temuan'>;
     prosedur: Omit<Prosedur, 'prosesBisnis'>;
     klausul: Omit<Klausul, 'auditProgram'>[];
     fungsi: Fungsi[];

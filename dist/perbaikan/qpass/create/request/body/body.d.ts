@@ -28,5 +28,5 @@ export default interface Body {
      * Save
      */
     ditutup: boolean;
-    remark: boolean;
+    remark: string;
 }

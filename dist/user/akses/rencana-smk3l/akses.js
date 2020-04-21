@@ -4,8 +4,8 @@ var Akses;
 (function (Akses) {
     Akses["CREATE"] = "CREATE";
     Akses["UPDATE_DATA"] = "UPDATE_DATA";
-    Akses["UPDATE_SUBMIT"] = "UPDATE_SUBMIT";
-    Akses["UPDATE_PUBLISH"] = "UPDATE_PUBLISH";
+    Akses["SUBMIT"] = "SUBMIT";
+    Akses["PUBLISH"] = "PUBLISH";
     Akses["DELETE"] = "DELETE";
     Akses["READ"] = "READ";
     Akses["EMAIL_PUBLISH"] = "EMAIL_PUBLISH";

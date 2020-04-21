@@ -4,7 +4,7 @@ import Id from "../../../../../id/id";
 import Nama from "../../../../../nama/create/nama";
 import LevelUsaha from "../../../../../unit-kerja/level-usaha/read/response/body/body";
 
-export default interface Bodyz extends Deactivate, Record, Id, Nama  {
+export default interface Body extends Deactivate, Record, Id, Nama  {
 
     levelUsaha: Omit<LevelUsaha,'jenisUnit'>;
     judul : boolean;

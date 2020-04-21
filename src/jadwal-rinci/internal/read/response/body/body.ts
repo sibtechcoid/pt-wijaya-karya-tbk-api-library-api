@@ -7,11 +7,11 @@ import Klausul from "../../../../klausul/read/response/body/body";
 import Audit from "../../../../../audit/read/response/body/body";
 import User from "../../../../../user/read/response/body/body";
 import Deactivate from "../../../../../deactivate/read/response/body/body";
-import Body from "../../../../../hasil-temuan/internal/read/response/body/body";
+import HasilTemuan from "../../../../../hasil-temuan/internal/read/response/body/body";
 
-export default interface Bodyz extends Record, Id, Deactivate  {
+export default interface Body extends Record, Id, Deactivate  {
 
-    temuan : Pick<Body, keyof Record|keyof Id|'status'>
+    temuan : Pick<HasilTemuan, keyof Record|keyof Id|'status'>
     audit: Omit<Audit, 'unitKerja'|'penyetuju'|'penolakan'|'anggota'|'suratTugas'|'jabatan'>;
     selesai  : Date|string;
     mulai  : Date|string;

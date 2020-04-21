@@ -23,7 +23,7 @@ export default function Type<
         kuisioner   : (v) => Undefinable(v, ModeType),
         deactivate  : (v) => Undefinable(v, ModeType),
         nilai       : (v) => Undefinable(v, ModeType),
-        ke          : (v) => Undefinable(v, ModeType),
+        untuk          : (v) => Undefinable(v, ModeType),
     };
 
     return Structure(value, sort);

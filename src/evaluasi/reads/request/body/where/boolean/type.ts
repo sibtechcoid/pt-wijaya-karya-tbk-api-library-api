@@ -21,7 +21,7 @@ export default function
         //pertanyaan: (v) => Undefinable(v, IsString),
         dari: (v) => Undefinable(v, (v) : v is Group =>IsEnum(v, Group)),
         deactivate : (v) => Undefinable(v, BooleanType),
-        ke : (v) => Undefinable(v, TypeNumber),
+        untuk : (v) => Undefinable(v, TypeNumber),
         kuisioner: (v) => Undefinable(v, TypeNumber),
         nilai: (v) => Undefinable(v, TypeNumber),
         audit: (v) => Undefinable(v, TypeNumber),

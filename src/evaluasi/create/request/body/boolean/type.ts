@@ -14,7 +14,7 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
     }
 
     let create : Validator<Required<TypeInterface>> = {
-        ke : TypeNumber,
+        untuk : TypeNumber,
         kuisioner: TypeNumber,
         nilai: TypeNumber,
         audit: TypeNumber,

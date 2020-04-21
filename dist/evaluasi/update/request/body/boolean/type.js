@@ -11,7 +11,7 @@ function Type(value) {
     }
     let sort = {
         id: (v) => undefinable_1.default(v, positive_1.default),
-        ke: (v) => undefinable_1.default(v, type_2.default),
+        untuk: (v) => undefinable_1.default(v, type_2.default),
         kuisioner: (v) => undefinable_1.default(v, type_2.default),
         nilai: (v) => undefinable_1.default(v, type_2.default),
         audit: (v) => undefinable_1.default(v, type_2.default),

@@ -8,7 +8,7 @@ function Type(value) {
         return false;
     }
     let create = {
-        ke: type_2.default,
+        untuk: type_2.default,
         kuisioner: type_2.default,
         nilai: type_2.default,
         audit: type_2.default,

@@ -16,7 +16,7 @@ function Type(value) {
         kuisioner: (v) => undefinable_1.default(v, type_1.default),
         deactivate: (v) => undefinable_1.default(v, type_1.default),
         nilai: (v) => undefinable_1.default(v, type_1.default),
-        ke: (v) => undefinable_1.default(v, type_1.default),
+        untuk: (v) => undefinable_1.default(v, type_1.default),
     };
     return structure_1.default(value, sort);
 }

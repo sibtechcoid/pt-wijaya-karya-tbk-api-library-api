@@ -16,7 +16,7 @@ function Type(value) {
         //pertanyaan: (v) => Undefinable(v, IsString),
         dari: (v) => undefinable_1.default(v, (v) => type_3.default(v, group_1.default)),
         deactivate: (v) => undefinable_1.default(v, type_2.default),
-        ke: (v) => undefinable_1.default(v, type_4.default),
+        untuk: (v) => undefinable_1.default(v, type_4.default),
         kuisioner: (v) => undefinable_1.default(v, type_4.default),
         nilai: (v) => undefinable_1.default(v, type_4.default),
         audit: (v) => undefinable_1.default(v, type_4.default),

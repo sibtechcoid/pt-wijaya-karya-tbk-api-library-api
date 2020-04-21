@@ -14,6 +14,7 @@ function Type(value) {
         id: (v) => undefinable_1.default(v, positive_1.default),
         ditutup: (v) => undefinable_1.default(v, type_2.default),
         catatan: (v) => undefinable_1.default(v, type_1.default),
+        remark: (v) => undefinable_1.default(v, type_1.default),
     };
     return structure_1.default(value, update);
 }

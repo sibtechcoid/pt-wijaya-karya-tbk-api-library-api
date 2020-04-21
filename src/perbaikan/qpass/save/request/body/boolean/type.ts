@@ -18,6 +18,7 @@ export default function Type<Extended extends Body = Body>(value : any) : value 
         id: (v) => Undefinable(v, Positive),
         ditutup : (v) => Undefinable(v, BooleanType),
         catatan : (v) => Undefinable(v, StringType),
+        remark : (v) => Undefinable(v, StringType),
     };
 
     return Structure(value, update);

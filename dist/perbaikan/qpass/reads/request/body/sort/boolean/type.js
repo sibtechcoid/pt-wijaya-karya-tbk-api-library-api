@@ -28,6 +28,7 @@ function Type(value) {
         selesai: (v) => undefinable_1.default(v, type_1.default),
         ditutup: (v) => undefinable_1.default(v, type_1.default),
         catatan: (v) => undefinable_1.default(v, type_1.default),
+        remark: (v) => undefinable_1.default(v, type_1.default),
     };
     return structure_1.default(value, sort);
 }

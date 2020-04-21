@@ -37,7 +37,7 @@ export default function Type<Extended extends Body = Body>(value : any) : value 
         /**
          * PTKA
          */
-
+        catatan : (v) => Undefinable(v, StringType),
         ptka : (v) => Undefinable(v, StringType),
         referensi : (v) => Undefinable(v, StringType),
         konsekuensi : (v) => Undefinable(v, StringType),

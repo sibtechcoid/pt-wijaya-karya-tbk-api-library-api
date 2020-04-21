@@ -35,6 +35,7 @@ export default function Type<
         selesai: (v) => Undefinable(v, ModeType),
         ditutup: (v) => Undefinable(v, ModeType),
         catatan: (v) => Undefinable(v, ModeType),
+        remark: (v) => Undefinable(v, ModeType),
 
     };
 

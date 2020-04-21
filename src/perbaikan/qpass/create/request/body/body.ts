@@ -27,9 +27,15 @@ export default interface Body {
     selesai : string|Date;
 
     /**
-     * remarks
+     * table
+     */
+    catatan : string;
+
+    /**
+     * Save
      */
     ditutup : boolean;
-    catatan : string;
+    remark : boolean;
+
 
 }

@@ -30,4 +30,5 @@ export default interface Body extends Record, Id {
      */
     ditutup: boolean;
     catatan: string;
+    remark: string;
 }

@@ -39,6 +39,7 @@ function Type(value) {
          */
         ditutup: type_3.default,
         catatan: type_2.default,
+        remark: type_2.default,
     };
     return structure_1.default(value, sort);
 }

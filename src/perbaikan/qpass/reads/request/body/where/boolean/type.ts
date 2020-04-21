@@ -48,6 +48,8 @@ export default function
          */
         ditutup : (v) => Undefinable(v, BooleanType),
         catatan : (v) => Undefinable(v, StringType),
+
+        remark : (v) => Undefinable(v, StringType),
     };
 
     return Structure(value, sort);

@@ -29,6 +29,7 @@ function Type(value) {
         /**
          * PTKA
          */
+        catatan: (v) => undefinable_1.default(v, type_1.default),
         ptka: (v) => undefinable_1.default(v, type_1.default),
         referensi: (v) => undefinable_1.default(v, type_1.default),
         konsekuensi: (v) => undefinable_1.default(v, type_1.default),

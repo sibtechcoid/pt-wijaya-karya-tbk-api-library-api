@@ -1,11 +1,8 @@
 import TypeInterface from "../body";
 import NotNull from "@dikac/t-object/boolean/type";
-import IsString from "@dikac/t-string/boolean/type";
 import Positive from "@dikac/t-number/boolean/positive";
 import Structure, {Validator} from "@dikac/t-object/boolean/structure";
 import Undefinable from "@dikac/t-undefined/boolean/undefinable";
-import IsEnum from "@dikac/t-enum/boolean/type";
-import Group from "../../../../../anggota/jabatan/group/group";
 import TypeNumber from "@dikac/t-number/boolean/type";
 
 export default function Type<Extended extends TypeInterface = TypeInterface>(value : any) : value is Extended {

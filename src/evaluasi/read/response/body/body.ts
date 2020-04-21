@@ -1,6 +1,5 @@
 import Id from "../../../../id/id";
 import Record from "../../../../record/record";
-import Group from "../../../../anggota/jabatan/group/group";
 import Deactivate from "../../../../deactivate/read/response/body/body";
 import Kuisioner from "../../../../kuisioner/read/response/body/body";
 import Audit from "../../../../audit/read/response/body/body";

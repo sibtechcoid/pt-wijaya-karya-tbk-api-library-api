@@ -3,7 +3,6 @@ import Where from "../where";
 import BooleanType from "@dikac/t-boolean/type";
 import Structure, {Validator} from "@dikac/t-object/boolean/structure";
 import Undefinable from "@dikac/t-undefined/boolean/undefinable";
-import IsString from "@dikac/t-string/boolean/type";
 import IsEnum from "@dikac/t-enum/boolean/type";
 import Group from "../../../../../../anggota/jabatan/group/group";
 import TypeNumber from "@dikac/t-number/boolean/type";

@@ -11,7 +11,7 @@ import HasilTemuan from "../../../../../hasil-temuan/internal/read/response/body
 
 export default interface Body extends Record, Id, Deactivate  {
 
-    temuan : Pick<HasilTemuan, keyof Record|keyof Id|'status'|'jadwalRinci'>
+    temuan : Pick<HasilTemuan, keyof Record|keyof Id|'status'>[]
     audit: Omit<Audit, 'unitKerja'|'penyetuju'|'penolakan'|'anggota'|'suratTugas'|'jabatan'>;
     selesai  : Date|string;
     mulai  : Date|string;

@@ -3,5 +3,5 @@ import Path from "./path";
 
 export default function Create() : Path {
 
-    return new CreatePath('/dashboard/smk3l');
+    return new CreatePath('/dashboard/audit-smk3l');
 }

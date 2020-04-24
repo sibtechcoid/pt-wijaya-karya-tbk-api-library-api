@@ -1,4 +1,4 @@
 export default interface Body {
-    status: string[];
+    proyek: string[];
     data: number[];
 }

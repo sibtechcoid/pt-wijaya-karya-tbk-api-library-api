@@ -1,5 +1,5 @@
 export default interface Body {
-    externalOrganisasiRep: string;
-    externalOrganisasiNo: string;
-    externalAuditNo: string;
+    externalOrganisasiRep: string | null;
+    externalOrganisasiNo: string | null;
+    externalAuditNo: string | null;
 }

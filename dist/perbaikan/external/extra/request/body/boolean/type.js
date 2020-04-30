@@ -11,9 +11,9 @@ function Type(value) {
     }
     let sort = {
         audit: (v) => undefinable_1.default(v, positive_1.default),
-        organisasiRep: (v) => undefinable_1.default(v, type_2.default),
-        organisasiNo: (v) => undefinable_1.default(v, type_2.default),
-        auditNo: (v) => undefinable_1.default(v, type_2.default),
+        externalOrganisasiRep: (v) => undefinable_1.default(v, type_2.default),
+        externalOrganisasiNo: (v) => undefinable_1.default(v, type_2.default),
+        externalAuditNo: (v) => undefinable_1.default(v, type_2.default),
     };
     return structure_1.default(value, sort);
 }

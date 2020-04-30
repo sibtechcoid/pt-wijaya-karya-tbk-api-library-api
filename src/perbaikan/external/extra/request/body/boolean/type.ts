@@ -20,9 +20,9 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
     let sort : Validator<Required<TypeInterface>> = {
 
         audit: (v) => Undefinable(v, Positive),
-        organisasiRep: (v) => Undefinable(v, StringType),
-        organisasiNo: (v) => Undefinable(v, StringType),
-        auditNo: (v) => Undefinable(v, StringType),
+        externalOrganisasiRep: (v) => Undefinable(v, StringType),
+        externalOrganisasiNo: (v) => Undefinable(v, StringType),
+        externalAuditNo: (v) => Undefinable(v, StringType),
 
     };
 

@@ -1,10 +1,6 @@
-import CreateBody from "../../../../read/response/body/body";
+import CreateBody from "../../../../create/request/body/body";
 
-export default interface Where extends  Partial<Omit<CreateBody, 'kuisioner'|'audit'|'dari'|'untuk'>> {
+export default interface Where extends  Partial<CreateBody> {
 
-    kuisioner ?: number;
-    audit ?: number;
-    dari ?: number;
-    untuk ?: number;
 }
 

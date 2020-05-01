@@ -17,16 +17,11 @@ export default function
     }
 
     let sort : Validator<Required<Where>> = {
-        //pertanyaan: (v) => Undefinable(v, IsString),
-        dari: (v) => Undefinable(v, (v) : v is Group =>IsEnum(v, Group)),
-        deactivate : (v) => Undefinable(v, BooleanType),
+        dari: (v) => Undefinable(v, TypeNumber),
         untuk : (v) => Undefinable(v, TypeNumber),
         kuisioner: (v) => Undefinable(v, TypeNumber),
         nilai: (v) => Undefinable(v, TypeNumber),
         audit: (v) => Undefinable(v, TypeNumber),
-        id: (v) => Undefinable(v, TypeNumber),
-        created : (v) => Undefinable(v, TypeDateCompatible),
-        updated : (v) => Undefinable(v, TypeDateCompatible),
     };
 
     return Structure(value, sort);

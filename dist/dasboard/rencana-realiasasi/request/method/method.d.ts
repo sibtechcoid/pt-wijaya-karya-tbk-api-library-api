@@ -1,3 +1,3 @@
-import Create from "../../../../method/create";
-export default interface Method extends Create {
+import Read from "../../../../method/read";
+export default interface Method extends Read {
 }

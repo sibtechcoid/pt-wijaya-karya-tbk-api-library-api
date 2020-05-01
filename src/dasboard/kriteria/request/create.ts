@@ -3,8 +3,9 @@ import CreatBody from "../../../body/create";
 import CreateCreate from "../../../method/create-create";
 import Path from "./path/create";
 import Object from "./body/body";
+import ReadCreate from "../../../method/read-create";
 
 export default function Create(type : Object) : Request {
 
-    return Object.assign(CreateCreate(), Path(), new CreatBody<Object>(type))
+    return Object.assign(ReadCreate(), Path(), new CreatBody<Object>(type))
 }

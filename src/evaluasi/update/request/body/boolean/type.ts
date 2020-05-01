@@ -14,40 +14,8 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
 
     let sort : Validator<Required<TypeInterface>> = {
         id : (v) => Undefinable(v, Positive),
-        untuk : (v) => Undefinable(v, TypeNumber),
-        kuisioner: (v) => Undefinable(v, TypeNumber),
         nilai: (v) => Undefinable(v, TypeNumber),
-        audit: (v) => Undefinable(v, TypeNumber),
     };
-    //
-    // if(!TypeId(value)) {
-    //
-    //     return false;
-    // }
-    //
-    // if(value.nomer !== undefined) {
-    //
-    //     if(!IsString(value.nomer)) {
-    //
-    //         return false;
-    //     }
-    // }
-    //
-    // if(value.audit !== undefined) {
-    //
-    //     if(!ArrayOf(value.audit, Positive)) {
-    //
-    //         return false;
-    //     }
-    // }
-    //
-    // if(value.lampiran !== undefined) {
-    //
-    //     if(!ArrayOf(value.lampiran, IsString)) {
-    //
-    //         return false;
-    //     }
-    // }
 
     return Structure(value, sort)
 }

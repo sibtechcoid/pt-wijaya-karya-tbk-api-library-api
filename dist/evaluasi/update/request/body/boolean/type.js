@@ -11,40 +11,8 @@ function Type(value) {
     }
     let sort = {
         id: (v) => undefinable_1.default(v, positive_1.default),
-        untuk: (v) => undefinable_1.default(v, type_2.default),
-        kuisioner: (v) => undefinable_1.default(v, type_2.default),
         nilai: (v) => undefinable_1.default(v, type_2.default),
-        audit: (v) => undefinable_1.default(v, type_2.default),
     };
-    //
-    // if(!TypeId(value)) {
-    //
-    //     return false;
-    // }
-    //
-    // if(value.nomer !== undefined) {
-    //
-    //     if(!IsString(value.nomer)) {
-    //
-    //         return false;
-    //     }
-    // }
-    //
-    // if(value.audit !== undefined) {
-    //
-    //     if(!ArrayOf(value.audit, Positive)) {
-    //
-    //         return false;
-    //     }
-    // }
-    //
-    // if(value.lampiran !== undefined) {
-    //
-    //     if(!ArrayOf(value.lampiran, IsString)) {
-    //
-    //         return false;
-    //     }
-    // }
     return structure_1.default(value, sort);
 }
 exports.default = Type;

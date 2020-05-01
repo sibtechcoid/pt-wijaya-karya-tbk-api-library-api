@@ -1,4 +1,4 @@
-import TypeInterface from "../../../../create/request/body/body";
+import TypeInterface from "../../../../list/request/body/body";
 import NotNull from "@dikac/t-object/boolean/type";
 import Structure, {Validator} from "@dikac/t-object/boolean/structure";
 import TypeNumber from "@dikac/t-number/boolean/type";
@@ -12,10 +12,7 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
 
     let create : Validator<Required<TypeInterface>> = {
         untuk : TypeNumber,
-        kuisioner: TypeNumber,
-        nilai: TypeNumber,
         audit: TypeNumber,
-
     };
 
     return Structure(value, create);

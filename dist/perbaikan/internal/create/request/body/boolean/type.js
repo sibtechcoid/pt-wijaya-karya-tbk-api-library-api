@@ -42,6 +42,10 @@ function Type(value) {
          */
         ditutup: type_3.default,
         catatan: type_2.default,
+        /**
+         * additional
+         */
+        noProsedur: type_2.default,
     };
     return structure_1.default(value, sort);
 }

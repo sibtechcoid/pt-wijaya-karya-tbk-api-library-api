@@ -1,6 +1,6 @@
 {
   "name": "wika-aims-api-library",
-  "version": "0.230.0",
+  "version": "0.230.1",
   "description": "Wika API library",
   "dependencies": {
     "@dikac/deployer": "^0.1.4",

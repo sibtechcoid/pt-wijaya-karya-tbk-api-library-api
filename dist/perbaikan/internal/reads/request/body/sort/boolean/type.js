@@ -30,6 +30,7 @@ function Type(value) {
         ditutup: (v) => undefinable_1.default(v, type_1.default),
         catatan: (v) => undefinable_1.default(v, type_1.default),
         rencanaPerbaikan: (v) => undefinable_1.default(v, type_1.default),
+        noProsedur: (v) => undefinable_1.default(v, type_1.default),
     };
     return structure_1.default(value, sort);
 }

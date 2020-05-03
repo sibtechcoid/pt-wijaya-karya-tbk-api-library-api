@@ -48,6 +48,7 @@ export default function Type<Extended extends Body = Body>(value : any) : value 
         /**
          * PTKA
          */
+        noProsedur : (v) => Undefinable(v, StringType),
         prosedur : (v) => Undefinable(v, Positive),
         ptka : (v) => Undefinable(v, StringType),
         konsekuensi : (v) => Undefinable(v, StringType),

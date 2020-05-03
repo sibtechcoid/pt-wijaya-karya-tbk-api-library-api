@@ -64,6 +64,8 @@ export default function
         //  * submitted
         //  */
         // submit : (v) => Undefinable(v, BooleanType),
+
+        noProsedur : (v) => Undefinable(v, StringType),
     };
 
     return Structure(value, sort);

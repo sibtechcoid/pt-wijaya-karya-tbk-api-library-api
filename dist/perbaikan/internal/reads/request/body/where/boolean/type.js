@@ -48,6 +48,12 @@ function Type(value) {
          */
         ditutup: (v) => undefinable_1.default(v, type_2.default),
         catatan: (v) => undefinable_1.default(v, type_3.default),
+        //
+        // /**
+        //  * submitted
+        //  */
+        // submit : (v) => Undefinable(v, BooleanType),
+        noProsedur: (v) => undefinable_1.default(v, type_3.default),
     };
     return structure_1.default(value, sort);
 }

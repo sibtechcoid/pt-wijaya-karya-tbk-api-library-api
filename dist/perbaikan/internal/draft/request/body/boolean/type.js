@@ -41,6 +41,7 @@ function Type(value) {
         /**
          * PTKA
          */
+        noProsedur: (v) => undefinable_1.default(v, type_1.default),
         prosedur: (v) => undefinable_1.default(v, positive_1.default),
         ptka: (v) => undefinable_1.default(v, type_1.default),
         konsekuensi: (v) => undefinable_1.default(v, type_1.default),

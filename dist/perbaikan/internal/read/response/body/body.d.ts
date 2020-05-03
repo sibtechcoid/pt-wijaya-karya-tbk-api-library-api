@@ -34,4 +34,8 @@ export default interface Body extends Record, Id {
      */
     ditutup: boolean;
     catatan: string;
+    /**
+     * additional
+     */
+    noProsedur: string | null;
 }

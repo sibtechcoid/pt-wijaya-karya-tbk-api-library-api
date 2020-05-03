@@ -50,6 +50,10 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
         ditutup : BooleanType,
         catatan : StringType,
 
+        /**
+         * additional
+         */
+        noProsedur : StringType,
     };
 
     return Structure(value, sort);

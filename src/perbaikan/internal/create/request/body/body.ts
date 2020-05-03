@@ -34,4 +34,9 @@ export default interface Body {
     ditutup : boolean;
     catatan : string
 
+
+    /**
+     * additional
+     */
+    noProsedur : string;
 }

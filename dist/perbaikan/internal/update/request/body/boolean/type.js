@@ -44,6 +44,10 @@ function Type(value) {
          */
         ditutup: type_4.default,
         catatan: type_2.default,
+        /**
+         * additional
+         */
+        noProsedur: (v) => undefinable_1.default(v, type_2.default),
     };
     return structure_1.default(value, sort);
 }

@@ -52,6 +52,11 @@ export default function Type<Extended extends Body = Body>(value : any) : value 
          */
         ditutup : BooleanType,
         catatan : StringType,
+
+        /**
+         * additional
+         */
+        noProsedur : (v) => Undefinable(v, StringType),
     };
 
     return Structure(value, sort);

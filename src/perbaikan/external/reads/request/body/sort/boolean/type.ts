@@ -39,7 +39,7 @@ export default function Type<
         tanggal: (v) => Undefinable(v, ModeType),
         catatan: (v) => Undefinable(v, ModeType),
         status: (v) => Undefinable(v, ModeType),
-
+        fungsiBagian: (v) => Undefinable(v, ModeType),
     };
 
     return Structure(value, sort);

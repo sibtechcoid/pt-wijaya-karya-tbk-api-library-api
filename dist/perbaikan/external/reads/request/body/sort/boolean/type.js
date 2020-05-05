@@ -32,6 +32,7 @@ function Type(value) {
         tanggal: (v) => undefinable_1.default(v, type_1.default),
         catatan: (v) => undefinable_1.default(v, type_1.default),
         status: (v) => undefinable_1.default(v, type_1.default),
+        fungsiBagian: (v) => undefinable_1.default(v, type_1.default),
     };
     return structure_1.default(value, sort);
 }

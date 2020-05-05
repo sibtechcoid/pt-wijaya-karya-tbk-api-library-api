@@ -29,6 +29,7 @@ function Type(value) {
         ptka: (v) => undefinable_1.default(v, type_1.default),
         fungsi: (v) => undefinable_1.default(v, type_1.default),
         penemu: (v) => undefinable_1.default(v, type_1.default),
+        fungsiBagian: (v) => undefinable_1.default(v, type_1.default),
         biro: (v) => undefinable_1.default(v, type_1.default),
         konsekuensi: (v) => undefinable_1.default(v, type_1.default),
         dibuat: (v) => undefinable_1.default(v, compatible_1.default),

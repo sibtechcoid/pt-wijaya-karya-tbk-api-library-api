@@ -33,6 +33,7 @@ export default function Type<Extended extends Body = Body>(value : any) : value 
         ptka: (v) => Undefinable(v, StringType),
         fungsi: (v) => Undefinable(v, StringType),
         penemu: (v) => Undefinable(v, StringType),
+        fungsiBagian: (v) => Undefinable(v, StringType),
         biro: (v) => Undefinable(v, StringType),
         konsekuensi: (v) => Undefinable(v, StringType),
         dibuat : (v) => Undefinable(v, TypeDateCompatible),

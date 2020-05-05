@@ -28,6 +28,7 @@ function Type(value) {
         kontak: (v) => undefinable_1.default(v, type_2.default),
         ptka: (v) => undefinable_1.default(v, type_2.default),
         fungsi: (v) => undefinable_1.default(v, type_2.default),
+        fungsiBagian: (v) => undefinable_1.default(v, type_2.default),
         penemu: (v) => undefinable_1.default(v, type_2.default),
         biro: (v) => undefinable_1.default(v, type_2.default),
         konsekuensi: (v) => undefinable_1.default(v, type_2.default),

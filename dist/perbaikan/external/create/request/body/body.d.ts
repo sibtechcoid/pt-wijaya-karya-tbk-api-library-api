@@ -15,11 +15,15 @@ export default interface Body {
     bukti: string[];
     unitKerja: string;
     /**
+     * ALOAS FOR STADNARD
+     */
+    fungsi: string;
+    /**
      * PTKA
      */
     kontak: string;
     ptka: string;
-    fungsi: string;
+    fungsiBagian: string;
     dibuat: string | Date;
     penemu: string;
     biro: string;

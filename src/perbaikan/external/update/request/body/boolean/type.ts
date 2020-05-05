@@ -31,6 +31,7 @@ export default function Type<Extended extends Body = Body>(value : any) : value 
         bukti :  (v) => Undefinable(v,(v) : v is  string[] => ArrayOf(v, StringType)),
         kontak: (v) => Undefinable(v, StringType),
         ptka: (v) => Undefinable(v, StringType),
+        fungsiBagian: (v) => Undefinable(v, StringType),
         fungsi: (v) => Undefinable(v, StringType),
         penemu: (v) => Undefinable(v, StringType),
         biro: (v) => Undefinable(v, StringType),

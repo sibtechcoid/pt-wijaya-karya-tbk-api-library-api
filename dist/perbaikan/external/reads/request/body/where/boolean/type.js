@@ -20,6 +20,7 @@ function Type(value) {
         klausul: (v) => undefinable_1.default(v, type_2.default),
         auditor: (v) => undefinable_1.default(v, type_2.default),
         deskripsi: (v) => undefinable_1.default(v, type_2.default),
+        fungsiBagian: (v) => undefinable_1.default(v, type_2.default),
         deadline: (v) => undefinable_1.default(v, type_2.default),
         penyebab: (v) => undefinable_1.default(v, type_2.default),
         koreksi: (v) => undefinable_1.default(v, type_2.default),

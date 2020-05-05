@@ -25,6 +25,7 @@ export default function
         klausul : (v) => Undefinable(v, StringType),
         auditor : (v) => Undefinable(v, StringType),
         deskripsi : (v) => Undefinable(v, StringType),
+        fungsiBagian : (v) => Undefinable(v, StringType),
         deadline : (v) => Undefinable(v, StringType),
         penyebab : (v) => Undefinable(v, StringType),
         koreksi : (v) => Undefinable(v, StringType),

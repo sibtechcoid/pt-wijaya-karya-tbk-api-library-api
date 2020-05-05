@@ -21,12 +21,16 @@ export default interface Body {
     unitKerja : string;
 
     /**
+     * ALOAS FOR STADNARD
+     */
+    fungsi : string;
+
+    /**
      * PTKA
      */
     kontak : string;
     ptka : string;
-    fungsi : string;
-
+    fungsiBagian : string
     dibuat : string|Date;
     penemu : string;
     biro : string;

@@ -33,4 +33,5 @@ export default interface Body extends Record, Id {
      */
     status: Status;
     catatan: string;
+    fungsiBagian: string;
 }

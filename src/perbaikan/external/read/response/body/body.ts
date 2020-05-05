@@ -38,6 +38,8 @@ export default interface Body extends Record, Id {
     /**
      * remark
      */
-    status : Status
+    status : Status;
     catatan : string;
+
+    fungsiBagian : string;
 }

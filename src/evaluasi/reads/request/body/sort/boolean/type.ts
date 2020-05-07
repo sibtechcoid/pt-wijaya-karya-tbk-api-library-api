@@ -24,6 +24,7 @@ export default function Type<
         deactivate  : (v) => Undefinable(v, ModeType),
         nilai       : (v) => Undefinable(v, ModeType),
         untuk          : (v) => Undefinable(v, ModeType),
+        finish          : (v) => Undefinable(v, ModeType),
     };
 
     return Structure(value, sort);

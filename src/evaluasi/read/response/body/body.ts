@@ -10,6 +10,7 @@ export default interface Body extends Id, Record, Deactivate {
 
     kuisioner : Kuisioner;
     nilai  : number;
+    finish  : boolean;
     audit  : Omit<Audit, 'anggota'|'penyetuju'|'penolakan'|'suratTugas'|'perbaikan'|'jabatan'|'unitKerja'>;
     dari  : Omit<User, 'jabatan'>;
     untuk  : Omit<User, 'jabatan'>;

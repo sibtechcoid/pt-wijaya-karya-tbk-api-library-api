@@ -17,6 +17,7 @@ function Type(value) {
         deactivate: (v) => undefinable_1.default(v, type_1.default),
         nilai: (v) => undefinable_1.default(v, type_1.default),
         untuk: (v) => undefinable_1.default(v, type_1.default),
+        finish: (v) => undefinable_1.default(v, type_1.default),
     };
     return structure_1.default(value, sort);
 }

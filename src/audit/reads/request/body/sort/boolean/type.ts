@@ -13,6 +13,7 @@ export default function Type<
 
     let sort : Validator<Required<Sort>> = {
         reminder    : (v) => Undefinable(v, ModeType),
+        reminded    : (v) => Undefinable(v, ModeType),
         created    : (v) => Undefinable(v, ModeType),
         fase        : (v) => Undefinable(v, ModeType),
         deactivate : (v) => Undefinable(v, ModeType),

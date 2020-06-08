@@ -37,4 +37,5 @@ export default interface Body extends Deactivate, Id, Schedule, Record  {
     externalOrganisasiNo: string|null;
     externalAuditNo: string|null;
     reminder : number
+    reminded : boolean
 }

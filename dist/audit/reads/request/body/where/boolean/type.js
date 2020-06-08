@@ -21,6 +21,7 @@ function Type(value) {
         realisasi: (v) => undefinable_1.default(v, (v) => type_4.default(v) && v.length === 2),
     };
     let sort = {
+        reminder: (v) => undefinable_1.default(v, positive_1.default),
         unitKerja: (v) => undefinable_1.default(v, positive_1.default),
         deactivate: (v) => undefinable_1.default(v, type_2.default),
         rencana: (v) => undefinable_1.default(v, (v) => array_of_1.default(v, compatible_1.default)),

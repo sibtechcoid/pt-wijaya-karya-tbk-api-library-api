@@ -6,6 +6,7 @@ const undefinable_1 = require("@dikac/t-undefined/boolean/undefinable");
 const array_of_1 = require("@dikac/t-array/boolean/array-of");
 function Type(value) {
     let sort = {
+        reminder: (v) => undefinable_1.default(v, type_1.default),
         created: (v) => undefinable_1.default(v, type_1.default),
         fase: (v) => undefinable_1.default(v, type_1.default),
         deactivate: (v) => undefinable_1.default(v, type_1.default),

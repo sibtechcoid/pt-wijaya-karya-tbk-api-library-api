@@ -7,4 +7,5 @@ export default interface Body extends Schedule {
     anggota: Member[];
     status: Status;
     tipe: Type;
+    reminder: number;
 }

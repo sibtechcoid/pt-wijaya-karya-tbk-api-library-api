@@ -27,6 +27,7 @@ export default function
     };
 
     let sort : Validator<Required<Where>> = {
+        reminder: (v) => Undefinable(v, Positive),
         unitKerja: (v) => Undefinable(v, Positive),
         deactivate: (v) => Undefinable(v, DeactivatedType),
         rencana: (v) => Undefinable(v, (v) : v is Date[] => ArrayOf(v, TypeDateCompatible)),

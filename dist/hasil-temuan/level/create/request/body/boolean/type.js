@@ -8,6 +8,7 @@ const type_3 = require("@dikac/t-object/boolean/type");
 const positive_1 = require("@dikac/t-number/boolean/positive");
 const type_4 = require("../../../../type/type");
 const type_5 = require("@dikac/t-enum/boolean/type");
+const array_of_1 = require("@dikac/t-array/boolean/array-of");
 function Type(value) {
     if (!type_3.default(value)) {
         return false;
@@ -17,6 +18,7 @@ function Type(value) {
         nama: type_2.default,
         bobot: (v) => nullable_1.default(v, positive_1.default),
         point: (v) => nullable_1.default(v, positive_1.default),
+        ruangan: (v) => array_of_1.default(v, positive_1.default),
         parent: (v) => nullable_1.default(v, positive_1.default),
         judul: type_1.default,
         tipe: (v) => type_5.default(v, type_4.default),

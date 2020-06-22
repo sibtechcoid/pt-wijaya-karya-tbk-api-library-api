@@ -8,6 +8,7 @@ import Body from "../body";
 import Positive from "@dikac/t-number/boolean/positive";
 import LevelType from "../../../../type/type";
 import EnumType from "@dikac/t-enum/boolean/type";
+import ArrayOf from "@dikac/t-array/boolean/array-of";
 
 export default function Type<Extended extends TypeInterface = TypeInterface>(value : any) : value is Extended {
 
@@ -21,6 +22,7 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
         nama : StringType,
         bobot : (v) => Nullable(v, Positive),
         point : (v) => Nullable(v, Positive),
+        ruangan : (v) => ArrayOf(v, Positive),
         parent : (v) => Nullable(v, Positive),
         judul : BooleanType,
         tipe    : (v) : v is LevelType =>EnumType(v, LevelType),

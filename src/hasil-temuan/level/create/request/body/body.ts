@@ -1,5 +1,6 @@
 import Nama from "../../../../../nama/create/nama";
 import Type from "../../../type/type";
+import Ruangan from "../../../../ruangan/read/response/body/body";
 
 
 export default interface Body extends Nama {
@@ -11,4 +12,5 @@ export default interface Body extends Nama {
     parent : number|null;
     judul : boolean;
     tipe : Type;
+    ruangan : number[];
 }

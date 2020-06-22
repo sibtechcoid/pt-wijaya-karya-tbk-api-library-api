@@ -42,11 +42,13 @@ const type_37 = require("../../../../hasil-temuan-internal/boolean/type");
 const type_38 = require("../../../../hasil-temuan-smk3l/boolean/type");
 const type_39 = require("../../../../hasil-temuan-kriteria/boolean/type");
 const type_40 = require("../../../../hasil-temuan-level/boolean/type");
+const type_41 = require("../../../../ruangan/boolean/type");
 function Type(value) {
     if (!type_1.default(value)) {
         return false;
     }
     let sort = {
+        ruangan: (v) => array_of_1.default(v, type_41.default),
         kuisioner: (v) => array_of_1.default(v, type_2.default),
         evaluasi: (v) => array_of_1.default(v, type_3.default),
         perbaikanInternal: (v) => array_of_1.default(v, type_4.default),

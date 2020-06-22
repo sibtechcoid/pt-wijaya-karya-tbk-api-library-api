@@ -37,9 +37,11 @@ import PerbaikanInternal from "../../../perbaikan-internal/akses";
 import PerbaikanQpass from "../../../perbaikan-qpass/akses";
 import Evaluasi from "../../../evaluasi/akses";
 import Kuisioner from "../../../kuisioner/akses";
+import Ruangan from "../../../ruangan/akses";
 
 export default interface Body {
 
+    ruangan : Ruangan[];
     evaluasi : Evaluasi[];
     kuisioner : Kuisioner[];
 

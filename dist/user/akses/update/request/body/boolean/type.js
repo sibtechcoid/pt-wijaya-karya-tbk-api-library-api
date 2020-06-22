@@ -42,6 +42,7 @@ const type_37 = require("../../../../perbaikan-internal/boolean/type");
 const type_38 = require("../../../../perbaikan-qpass/boolean/type");
 const type_39 = require("../../../../kuisioner/boolean/type");
 const type_40 = require("../../../../evaluasi/boolean/type");
+const type_41 = require("../../../../ruangan/boolean/type");
 const undefinable_1 = require("@dikac/t-undefined/boolean/undefinable");
 const positive_1 = require("@dikac/t-number/boolean/positive");
 function Type(value) {
@@ -50,6 +51,7 @@ function Type(value) {
     }
     let sort = {
         id: positive_1.default,
+        ruangan: (v) => undefinable_1.default(v, (v) => array_of_1.default(v, type_41.default)),
         kuisioner: (v) => undefinable_1.default(v, (v) => array_of_1.default(v, type_39.default)),
         evaluasi: (v) => undefinable_1.default(v, (v) => array_of_1.default(v, type_40.default)),
         perbaikanInternal: (v) => undefinable_1.default(v, (v) => array_of_1.default(v, type_37.default)),

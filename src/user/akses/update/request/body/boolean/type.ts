@@ -46,7 +46,9 @@ import PerbaikanInternalType from "../../../../perbaikan-internal/boolean/type";
 import PerbaikanQpassType from "../../../../perbaikan-qpass/boolean/type";
 import KuisionerType from "../../../../kuisioner/boolean/type";
 import EvaluasiType from "../../../../evaluasi/boolean/type";
+import RuanganType from "../../../../ruangan/boolean/type";
 import SuratTugasAccess from "../../../../surat-tugas/akses";
+import RuanganAccess from "../../../../ruangan/akses";
 import UserAksesAccess from "../../../../user/akses";
 import JabatanAccess from "../../../../jabatan/akses";
 import UnitKerjaAksesAccess from "../../../../unit-kerja/akses";
@@ -105,6 +107,7 @@ export default function Type(value : any) : value is Body {
 
     let sort : Validator<Required<Body>> = {
         id : Positive,
+        ruangan             : (v)=>Undefinable(v,(v) : v is RuanganAccess[]           => ArrayOf(v, RuanganType)),
         kuisioner             : (v)=>Undefinable(v,(v) : v is KuisionerlAccess[]           => ArrayOf(v, KuisionerType)),
         evaluasi              : (v)=>Undefinable(v,(v) : v is EvaluasiAccess[]             => ArrayOf(v, EvaluasiType)),
 

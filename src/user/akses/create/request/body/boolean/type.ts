@@ -42,8 +42,7 @@ import HasilTemuanInternalType from "../../../../hasil-temuan-internal/boolean/t
 import HasilTemuanSmk3lType from "../../../../hasil-temuan-smk3l/boolean/type";
 import HasilTemuanKriteriaType from "../../../../hasil-temuan-kriteria/boolean/type";
 import HasilTemuanLevelType from "../../../../hasil-temuan-level/boolean/type";
-
-
+import RuanganType from "../../../../ruangan/boolean/type";
 
 export default function Type(value : any) : value is Body {
 
@@ -52,8 +51,8 @@ export default function Type(value : any) : value is Body {
         return false;
     }
 
-
     let sort : Validator<Required<Body>> = {
+        ruangan           : (v) => ArrayOf(v, RuanganType),
         kuisioner           : (v) => ArrayOf(v, KuisionerType),
         evaluasi            : (v) => ArrayOf(v, EvaluasiType),
         perbaikanInternal   : (v) => ArrayOf(v, PerbaikanInternalType),

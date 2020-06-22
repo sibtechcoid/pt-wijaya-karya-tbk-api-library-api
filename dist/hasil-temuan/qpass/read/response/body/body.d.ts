@@ -4,7 +4,7 @@ import Deactivate from "../../../../../deactivate/read/response/body/body";
 import Perbaikan from "../../../../../perbaikan/qpass/read/response/body/body";
 import Id from "../../../../../id/id";
 export default interface Body extends Record, Deactivate, Id {
-    level: Omit<Level, 'parent' | 'levelUsaha'>;
+    level: Omit<Level, 'parent' | 'levelUsaha' | 'ruangan'>;
     hasil: number;
     catatan: string;
     lampiran: string[];

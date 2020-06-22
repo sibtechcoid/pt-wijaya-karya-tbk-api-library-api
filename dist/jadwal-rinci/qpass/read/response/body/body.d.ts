@@ -11,5 +11,5 @@ export default interface Body extends Deactivate, Record, Id {
     selesai: Date | string;
     mulai: Date | string;
     fungsi: Fungsi[];
-    level: Omit<Level, 'levelUsaha'>;
+    level: Omit<Level, 'levelUsaha' | 'ruangan'>;
 }

@@ -12,6 +12,6 @@ export default interface Body extends Deactivate, Record, Id, Nama {
     nama: string;
     bobot: null | number;
     point: null | number;
-    parent: Omit<Body, 'levelUsaha' | 'parent'> | null;
+    parent: Omit<Body, 'levelUsaha' | 'parent' | 'ruangan'> | null;
     ruangan: Omit<Ruangan, 'level'>[];
 }

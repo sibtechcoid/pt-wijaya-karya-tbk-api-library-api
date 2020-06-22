@@ -9,7 +9,7 @@ export default interface Body extends Record, Id {
     /**
      * perintah
      */
-    prosesBisnis: Omit<Level, 'parent' | 'levelUsaha'>;
+    prosesBisnis: Omit<Level, 'parent' | 'levelUsaha' | 'ruangan'>;
     faktor: string;
     analisis: string;
     tindakan: string;
@@ -19,7 +19,7 @@ export default interface Body extends Record, Id {
     /**
      * PTKA
      */
-    prosedur: Omit<Level, 'parent' | 'levelUsaha'>;
+    prosedur: Omit<Level, 'parent' | 'levelUsaha' | 'ruangan'>;
     ptka: string;
     konsekuensi: string;
     referensi: string;

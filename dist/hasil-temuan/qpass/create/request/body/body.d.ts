@@ -6,7 +6,7 @@ export default interface Body {
     hasil: number;
     catatan: string;
     lampiran: string[];
-    ruangan: number;
-    sampel: number;
+    ruangan: number | null;
+    sampel: number | null;
     audit: number;
 }

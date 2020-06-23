@@ -6,10 +6,10 @@ import Perbaikan from "../../../../../perbaikan/qpass/read/response/body/body";
 import Id from "../../../../../id/id";
 export default interface Body extends Record, Deactivate, Id {
     level: Omit<Level, 'parent' | 'levelUsaha' | 'ruangan'>;
-    ruangan: Omit<Ruangan, 'level'>;
+    ruangan: Omit<Ruangan, 'level'> | null;
     hasil: number;
     catatan: string;
     lampiran: string[];
-    sampel: number;
+    sampel: number | null;
     perbaikan: Omit<Perbaikan, 'hasilTemuan'> | null;
 }

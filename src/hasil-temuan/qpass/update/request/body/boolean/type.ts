@@ -1,7 +1,6 @@
 import Body from "../body";
 import Structure, {Validator} from "@dikac/t-object/boolean/structure";
 import Undefinable from "@dikac/t-undefined/boolean/undefinable";
-import StringType from "@dikac/t-string/boolean/type";
 import TypeObject from "@dikac/t-object/boolean/type";
 import Positive from "@dikac/t-number/boolean/positive";
 import ArrayOf from "@dikac/t-array/boolean/array-of";

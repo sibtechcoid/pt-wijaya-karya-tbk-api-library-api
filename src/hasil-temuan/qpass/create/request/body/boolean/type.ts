@@ -1,6 +1,5 @@
 import TypeInterface from "../body";
 import Structure, {Validator} from "@dikac/t-object/boolean/structure";
-import StringType from "@dikac/t-string/boolean/type";
 import NotNull from "@dikac/t-object/boolean/type";
 import Body from "../body";
 import Positive from "@dikac/t-number/boolean/positive";

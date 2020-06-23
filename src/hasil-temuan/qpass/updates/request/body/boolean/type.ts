@@ -2,7 +2,7 @@ import TypeInterface from "../body";
 import NotNull from "@dikac/t-object/boolean/type";
 import ArrayOf from "@dikac/t-array/boolean/array-of";
 import HasilType from "../hasil/boolean/type";
-import TypeRead from "../../../../read/request/body/boolean/type";
+import Positive from "@dikac/t-number/boolean/positive";
 
 export default function Type<Extended extends TypeInterface = TypeInterface>(value : any) : value is Extended {
 
@@ -11,7 +11,7 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
         return false;
     }
 
-    if(!TypeRead(value)) {
+    if(!Positive(value.audit)) {
 
         return false;
     }

@@ -1,21 +1,32 @@
-import TypeInterface from "../body";
-import NotNull from "@dikac/t-object/boolean/type";
+import Body from "../body";
+import Structure, {Validator} from "@dikac/t-object/boolean/structure";
+import Undefinable from "@dikac/t-undefined/boolean/undefinable";
+import StringType from "@dikac/t-string/boolean/type";
+import TypeObject from "@dikac/t-object/boolean/type";
+import Positive from "@dikac/t-number/boolean/positive";
 import ArrayOf from "@dikac/t-array/boolean/array-of";
-import HasilType from "../hasil/boolean/type";
-import TypeRead from "../../../../read/request/body/boolean/type";
+import TypeNumber from "@dikac/t-number/boolean/type";
+import TypeString from "@dikac/t-string/boolean/type";
 
-export default function Type<Extended extends TypeInterface = TypeInterface>(value : any) : value is Extended {
+export default function Type<Extended extends Body = Body>(value : any) : value is Extended {
 
-    if(!NotNull<Extended>(value)) {
-
-        return false;
-    }
-
-    if(!TypeRead(value)) {
+    if(!TypeObject<Extended>(value)) {
 
         return false;
     }
 
-    return ArrayOf(value.hasil, HasilType);
+    let sort : Validator<Required<Body>> = {
+        id    : Positive,
+        level    : (p) => Undefinable<number|null>(p, (p) : p is number|null => ArrayOf<number>(p, (p) : p is number => Positive(p))),
+        lampiran    : (p) => Undefinable<number|null>(p, (p) : p is number|null => ArrayOf<number>(p, (p) : p is number => TypeString(p))),
 
+        audit: (v) => Undefinable(v, Positive),
+        sampel: (v) => Undefinable(v, Positive),
+        ruangan: (v) => Undefinable(v, Positive),
+        hasil : (v) => Undefinable(v, TypeNumber),
+        catatan : (v) => Undefinable(v, TypeString),
+
+    };
+
+    return Structure(value, sort);
 }

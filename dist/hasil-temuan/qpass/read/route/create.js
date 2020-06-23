@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const create_1 = require("../../update/request/path/create");
+const create_1 = require("../../create/request/path/create");
 const read_create_1 = require("../../../../method/read-create");
 const create_2 = require("../../../../route/create");
 const type_1 = require("../request/body/boolean/type");

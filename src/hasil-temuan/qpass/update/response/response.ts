@@ -1,5 +1,6 @@
-import Created from "../../../../response/created";
+import Success from "../../../../response/success";
 import Body from "./body/body";
 
-type Response = Created<Body>;
+
+type Response = Success<Body>;
 export default Response;

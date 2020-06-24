@@ -3,8 +3,9 @@ import Route from "./route";
 import CreateRoute from "../../../../route/create";
 import Path from "../request/path/create";
 import TypeActivable from "../../../../deactivate/update/request/body/boolean/type";
+import TypeId from "../../../../id/boolean/type";
 
 export default function Create() : Route {
 
-    return CreateRoute(DeleteCreate(), Path(), TypeActivable);
+    return CreateRoute(DeleteCreate(), Path(), TypeId);
 }

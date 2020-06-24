@@ -3,8 +3,9 @@ import CreatBody from "../../../../body/create";
 import Delete from "../../../../method/delete-create";
 import Path from "./path/create";
 import Body from "../../../../deactivate/update/request/body/body";
+import Id from "../../../../id/id";
 
-export default function Create(activable : Body) : Request {
+export default function Create(activable : Id) : Request {
 
-    return Object.assign(Delete(), Path(), new CreatBody<Body>(activable))
+    return Object.assign(Delete(), Path(), new CreatBody<Id>(activable))
 }

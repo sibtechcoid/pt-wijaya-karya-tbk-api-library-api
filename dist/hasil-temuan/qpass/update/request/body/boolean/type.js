@@ -13,8 +13,8 @@ function Type(value) {
     }
     let sort = {
         id: positive_1.default,
-        level: (p) => undefinable_1.default(p, (p) => array_of_1.default(p, (p) => positive_1.default(p))),
         lampiran: (p) => undefinable_1.default(p, (p) => array_of_1.default(p, (p) => type_3.default(p))),
+        level: (v) => undefinable_1.default(v, positive_1.default),
         audit: (v) => undefinable_1.default(v, positive_1.default),
         sampel: (v) => undefinable_1.default(v, positive_1.default),
         ruangan: (v) => undefinable_1.default(v, positive_1.default),

@@ -16,9 +16,9 @@ export default function Type<Extended extends Body = Body>(value : any) : value 
 
     let sort : Validator<Required<Body>> = {
         id    : Positive,
-        level    : (p) => Undefinable<number|null>(p, (p) : p is number|null => ArrayOf<number>(p, (p) : p is number => Positive(p))),
         lampiran    : (p) => Undefinable<number|null>(p, (p) : p is number|null => ArrayOf<number>(p, (p) : p is number => TypeString(p))),
 
+        level: (v) => Undefinable(v, Positive),
         audit: (v) => Undefinable(v, Positive),
         sampel: (v) => Undefinable(v, Positive),
         ruangan: (v) => Undefinable(v, Positive),

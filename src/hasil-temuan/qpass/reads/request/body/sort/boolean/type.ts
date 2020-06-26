@@ -16,6 +16,7 @@ export default function Type<
     }
 
     let sort : Validator<Required<Sort>> = {
+        audit    : (v) => Undefinable(v, ModeType),
         level    : (v) => Undefinable(v, ModeType),
         created    : (v) => Undefinable(v, ModeType),
         deactivate : (v) => Undefinable(v, ModeType),

@@ -7,7 +7,7 @@ import Level from "../../../../../hasil-temuan/level/reads/response/body/body";
 
 export default interface Body extends Record, Id {
 
-    hasilTemuan: Omit<HasilTemuan, 'level' | 'perbaikan'|'ruangan'>;
+    hasilTemuan: Omit<HasilTemuan, 'level' | 'perbaikan'|'ruangan'|'audit'>;
 
     /**
      * perintah

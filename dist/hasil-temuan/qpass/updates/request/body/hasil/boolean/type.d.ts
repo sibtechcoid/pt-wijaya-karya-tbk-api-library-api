@@ -1,2 +1,2 @@
-import TypeInterface from "../hasil";
-export default function Type<Extended extends TypeInterface = TypeInterface>(value: any): value is Extended;
+import Hasil from "../hasil";
+export default function Typez<Extended extends Hasil = Hasil>(value: any): value is Extended;

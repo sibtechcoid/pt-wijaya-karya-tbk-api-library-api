@@ -1,5 +1,6 @@
-import Hasil from "./hasil/hasil";
-export default interface Body {
+import Create from "../../../create/request/body/body";
+import Update from "../../../update/request/body/body";
+export default interface Bodyz {
     audit: number;
-    hasil: Hasil[];
+    hasil: (Omit<Create, 'audit'> | Omit<Update, 'audit'>)[];
 }

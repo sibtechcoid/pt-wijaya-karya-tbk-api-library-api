@@ -7,7 +7,10 @@ function Typez(value) {
     if (!type_1.default(value)) {
         return false;
     }
-    return type_2.default(value) || type_3.default(value);
+    // audit migh be required
+    let clone = Object.assign(value);
+    clone.audit = Number.MAX_SAFE_INTEGER;
+    return type_2.default(clone) || type_3.default(clone);
     // let sort : Validator<Required<TypeInterface>> = {
     //     level: Positive,
     //     ruangan: Positive,

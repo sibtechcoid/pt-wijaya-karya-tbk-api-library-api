@@ -10,7 +10,12 @@ export default function Typez<Extended extends Hasil = Hasil>(value : any) : val
         return false;
     }
 
-    return TypeCreate(value) || TypeUpdate(value);
+
+    // audit migh be required
+    let clone = Object.assign(value);
+    clone.audit = Number.MAX_SAFE_INTEGER;
+
+    return TypeCreate(clone) || TypeUpdate(clone);
 
     // let sort : Validator<Required<TypeInterface>> = {
     //     level: Positive,

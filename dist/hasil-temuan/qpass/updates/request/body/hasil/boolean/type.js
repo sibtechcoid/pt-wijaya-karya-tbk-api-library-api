@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const type_1 = require("@dikac/t-object/boolean/type");
 const type_2 = require("../../../../../create/request/body/boolean/type");
 const type_3 = require("../../../../../update/request/body/boolean/type");
-function Typez(value) {
+function Type(value) {
     if (!type_1.default(value)) {
         return false;
     }
@@ -22,4 +22,4 @@ function Typez(value) {
     //
     // return Structure(value, sort);
 }
-exports.default = Typez;
+exports.default = Type;

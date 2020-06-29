@@ -3,7 +3,7 @@ import NotNull from "@dikac/t-object/boolean/type";
 import TypeCreate from "../../../../../create/request/body/boolean/type";
 import TypeUpdate from "../../../../../update/request/body/boolean/type";
 
-export default function Typez<Extended extends Hasil = Hasil>(value : any) : value is Extended {
+export default function Type<Extended extends Hasil = Hasil>(value : any) : value is Extended {
 
     if(!NotNull<Extended>(value)) {
 

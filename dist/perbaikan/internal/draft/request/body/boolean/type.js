@@ -7,7 +7,6 @@ const undefinable_1 = require("@dikac/t-undefined/boolean/undefinable");
 const positive_1 = require("@dikac/t-number/boolean/positive");
 const type_1 = require("@dikac/t-string/boolean/type");
 const type_2 = require("@dikac/t-enum/boolean/type");
-const tinjauan_1 = require("../../../../tinjauan/tinjauan");
 const keputusan_1 = require("../../../../../keputusan/keputusan");
 const type_3 = require("@dikac/t-object/boolean/type");
 function Type(value) {
@@ -32,8 +31,8 @@ function Type(value) {
         faktor: (v) => undefinable_1.default(v, type_1.default),
         rencanaPerbaikan: (v) => undefinable_1.default(v, type_1.default),
         analisis: (v) => undefinable_1.default(v, type_1.default),
-        tinjauan: (v) => undefinable_1.default(v, (v) => type_2.default(v, tinjauan_1.default)),
-        tinjauanCatatan: (v) => undefinable_1.default(v, type_1.default),
+        //tinjauan : (v) => Undefinable(v,(v) : v is Tinjauan => TypeEnum(v, Tinjauan)),
+        //tinjauanCatatan : (v) => Undefinable(v, StringType),
         perbaikan: (v) => undefinable_1.default(v, compatible_1.default),
         closing: (v) => undefinable_1.default(v, (v) => array_of_1.default(v, type_1.default)),
         pic: (v) => undefinable_1.default(v, positive_1.default),

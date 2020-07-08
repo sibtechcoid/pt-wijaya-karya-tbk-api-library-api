@@ -4,7 +4,6 @@ import ArrayOf from "@dikac/t-array/boolean/array-of";
 import TypeDateCompatible from "@dikac/t-date/boolean/compatible";
 import Structure, {Validator} from "@dikac/t-object/boolean/structure";
 import Positive from "@dikac/t-number/boolean/positive";
-import Tinjauan from "../../../../tinjauan/tinjauan";
 import Keputusan from "../../../../../keputusan/keputusan";
 import StringType from "@dikac/t-string/boolean/type";
 import BooleanType from "@dikac/t-boolean/type";
@@ -26,8 +25,7 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
          */
         faktor : StringType,
         analisis : StringType,
-        tinjauan : (v) =>TypeEnum(v, Tinjauan),
-        tinjauanCatatan : StringType,
+
         rencanaPerbaikan : StringType,
         perbaikan : TypeDateCompatible,
         closing :  (v) => ArrayOf(v, StringType),

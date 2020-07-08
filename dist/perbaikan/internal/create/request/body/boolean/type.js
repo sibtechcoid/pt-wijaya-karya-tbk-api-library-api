@@ -5,7 +5,6 @@ const array_of_1 = require("@dikac/t-array/boolean/array-of");
 const compatible_1 = require("@dikac/t-date/boolean/compatible");
 const structure_1 = require("@dikac/t-object/boolean/structure");
 const positive_1 = require("@dikac/t-number/boolean/positive");
-const tinjauan_1 = require("../../../../tinjauan/tinjauan");
 const keputusan_1 = require("../../../../../keputusan/keputusan");
 const type_2 = require("@dikac/t-string/boolean/type");
 const type_3 = require("@dikac/t-boolean/type");
@@ -21,8 +20,6 @@ function Type(value) {
          */
         faktor: type_2.default,
         analisis: type_2.default,
-        tinjauan: (v) => type_4.default(v, tinjauan_1.default),
-        tinjauanCatatan: type_2.default,
         rencanaPerbaikan: type_2.default,
         perbaikan: compatible_1.default,
         closing: (v) => array_of_1.default(v, type_2.default),

@@ -5,6 +5,10 @@ import ArrayOf from "@dikac/t-array/boolean/array-of";
 import TypeString from "@dikac/t-string/boolean/type";
 import undefinable from "@dikac/t-undefined/boolean/undefinable";
 import Positive from "@dikac/t-number/boolean/positive";
+import Undefinable from "@dikac/t-undefined/boolean/undefinable";
+import Tinjauan from "../../../../tinjauan/tinjauan";
+import TypeEnum from "@dikac/t-enum/boolean/type";
+import StringType from "@dikac/t-string/boolean/type";
 
 export default function Type<Extended extends TypeInterface = TypeInterface>(value : any) : value is Extended {
 
@@ -17,7 +21,8 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
         id : Positive,
         jadwalRinci : (v) => undefinable(v, Positive),
         prosesBisnis : (v) => undefinable(v, Positive),
-
+        tinjauan : (v) => Undefinable(v, (v) : v is Tinjauan[] =>TypeEnum(v, Tinjauan)),
+        tinjauanCatatan : (v) => Undefinable(v, StringType),
         prosedur : (v) => undefinable(v, Positive),
         klausul : (v) => undefinable(v, (v) : v is number[] => ArrayOf(v, Positive)),
         fungsi : (v) => undefinable(v, (v) : v is number[] => ArrayOf(v, Positive)),

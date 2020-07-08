@@ -3,7 +3,6 @@ import Structure, {Validator} from "@dikac/t-object/boolean/structure";
 import ModeType from "../../../../../../../sort/mode/boolean/type";
 import Undefinable from "@dikac/t-undefined/boolean/undefinable";
 import NotNull from "@dikac/t-object/boolean/type";
-import StringType from "@dikac/t-string/boolean/type";
 
 export default function Type<
     Extended extends Sort = Sort
@@ -23,8 +22,7 @@ export default function Type<
         hasilTemuan: (v) => Undefinable(v, ModeType),
         faktor: (v) => Undefinable(v, ModeType),
         analisis: (v) => Undefinable(v, ModeType),
-        tinjauan: (v) => Undefinable(v, ModeType),
-        tinjauanCatatan: (v) => Undefinable(v, ModeType),
+
         perbaikan: (v) => Undefinable(v, ModeType),
         closing: (v) => Undefinable(v, ModeType),
         pic: (v) => Undefinable(v, ModeType),

@@ -12,6 +12,8 @@ function Type(value) {
         created: (v) => undefinable_1.default(v, type_1.default),
         id: (v) => undefinable_1.default(v, type_1.default),
         updated: (v) => undefinable_1.default(v, type_1.default),
+        tinjauan: (v) => undefinable_1.default(v, type_1.default),
+        tinjauanCatatan: (v) => undefinable_1.default(v, type_1.default),
     };
     return structure_1.default(value, sort);
 }

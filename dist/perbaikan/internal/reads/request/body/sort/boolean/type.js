@@ -15,8 +15,6 @@ function Type(value) {
         hasilTemuan: (v) => undefinable_1.default(v, type_1.default),
         faktor: (v) => undefinable_1.default(v, type_1.default),
         analisis: (v) => undefinable_1.default(v, type_1.default),
-        tinjauan: (v) => undefinable_1.default(v, type_1.default),
-        tinjauanCatatan: (v) => undefinable_1.default(v, type_1.default),
         perbaikan: (v) => undefinable_1.default(v, type_1.default),
         closing: (v) => undefinable_1.default(v, type_1.default),
         pic: (v) => undefinable_1.default(v, type_1.default),

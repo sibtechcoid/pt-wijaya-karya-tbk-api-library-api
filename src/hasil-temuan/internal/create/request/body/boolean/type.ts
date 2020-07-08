@@ -4,6 +4,9 @@ import Structure, {Validator} from "@dikac/t-object/boolean/structure";
 import TypeString from "@dikac/t-string/boolean/type";
 import ArrayOf from "@dikac/t-array/boolean/array-of";
 import Positive from "@dikac/t-number/boolean/positive";
+import Tinjauan from "../../../../tinjauan/tinjauan";
+import TypeEnum from "@dikac/t-enum/boolean/type";
+import StringType from "@dikac/t-string/boolean/type";
 
 export default function Type<Extended extends TypeInterface = TypeInterface>(value : any) : value is Extended {
 
@@ -16,7 +19,10 @@ export default function Type<Extended extends TypeInterface = TypeInterface>(val
 
         jadwalRinci : Positive,
         prosesBisnis : Positive,
-
+        tinjauan : (v) =>TypeEnum(v, Tinjauan),
+        tinjauanCatatan : StringType,
+        // tinjauan : (v) => Undefinable(v,(v) : v is Tinjauan => TypeEnum(v, Tinjauan)),
+        // tinjauanCatatan : (v) => Undefinable(v, StringType),
         prosedur : Positive,
         klausul : (v) => ArrayOf(v, Positive),
         fungsi : (v) => ArrayOf(v, Positive),

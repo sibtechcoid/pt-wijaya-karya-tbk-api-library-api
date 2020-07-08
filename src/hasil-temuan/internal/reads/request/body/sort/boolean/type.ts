@@ -19,6 +19,8 @@ export default function Type<
         created    : (v) => Undefinable(v, ModeType),
         id         : (v) => Undefinable(v, ModeType),
         updated    : (v) => Undefinable(v, ModeType),
+        tinjauan: (v) => Undefinable(v, ModeType),
+        tinjauanCatatan: (v) => Undefinable(v, ModeType),
     };
 
     return Structure(value, sort);

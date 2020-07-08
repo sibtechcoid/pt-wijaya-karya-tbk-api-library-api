@@ -7,7 +7,6 @@ const undefinable_1 = require("@dikac/t-undefined/boolean/undefinable");
 const compatible_1 = require("@dikac/t-date/boolean/compatible");
 const positive_1 = require("@dikac/t-number/boolean/positive");
 const type_3 = require("@dikac/t-string/boolean/type");
-const tinjauan_1 = require("../../../../../tinjauan/tinjauan");
 const type_4 = require("@dikac/t-enum/boolean/type");
 const array_of_1 = require("@dikac/t-array/boolean/array-of");
 const keputusan_1 = require("../../../../../../keputusan/keputusan");
@@ -28,8 +27,6 @@ function Type(value) {
         prosesBisnis: (v) => undefinable_1.default(v, positive_1.default),
         faktor: (v) => undefinable_1.default(v, type_3.default),
         analisis: (v) => undefinable_1.default(v, type_3.default),
-        tinjauan: (v) => undefinable_1.default(v, (v) => type_4.default(v, tinjauan_1.default)),
-        tinjauanCatatan: (v) => undefinable_1.default(v, type_3.default),
         rencanaPerbaikan: (v) => undefinable_1.default(v, type_3.default),
         perbaikan: (v) => undefinable_1.default(v, compatible_1.default),
         closing: (v) => undefinable_1.default(v, (v) => array_of_1.default(v, type_3.default)),

@@ -1,4 +1,3 @@
-import Tinjauan from "../../../tinjauan/tinjauan";
 import Keputusan from "../../../../keputusan/keputusan";
 export default interface Body {
     hasilTemuan: number;
@@ -8,8 +7,6 @@ export default interface Body {
     prosesBisnis: number;
     faktor: string;
     analisis: string;
-    tinjauan: Tinjauan;
-    tinjauanCatatan: string;
     rencanaPerbaikan: string;
     perbaikan: string | Date;
     closing: string[];

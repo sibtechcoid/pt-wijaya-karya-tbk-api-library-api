@@ -5,6 +5,6 @@ var Akses;
     Akses["CREATE"] = "CREATE";
     Akses["DELETE"] = "DELETE";
     Akses["READ"] = "READ";
-    Akses["UPDATE"] = "DRAFT";
+    Akses["UPDATE"] = "UPDATE";
 })(Akses || (Akses = {}));
 exports.default = Akses;

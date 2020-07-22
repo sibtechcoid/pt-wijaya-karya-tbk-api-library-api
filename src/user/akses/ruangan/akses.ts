@@ -2,7 +2,7 @@ enum Akses  {
     CREATE = 'CREATE',
     DELETE  = 'DELETE',
     READ  = 'READ',
-    UPDATE = 'DRAFT',
+    UPDATE = 'UPDATE',
 }
 
 export default  Akses;

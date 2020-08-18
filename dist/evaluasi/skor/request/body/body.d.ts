@@ -6,5 +6,5 @@ export default interface Body {
     /**
      * user id
      */
-    user: number;
+    untuk: number;
 }

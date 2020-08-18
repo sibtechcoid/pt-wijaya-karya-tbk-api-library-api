@@ -8,7 +8,7 @@ function Type(value) {
         return false;
     }
     let create = {
-        user: type_2.default,
+        untuk: type_2.default,
         audit: type_2.default,
     };
     return structure_1.default(value, create);
